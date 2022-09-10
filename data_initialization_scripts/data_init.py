@@ -108,9 +108,8 @@ def retrieve_gpu_data(api_instance):
     #                 etc.}]}
     gpu_info_dict = json.loads(gpu_data)
 
-
 if __name__ == "__main__":
     # initalizes an API instance and sets region to US
     api_instance = API("us")
-    retrieve_cpu_data(api_instance)
-    retrieve_gpu_data(api_instance)
+    user_budget = int(input())
+    
