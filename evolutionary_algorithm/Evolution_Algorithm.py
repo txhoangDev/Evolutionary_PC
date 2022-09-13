@@ -12,14 +12,16 @@ class Individual(ABC):
     @abstractmethod
     def pair(self, other, pair_params):
         pass
-
+ 
     @abstractmethod
     def mutate(self, mutate_params):
         pass
 
     @abstractmethod
     def _random_init(self, init_params):
-        pass
+        return np.random.choice(
+            a=range(init_params['brand'])
+        )
 
 
 class Optimization(Individual):

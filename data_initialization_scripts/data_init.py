@@ -1,8 +1,11 @@
 # imports
+from turtle import hideturtle
 from pcpartpicker import API
-from requests_html import HTMLSession
-import json
+from requests import get
 import re
+import json
+from bs4 import BeautifulSoup as bs
+from datetime import date
 
 """
 Some pcpartpicker supported parts:
@@ -10,7 +13,6 @@ Some pcpartpicker supported parts:
         cooler = 'cpu-cooler'
     motherboard = 'motherboard'
     GPU = 'video-card'
-    fans = 'case-fans'
     case = 'case'
     RAM = 'memory'
     PSU = 'power-supply'
@@ -18,98 +20,54 @@ Some pcpartpicker supported parts:
     HD = 'external-hard-drive'
 """
 
-def amazon_price_extractor(item_name):
+def get_cpu_price(item_name):
     """
     Gets the ASIN of each product and looks for the price of the product
+    and returns the price of the product
     
     Args:
         item_name (string): name of the item from PC Part Picker
     """
-    
     # replaces item name to fit the amazon url standard
-    item = re.sub(r'[\s|-]', '+', item_name)
+    item = re.sub(r'[\s]', '+', item_name)
     
     # initialize the amazon search url
-    search_url = 'https://www.amazon.com/s?k=' + item
+    search_url = 'https://www.cpubenchmark.net/cpu.php?cpu=' + item
     
-    # starts a web browser session to get HTML from url
-    web_session = HTMLSession()
-    web_result = web_session.get(search_url)
-    # ensures that a response will be given before moving on
-    web_result.html.render(sleep=1)
+    # gets a response from the web browser
+    result = get(search_url)
     
-    # gets data from the results from web page for ASIN
-    asin_result = web_result.html.find('div[data-asin]')
-    
-    # finds the first non-empty ASIN and breaks out of the loop
-    for asin in asin_result:
-        if(asin.attrs['data-asin'] != ""):
-            product_asin = asin.attrs['data-asin']
-            break
-    
-    # Makes the product name fit the url standard
-    product_name = re.sub(r'\+', '-', item)
-    product_url = 'https://www.amazon.com/' + product_name + '/dp/' + product_asin
+    # parses the response into a json/dict
+    formatted_result = bs(result.content, 'html.parser')
 
-    # gets the product page information 
-    product_result = web_session.get(product_url)
-    product_result.html.render(sleep=1)
+    price = formatted_result.find_all('a', attrs={'href': '#history'})
     
-    # finds the price from the HTML
-    # this would be the dollars of the price
-    product_info = product_result.html.find('span[class="a-price-whole"]')
-    # this would the cents of the price
-    product_info2 = product_result.html.find('span[class="a-price-fraction"]')
-    
-    #gets price and places in variable
-    for product in product_info:
-        price_whole = product.text
-        break;
-    for product in product_info2:
-        price_decimal = product.text
-        break;
-    
-    price = price_whole + '.' + price_decimal
-
-# retrieving cpu data
-def retrieve_cpu_data(api_instance):
-    """
-    Gets CPU data from PCPartPickerAPI
-    
-    Args:
-        api_instance (PCPartPickerAPI Instance): passes the instance
-                                                 initialized in main
-    """
-    
-    # gets the data from the API and turns it into a string (JSON)
-    cpu_data = api_instance.retrieve("cpu").to_json()
-    # Turns the JSON into a dictionary for data access
-    # Dictionary looks like this:
-    # {'cpu':[{'brand': name, 
-    #          'model': name, 
-    #          'cores': num}]}
-    cpu_info_dict = json.loads(cpu_data)
-    
-def retrieve_gpu_data(api_instance):
-    """
-    Gets the GPU data from PCPartPickerAPI
-
-    Args:
-        api_instance (PcPartPickerAPI Instance): passes the instance
-                                                 initialized in main
-    """
-    
-    # gets the data from the API and turns it into a JSON String
-    gpu_data = api_instance.retrieve("video-card").to_json()
-    # turns the JSON into a dictionary for access later
-    # Dictionary looks like this:
-    # {'video-card':[{'brand': name,
-    #                 'model': name,
-    #                 etc.}]}
-    gpu_info_dict = json.loads(gpu_data)
+    if len(price) == 0:
+        return 'NA'
+    else:
+        for p in price:
+            return p.text
 
 if __name__ == "__main__":
     # initalizes an API instance and sets region to US
-    api_instance = API("us")
-    user_budget = int(input())
-    
+    with open("Data.json", 'r') as file:
+        data = json.load(file)
+    file.close()
+    # with open("Data.json", 'w') as json_file:
+    #     json.write()
+    #     # y, m, d = [int(x) for x in data['Last_Update'].split("-")]
+    #     # last_update = date(y, m, d)
+    # json_file.close()
+    api_instance = API()
+    parts_data = api_instance.retrieve_all()
+    for part in parts_data:
+        if part == 'cpu':
+            for info in parts_data[part]:
+                data[part].append({"name": info.brand + ' ' + info.model, "price": info.price.__str__(), "benchmark": 0})
+        elif part == 'video-card':
+            for info in parts_data[part]:
+                data[part].append({"name": info.brand + ' ' + info.model, "price": info.price.__str__(), "benchmark": 0})
+    info = json.dumps(data, indent=4)
+    with open("Data.json", "w") as file:
+        file.write(info)
+    file.close()
