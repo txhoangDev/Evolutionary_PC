@@ -1,6 +1,6 @@
 import numpy as np
 from abc import ABC, abstractmethod
-
+import random
 
 class Individual(ABC):
     def __init__(self, value=None, init_params=None):
@@ -19,9 +19,7 @@ class Individual(ABC):
 
     @abstractmethod
     def _random_init(self, init_params):
-        return np.random.choice(
-            a=range(init_params['brand'])
-        )
+        pass
 
 
 class Optimization(Individual):

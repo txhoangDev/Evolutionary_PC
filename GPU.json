@@ -1,1399 +1,273 @@
 {
-    "body": [
-        [
-            "NVIDIA GeForce RTX 3090",
-            6570.9,
-            220
-        ],
-        [
-            "NVIDIA GeForce RTX 3090 Ti",
-            6106.93,
-            10
-        ],
-        [
-            "NVIDIA GeForce RTX 3080 Ti",
-            5495.03,
-            34
-        ],
-        [
-            "NVIDIA RTX A6000",
-            5151.11,
-            2
-        ],
-        [
-            "NVIDIA RTX A5000",
-            4883.19,
-            1
-        ],
-        [
-            "NVIDIA GeForce RTX 3080",
-            4834.83,
-            87
-        ],
-        [
-            "NVIDIA RTX A4500",
-            4050.83,
-            1
-        ],
-        [
-            "NVIDIA A40-16Q",
-            3826.55,
-            1
-        ],
-        [
-            "NVIDIA GeForce RTX 3080 Ti Laptop GPU",
-            3819.78,
-            2
-        ],
-        [
-            "NVIDIA A40-24Q",
-            3813.25,
-            1
-        ],
-        [
-            "NVIDIA GeForce RTX 3070 Ti",
-            3797.5,
-            23
-        ],
-        [
-            "NVIDIA A40-48Q",
-            3728.76,
-            1
-        ],
-        [
-            "NVIDIA A40-8Q",
-            3622.84,
-            1
-        ],
-        [
-            "NVIDIA GeForce RTX 3080 Laptop GPU",
-            3473.16,
-            13
-        ],
-        [
-            "NVIDIA RTX A5000 Laptop GPU",
-            3437.57,
-            1
-        ],
-        [
-            "NVIDIA GeForce RTX 3070",
-            3363.34,
-            33
-        ],
-        [
-            "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
-            3294.51,
-            2
-        ],
-        [
-            "NVIDIA Quadro RTX 6000",
-            3245.47,
-            1
-        ],
-        [
-            "NVIDIA TITAN RTX",
-            3241.39,
-            1
-        ],
-        [
-            "NVIDIA GeForce RTX 3070 Laptop GPU",
-            3213.55,
-            15
-        ],
-        [
-            "NVIDIA A10G",
-            3137.51,
-            3
-        ],
-        [
-            "NVIDIA GeForce RTX 3060 Ti",
-            3061.54,
-            25
-        ],
-        [
-            "NVIDIA GeForce RTX 2080 Ti",
-            3052.83,
-            12
-        ],
-        [
-            "NVIDIA RTX A4000",
-            2772.13,
-            2
-        ],
-        [
-            "NVIDIA GeForce RTX 2080",
-            2518.96,
-            4
-        ],
-        [
-            "AMD Radeon RX 6900 XT",
-            2470.3,
-            8
-        ],
-        [
-            "NVIDIA GeForce RTX 3060 Laptop GPU",
-            2469.37,
-            23
-        ],
-        [
-            "NVIDIA GeForce RTX 2080 SUPER",
-            2425.28,
-            5
-        ],
-        [
-            "NVIDIA GeForce RTX 2070 SUPER",
-            2413.7,
-            10
-        ],
-        [
-            "AMD Radeon RX 6950 XT",
-            2401.04,
-            4
-        ],
-        [
-            "AMD Radeon RX 6800 XT",
-            2398.16,
-            7
-        ],
-        [
-            "NVIDIA Quadro RTX 5000 with Max-Q Design",
-            2363.2,
-            3
-        ],
-        [
-            "NVIDIA GeForce RTX 3060",
-            2358.16,
-            30
-        ],
-        [
-            "NVIDIA GeForce RTX 2060 SUPER",
-            2259.39,
-            9
-        ],
-        [
-            "NVIDIA GeForce RTX 2070",
-            2218.74,
-            12
-        ],
-        [
-            "NVIDIA Quadro RTX 4000",
-            2176.04,
-            1
-        ],
-        [
-            "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
-            2047.56,
-            13
-        ],
-        [
-            "NVIDIA GeForce RTX 2070 Super with Max-Q Design",
-            2042.22,
-            2
-        ],
-        [
-            "AMD Radeon RX 6800",
-            1808.92,
-            2
-        ],
-        [
-            "NVIDIA GeForce RTX 2060",
-            1759.88,
-            29
-        ],
-        [
-            "NVIDIA Quadro RTX 3000",
-            1674.59,
-            2
-        ],
-        [
-            "NVIDIA GeForce RTX 3050",
-            1594.91,
-            3
-        ],
-        [
-            "AMD Radeon RX 6750 XT",
-            1536.12,
-            2
-        ],
-        [
-            "NVIDIA Tesla T4",
-            1453.83,
-            2
-        ],
-        [
-            "AMD Radeon RX 6700 XT",
-            1452.6,
-            8
-        ],
-        [
-            "AMD Radeon RX 6800M",
-            1390.66,
-            3
-        ],
-        [
-            "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
-            1269.08,
-            11
-        ],
-        [
-            "NVIDIA GeForce RTX 3050 Laptop GPU",
-            1198.62,
-            16
-        ],
-        [
-            "NVIDIA RTX A2000 Laptop GPU",
-            1176.88,
-            1
-        ],
-        [
-            "AMD Ryzen Threadripper 3990X 64-Core Processor",
-            1129.86,
-            1
-        ],
-        [
-            "NVIDIA TITAN Xp",
-            1071.38,
-            1
-        ],
-        [
-            "AMD Radeon RX 5700 XT",
-            971.64,
-            7
-        ],
-        [
-            "NVIDIA TITAN Xp COLLECTORS EDITION",
-            954.03,
-            1
-        ],
-        [
-            "AMD Radeon RX 6600 XT",
-            951.38,
-            2
-        ],
-        [
-            "NVIDIA GeForce GTX 1080 Ti",
-            891.42,
-            7
-        ],
-        [
-            "AMD Radeon RX 5700",
-            853.71,
-            2
-        ],
-        [
-            "NVIDIA GeForce GTX 1660 SUPER",
-            850.86,
-            8
-        ],
-        [
-            "AMD Ryzen Threadripper PRO 5975WX 32-Cores",
-            831.47,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 1660 Ti",
-            811.21,
-            6
-        ],
-        [
-            "NVIDIA GeForce GTX 1070 Ti",
-            701.31,
-            1
-        ],
-        [
-            "AMD Ryzen Threadripper PRO 3975WX 32-Cores",
-            685.61,
-            2
-        ],
-        [
-            "AMD Ryzen Threadripper 3970X 32-Core Processor",
-            662.96,
-            2
-        ],
-        [
-            "NVIDIA GeForce GTX 1660",
-            644.86,
-            2
-        ],
-        [
-            "AMD Ryzen Threadripper 3960X 24-Core Processor",
-            619.74,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 1080",
-            602.15,
-            7
-        ],
-        [
-            "NVIDIA GeForce GTX 1070",
-            567.11,
-            9
-        ],
-        [
-            "NVIDIA GeForce GTX 980 Ti",
-            553.16,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 1650 SUPER",
-            542.53,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 1650 Ti",
-            529.4,
-            3
-        ],
-        [
-            "AMD Radeon RX 5500 XT",
-            520.81,
-            9
-        ],
-        [
-            "NVIDIA GeForce GTX 1650",
-            467.76,
-            11
-        ],
-        [
-            "NVIDIA GeForce GTX TITAN Z",
-            453.75,
-            1
-        ],
-        [
-            "AMD Radeon RX 6500 XT",
-            447.53,
-            3
-        ],
-        [
-            "2X Intel Xeon CPU E5-2690 v4 @ 2.60GHz",
-            396.35,
-            1
-        ],
-        [
-            "AMD Ryzen 9 5950X 16-Core Processor",
-            391.81,
-            56
-        ],
-        [
-            "2X Intel Xeon CPU E5-2680 v4 @ 2.40GHz",
-            391.39,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 1060 6GB",
-            388.5,
-            9
-        ],
-        [
-            "Intel Core i9-12900KS",
-            380.47,
-            1
-        ],
-        [
-            "AMD Ryzen Threadripper PRO 3955WX 16-Cores",
-            379.06,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 1060",
-            378.3,
-            1
-        ],
-        [
-            "NVIDIA T600",
-            370.02,
-            1
-        ],
-        [
-            "Intel Core i9-12900K",
-            362.53,
-            15
-        ],
-        [
-            "AMD Radeon RX 6650 XT",
-            359.55,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 1650 with Max-Q Design",
-            352.68,
-            1
-        ],
-        [
-            "Intel Core i9-12900KF",
-            352.64,
-            2
-        ],
-        [
-            "2X Intel Core Processor (Broadwell, no TSX, IBRS)",
-            343.79,
-            1
-        ],
-        [
-            "Intel Core i9-12900F",
-            323.19,
-            1
-        ],
-        [
-            "AMD Ryzen 9 3950X 16-Core Processor",
-            318.23,
-            2
-        ],
-        [
-            "NVIDIA Tesla K40m",
-            318.17,
-            1
-        ],
-        [
-            "AMD Ryzen 9 5900X 12-Core Processor",
-            317.64,
-            46
-        ],
-        [
-            "Intel Core i7-12700KF",
-            316.38,
-            8
-        ],
-        [
-            "Intel Core i7-12700K",
-            315.35,
-            21
-        ],
-        [
-            "NVIDIA GeForce GTX 1060 5GB",
-            309.78,
-            1
-        ],
-        [
-            "AMD Radeon RX 6400",
-            305.68,
-            1
-        ],
-        [
-            "Intel Core i9-12950HX",
-            302.79,
-            2
-        ],
-        [
-            "AMD Ryzen Threadripper 2950X 16-Core Processor",
-            291.79,
-            2
-        ],
-        [
-            "NVIDIA GeForce GTX 970",
-            286.88,
-            1
-        ],
-        [
-            "2X Genuine Intel CPU @ 2.40GHz",
-            278.54,
-            1
-        ],
-        [
-            "AMD Ryzen 9 3900X 12-Core Processor",
-            276.78,
-            9
-        ],
-        [
-            "AMD Ryzen Threadripper 1950X 16-Core Processor",
-            275.03,
-            1
-        ],
-        [
-            "Intel Xeon W-2275 CPU @ 3.30GHz",
-            272.8,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 970M",
-            271.76,
-            1
-        ],
-        [
-            "Intel Core i7-12700F",
-            268.83,
-            2
-        ],
-        [
-            "Intel Core i5-12600K",
-            260.72,
-            5
-        ],
-        [
-            "Intel Core i7-12700",
-            258.13,
-            4
-        ],
-        [
-            "Intel Core i9-10900KF CPU @ 3.70GHz",
-            250.58,
-            2
-        ],
-        [
-            "Intel Core i9-10900K CPU @ 3.70GHz",
-            248.65,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 960",
-            245.55,
-            1
-        ],
-        [
-            "Intel Core i9-10850K CPU @ 3.60GHz",
-            242.93,
-            2
-        ],
-        [
-            "AMD EPYC 75F3 32-Core Processor",
-            239.25,
-            1
-        ],
-        [
-            "Intel Core i5-12600KF",
-            228.66,
-            1
-        ],
-        [
-            "AMD Ryzen 7 5800X 8-Core Processor",
-            223.63,
-            47
-        ],
-        [
-            "Intel Core i9-10920X CPU @ 3.50GHz",
-            222.71,
-            1
-        ],
-        [
-            "Intel Core i7-11700K @ 3.60GHz",
-            221.49,
-            3
-        ],
-        [
-            "AMD Ryzen 7 5800X3D 8-Core Processor",
-            215.93,
-            9
-        ],
-        [
-            "Intel Core i9-11980HK @ 2.60GHz",
-            213.17,
-            11
-        ],
-        [
-            "NVIDIA GeForce GTX 1050 Ti",
-            210.29,
-            2
-        ],
-        [
-            "AMD Ryzen 9 6900HX with Radeon Graphics",
-            209.24,
-            2
-        ],
-        [
-            "Intel Xeon CPU E5-2683 v4 @ 2.10GHz",
-            208.9,
-            1
-        ],
-        [
-            "Intel Core i9-12900H",
-            208.65,
-            6
-        ],
-        [
-            "Intel Core i7-10700F CPU @ 2.90GHz",
-            203.41,
-            1
-        ],
-        [
-            "Intel Core i9-9820X CPU @ 3.30GHz",
-            201.9,
-            1
-        ],
-        [
-            "AMD Ryzen 7 5700G with Radeon Graphics",
-            201.4,
-            3
-        ],
-        [
-            "Intel Core i9-11900K @ 3.50GHz",
-            201.22,
-            5
-        ],
-        [
-            "AMD Ryzen 7 5700X 8-Core Processor",
-            201.06,
-            4
-        ],
-        [
-            "Intel Core i7-11700KF @ 3.60GHz",
-            199.42,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 770",
-            199.01,
-            1
-        ],
-        [
-            "AMD Ryzen 9 5900HX with Radeon Graphics",
-            196.53,
-            7
-        ],
-        [
-            "Intel Core i9-10900 CPU @ 2.80GHz",
-            193.33,
-            2
-        ],
-        [
-            "AMD Ryzen 7 3800X 8-Core Processor",
-            190.2,
-            5
-        ],
-        [
-            "Intel Core i9-9900KF CPU @ 3.60GHz",
-            186.57,
-            1
-        ],
-        [
-            "AMD Ryzen 7 6800H with Radeon Graphics",
-            185.64,
-            2
-        ],
-        [
-            "Intel Core i7-12700H",
-            185.33,
-            6
-        ],
-        [
-            "Intel Core i9-9900K CPU @ 3.60GHz",
-            184.84,
-            10
-        ],
-        [
-            "Intel Core i5-12500H",
-            184.73,
-            2
-        ],
-        [
-            "NVIDIA GeForce GTX 670",
-            183.43,
-            1
-        ],
-        [
-            "AMD Ryzen 7 3700X 8-Core Processor",
-            181.76,
-            14
-        ],
-        [
-            "Intel Core i5-12600",
-            175.34,
-            1
-        ],
-        [
-            "Intel Core i7-10700K CPU @ 3.80GHz",
-            175.19,
-            6
-        ],
-        [
-            "AMD Ryzen 7 5800HS with Radeon Graphics",
-            174.54,
-            1
-        ],
-        [
-            "Intel Core i7-11800H @ 2.30GHz",
-            171.86,
-            13
-        ],
-        [
-            "2X Intel Xeon CPU E5-2687W v2 @ 3.40GHz",
-            170.85,
-            1
-        ],
-        [
-            "Intel Core i5-12400",
-            170.84,
-            7
-        ],
-        [
-            "AMD Ryzen 7 5800H with Radeon Graphics",
-            170.55,
-            14
-        ],
-        [
-            "NVIDIA GeForce GTX 1050",
-            167.76,
-            2
-        ],
-        [
-            "Intel Core i9-11900KB @ 3.30GHz",
-            166.44,
-            1
-        ],
-        [
-            "Intel Core i5-12400F",
-            165.97,
-            4
-        ],
-        [
-            "Intel Core i7-10700 CPU @ 2.90GHz",
-            165.37,
-            1
-        ],
-        [
-            "AMD Ryzen 5 5600 6-Core Processor",
-            160.41,
-            2
-        ],
-        [
-            "AMD Ryzen 5 5600X 6-Core Processor",
-            160.13,
-            20
-        ],
-        [
-            "Intel Core i9-11950H @ 2.60GHz",
-            159.35,
-            1
-        ],
-        [
-            "Intel Core i5-12490F",
-            157.62,
-            1
-        ],
-        [
-            "AMD Ryzen 5 5600G with Radeon Graphics",
-            157.58,
-            16
-        ],
-        [
-            "Intel Xeon CPU E5-2666 v3 @ 2.90GHz",
-            157.3,
-            1
-        ],
-        [
-            "2X Intel Xeon CPU E5-2680 0 @ 2.70GHz",
-            157.25,
-            1
-        ],
-        [
-            "NVIDIA GeForce GTX 760",
-            157.09,
-            1
-        ],
-        [
-            "AMD Ryzen 7 2700X Eight-Core Processor",
-            156.2,
-            2
-        ],
-        [
-            "AMD Ryzen 7 1800X Eight-Core Processor",
-            155.82,
-            1
-        ],
-        [
-            "Intel Core i7-11700 @ 2.50GHz",
-            152.94,
-            1
-        ],
-        [
-            "Intel Core i5-12500",
-            151.63,
-            1
-        ],
-        [
-            "AMD Ryzen 7 1700X Eight-Core Processor",
-            149,
-            3
-        ],
-        [
-            "AMD Ryzen 7 PRO 6850U with Radeon Graphics",
-            148.07,
-            1
-        ],
-        [
-            "Intel Core i5-11400F @ 2.60GHz",
-            147.63,
-            2
-        ],
-        [
-            "AMD Ryzen 7 5800U with Radeon Graphics",
-            146.42,
-            5
-        ],
-        [
-            "AMD Ryzen 5 5500",
-            144.76,
-            1
-        ],
-        [
-            "Intel Core i7-10870H CPU @ 2.20GHz",
-            142.54,
-            1
-        ],
-        [
-            "Intel Core i5-11400 @ 2.60GHz",
-            140.83,
-            1
-        ],
-        [
-            "Intel Core i7-1260P",
-            139.66,
-            2
-        ],
-        [
-            "AMD Ryzen 7 6800HS with Radeon Graphics",
-            139.16,
-            2
-        ],
-        [
-            "AMD Ryzen 7 5700U with Radeon Graphics",
-            138.88,
-            1
-        ],
-        [
-            "AMD Ryzen 7 1700 Eight-Core Processor",
-            138.79,
-            3
-        ],
-        [
-            "Intel Core i7-9700K CPU @ 3.60GHz",
-            137.61,
-            1
-        ],
-        [
-            "AMD Ryzen 7 2700 Eight-Core Processor",
-            136.2,
-            3
-        ],
-        [
-            "AMD Ryzen 9 5900HS with Radeon Graphics",
-            134.68,
-            1
-        ],
-        [
-            "AMD Ryzen 5 3600 6-Core Processor",
-            133.87,
-            6
-        ],
-        [
-            "Intel Core i5-10600 CPU @ 3.30GHz",
-            133.7,
-            1
-        ],
-        [
-            "2X Intel Xeon CPU E5-4610 v2 @ 2.30GHz",
-            133.14,
-            2
-        ],
-        [
-            "AMD Ryzen 5 PRO 4650G with Radeon Graphics",
-            131.11,
-            1
-        ],
-        [
-            "AMD Ryzen 5 3600X 6-Core Processor",
-            130.13,
-            1
-        ],
-        [
-            "Intel Core i5-1240P",
-            129.42,
-            2
-        ],
-        [
-            "Intel Core i5-10500H CPU @ 2.50GHz",
-            128.24,
-            1
-        ],
-        [
-            "AMD 4700S 8-Core Processor Desktop Kit",
-            127.02,
-            1
-        ],
-        [
-            "Intel Core i7-8700K CPU @ 3.70GHz",
-            126.34,
-            1
-        ],
-        [
-            "2X Intel Xeon CPU E5-2620 v3 @ 2.40GHz",
-            125.57,
-            2
-        ],
-        [
-            "AMD Ryzen 5 5600H with Radeon Graphics",
-            125.41,
-            3
-        ],
-        [
-            "AMD Ryzen 5 3600XT 6-Core Processor",
-            124.38,
-            1
-        ],
-        [
-            "Intel Core i5-10400 CPU @ 2.90GHz",
-            116.89,
-            2
-        ],
-        [
-            "Intel Core i7-8700 CPU @ 3.20GHz",
-            116.05,
-            4
-        ],
-        [
-            "NVIDIA GeForce GTX 860M",
-            115.38,
-            2
-        ],
-        [
-            "Intel Core i7-10750H CPU @ 2.60GHz",
-            113.88,
-            9
-        ],
-        [
-            "AMD Ryzen 5 1600X Six-Core Processor",
-            112.76,
-            1
-        ],
-        [
-            "Intel Core Processor (Broadwell, no TSX, IBRS)",
-            111.77,
-            3
-        ],
-        [
-            "AMD Ryzen 5 2600X Six-Core Processor",
-            111.5,
-            4
-        ],
-        [
-            "Intel Core i5-10400F CPU @ 2.90GHz",
-            109.29,
-            4
-        ],
-        [
-            "Intel Core i3-1220P",
-            108.13,
-            1
-        ],
-        [
-            "AMD Ryzen 5 1600 Six-Core Processor",
-            107.82,
-            6
-        ],
-        [
-            "AMD Ryzen 5 4600H with Radeon Graphics",
-            105,
-            2
-        ],
-        [
-            "AMD Ryzen 5 2600 Six-Core Processor",
-            104.27,
-            2
-        ],
-        [
-            "AMD Ryzen 7 4800H with Radeon Graphics",
-            101.18,
-            4
-        ],
-        [
-            "Intel Xeon CPU E5-2670 v2 @ 2.50GHz",
-            98.06,
-            1
-        ],
-        [
-            "Intel Core i7-9750H CPU @ 2.60GHz",
-            97.84,
-            2
-        ],
-        [
-            "Intel Core i5-11320H @ 3.20GHz",
-            96,
-            1
-        ],
-        [
-            "AMD Ryzen 3 3100 4-Core Processor",
-            94.75,
-            1
-        ],
-        [
-            "2X Intel Xeon CPU E5-2630 0 @ 2.30GHz",
-            93.86,
-            1
-        ],
-        [
-            "AMD Ryzen 7 4700U with Radeon Graphics",
-            93.55,
-            1
-        ],
-        [
-            "AMD Ryzen 5 5500U with Radeon Graphics",
-            92.57,
-            4
-        ],
-        [
-            "Intel Core i7-11370H @ 3.30GHz",
-            88.39,
-            1
-        ],
-        [
-            "Intel Core i5-9500 CPU @ 3.00GHz",
-            87.38,
-            1
-        ],
-        [
-            "Intel Core i7-6700K CPU @ 4.00GHz",
-            84.39,
-            1
-        ],
-        [
-            "Intel Core i7-8750H CPU @ 2.20GHz",
-            80.75,
-            2
-        ],
-        [
-            "Intel Core i5-9400F CPU @ 2.90GHz",
-            78.97,
-            1
-        ],
-        [
-            "Intel Core i7-1195G7 @ 2.90GHz",
-            78.87,
-            1
-        ],
-        [
-            "Intel Core i3-10100F CPU @ 3.60GHz",
-            78.6,
-            2
-        ],
-        [
-            "Intel Core i7-7700 CPU @ 3.60GHz",
-            76.83,
-            2
-        ],
-        [
-            "Intel Core i5-8500 CPU @ 3.00GHz",
-            76.69,
-            1
-        ],
-        [
-            "Genuine Intel CPU 0000 @ 2.40GHz",
-            76.4,
-            1
-        ],
-        [
-            "Intel Core i7-4790K CPU @ 4.00GHz",
-            75.49,
-            2
-        ],
-        [
-            "NVIDIA T550 Laptop GPU",
-            73.81,
-            5
-        ],
-        [
-            "Intel Core i7-8705G CPU @ 3.10GHz",
-            73.48,
-            1
-        ],
-        [
-            "Intel Core i9-9880H CPU @ 2.30GHz",
-            72.45,
-            3
-        ],
-        [
-            "2X Intel Xeon CPU           X5570  @ 2.93GHz",
-            71.89,
-            1
-        ],
-        [
-            "AMD Ryzen 5 2400G with Radeon Vega Graphics",
-            70,
-            3
-        ],
-        [
-            "Intel Xeon CPU E5-2670 0 @ 2.60GHz",
-            68.91,
-            1
-        ],
-        [
-            "Intel Core i5-8300H CPU @ 2.30GHz",
-            68.49,
-            2
-        ],
-        [
-            "Intel Core i7-3930K CPU @ 3.20GHz",
-            68.42,
-            1
-        ],
-        [
-            "Intel Core i5-1135G7 @ 2.40GHz",
-            66.87,
-            5
-        ],
-        [
-            "Intel Core i7-4770 CPU @ 3.40GHz",
-            66.77,
-            2
-        ],
-        [
-            "Intel Xeon CPU E3-1240 v3 @ 3.40GHz",
-            65.69,
-            1
-        ],
-        [
-            "Intel Xeon CPU E3-1270 v3 @ 3.50GHz",
-            65.32,
-            1
-        ],
-        [
-            "Intel Core i5-10300H CPU @ 2.50GHz",
-            64.8,
-            2
-        ],
-        [
-            "Intel Xeon CPU E5-1620 v3 @ 3.50GHz",
-            63.97,
-            1
-        ],
-        [
-            "Intel Core i5-9300HF CPU @ 2.40GHz",
-            62.05,
-            1
-        ],
-        [
-            "AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx",
-            61.36,
-            3
-        ],
-        [
-            "AMD Ryzen 5 1400 Quad-Core Processor",
-            60.15,
-            2
-        ],
-        [
-            "AMD Ryzen 5 3400G with Radeon Vega Graphics",
-            58.84,
-            2
-        ],
-        [
-            "Intel Core i3-9100 CPU @ 3.60GHz",
-            58.8,
-            1
-        ],
-        [
-            "Intel Core i5-7600K CPU @ 3.80GHz",
-            58.68,
-            1
-        ],
-        [
-            "Intel Core i7-1165G7 @ 2.80GHz",
-            57.79,
-            1
-        ],
-        [
-            "Intel Core i7-4720HQ CPU @ 2.60GHz",
-            56.92,
-            1
-        ],
-        [
-            "Intel Core i7-1065G7 CPU @ 1.30GHz",
-            55.89,
-            1
-        ],
-        [
-            "AMD Ryzen 7 3750H with Radeon Vega Mobile Gfx",
-            55.78,
-            1
-        ],
-        [
-            "Intel Core i7-3770K CPU @ 3.50GHz",
-            55.57,
-            2
-        ],
-        [
-            "Intel Core i7-7820HQ CPU @ 2.90GHz",
-            54.71,
-            1
-        ],
-        [
-            "Intel Core i7-4770K CPU @ 3.50GHz",
-            53.41,
-            1
-        ],
-        [
-            "Intel Xeon CPU E5-2623 v4 @ 2.60GHz",
-            49.77,
-            1
-        ],
-        [
-            "Intel Core i7-4820K CPU @ 3.70GHz",
-            48.42,
-            1
-        ],
-        [
-            "Intel Core i7-3770 CPU @ 3.40GHz",
-            47.8,
-            3
-        ],
-        [
-            "AMD FX(tm)-8350 Eight-Core Processor",
-            46.82,
-            1
-        ],
-        [
-            "Intel Core i5-10210U CPU @ 1.60GHz",
-            45.11,
-            1
-        ],
-        [
-            "AMD Ryzen 3 2200G with Radeon Vega Graphics",
-            44.12,
-            3
-        ],
-        [
-            "Intel Core i7-10510U CPU @ 1.80GHz",
-            44.11,
-            1
-        ],
-        [
-            "Intel Core i7-3630QM CPU @ 2.40GHz",
-            43.4,
-            1
-        ],
-        [
-            "Intel Core i5-7500 CPU @ 3.40GHz",
-            43.33,
-            1
-        ],
-        [
-            "Intel Core i7-1185G7 @ 3.00GHz",
-            42.84,
-            1
-        ],
-        [
-            "Intel Core i5-7600 CPU @ 3.50GHz",
-            42.13,
-            4
-        ],
-        [
-            "Intel Core i5-1035G1 CPU @ 1.00GHz",
-            41.97,
-            5
-        ],
-        [
-            "Intel Core i5-4440 CPU @ 3.10GHz",
-            41.71,
-            2
-        ],
-        [
-            "Intel Core i7-6820HQ CPU @ 2.70GHz",
-            38.65,
-            1
-        ],
-        [
-            "Intel Core i5-2500K CPU @ 3.30GHz",
-            38.61,
-            1
-        ],
-        [
-            "Intel Core i7-8565U CPU @ 1.80GHz",
-            38.27,
-            1
-        ],
-        [
-            "AMD Ryzen 3 3200G with Radeon Vega Graphics",
-            36.74,
-            1
-        ],
-        [
-            "Intel Core i5-3570K CPU @ 3.40GHz",
-            33.91,
-            2
-        ],
-        [
-            "Intel Core i5-6500 CPU @ 3.20GHz",
-            33.61,
-            2
-        ],
-        [
-            "Intel Pentium CPU G4560 @ 3.50GHz",
-            32.14,
-            2
-        ],
-        [
-            "Intel Core i5-10310U CPU @ 1.70GHz",
-            31.21,
-            1
-        ],
-        [
-            "Intel Core i7-8550U CPU @ 1.80GHz",
-            30.5,
-            1
-        ],
-        [
-            "Intel Core i3-1115G4 @ 3.00GHz",
-            30.29,
-            2
-        ],
-        [
-            "Intel Core i5-2400 CPU @ 3.10GHz",
-            28.87,
-            1
-        ],
-        [
-            "Intel Core i5-6300U CPU @ 2.40GHz",
-            26.12,
-            1
-        ],
-        [
-            "Intel Core i5-7200U CPU @ 2.50GHz",
-            24.9,
-            2
-        ],
-        [
-            "Intel Core i5-2310 CPU @ 2.90GHz",
-            23.78,
-            1
-        ],
-        [
-            "Intel Core i5-5257U CPU @ 2.70GHz",
-            21.93,
-            1
-        ],
-        [
-            "Intel Core i7-5500U CPU @ 2.40GHz",
-            20.09,
-            1
-        ],
-        [
-            "Intel Core i5-3230M CPU @ 2.60GHz",
-            17.73,
-            1
-        ],
-        [
-            "Intel Core i5-4288U CPU @ 2.60GHz",
-            14.75,
-            1
-        ],
-        [
-            "AMD A8-5500 APU with Radeon(tm) HD Graphics",
-            13.88,
-            1
-        ],
-        [
-            "Intel Core i5-4200U CPU @ 1.60GHz",
-            13.87,
-            1
-        ],
-        [
-            "Intel Pentium Silver N6000 @ 1.10GHz",
-            11.85,
-            1
-        ],
-        [
-            "AMD A6-9225 RADEON R4, 5 COMPUTE CORES 2C+3G",
-            4.24,
-            1
-        ]
-    ]
+    "NVIDIA GeForce RTX 3090": 6570.9,
+    "NVIDIA GeForce RTX 3090 Ti": 6106.93,
+    "NVIDIA GeForce RTX 3080 Ti": 5495.03,
+    "NVIDIA RTX A6000": 5151.11,
+    "NVIDIA RTX A5000": 4883.19,
+    "NVIDIA GeForce RTX 3080": 4834.83,
+    "NVIDIA RTX A4500": 4050.83,
+    "NVIDIA A40-16Q": 3826.55,
+    "NVIDIA A40-24Q": 3813.25,
+    "NVIDIA GeForce RTX 3070 Ti": 3797.5,
+    "NVIDIA A40-48Q": 3728.76,
+    "NVIDIA A40-8Q": 3622.84,
+    "NVIDIA GeForce RTX 3070": 3363.34,
+    "NVIDIA Quadro RTX 6000": 3245.47,
+    "NVIDIA TITAN RTX": 3241.39,
+    "NVIDIA A10G": 3137.51,
+    "NVIDIA GeForce RTX 3060 Ti": 3061.54,
+    "NVIDIA GeForce RTX 2080 Ti": 3052.83,
+    "NVIDIA RTX A4000": 2772.13,
+    "NVIDIA GeForce RTX 2080": 2518.96,
+    "AMD Radeon RX 6900 XT": 2470.3,
+    "NVIDIA GeForce RTX 2080 SUPER": 2425.28,
+    "NVIDIA GeForce RTX 2070 SUPER": 2413.7,
+    "AMD Radeon RX 6950 XT": 2401.04,
+    "AMD Radeon RX 6800 XT": 2398.16,
+    "NVIDIA Quadro RTX 5000 with Max-Q Design": 2363.2,
+    "NVIDIA GeForce RTX 3060": 2358.16,
+    "NVIDIA GeForce RTX 2060 SUPER": 2259.39,
+    "NVIDIA GeForce RTX 2070": 2218.74,
+    "NVIDIA Quadro RTX 4000": 2176.04,
+    "NVIDIA GeForce RTX 2080 Super with Max-Q Design": 2047.56,
+    "NVIDIA GeForce RTX 2070 Super with Max-Q Design": 2042.22,
+    "AMD Radeon RX 6800": 1808.92,
+    "NVIDIA GeForce RTX 2060": 1759.88,
+    "NVIDIA Quadro RTX 3000": 1674.59,
+    "NVIDIA GeForce RTX 3050": 1594.91,
+    "AMD Radeon RX 6750 XT": 1536.12,
+    "NVIDIA Tesla T4": 1453.83,
+    "AMD Radeon RX 6700 XT": 1452.6,
+    "AMD Radeon RX 6800M": 1390.66,
+    "NVIDIA RTX A2000 Laptop GPU": 1176.88,
+    "AMD Ryzen Threadripper 3990X": 1129.86,
+    "NVIDIA TITAN Xp": 1071.38,
+    "AMD Radeon RX 5700 XT": 971.64,
+    "NVIDIA TITAN Xp COLLECTORS EDITION": 954.03,
+    "AMD Radeon RX 6600 XT": 951.38,
+    "NVIDIA GeForce GTX 1080 Ti": 891.42,
+    "AMD Radeon RX 5700": 853.71,
+    "NVIDIA GeForce GTX 1660 SUPER": 850.86,
+    "AMD Ryzen Threadripper PRO 5975WX": 831.47,
+    "NVIDIA GeForce GTX 1660 Ti": 811.21,
+    "NVIDIA GeForce GTX 1070 Ti": 701.31,
+    "AMD Ryzen Threadripper PRO 3975WX": 685.61,
+    "AMD Ryzen Threadripper 3970X": 662.96,
+    "NVIDIA GeForce GTX 1660": 644.86,
+    "AMD Ryzen Threadripper 3960X": 619.74,
+    "NVIDIA GeForce GTX 1080": 602.15,
+    "NVIDIA GeForce GTX 1070": 567.11,
+    "NVIDIA GeForce GTX 980 Ti": 553.16,
+    "NVIDIA GeForce GTX 1650 SUPER": 542.53,
+    "NVIDIA GeForce GTX 1650 Ti": 529.4,
+    "AMD Radeon RX 5500 XT": 520.81,
+    "NVIDIA GeForce GTX 1650": 467.76,
+    "NVIDIA GeForce GTX TITAN Z": 453.75,
+    "AMD Radeon RX 6500 XT": 447.53,
+    "2X Intel Xeon CPU E5-2690 v4": 396.35,
+    "AMD Ryzen 9 5950X": 391.81,
+    "2X Intel Xeon CPU E5-2680 v4": 391.39,
+    "NVIDIA GeForce GTX 1060 6GB": 388.5,
+    "Intel Core i9-12900KS": 380.47,
+    "AMD Ryzen Threadripper PRO 3955WX": 379.06,
+    "NVIDIA GeForce GTX 1060": 378.3,
+    "NVIDIA T600": 370.02,
+    "Intel Core i9-12900K": 362.53,
+    "AMD Radeon RX 6650 XT": 359.55,
+    "NVIDIA GeForce GTX 1650 with Max-Q Design": 352.68,
+    "Intel Core i9-12900KF": 352.64,
+    "2X Intel Core Processor": 343.79,
+    "Intel Core i9-12900F": 323.19,
+    "AMD Ryzen 9 3950X": 318.23,
+    "NVIDIA Tesla K40m": 318.17,
+    "AMD Ryzen 9 5900X": 317.64,
+    "Intel Core i7-12700KF": 316.38,
+    "Intel Core i7-12700K": 315.35,
+    "NVIDIA GeForce GTX 1060 5GB": 309.78,
+    "AMD Radeon RX 6400": 305.68,
+    "Intel Core i9-12950HX": 302.79,
+    "AMD Ryzen Threadripper 2950X": 291.79,
+    "NVIDIA GeForce GTX 970": 286.88,
+    "2X Genuine Intel": 278.54,
+    "AMD Ryzen 9 3900X": 276.78,
+    "AMD Ryzen Threadripper 1950X": 275.03,
+    "Intel Xeon W-2275": 272.8,
+    "NVIDIA GeForce GTX 970M": 271.76,
+    "Intel Core i7-12700F": 268.83,
+    "Intel Core i5-12600K": 260.72,
+    "Intel Core i7-12700": 258.13,
+    "Intel Core i9-10900KF": 250.58,
+    "Intel Core i9-10900K": 248.65,
+    "NVIDIA GeForce GTX 960": 245.55,
+    "Intel Core i9-10850K": 242.93,
+    "AMD EPYC 75F3": 239.25,
+    "Intel Core i5-12600KF": 228.66,
+    "AMD Ryzen 7 5800X": 223.63,
+    "Intel Core i9-10920X": 222.71,
+    "Intel Core i7-11700K": 221.49,
+    "AMD Ryzen 7 5800X3D": 215.93,
+    "Intel Core i9-11980HK": 213.17,
+    "NVIDIA GeForce GTX 1050 Ti": 210.29,
+    "AMD Ryzen 9 6900HX": 209.24,
+    "Intel Xeon CPU E5-2683 v4": 208.9,
+    "Intel Core i9-12900H": 208.65,
+    "Intel Core i7-10700F": 203.41,
+    "Intel Core i9-9820X": 201.9,
+    "AMD Ryzen 7 5700G": 201.4,
+    "Intel Core i9-11900K": 201.22,
+    "AMD Ryzen 7 5700X": 201.06,
+    "Intel Core i7-11700KF": 199.42,
+    "NVIDIA GeForce GTX 770": 199.01,
+    "AMD Ryzen 9 5900HX": 196.53,
+    "Intel Core i9-10900": 193.33,
+    "AMD Ryzen 7 3800X": 190.2,
+    "Intel Core i9-9900KF": 186.57,
+    "AMD Ryzen 7 6800H": 185.64,
+    "Intel Core i7-12700H": 185.33,
+    "Intel Core i9-9900K": 184.84,
+    "Intel Core i5-12500H": 184.73,
+    "NVIDIA GeForce GTX 670": 183.43,
+    "AMD Ryzen 7 3700X": 181.76,
+    "Intel Core i5-12600": 175.34,
+    "Intel Core i7-10700K": 175.19,
+    "AMD Ryzen 7 5800HS": 174.54,
+    "Intel Core i7-11800H": 171.86,
+    "2X Intel Xeon CPU E5-2687W v2": 170.85,
+    "Intel Core i5-12400": 170.84,
+    "AMD Ryzen 7 5800H": 170.55,
+    "NVIDIA GeForce GTX 1050": 167.76,
+    "Intel Core i9-11900KB": 166.44,
+    "Intel Core i5-12400F": 165.97,
+    "Intel Core i7-10700": 165.37,
+    "AMD Ryzen 5 5600": 160.41,
+    "AMD Ryzen 5 5600X": 160.13,
+    "Intel Core i9-11950H": 159.35,
+    "Intel Core i5-12490F": 157.62,
+    "AMD Ryzen 5 5600G": 157.58,
+    "Intel Xeon CPU E5-2666 v3": 157.3,
+    "2X Intel Xeon CPU E5-2680 0": 157.25,
+    "NVIDIA GeForce GTX 760": 157.09,
+    "AMD Ryzen 7 2700X": 156.2,
+    "AMD Ryzen 7 1800X": 155.82,
+    "Intel Core i7-11700": 152.94,
+    "Intel Core i5-12500": 151.63,
+    "AMD Ryzen 7 1700X": 149,
+    "AMD Ryzen 7 PRO 6850U": 148.07,
+    "Intel Core i5-11400F": 147.63,
+    "AMD Ryzen 7 5800U": 146.42,
+    "AMD Ryzen 5 5500": 144.76,
+    "Intel Core i7-10870H ": 142.54,
+    "Intel Core i5-11400": 140.83,
+    "Intel Core i7-1260P": 139.66,
+    "AMD Ryzen 7 6800HS": 139.16,
+    "AMD Ryzen 7 5700U": 138.88,
+    "AMD Ryzen 7 1700": 138.79,
+    "Intel Core i7-9700K": 137.61,
+    "AMD Ryzen 7 2700": 136.2,
+    "AMD Ryzen 9 5900HS": 134.68,
+    "AMD Ryzen 5 3600": 133.87,
+    "Intel Core i5-10600": 133.7,
+    "2X Intel Xeon CPU E5-4610 v2": 133.14,
+    "AMD Ryzen 5 PRO 4650G": 131.11,
+    "AMD Ryzen 5 3600X": 130.13,
+    "Intel Core i5-1240P": 129.42,
+    "Intel Core i5-10500H": 128.24,
+    "AMD 4700S": 127.02,
+    "Intel Core i7-8700K": 126.34,
+    "2X Intel Xeon CPU E5-2620 v3": 125.57,
+    "AMD Ryzen 5 5600H": 125.41,
+    "AMD Ryzen 5 3600XT": 124.38,
+    "Intel Core i5-10400": 116.89,
+    "Intel Core i7-8700": 116.05,
+    "NVIDIA GeForce GTX 860M": 115.38,
+    "Intel Core i7-10750H": 113.88,
+    "AMD Ryzen 5 1600X": 112.76,
+    "Intel Core Processor (Broadwell, no TSX, IBRS)": 111.77,
+    "AMD Ryzen 5 2600X": 111.5,
+    "Intel Core i5-10400F": 109.29,
+    "Intel Core i3-1220P": 108.13,
+    "AMD Ryzen 5 1600": 107.82,
+    "AMD Ryzen 5 4600H": 105,
+    "AMD Ryzen 5 2600": 104.27,
+    "AMD Ryzen 7 4800H": 101.18,
+    "Intel Xeon CPU E5-2670 v2": 98.06,
+    "Intel Core i7-9750H": 97.84,
+    "Intel Core i5-11320H": 96,
+    "AMD Ryzen 3 3100 4-Core Processor": 94.75,
+    "2X Intel Xeon CPU E5-2630 0": 93.86,
+    "AMD Ryzen 7 4700U": 93.55,
+    "AMD Ryzen 5 5500U": 92.57,
+    "Intel Core i7-11370H": 88.39,
+    "Intel Core i5-9500": 87.38,
+    "Intel Core i7-6700K": 84.39,
+    "Intel Core i7-8750H": 80.75,
+    "Intel Core i5-9400F": 78.97,
+    "Intel Core i7-1195G7": 78.87,
+    "Intel Core i3-10100F": 78.6,
+    "Intel Core i7-7700": 76.83,
+    "Intel Core i5-8500": 76.69,
+    "Genuine Intel CPU 0000": 76.4,
+    "Intel Core i7-4790K": 75.49,
+    "NVIDIA T550 Laptop GPU": 73.81,
+    "Intel Core i7-8705G": 73.48,
+    "Intel Core i9-9880H": 72.45,
+    "2X Intel Xeon CPU X5570 ": 71.89,
+    "AMD Ryzen 5 2400G": 70,
+    "Intel Xeon CPU E5-2670 0": 68.91,
+    "Intel Core i5-8300H": 68.49,
+    "Intel Core i7-3930K": 68.42,
+    "Intel Core i5-1135G7": 66.87,
+    "Intel Core i7-4770": 66.77,
+    "Intel Xeon CPU E3-1240 v3": 65.69,
+    "Intel Xeon CPU E3-1270 v3": 65.32,
+    "Intel Core i5-10300H": 64.8,
+    "Intel Xeon CPU E5-1620 v3": 63.97,
+    "Intel Core i5-9300HF": 62.05,
+    "AMD Ryzen 5 3550H": 61.36,
+    "AMD Ryzen 5 1400 Quad-Core Processor": 60.15,
+    "AMD Ryzen 5 3400G": 58.84,
+    "Intel Core i3-9100": 58.8,
+    "Intel Core i5-7600K": 58.68,
+    "Intel Core i7-1165G7": 57.79,
+    "Intel Core i7-4720HQ": 56.92,
+    "Intel Core i7-1065G7": 55.89,
+    "AMD Ryzen 7 3750H": 55.78,
+    "Intel Core i7-3770K": 55.57,
+    "Intel Core i7-7820HQ": 54.71,
+    "Intel Core i7-4770K": 53.41,
+    "Intel Xeon CPU E5-2623 v4": 49.77,
+    "Intel Core i7-4820K": 48.42,
+    "Intel Core i7-3770": 47.8,
+    "AMD FX(tm)-8350": 46.82,
+    "Intel Core i5-10210U": 45.11,
+    "AMD Ryzen 3 2200G": 44.12,
+    "Intel Core i7-10510U": 44.11,
+    "Intel Core i7-3630QM": 43.4,
+    "Intel Core i5-7500": 43.33,
+    "Intel Core i7-1185G7": 42.84,
+    "Intel Core i5-7600": 42.13,
+    "Intel Core i5-1035G1": 41.97,
+    "Intel Core i5-4440": 41.71,
+    "Intel Core i7-6820HQ": 38.65,
+    "Intel Core i5-2500K": 38.61,
+    "Intel Core i7-8565U": 38.27,
+    "AMD Ryzen 3 3200G": 36.74,
+    "Intel Core i5-3570K": 33.91,
+    "Intel Core i5-6500": 33.61,
+    "Intel Pentium CPU G4560": 32.14,
+    "Intel Core i5-10310U": 31.21,
+    "Intel Core i7-8550U": 30.5,
+    "Intel Core i3-1115G4": 30.29,
+    "Intel Core i5-2400": 28.87,
+    "Intel Core i5-6300U": 26.12,
+    "Intel Core i5-7200U": 24.9,
+    "Intel Core i5-2310": 23.78,
+    "Intel Core i5-5257U": 21.93,
+    "Intel Core i7-5500U": 20.09,
+    "Intel Core i5-3230M": 17.73,
+    "Intel Core i5-4288U": 14.75,
+    "AMD A8-5500 APU": 13.88,
+    "Intel Core i5-4200U": 13.87,
+    "Intel Pentium Silver N6000": 11.85,
+    "AMD A6-9225 RADEON R4, 5 COMPUTE CORES 2C+3G": 4.24
 }
