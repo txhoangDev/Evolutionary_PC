@@ -54,7 +54,7 @@
             "benchmark": "39,937"
         },
         "Intel Xeon W-3265M @ 2.70GHz": {
-            "price": "$6,353.00*",
+            "price": "$6,353.00",
             "benchmark": "39,618"
         },
         "AMD Ryzen 9 5900X": {
@@ -106,7 +106,7 @@
             "benchmark": "30,631"
         },
         "Intel Core i9-9990XE @ 4.00GHz": {
-            "price": "$2,163.00*",
+            "price": "$2,163.00",
             "benchmark": "30,162"
         },
         "Intel Core i9-10940X @ 3.30GHz": {
@@ -118,7 +118,7 @@
             "benchmark": "28,151"
         },
         "Intel Xeon W-2275 @ 3.30GHz": {
-            "price": "$1,112.00*",
+            "price": "$1,112.00",
             "benchmark": "27,909"
         },
         "Intel Core i5-12600K": {
@@ -606,7 +606,7 @@
             "benchmark": "2,816"
         },
         "Intel Celeron G4950 @ 3.30GHz": {
-            "price": "$1,008.65*",
+            "price": "$1,008.65",
             "benchmark": "2,714"
         },
         "Intel Celeron G5900 @ 3.40GHz": {
@@ -660,7 +660,7 @@
             "benchmark": "15,494"
         },
         "RTX A6000": {
-            "price": "4,949.99*",
+            "price": "4,949.99",
             "benchmark": "15,378"
         },
         "Radeon RX 6800 XT": {
@@ -668,11 +668,11 @@
             "benchmark": "14,590"
         },
         "RTX A5000": {
-            "price": "2,631.20*",
+            "price": "2,631.20",
             "benchmark": "13,242"
         },
         "RTX A4500": {
-            "price": "1,752.60*",
+            "price": "1,752.60",
             "benchmark": "12,965"
         },
         "GeForce RTX 3070 Ti": {
@@ -680,7 +680,7 @@
             "benchmark": "12,490"
         },
         "Radeon PRO W6800": {
-            "price": "2,194.99*",
+            "price": "2,194.99",
             "benchmark": "12,301"
         },
         "GeForce RTX 3070": {
@@ -704,7 +704,7 @@
             "benchmark": "10,481"
         },
         "TITAN RTX": {
-            "price": "2,794.99*",
+            "price": "2,794.99",
             "benchmark": "8,579"
         },
         "Radeon RX 6700 XT": {
@@ -712,15 +712,15 @@
             "benchmark": "10,380"
         },
         "RTX A4000": {
-            "price": "1,233.98*",
+            "price": "1,233.98",
             "benchmark": "10,345"
         },
         "Quadro RTX 6000": {
-            "price": "6,300.00*",
+            "price": "6,300.00",
             "benchmark": "10,240"
         },
         "Quadro RTX 8000": {
-            "price": "4,741.49*",
+            "price": "4,741.49",
             "benchmark": "9,873"
         },
         "GeForce GTX 1080 Ti": {
@@ -728,15 +728,15 @@
             "benchmark": "9,747"
         },
         "Quadro GV100": {
-            "price": "8,999.00*",
+            "price": "8,999.00",
             "benchmark": "9,555"
         },
         "NVIDIA TITAN Xp": {
-            "price": "1,645.00*",
+            "price": "1,645.00",
             "benchmark": "9,463"
         },
         "TITAN V": {
-            "price": "1,999.99*",
+            "price": "1,999.99",
             "benchmark": "9,414"
         },
         "NVIDIA TITAN X": {
@@ -744,7 +744,7 @@
             "benchmark": "9,224"
         },
         "Quadro P6000": {
-            "price": "3,250.00*",
+            "price": "3,250.00",
             "benchmark": "8,996"
         },
         "GeForce RTX 3060": {
@@ -776,7 +776,7 @@
             "benchmark": "7,895"
         },
         "Radeon VII": {
-            "price": "1,899.95*",
+            "price": "1,899.95",
             "benchmark": "7,106"
         },
         "GeForce GTX 1080": {
@@ -792,7 +792,7 @@
             "benchmark": "7,199"
         },
         "Radeon Pro W5700": {
-            "price": "1,649.99*",
+            "price": "1,649.99",
             "benchmark": "7,162"
         },
         "GeForce RTX 2060 SUPER": {
@@ -812,7 +812,7 @@
             "benchmark": "6,673"
         },
         "Quadro P5000": {
-            "price": "1,868.99*",
+            "price": "1,868.99",
             "benchmark": "6,608"
         },
         "Radeon RX Vega 64": {
@@ -836,7 +836,7 @@
             "benchmark": "6,150"
         },
         "GeForce RTX 2080 with Max-Q Design": {
-            "price": "2,099.99*",
+            "price": "2,099.99",
             "benchmark": "6,144"
         },
         "GeForce GTX 1070": {
@@ -844,15 +844,15 @@
             "benchmark": "6,076"
         },
         "Radeon Vega Frontier Edition": {
-            "price": "1,679.99*",
+            "price": "1,679.99",
             "benchmark": "6,000"
         },
         "Radeon Pro WX 8200": {
-            "price": "1,599.39*",
+            "price": "1,599.39",
             "benchmark": "5,889"
         },
         "GeForce GTX TITAN X": {
-            "price": "1,096.99*",
+            "price": "1,096.99",
             "benchmark": "5,841"
         },
         "GeForce RTX 3060 Laptop GPU": {
@@ -864,7 +864,7 @@
             "benchmark": "5,617"
         },
         "Quadro M6000": {
-            "price": "4,827.53*",
+            "price": "4,827.53",
             "benchmark": "5,387"
         },
         "GeForce GTX 1660 SUPER": {
@@ -872,7 +872,7 @@
             "benchmark": "5,253"
         },
         "Radeon Pro Duo": {
-            "price": "1,199.06*",
+            "price": "1,199.06",
             "benchmark": "3,487"
         },
         "GeForce GTX 1660": {
@@ -924,7 +924,7 @@
             "benchmark": "3,991"
         },
         "Radeon Pro SSG": {
-            "price": "2,410.15*",
+            "price": "2,410.15",
             "benchmark": "4,404"
         },
         "Radeon R9 Fury + Fury X": {
@@ -1012,7 +1012,7 @@
             "benchmark": "3,423"
         },
         "GeForce GTX TITAN Z": {
-            "price": "1,515.00*",
+            "price": "1,515.00",
             "benchmark": "3,366"
         },
         "Quadro M5000M": {
@@ -1032,7 +1032,7 @@
             "benchmark": "3,294"
         },
         "Radeon Pro WX 7100": {
-            "price": "1,047.99*",
+            "price": "1,047.99",
             "benchmark": "3,274"
         },
         "Quadro T1000": {
@@ -1060,7 +1060,7 @@
             "benchmark": "3,105"
         },
         "FirePro W9100": {
-            "price": "1,729.99*",
+            "price": "1,729.99",
             "benchmark": "3,051"
         },
         "Radeon HD 7990": {
@@ -1220,7 +1220,7 @@
             "benchmark": "2,098"
         },
         "Quadro K5100M": {
-            "price": "1,108.84*",
+            "price": "1,108.84",
             "benchmark": "1,663"
         },
         "Quadro M3000M": {
@@ -1228,7 +1228,7 @@
             "benchmark": "2,070"
         },
         "Radeon R9 M295X": {
-            "price": "1,449.00*",
+            "price": "1,449.00",
             "benchmark": "2,057"
         },
         "FirePro W7000": {
@@ -1352,7 +1352,7 @@
             "benchmark": "1,437"
         },
         "GeForce GTX 960M": {
-            "price": "1,169.00*",
+            "price": "1,169.00",
             "benchmark": "1,346"
         },
         "FirePro 3D V8800": {
@@ -1368,11 +1368,11 @@
             "benchmark": "1,271"
         },
         "Radeon Pro": {
-            "price": "2,782.02*",
+            "price": "2,782.02",
             "benchmark": "1,403"
         },
         "Radeon RX Vega 11": {
-            "price": "1,002.00*",
+            "price": "1,002.00",
             "benchmark": "1,398"
         },
         "GeForce GTX 590": {
@@ -1380,11 +1380,11 @@
             "benchmark": "1,153"
         },
         "Radeon Pro 555": {
-            "price": "1,049.00*",
+            "price": "1,049.00",
             "benchmark": "1,383"
         },
         "FirePro 3D V9800": {
-            "price": "2,499.00*",
+            "price": "2,499.00",
             "benchmark": "1,375"
         },
         "Tesla C2050": {
@@ -1464,7 +1464,7 @@
             "benchmark": "1,202"
         },
         "Quadro K620": {
-            "price": "2,029.99*",
+            "price": "2,029.99",
             "benchmark": "967"
         },
         "FirePro W600": {
@@ -1520,7 +1520,7 @@
             "benchmark": "1,091"
         },
         "Quadro 6000": {
-            "price": "4,092.38*",
+            "price": "4,092.38",
             "benchmark": "1,085"
         },
         "GeForce GTX 765M": {
@@ -1624,7 +1624,7 @@
             "benchmark": "872"
         },
         "Quadro P520": {
-            "price": "1,499.00*",
+            "price": "1,499.00",
             "benchmark": "861"
         },
         "GeForce GT 740": {
@@ -1712,7 +1712,7 @@
             "benchmark": "510"
         },
         "Radeon Vega 6": {
-            "price": "1,799.99*",
+            "price": "1,799.99",
             "benchmark": "669"
         },
         "Radeon R9 M370X": {
@@ -1864,7 +1864,7 @@
             "benchmark": "124"
         },
         "Radeon Vega 3": {
-            "price": "2,677.99*",
+            "price": "2,677.99",
             "benchmark": "448"
         },
         "FirePro V4900": {
@@ -2004,7 +2004,7 @@
             "benchmark": "253"
         },
         "Intel HD 4000": {
-            "price": "1,592.95*",
+            "price": "1,592.95",
             "benchmark": "242"
         },
         "Radeon R5 310": {

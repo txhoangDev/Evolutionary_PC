@@ -3,41 +3,67 @@ import random
 import json
 
 class PC_Build:
+    
     with open("Data.json", 'r') as file:
         parts_data = json.load(file)
     file.close()
     
     fitness_scores = []
-    build_fitness_map = {}
+    population = []
+    current_parents = []
+    children = []
+    last_gen_parents = []
+    solution = []
+    number_of_parents = 0
     
-    def Calculate_Fitness(self, builds):
-        for build in builds:
-            fitness_score = self.parts_data['cpu'][build[0]]['benchmark'] + self.parts_data['gpu'][build[1]]['benchmark']
-            self.fitness_scores.append(fitness_score)
+    def __init__(self, num_of_parents):
+        cpus = list(self.parts_data['cpu'].keys())
+        random.shuffle(cpus)
+        gpus = list(self.parts_data['gpu'].keys())
+        random.shuffle(gpus)
+        self.population = list(zip(cpus, gpus))
+        self.number_of_parents = num_of_parents
     
-    def Get_Parents(self, builds, fitness_scores):
-        for ii in range(len(builds)):
-            self.build_fitness_map[fitness_scores[ii]] = builds[ii]
-        fitness_scores.sort(reverse=True)
-        return self.build_fitness_map[fitness_scores[0]], self.build_fitness_map[fitness_scores[1]]
+    def Calculate_Fitness(self, parents):
+        return int(self.parts_data['cpu'][parents[0]]['benchmark'].replace(',', '')) + int(self.parts_data['gpu'][parents[1]]['benchmark'].replace(',', ''))
     
-    def Generate_Children(self, parents, builds):
-        cpus = [parents[0][0], parents[1][0]]
-        gpus = [parents[0][1], parents[1][1]]
-        children = list(zip(cpus, gpus))
-        child_score = self.Calculate_Fitness(children)
-        self.fitness_scores.sort()
-        for score in range(len(children)):
-            if self.current_fitness_scores[0] < score:
-                self.build_fitness_map.pop(self.current_fitness_scores[0])
-                self.current_fitness_scores[0] = child_score[score]
-                self.build_fitness_map.pop[self.current_fitness_scores[0]] = children[score]
-                self.current_fitness_scores.sort()
+    def Generate_Parents(self):
+        for ii in range(len(self.population)):
+            cur_parents = self.population[random.randint(0, len(self.population)-1)]
+            while(cur_parents in self.last_gen_parents):
+                cur_parents = self.population[random.randint(0, len(self.population)-1)]
+            if len(self.current_parents) == 0:
+                self.current_parents.append(cur_parents)
+                self.solution = (cur_parents)
+            else:
+                for jj in range(len(self.current_parents)):
+                    if self.Calculate_Fitness(self.current_parents[jj]) < self.Calculate_Fitness(cur_parents):
+                        if len(self.current_parents) < self.number_of_parents:
+                            self.current_parents.append(cur_parents)
+                        else:
+                            self.current_parents[jj] = cur_parents
+                        if self.Calculate_Fitness(self.solution) < self.Calculate_Fitness(cur_parents):
+                            self.solution = (cur_parents)
+    
+    def Generate_Children(self):
+        self.children = []
+        cpus = []
+        gpus = []
+        for ii in range(len(self.current_parents)):
+            cpus.append(self.current_parents[ii][0])
+            gpus.append(self.current_parents[ii][1])
+        random.shuffle(cpus)
+        random.shuffle(gpus)
+        self.children = list(zip(cpus, gpus))
+        self.last_gen_parents = self.current_parents
+        self.current_parents = []
+        for ii in range(len(self.children)):
+            if self.children[ii] not in self.last_gen_parents and \
+               self.Calculate_Fitness(self.children[ii]) > self.Calculate_Fitness(self.solution):
+                    self.solution = self.children[ii]
                 
-    def run(self, builds, num_of_generations):
+    def run(self, num_of_generations):
         for ii in range(num_of_generations):
-            self.Calculate_Fitness(builds)
-            parents = self.Generate_Children(builds, self.fitness_scores)
-            self.Generate_Children(parents, builds)
-        self.fitness_scores.sort(reverse=True)
-        return self.build_fitness_map[self.fitness_scores[0]]
+            self.Generate_Parents()
+            self.Generate_Children()
+        return self.solution
