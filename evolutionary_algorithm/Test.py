@@ -16,34 +16,29 @@ class PC_Build:
     solution = []
     number_of_parents = 0
     
-    def __init__(self, num_of_parents):
-        cpus = list(self.parts_data['cpu'].keys())
-        random.shuffle(cpus)
-        gpus = list(self.parts_data['gpu'].keys())
-        random.shuffle(gpus)
-        self.population = list(zip(cpus, gpus))
+    def __init__(self, num_of_parents, cpu_list, gpu_list):
+        random.shuffle(cpu_list)
+        random.shuffle(gpu_list)
+        ii = 0
+        for gpu in gpu_list:
+            if ii == len(cpu_list):
+                ii = 0
+            self.population.append([cpu_list[ii], gpu])
+            ii += 1
         self.number_of_parents = num_of_parents
     
     def Calculate_Fitness(self, parents):
         return int(self.parts_data['cpu'][parents[0]]['benchmark'].replace(',', '')) + int(self.parts_data['gpu'][parents[1]]['benchmark'].replace(',', ''))
     
     def Generate_Parents(self):
-        for ii in range(len(self.population)):
-            cur_parents = self.population[random.randint(0, len(self.population)-1)]
-            while(cur_parents in self.last_gen_parents):
-                cur_parents = self.population[random.randint(0, len(self.population)-1)]
-            if len(self.current_parents) == 0:
-                self.current_parents.append(cur_parents)
-                self.solution = (cur_parents)
+        for combo in self.population:
+            fitness = self.Calculate_Fitness(combo)
+            if len(self.current_parents) < self.number_of_parents:
+                self.current_parents.append(combo)
             else:
-                for jj in range(len(self.current_parents)):
-                    if self.Calculate_Fitness(self.current_parents[jj]) < self.Calculate_Fitness(cur_parents):
-                        if len(self.current_parents) < self.number_of_parents:
-                            self.current_parents.append(cur_parents)
-                        else:
-                            self.current_parents[jj] = cur_parents
-                        if self.Calculate_Fitness(self.solution) < self.Calculate_Fitness(cur_parents):
-                            self.solution = (cur_parents)
+                for ii in range(len(self.current_parents)):
+                    if fitness > self.Calculate_Fitness(self.current_parents[ii]):
+                        self.current_parents[ii] = combo
     
     def Generate_Children(self):
         self.children = []
