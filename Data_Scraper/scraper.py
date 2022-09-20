@@ -41,10 +41,7 @@ class Scraper:
             if cpu_price_tag[ii].text == 'NA' or cpu_benchmark_tag[ii].text == 'NA':
                 continue
             # removes the '*' from price
-            cpu_page_response = get("https://www.cpubenchmark.net/cpu.php?cpu=" + cpu_names_tag[ii].text.replace(' ', '+'))
-            cpu_html = bs(cpu_page_response.content, 'html.parser')
-            description_tag = cpu_html.find_all('div', attrs={'class':'left-desc-cpu'})
-            if 'Class: Desktop' in description_tag[0].text:
+            if cpu_names_tag[ii].text in list(self.parts_data['cpu'].keys()):
                 price = cpu_price_tag[ii].text.replace('$', '').replace(',', '').replace('*', '')
                 cpu_info[cpu_names_tag[ii].text] = {"price": price,
                                                     "benchmark": cpu_benchmark_tag[ii].text.replace(',', '')}
@@ -57,6 +54,7 @@ class Scraper:
         #     "price": price,
         #     "benchmark": score
         # }
+        
         gpu_info = {}
         
         # get gpu page and turn into html
@@ -64,7 +62,7 @@ class Scraper:
 
         # get data from html page containing name, price, benchmark
         gpu_chart_tag = gpu_html.find_all('div', attrs={'id': 'mark'})
-        
+                
         for tag in gpu_chart_tag:
             gpu_names = tag.find_all('span', attrs={'class': 'prdname'})
             gpu_prices = tag.find_all('span', attrs={'class': 'price-neww'})
@@ -75,14 +73,10 @@ class Scraper:
             if gpu_prices[ii].text == 'NA' or gpu_benchmark[ii].text == 'NA':
                 continue
             # removes the '*' from price
-            gpu_page_response = get("https://www.videocardbenchmark.net/gpu.php?gpu=" + gpu_names[ii].text.replace(' ', '+'))
-            gpu_html = bs(gpu_page_response.content, 'html.parser')
-            description_tag = gpu_html.find_all('div', attrs={'class':'desc-foot'})
-            if len(description_tag) > 0:
-                if 'Videocard Category: Desktop' in description_tag[0].text:
-                    price = gpu_prices[ii].text.replace('$', '').replace(',', '').replace('*', '')
-                    gpu_info[gpu_names[ii].text] = {"price": price,
-                                                    "benchmark": gpu_benchmark[ii].text.replace(',', '')}
+            if gpu_names[ii].text in list(self.parts_data['gpu'].keys()):
+                price = gpu_prices[ii].text.replace('$', '').replace(',', '').replace('*', '')
+                gpu_info[gpu_names[ii].text] = {"price": price,
+                                                "benchmark": gpu_benchmark[ii].text.replace(',', '')}
         return gpu_info
     
     def get_ram_benchmark(self, ram_name):

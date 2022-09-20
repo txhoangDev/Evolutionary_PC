@@ -3,10 +3,10 @@
     "cpu": {
         "AMD Ryzen Threadripper PRO 5995WX": {
             "price": "9018.00",
-            "benchmark": "97155"
+            "benchmark": "97275"
         },
         "AMD Ryzen Threadripper PRO 3995WX": {
-            "price": "6888.83",
+            "price": "7542.24",
             "benchmark": "83153"
         },
         "AMD Ryzen Threadripper 3990X": {
@@ -23,31 +23,31 @@
         },
         "AMD Ryzen Threadripper 3970X": {
             "price": "1999.99",
-            "benchmark": "63575"
+            "benchmark": "63556"
         },
         "AMD Ryzen Threadripper PRO 3975WX": {
-            "price": "3000.00",
+            "price": "3278.99",
             "benchmark": "62819"
         },
         "AMD Ryzen Threadripper 3960X": {
-            "price": "1669.00",
+            "price": "1355.00",
             "benchmark": "54802"
         },
         "AMD Ryzen 9 5950X": {
-            "price": "533.27",
-            "benchmark": "45859"
+            "price": "549.00",
+            "benchmark": "45857"
         },
         "Intel Core i9-12900KS": {
             "price": "713.99",
-            "benchmark": "44834"
+            "benchmark": "44805"
         },
         "Intel Core i9-12900KF": {
             "price": "549.49",
-            "benchmark": "41519"
+            "benchmark": "41524"
         },
         "Intel Core i9-12900K": {
             "price": "588.00",
-            "benchmark": "41452"
+            "benchmark": "41446"
         },
         "AMD Ryzen Threadripper PRO 3955WX": {
             "price": "1330.00",
@@ -59,47 +59,47 @@
         },
         "AMD Ryzen 9 5900X": {
             "price": "387.99",
-            "benchmark": "39319"
+            "benchmark": "39320"
         },
         "AMD Ryzen 9 3950X": {
-            "price": "680.00",
-            "benchmark": "39045"
+            "price": "629.99",
+            "benchmark": "39041"
         },
         "Intel Core i9-12900F": {
             "price": "483.99",
-            "benchmark": "36827"
+            "benchmark": "36831"
         },
         "Intel Core i9-12900": {
-            "price": "508.42",
-            "benchmark": "36609"
+            "price": "499.99",
+            "benchmark": "36493"
         },
         "Intel Core i7-12700K": {
             "price": "409.00",
-            "benchmark": "34590"
+            "benchmark": "34602"
         },
         "Intel Core i7-12700KF": {
             "price": "377.98",
-            "benchmark": "34377"
+            "benchmark": "34381"
         },
         "Intel Core i9-12900T": {
             "price": "489.00",
-            "benchmark": "33281"
+            "benchmark": "33481"
         },
         "Intel Core i9-10980XE @ 3.00GHz": {
             "price": "992.00",
-            "benchmark": "33277"
+            "benchmark": "33279"
         },
         "AMD Ryzen 9 3900XT": {
-            "price": "966.00",
+            "price": "368.93",
             "benchmark": "32957"
         },
         "Intel Core i7-12700F": {
             "price": "312.96",
-            "benchmark": "31568"
+            "benchmark": "31574"
         },
         "Intel Core i7-12700": {
             "price": "342.98",
-            "benchmark": "31292"
+            "benchmark": "31293"
         },
         "AMD Ryzen 9 3900": {
             "price": "501.00",
@@ -115,7 +115,7 @@
         },
         "AMD Ryzen 7 5800X": {
             "price": "257.00",
-            "benchmark": "28151"
+            "benchmark": "28147"
         },
         "Intel Core i7-12700E": {
             "price": "344.00",
@@ -123,26 +123,26 @@
         },
         "Intel Xeon W-2275 @ 3.30GHz": {
             "price": "1112.00",
-            "benchmark": "27909"
+            "benchmark": "27917"
         },
         "Intel Core i5-12600K": {
             "price": "277.99",
-            "benchmark": "27665"
+            "benchmark": "27668"
         },
         "AMD Ryzen 7 5800X3D": {
             "price": "419.99",
-            "benchmark": "27606"
+            "benchmark": "27608"
         },
         "Intel Core i5-12600KF": {
-            "price": "269.99",
-            "benchmark": "27183"
+            "price": "259.99",
+            "benchmark": "27213"
         },
         "AMD Ryzen 7 5700X": {
-            "price": "231.07",
-            "benchmark": "26598"
+            "price": "227.35",
+            "benchmark": "26626"
         },
         "Intel Core i9-10920X @ 3.50GHz": {
-            "price": "719.99",
+            "price": "659.99",
             "benchmark": "26544"
         },
         "Intel Xeon W-3323 @ 3.50GHz": {
@@ -151,27 +151,27 @@
         },
         "Intel Core i9-11900K @ 3.50GHz": {
             "price": "327.99",
-            "benchmark": "25540"
+            "benchmark": "25539"
         },
         "Intel Core i9-11900KF @ 3.50GHz": {
-            "price": "279.99",
-            "benchmark": "25399"
+            "price": "342.99",
+            "benchmark": "25407"
         },
         "Intel Xeon W-1370P @ 3.60GHz": {
-            "price": "448.99",
+            "price": "453.99",
             "benchmark": "24975"
         },
         "Intel Core i7-11700K @ 3.60GHz": {
-            "price": "268.97",
-            "benchmark": "24674"
+            "price": "279.99",
+            "benchmark": "24673"
         },
         "AMD Ryzen 7 5700G": {
-            "price": "241.85",
-            "benchmark": "24548"
+            "price": "212.43",
+            "benchmark": "24549"
         },
         "Intel Core i7-11700KF @ 3.60GHz": {
             "price": "269.99",
-            "benchmark": "24158"
+            "benchmark": "24153"
         },
         "Intel Xeon W-1370 @ 2.90GHz": {
             "price": "391.99",
@@ -183,27 +183,27 @@
         },
         "Intel Core i9-10900K @ 3.70GHz": {
             "price": "349.00",
-            "benchmark": "23605"
+            "benchmark": "23598"
         },
         "Intel Core i9-10900KF @ 3.70GHz": {
-            "price": "349.98",
-            "benchmark": "23348"
+            "price": "329.99",
+            "benchmark": "23328"
         },
         "AMD Ryzen 7 PRO 3700": {
             "price": "329.99",
             "benchmark": "23045"
         },
         "Intel Core i9-11900 @ 2.50GHz": {
-            "price": "352.00",
+            "price": "349.95",
             "benchmark": "23040"
         },
         "Intel Core i9-11900F @ 2.50GHz": {
-            "price": "449.00",
-            "benchmark": "23014"
+            "price": "439.99",
+            "benchmark": "22973"
         },
         "Intel Core i9-10850K @ 3.60GHz": {
-            "price": "389.99",
-            "benchmark": "22916"
+            "price": "349.95",
+            "benchmark": "22917"
         },
         "Intel Core i7-12700T": {
             "price": "339.00",
@@ -214,7 +214,7 @@
             "benchmark": "22695"
         },
         "Intel Core i9-10900X @ 3.70GHz": {
-            "price": "543.08",
+            "price": "553.56",
             "benchmark": "22663"
         },
         "Intel Xeon W-2255 @ 3.70GHz": {
@@ -222,23 +222,27 @@
             "benchmark": "22333"
         },
         "AMD Ryzen 5 5600X": {
-            "price": "179.99",
-            "benchmark": "21976"
+            "price": "194.00",
+            "benchmark": "21975"
+        },
+        "Intel Core i5-12490F": {
+            "price": "229.99",
+            "benchmark": "21596"
         },
         "AMD Ryzen 5 5600": {
             "price": "159.00",
-            "benchmark": "21488"
+            "benchmark": "21496"
         },
         "Intel Core i7-11700F @ 2.50GHz": {
-            "price": "310.00",
-            "benchmark": "21238"
+            "price": "313.46",
+            "benchmark": "21225"
         },
         "Intel Core i5-12600": {
             "price": "229.98",
-            "benchmark": "21113"
+            "benchmark": "21120"
         },
         "Intel Core i9-10900F @ 2.80GHz": {
-            "price": "404.66",
+            "price": "358.99",
             "benchmark": "20678"
         },
         "Intel Core i9-10900E @ 2.80GHz": {
@@ -246,36 +250,28 @@
             "benchmark": "20658"
         },
         "AMD Ryzen 7 PRO 4750G": {
-            "price": "259.99",
-            "benchmark": "20562"
-        },
-        "Intel Core i5-12500": {
-            "price": "202.00",
-            "benchmark": "20334"
+            "price": "249.98",
+            "benchmark": "20561"
         },
         "Intel Core i9-10900 @ 2.80GHz": {
             "price": "402.90",
             "benchmark": "20285"
-        },
-        "Intel Core i5-12490F": {
-            "price": "216.66",
-            "benchmark": "20177"
         },
         "AMD Ryzen 7 4700G": {
             "price": "238.16",
             "benchmark": "20177"
         },
         "Intel Core i7-11700 @ 2.50GHz": {
-            "price": "313.97",
-            "benchmark": "20080"
+            "price": "339.99",
+            "benchmark": "20105"
         },
         "AMD Ryzen 5 5600G": {
             "price": "141.00",
-            "benchmark": "19830"
+            "benchmark": "19831"
         },
         "Intel Core i5-12400F": {
             "price": "170.99",
-            "benchmark": "19782"
+            "benchmark": "19792"
         },
         "Intel Core i5-11600K @ 3.90GHz": {
             "price": "200.00",
@@ -283,19 +279,19 @@
         },
         "Intel Core i5-11600KF @ 3.90GHz": {
             "price": "208.99",
-            "benchmark": "19710"
+            "benchmark": "19695"
         },
         "Intel Core i9-9900KS @ 4.00GHz": {
-            "price": "1341.62",
-            "benchmark": "19558"
+            "price": "860.00",
+            "benchmark": "19553"
         },
         "Intel Core i5-12400": {
             "price": "192.00",
-            "benchmark": "19509"
+            "benchmark": "19507"
         },
         "AMD Ryzen 5 5500": {
-            "price": "134.91",
-            "benchmark": "19501"
+            "price": "138.00",
+            "benchmark": "19491"
         },
         "Intel Core i9-11900T @ 1.50GHz": {
             "price": "439.00",
@@ -303,58 +299,58 @@
         },
         "Intel Core i7-10700K @ 3.80GHz": {
             "price": "259.99",
-            "benchmark": "19198"
+            "benchmark": "19197"
         },
         "Intel Core i7-10700KF @ 3.80GHz": {
-            "price": "224.99",
-            "benchmark": "19042"
+            "price": "259.99",
+            "benchmark": "19043"
         },
         "AMD Ryzen 5 3600XT": {
             "price": "349.00",
             "benchmark": "18738"
         },
         "Intel Core i5-11600 @ 2.80GHz": {
-            "price": "260.79",
-            "benchmark": "18231"
+            "price": "240.00",
+            "benchmark": "18236"
         },
         "Intel Core i5-11500 @ 2.70GHz": {
-            "price": "195.00",
-            "benchmark": "17639"
+            "price": "217.30",
+            "benchmark": "17629"
         },
         "Intel Core i5-12500T": {
             "price": "202.00",
-            "benchmark": "17571"
+            "benchmark": "17534"
         },
         "Intel Core i5-11400F @ 2.60GHz": {
             "price": "139.99",
-            "benchmark": "17193"
+            "benchmark": "17196"
         },
         "Intel Core i5-11400 @ 2.60GHz": {
-            "price": "214.41",
-            "benchmark": "17064"
+            "price": "144.83",
+            "benchmark": "17065"
         },
         "Intel Core i7-10700F @ 2.90GHz": {
             "price": "245.95",
-            "benchmark": "17028"
+            "benchmark": "17027"
         },
         "Intel Core i7-10700 @ 2.90GHz": {
-            "price": "289.99",
-            "benchmark": "16817"
+            "price": "291.32",
+            "benchmark": "16819"
         },
         "Intel Core i5-12400T": {
             "price": "169.99",
             "benchmark": "16492"
         },
         "AMD Ryzen 5 PRO 4650G": {
-            "price": "219.97",
-            "benchmark": "16347"
+            "price": "138.58",
+            "benchmark": "16341"
         },
         "AMD Ryzen 5 4500": {
-            "price": "123.61",
+            "price": "124.99",
             "benchmark": "15829"
         },
         "AMD Ryzen 5 4600G": {
-            "price": "120.02",
+            "price": "120.48",
             "benchmark": "15585"
         },
         "Intel Core i7-11700T @ 1.40GHz": {
@@ -375,11 +371,11 @@
         },
         "Intel Core i5-10600KF @ 4.10GHz": {
             "price": "179.99",
-            "benchmark": "14531"
+            "benchmark": "14532"
         },
         "Intel Core i5-10600K @ 4.10GHz": {
             "price": "209.99",
-            "benchmark": "14510"
+            "benchmark": "14507"
         },
         "Intel Xeon W-1250P @ 4.10GHz": {
             "price": "321.50",
@@ -387,11 +383,11 @@
         },
         "Intel Core i3-12100F": {
             "price": "345.99",
-            "benchmark": "14392"
+            "benchmark": "14391"
         },
         "Intel Core i3-12100": {
             "price": "122.00",
-            "benchmark": "14358"
+            "benchmark": "14357"
         },
         "Intel Core i9-9900T @ 2.10GHz": {
             "price": "439.00",
@@ -405,25 +401,21 @@
             "price": "192.00",
             "benchmark": "13397"
         },
-        "AMD Ryzen 5 3500X": {
-            "price": "189.99",
-            "benchmark": "13278"
-        },
         "Intel Core i5-11400T @ 1.30GHz": {
             "price": "182.00",
-            "benchmark": "13270"
+            "benchmark": "13330"
+        },
+        "AMD Ryzen 5 3500X": {
+            "price": "138.99",
+            "benchmark": "13277"
         },
         "Intel Core i7-10700T @ 2.00GHz": {
             "price": "413.99",
-            "benchmark": "13217"
+            "benchmark": "13202"
         },
         "Intel Core i5-10500 @ 3.10GHz": {
-            "price": "212.99",
+            "price": "208.79",
             "benchmark": "12961"
-        },
-        "Intel Core i3-12100T": {
-            "price": "122.00",
-            "benchmark": "12840"
         },
         "Intel Core i7-9700E @ 2.60GHz": {
             "price": "323.00",
@@ -434,19 +426,19 @@
             "benchmark": "12690"
         },
         "Intel Core i5-10400F @ 2.90GHz": {
-            "price": "133.00",
+            "price": "128.98",
             "benchmark": "12390"
         },
         "Intel Core i5-10400 @ 2.90GHz": {
-            "price": "159.00",
-            "benchmark": "12306"
+            "price": "119.99",
+            "benchmark": "12305"
         },
         "AMD Ryzen 3 3100": {
-            "price": "149.40",
+            "price": "149.95",
             "benchmark": "11650"
         },
         "AMD Ryzen 3 4100": {
-            "price": "124.95",
+            "price": "108.00",
             "benchmark": "11336"
         },
         "Intel Core i5-10600T @ 2.40GHz": {
@@ -457,10 +449,6 @@
             "price": "323.00",
             "benchmark": "10740"
         },
-        "Intel Core i5-9600 @ 3.10GHz": {
-            "price": "186.71",
-            "benchmark": "10356"
-        },
         "Intel Core i3-10325 @ 3.90GHz": {
             "price": "190.10",
             "benchmark": "10308"
@@ -470,7 +458,7 @@
             "benchmark": "10292"
         },
         "Intel Core i3-10320 @ 3.80GHz": {
-            "price": "134.99",
+            "price": "143.00",
             "benchmark": "10027"
         },
         "Intel Core i5-10400T @ 2.00GHz": {
@@ -491,7 +479,7 @@
         },
         "Intel Core i3-10105F @ 3.70GHz": {
             "price": "78.99",
-            "benchmark": "9099"
+            "benchmark": "9101"
         },
         "Intel Core i3-10100F @ 3.60GHz": {
             "price": "69.99",
@@ -499,7 +487,7 @@
         },
         "Intel Core i3-10105 @ 3.70GHz": {
             "price": "111.31",
-            "benchmark": "8841"
+            "benchmark": "8840"
         },
         "Intel Core i3-10100 @ 3.60GHz": {
             "price": "110.99",
@@ -507,7 +495,7 @@
         },
         "Intel Core i5-10300H @ 2.50GHz": {
             "price": "250.00",
-            "benchmark": "8646"
+            "benchmark": "8647"
         },
         "Intel Core i5-9600T @ 2.30GHz": {
             "price": "213.00",
@@ -550,7 +538,7 @@
             "benchmark": "4483"
         },
         "Intel Pentium Gold G6600 @ 4.20GHz": {
-            "price": "111.07",
+            "price": "115.97",
             "benchmark": "4396"
         },
         "Intel Pentium Gold G6505 @ 4.20GHz": {
@@ -566,7 +554,7 @@
             "benchmark": "4290"
         },
         "Intel Pentium Gold G5600F @ 3.90GHz": {
-            "price": "90.99",
+            "price": "89.99",
             "benchmark": "4160"
         },
         "Intel Pentium Gold G6500 @ 4.10GHz": {
@@ -602,7 +590,7 @@
             "benchmark": "3508"
         },
         "Intel Celeron G5905 @ 3.50GHz": {
-            "price": "29.97",
+            "price": "49.94",
             "benchmark": "2816"
         },
         "Intel Celeron G5925 @ 3.60GHz": {
@@ -622,7 +610,7 @@
             "benchmark": "2620"
         },
         "Intel Celeron G4930 @ 3.20GHz": {
-            "price": "100.96",
+            "price": "120.85",
             "benchmark": "2571"
         },
         "Intel Celeron G5920 @ 3.50GHz": {
@@ -640,136 +628,96 @@
     },
     "gpu": {
         "GeForce RTX 3090 Ti": {
-            "price": "1,099.99",
-            "benchmark": "17999"
+            "price": "1099.99",
+            "benchmark": "17974"
         },
         "Radeon RX 6950 XT": {
-            "price": "1,014.99",
+            "price": "982.79",
             "benchmark": "16593"
         },
         "GeForce RTX 3080 Ti": {
-            "price": "839.99",
-            "benchmark": "16512"
+            "price": "849.99",
+            "benchmark": "16516"
         },
         "GeForce RTX 3090": {
-            "price": "979.99",
-            "benchmark": "16454"
+            "price": "1053.99",
+            "benchmark": "16456"
         },
         "Radeon RX 6900 XT": {
-            "price": "699.99",
-            "benchmark": "15665"
+            "price": "733.92",
+            "benchmark": "15667"
         },
         "GeForce RTX 3080": {
             "price": "733.87",
-            "benchmark": "15505"
-        },
-        "RTX A6000": {
-            "price": "4,899.00",
-            "benchmark": "15358"
+            "benchmark": "15506"
         },
         "Radeon RX 6800 XT": {
-            "price": "594.18",
-            "benchmark": "14592"
-        },
-        "RTX A5000": {
-            "price": "2,631.20*",
-            "benchmark": "13251"
-        },
-        "RTX A4500": {
-            "price": "1,752.60*",
-            "benchmark": "12965"
+            "price": "599.99",
+            "benchmark": "14594"
         },
         "GeForce RTX 3070 Ti": {
-            "price": "619.99",
-            "benchmark": "12491"
-        },
-        "Radeon PRO W6800": {
-            "price": "2,194.99*",
-            "benchmark": "12301"
+            "price": "609.99",
+            "benchmark": "12497"
         },
         "Radeon RX 6800": {
             "price": "549.99",
-            "benchmark": "11846"
+            "benchmark": "11853"
         },
         "GeForce RTX 3070": {
             "price": "499.99",
-            "benchmark": "11835"
+            "benchmark": "11836"
         },
         "Radeon RX 6750 XT": {
             "price": "429.99",
-            "benchmark": "11045"
+            "benchmark": "11058"
         },
         "GeForce RTX 2080 Ti": {
             "price": "998.59",
-            "benchmark": "10672"
+            "benchmark": "10669"
         },
         "GeForce RTX 3060 Ti": {
             "price": "449.99",
-            "benchmark": "10483"
-        },
-        "TITAN RTX": {
-            "price": "2,794.99*",
-            "benchmark": "8579"
+            "benchmark": "10484"
         },
         "Radeon RX 6700 XT": {
-            "price": "399.99",
-            "benchmark": "10384"
-        },
-        "RTX A4000": {
-            "price": "1,233.98*",
-            "benchmark": "10343"
-        },
-        "Quadro RTX 6000": {
-            "price": "6,300.00*",
-            "benchmark": "10240"
-        },
-        "Quadro RTX 8000": {
-            "price": "4,741.49*",
-            "benchmark": "9873"
+            "price": "369.10",
+            "benchmark": "10383"
         },
         "GeForce GTX 1080 Ti": {
             "price": "483.82",
             "benchmark": "9749"
         },
-        "Quadro GV100": {
-            "price": "8,999.00*",
-            "benchmark": "9555"
-        },
         "NVIDIA TITAN Xp": {
-            "price": "1,645.00*",
+            "price": "1645.00",
             "benchmark": "9463"
         },
         "TITAN V": {
-            "price": "1,999.99*",
+            "price": "1999.99",
             "benchmark": "9414"
         },
         "NVIDIA TITAN X": {
             "price": "608.10",
             "benchmark": "9224"
         },
-        "Quadro P6000": {
-            "price": "3,250.00*",
-            "benchmark": "9003"
-        },
         "GeForce RTX 3060": {
             "price": "329.00",
-            "benchmark": "8957"
+            "benchmark": "8959"
         },
         "GeForce RTX 2080 SUPER": {
             "price": "683.99",
-            "benchmark": "8657"
+            "benchmark": "8654"
         },
         "Radeon RX 6650 XT": {
             "price": "309.26",
-            "benchmark": "8633"
+            "benchmark": "8624"
         },
         "Radeon RX 6600 XT": {
-            "price": "349.99",
-            "benchmark": "8370"
+            "price": "299.99",
+            "benchmark": "8369"
         },
         "GeForce RTX 2080": {
             "price": "797.05",
-            "benchmark": "8233"
+            "benchmark": "8230"
         },
         "Radeon RX 5700 XT": {
             "price": "799.00",
@@ -780,7 +728,7 @@
             "benchmark": "7895"
         },
         "Radeon VII": {
-            "price": "1,899.95*",
+            "price": "1899.95",
             "benchmark": "7106"
         },
         "GeForce GTX 1080": {
@@ -789,47 +737,35 @@
         },
         "Radeon RX 6600": {
             "price": "329.00",
-            "benchmark": "7448"
+            "benchmark": "7449"
         },
         "GeForce GTX 1070 Ti": {
             "price": "389.00",
-            "benchmark": "7200"
+            "benchmark": "7201"
         },
         "Radeon Pro W5700": {
-            "price": "1,649.99*",
+            "price": "1649.99",
             "benchmark": "7161"
         },
         "GeForce RTX 2060 SUPER": {
             "price": "339.99",
-            "benchmark": "6962"
+            "benchmark": "6961"
         },
         "Radeon RX 5700": {
             "price": "899.95",
             "benchmark": "6817"
         },
-        "RTX A2000": {
-            "price": "479.99",
-            "benchmark": "6678"
-        },
         "Radeon RX 5600 XT": {
             "price": "545.00",
             "benchmark": "6675"
         },
-        "Quadro P5000": {
-            "price": "1,868.99*",
-            "benchmark": "6608"
-        },
         "Radeon RX Vega 64": {
             "price": "716.89",
-            "benchmark": "6593"
+            "benchmark": "6594"
         },
         "GeForce RTX 2070": {
             "price": "627.44",
-            "benchmark": "6574"
-        },
-        "Quadro RTX 4000": {
-            "price": "899.00",
-            "benchmark": "6428"
+            "benchmark": "6573"
         },
         "GeForce GTX 980 Ti": {
             "price": "828.97",
@@ -839,65 +775,41 @@
             "price": "752.99",
             "benchmark": "6150"
         },
-        "GeForce RTX 2080 with Max-Q Design": {
-            "price": "2,099.99*",
-            "benchmark": "6144"
-        },
         "GeForce GTX 1070": {
             "price": "342.55",
             "benchmark": "6076"
         },
         "Radeon Pro WX 8200": {
-            "price": "1,599.39*",
+            "price": "1599.39",
             "benchmark": "5889"
         },
         "Radeon Vega Frontier Edition": {
-            "price": "1,679.99*",
+            "price": "1679.99",
             "benchmark": "5853"
         },
         "GeForce GTX TITAN X": {
-            "price": "1,096.99*",
+            "price": "1096.99",
             "benchmark": "5841"
-        },
-        "GeForce RTX 3060 Laptop GPU": {
-            "price": "369.48",
-            "benchmark": "5712"
         },
         "GeForce RTX 2060": {
             "price": "229.99",
-            "benchmark": "5616"
-        },
-        "Quadro M6000": {
-            "price": "4,827.53*",
-            "benchmark": "5387"
+            "benchmark": "5617"
         },
         "GeForce GTX 1660 SUPER": {
             "price": "209.99",
             "benchmark": "5253"
         },
         "Radeon Pro Duo": {
-            "price": "1,199.06*",
+            "price": "1199.06",
             "benchmark": "3487"
         },
         "GeForce GTX 1660": {
             "price": "209.99",
-            "benchmark": "5101"
-        },
-        "Radeon RX 6700M": {
-            "price": "369.99",
-            "benchmark": "5036"
+            "benchmark": "5102"
         },
         "Radeon RX 6500 XT": {
-            "price": "169.99",
-            "benchmark": "5032"
-        },
-        "Radeon RX 6600M": {
-            "price": "239.99",
-            "benchmark": "4970"
-        },
-        "Quadro P4000": {
-            "price": "556.19",
-            "benchmark": "4946"
+            "price": "160.00",
+            "benchmark": "5031"
         },
         "Radeon Pro W5500": {
             "price": "480.99",
@@ -909,27 +821,15 @@
         },
         "Radeon RX 5500 XT": {
             "price": "184.99",
-            "benchmark": "4807"
+            "benchmark": "4808"
         },
         "GeForce GTX 1660 Ti": {
             "price": "218.99",
-            "benchmark": "4751"
-        },
-        "Tesla T4": {
-            "price": "4,650.29",
-            "benchmark": "4679"
+            "benchmark": "4753"
         },
         "GeForce GTX 1650 SUPER": {
             "price": "441.05",
-            "benchmark": "4546"
-        },
-        "Quadro P2200": {
-            "price": "459.80",
-            "benchmark": "3991"
-        },
-        "Radeon Pro SSG": {
-            "price": "2,410.15*",
-            "benchmark": "4404"
+            "benchmark": "4544"
         },
         "Radeon R9 Fury + Fury X": {
             "price": "449.99",
@@ -941,15 +841,7 @@
         },
         "Radeon RX 590": {
             "price": "549.99",
-            "benchmark": "4220"
-        },
-        "Tesla M40": {
-            "price": "600.00",
-            "benchmark": "4193"
-        },
-        "Radeon R9 Fury": {
-            "price": "443.10",
-            "benchmark": "4170"
+            "benchmark": "4221"
         },
         "GeForce GTX 1060 5GB": {
             "price": "487.99",
@@ -965,15 +857,11 @@
         },
         "GeForce GTX 970": {
             "price": "237.99",
-            "benchmark": "4079"
+            "benchmark": "4080"
         },
         "GeForce GTX 780 Ti": {
             "price": "339.99",
             "benchmark": "4037"
-        },
-        "Quadro M5000": {
-            "price": "499.00",
-            "benchmark": "4014"
         },
         "Radeon RX 470/570": {
             "price": "388.99",
@@ -987,41 +875,13 @@
             "price": "524.99",
             "benchmark": "3749"
         },
-        "Quadro P3200": {
-            "price": "389.30",
-            "benchmark": "3738"
-        },
-        "Quadro T2000": {
-            "price": "528.35",
-            "benchmark": "2906"
-        },
-        "Tesla M60": {
-            "price": "787.90",
-            "benchmark": "3428"
-        },
-        "GeForce RTX 3050 Laptop GPU": {
-            "price": "289.99",
-            "benchmark": "3701"
-        },
         "Radeon RX 480": {
             "price": "339.99",
             "benchmark": "3677"
         },
-        "Quadro P2000": {
-            "price": "542.00",
-            "benchmark": "2958"
-        },
-        "Quadro K6000": {
-            "price": "210.66",
-            "benchmark": "3423"
-        },
         "GeForce GTX TITAN Z": {
-            "price": "1,515.00*",
+            "price": "1515.00",
             "benchmark": "3366"
-        },
-        "Quadro M5000M": {
-            "price": "546.92",
-            "benchmark": "2629"
         },
         "GeForce GTX 780": {
             "price": "279.99",
@@ -1035,21 +895,9 @@
             "price": "499.10",
             "benchmark": "3294"
         },
-        "Radeon Pro WX 7100": {
-            "price": "1,047.99*",
-            "benchmark": "3274"
-        },
-        "Quadro T1000": {
-            "price": "441.99",
-            "benchmark": "2552"
-        },
         "Radeon RX 6400": {
-            "price": "159.99",
+            "price": "157.10",
             "benchmark": "3243"
-        },
-        "T1000": {
-            "price": "355.99",
-            "benchmark": "3178"
         },
         "Radeon HD 7970 / R9 280X": {
             "price": "246.99",
@@ -1063,25 +911,9 @@
             "price": "175.19",
             "benchmark": "3106"
         },
-        "FirePro W9100": {
-            "price": "1,729.99*",
-            "benchmark": "3051"
-        },
         "Radeon HD 7990": {
             "price": "399.99",
             "benchmark": "2939"
-        },
-        "FirePro W8000": {
-            "price": "573.00",
-            "benchmark": "2855"
-        },
-        "GeForce GTX 970M": {
-            "price": "209.99",
-            "benchmark": "2303"
-        },
-        "GeForce GTX 980M": {
-            "price": "289.99",
-            "benchmark": "2793"
         },
         "GeForce GTX 960": {
             "price": "172.00",
@@ -1095,37 +927,17 @@
             "price": "132.20",
             "benchmark": "2725"
         },
-        "Barco MXRT 7600": {
-            "price": "602.59",
-            "benchmark": "2673"
-        },
-        "Quadro M4000": {
-            "price": "362.00",
-            "benchmark": "2650"
-        },
         "GeForce GTX 680": {
             "price": "399.00",
             "benchmark": "2629"
         },
         "GeForce GTX 1050 Ti": {
-            "price": "188.90",
+            "price": "187.90",
             "benchmark": "2627"
-        },
-        "FirePro W8100": {
-            "price": "704.00",
-            "benchmark": "2623"
-        },
-        "FirePro W7100": {
-            "price": "389.30",
-            "benchmark": "2038"
         },
         "Radeon R9 270X": {
             "price": "326.50",
             "benchmark": "2272"
-        },
-        "Quadro K5200": {
-            "price": "415.00",
-            "benchmark": "2583"
         },
         "GeForce GTX 690": {
             "price": "280.99",
@@ -1134,18 +946,6 @@
         "Radeon R9 380X": {
             "price": "349.99",
             "benchmark": "2523"
-        },
-        "Quadro P1000": {
-            "price": "335.00",
-            "benchmark": "1866"
-        },
-        "T600": {
-            "price": "239.99",
-            "benchmark": "2485"
-        },
-        "Barco MXRT 7500": {
-            "price": "299.00",
-            "benchmark": "2450"
         },
         "Radeon R9 285 / 380": {
             "price": "485.00",
@@ -1157,23 +957,11 @@
         },
         "Radeon R9 380": {
             "price": "89.99",
-            "benchmark": "2405"
-        },
-        "GRID K2": {
-            "price": "4,449.99",
-            "benchmark": "1360"
-        },
-        "Quadro M4000M": {
-            "price": "254.91",
-            "benchmark": "2399"
+            "benchmark": "2404"
         },
         "GeForce GTX 670": {
             "price": "193.98",
             "benchmark": "2380"
-        },
-        "Radeon Pro WX 4150": {
-            "price": "610.04",
-            "benchmark": "851"
         },
         "GeForce GTX 760 Ti": {
             "price": "297.50",
@@ -1182,14 +970,6 @@
         "GeForce GTX 480": {
             "price": "169.99",
             "benchmark": "2322"
-        },
-        "Quadro M2200": {
-            "price": "249.99",
-            "benchmark": "1848"
-        },
-        "Radeon Pro WX 5100": {
-            "price": "550.95",
-            "benchmark": "2296"
         },
         "GeForce GTX 950": {
             "price": "141.99",
@@ -1203,10 +983,6 @@
             "price": "213.16",
             "benchmark": "2228"
         },
-        "FirePro S7000": {
-            "price": "246.54",
-            "benchmark": "2224"
-        },
         "Radeon R9 370": {
             "price": "159.99",
             "benchmark": "2206"
@@ -1215,77 +991,21 @@
             "price": "176.00",
             "benchmark": "2168"
         },
-        "FirePro W9000": {
-            "price": "845.00",
-            "benchmark": "2153"
-        },
         "GeForce GTX 1050": {
             "price": "178.91",
             "benchmark": "2097"
-        },
-        "Quadro K5100M": {
-            "price": "1,108.84*",
-            "benchmark": "1663"
-        },
-        "Quadro M3000M": {
-            "price": "159.95",
-            "benchmark": "2069"
-        },
-        "Radeon R9 M295X": {
-            "price": "1,449.00*",
-            "benchmark": "2057"
-        },
-        "FirePro W7000": {
-            "price": "278.05",
-            "benchmark": "2029"
-        },
-        "GRID K520": {
-            "price": "149.99",
-            "benchmark": "1940"
         },
         "GeForce GTX 580": {
             "price": "139.92",
             "benchmark": "1528"
         },
-        "Radeon HD 8970M": {
-            "price": "139.99",
-            "benchmark": "1892"
-        },
-        "Quadro P600": {
-            "price": "325.99",
-            "benchmark": "1373"
-        },
-        "Quadro M2000M": {
-            "price": "213.16",
-            "benchmark": "1496"
-        },
-        "Quadro M2000": {
-            "price": "264.24",
-            "benchmark": "1821"
-        },
         "GeForce GTX 660": {
             "price": "167.95",
             "benchmark": "1814"
         },
-        "Quadro K4200": {
-            "price": "249.00",
-            "benchmark": "1792"
-        },
-        "GeForce GTX 680M": {
-            "price": "135.99",
-            "benchmark": "1425"
-        },
         "GeForce GTX 750 Ti": {
             "price": "88.11",
             "benchmark": "1761"
-        },
-        "Quadro K5000": {
-            "price": "249.00",
-            "benchmark": "1749"
-        },
-        "GeForce GTX 780M": {
-            "price": "499.00",
-            "benchmark": "1728"
         },
         "Radeon RX 460": {
             "price": "166.81",
@@ -1299,49 +1019,17 @@
             "price": "499.99",
             "benchmark": "1624"
         },
-        "FirePro V9800": {
-            "price": "474.00",
-            "benchmark": "1618"
-        },
         "GeForce GTX 750": {
             "price": "79.99",
             "benchmark": "1455"
-        },
-        "Quadro K4100M": {
-            "price": "261.29",
-            "benchmark": "1170"
-        },
-        "Quadro P620": {
-            "price": "586.04",
-            "benchmark": "1571"
         },
         "Radeon HD 7790": {
             "price": "139.99",
             "benchmark": "1571"
         },
-        "Quadro K2200": {
-            "price": "268.30",
-            "benchmark": "1566"
-        },
-        "T400": {
-            "price": "156.99",
-            "benchmark": "1547"
-        },
-        "Quadro M1000M": {
-            "price": "85.99",
-            "benchmark": "1170"
-        },
-        "Quadro K2200M": {
-            "price": "124.95",
-            "benchmark": "1539"
-        },
-        "GeForce GTX 860M": {
-            "price": "114.00",
-            "benchmark": "1277"
-        },
         "Radeon RX 560": {
             "price": "219.99",
-            "benchmark": "1503"
+            "benchmark": "1504"
         },
         "GeForce 8800 GTX": {
             "price": "119.99",
@@ -1349,51 +1037,15 @@
         },
         "Radeon R7 260X": {
             "price": "139.99",
-            "benchmark": "1445"
-        },
-        "Tesla C2070": {
-            "price": "604.00",
-            "benchmark": "1437"
-        },
-        "GeForce GTX 960M": {
-            "price": "1,169.00*",
-            "benchmark": "1345"
-        },
-        "FirePro 3D V8800": {
-            "price": "424.99",
-            "benchmark": "1427"
-        },
-        "Radeon Pro 455": {
-            "price": "449.00",
-            "benchmark": "1418"
-        },
-        "Quadro K5000M": {
-            "price": "508.91",
-            "benchmark": "1271"
-        },
-        "Radeon Pro": {
-            "price": "2,782.02*",
-            "benchmark": "1403"
+            "benchmark": "1443"
         },
         "Radeon RX Vega 11": {
-            "price": "1,002.00*",
+            "price": "1002.00",
             "benchmark": "1398"
         },
         "GeForce GTX 590": {
             "price": "435.00",
             "benchmark": "1153"
-        },
-        "Radeon Pro 555": {
-            "price": "1,049.00*",
-            "benchmark": "1383"
-        },
-        "FirePro 3D V9800": {
-            "price": "2,499.00*",
-            "benchmark": "1375"
-        },
-        "Tesla C2050": {
-            "price": "269.99",
-            "benchmark": "1373"
         },
         "GeForce GTX 570": {
             "price": "149.99",
@@ -1403,37 +1055,17 @@
             "price": "89.99",
             "benchmark": "1361"
         },
-        "FirePro W5000": {
-            "price": "184.00",
-            "benchmark": "1330"
-        },
         "Radeon R9 360": {
             "price": "133.89",
             "benchmark": "1329"
-        },
-        "Tesla C2075": {
-            "price": "646.00",
-            "benchmark": "1327"
         },
         "GeForce GTX 650 Ti": {
             "price": "93.05",
             "benchmark": "1320"
         },
-        "NVS 810": {
-            "price": "624.99",
-            "benchmark": "907"
-        },
         "Radeon R7 360": {
             "price": "145.99",
             "benchmark": "1294"
-        },
-        "GeForce GTX 950M": {
-            "price": "567.00",
-            "benchmark": "1114"
-        },
-        "FirePro W5100": {
-            "price": "125.99",
-            "benchmark": "1270"
         },
         "GeForce GT 1030": {
             "price": "109.99",
@@ -1443,65 +1075,21 @@
             "price": "498.49",
             "benchmark": "1255"
         },
-        "GeForce GTX 770M": {
-            "price": "138.00",
-            "benchmark": "1249"
-        },
         "GeForce GTX 560 Ti": {
             "price": "129.99",
             "benchmark": "1247"
-        },
-        "GeForce MX150": {
-            "price": "59.29",
-            "benchmark": "950"
         },
         "Radeon HD 5970": {
             "price": "179.99",
             "benchmark": "919"
         },
-        "Quadro K3100M": {
-            "price": "399.95",
-            "benchmark": "893"
-        },
-        "FirePro W4300": {
-            "price": "239.99",
-            "benchmark": "1202"
-        },
-        "Quadro K620": {
-            "price": "2,029.99*",
-            "benchmark": "968"
-        },
-        "FirePro W600": {
-            "price": "414.99",
-            "benchmark": "1195"
-        },
-        "FirePro W4100": {
-            "price": "184.00",
-            "benchmark": "707"
-        },
         "Radeon HD 7770": {
             "price": "300.00",
-            "benchmark": "1186"
-        },
-        "Quadro K1200": {
-            "price": "319.95",
-            "benchmark": "1182"
-        },
-        "Quadro K4000M": {
-            "price": "254.00",
-            "benchmark": "774"
-        },
-        "Quadro M600M": {
-            "price": "251.99",
-            "benchmark": "1170"
+            "benchmark": "1185"
         },
         "Radeon HD 5870": {
             "price": "295.00",
             "benchmark": "1134"
-        },
-        "Quadro K4000": {
-            "price": "270.00",
-            "benchmark": "1125"
         },
         "GeForce GTX 460": {
             "price": "89.99",
@@ -1511,25 +1099,9 @@
             "price": "59.99",
             "benchmark": "1108"
         },
-        "FirePro M6000": {
-            "price": "325.99",
-            "benchmark": "1098"
-        },
         "Radeon HD 6970": {
             "price": "149.99",
             "benchmark": "1094"
-        },
-        "FirePro 3D V7800": {
-            "price": "599.99",
-            "benchmark": "1091"
-        },
-        "Quadro 6000": {
-            "price": "4,092.38*",
-            "benchmark": "1085"
-        },
-        "GeForce GTX 765M": {
-            "price": "186.30",
-            "benchmark": "1055"
         },
         "GeForce GTX 460 v2": {
             "price": "199.99",
@@ -1537,19 +1109,11 @@
         },
         "GeForce GTX 560": {
             "price": "205.00",
-            "benchmark": "1042"
+            "benchmark": "1043"
         },
         "Radeon RX 550": {
             "price": "170.09",
-            "benchmark": "1040"
-        },
-        "GeForce GTX 580M": {
-            "price": "248.68",
-            "benchmark": "1021"
-        },
-        "Radeon Pro WX 3200": {
-            "price": "237.39",
-            "benchmark": "1021"
+            "benchmark": "1041"
         },
         "Radeon HD 6950": {
             "price": "139.99",
@@ -1557,31 +1121,19 @@
         },
         "Radeon HD 6870": {
             "price": "275.00",
-            "benchmark": "987"
-        },
-        "GeForce GTX 660M": {
-            "price": "78.99",
-            "benchmark": "777"
-        },
-        "Radeon R7 A12-9800E RADEON": {
-            "price": "139.19",
-            "benchmark": "957"
-        },
-        "GeForce GTX 465": {
-            "price": "195.00",
-            "benchmark": "938"
+            "benchmark": "986"
         },
         "GeForce GTX 560 SE": {
             "price": "89.99",
             "benchmark": "937"
         },
+        "GeForce GTX 465": {
+            "price": "195.00",
+            "benchmark": "936"
+        },
         "Radeon HD 5850": {
             "price": "288.99",
             "benchmark": "934"
-        },
-        "Radeon R7 PRO A10-9700E": {
-            "price": "529.00",
-            "benchmark": "929"
         },
         "Radeon R9 350": {
             "price": "299.00",
@@ -1591,14 +1143,6 @@
             "price": "284.95",
             "benchmark": "915"
         },
-        "Radeon R5 430": {
-            "price": "59.00",
-            "benchmark": "478"
-        },
-        "Barco MXRT 5500": {
-            "price": "299.00",
-            "benchmark": "911"
-        },
         "Radeon Vega 8": {
             "price": "126.86",
             "benchmark": "886"
@@ -1607,29 +1151,9 @@
             "price": "258.99",
             "benchmark": "883"
         },
-        "Radeon R7 430": {
-            "price": "199.99",
-            "benchmark": "548"
-        },
-        "Quadro K3000M": {
-            "price": "407.56",
-            "benchmark": "635"
-        },
-        "Quadro 5010M": {
-            "price": "235.95",
-            "benchmark": "877"
-        },
-        "Quadro K2100M": {
-            "price": "415.99",
-            "benchmark": "653"
-        },
         "Radeon R7 450": {
             "price": "299.00",
             "benchmark": "872"
-        },
-        "Quadro P520": {
-            "price": "1,499.00*",
-            "benchmark": "861"
         },
         "Radeon HD 7750": {
             "price": "99.99",
@@ -1643,101 +1167,29 @@
             "price": "109.98",
             "benchmark": "779"
         },
-        "FirePro V7900": {
-            "price": "190.00",
-            "benchmark": "824"
-        },
-        "FirePro 3D V5800": {
-            "price": "204.00",
-            "benchmark": "802"
-        },
         "GeForce GTX 460 SE": {
             "price": "159.99",
             "benchmark": "774"
-        },
-        "Quadro 5000": {
-            "price": "2,365.99",
-            "benchmark": "770"
         },
         "Radeon HD 6850": {
             "price": "85.00",
             "benchmark": "762"
         },
-        "Barco MXRT 5450": {
-            "price": "199.99",
-            "benchmark": "760"
-        },
         "Radeon R9 255": {
             "price": "344.16",
             "benchmark": "760"
         },
-        "Quadro K2000D": {
-            "price": "339.99",
-            "benchmark": "759"
-        },
-        "Radeon R7 A12-9720P RADEON": {
-            "price": "365.48",
-            "benchmark": "759"
-        },
-        "FirePro M4000": {
-            "price": "72.83",
-            "benchmark": "756"
-        },
-        "FirePro W2100": {
-            "price": "59.00",
-            "benchmark": "450"
-        },
-        "Quadro P400": {
-            "price": "201.17",
-            "benchmark": "738"
-        },
-        "Radeon R7 FX-9800P RADEON": {
-            "price": "530.00",
-            "benchmark": "721"
-        },
         "GeForce GTX 550 Ti": {
             "price": "99.99",
-            "benchmark": "720"
+            "benchmark": "721"
         },
         "Radeon HD 6790": {
             "price": "294.00",
             "benchmark": "704"
         },
-        "Quadro K2000M": {
-            "price": "144.04",
-            "benchmark": "498"
-        },
-        "Quadro K2000": {
-            "price": "294.00",
-            "benchmark": "684"
-        },
-        "Quadro K1100M": {
-            "price": "322.99",
-            "benchmark": "509"
-        },
-        "Radeon Vega 6": {
-            "price": "1,799.99*",
-            "benchmark": "670"
-        },
-        "Radeon R9 M370X": {
-            "price": "889.00",
-            "benchmark": "658"
-        },
         "Radeon HD 5770": {
             "price": "189.99",
             "benchmark": "657"
-        },
-        "Barco MXRT 7400": {
-            "price": "99.00",
-            "benchmark": "651"
-        },
-        "Barco MXRT 5400": {
-            "price": "203.00",
-            "benchmark": "650"
-        },
-        "Radeon R7 A12-9700P RADEON": {
-            "price": "435.92",
-            "benchmark": "642"
         },
         "GeForce GT 240": {
             "price": "160.97",
@@ -1753,11 +1205,11 @@
         },
         "Radeon R7 250": {
             "price": "189.97",
-            "benchmark": "630"
+            "benchmark": "629"
         },
         "GeForce GT 640": {
             "price": "109.99",
-            "benchmark": "629"
+            "benchmark": "628"
         },
         "GeForce GTS 450": {
             "price": "79.99",
@@ -1767,33 +1219,13 @@
             "price": "69.99",
             "benchmark": "607"
         },
-        "GeForce GT 635": {
-            "price": "66.94",
-            "benchmark": "605"
-        },
-        "FirePro V5800": {
-            "price": "53.00",
-            "benchmark": "602"
-        },
         "GeForce GT 710": {
             "price": "102.99",
             "benchmark": "363"
         },
-        "Quadro 4000": {
-            "price": "966.28",
-            "benchmark": "577"
-        },
         "Radeon HD 8570": {
             "price": "98.68",
             "benchmark": "570"
-        },
-        "Quadro K610M": {
-            "price": "240.00",
-            "benchmark": "383"
-        },
-        "GeForce GT 640M LE": {
-            "price": "849.99",
-            "benchmark": "331"
         },
         "GeForce GT 720": {
             "price": "99.99",
@@ -1803,14 +1235,6 @@
             "price": "69.99",
             "benchmark": "538"
         },
-        "Quadro 2000D": {
-            "price": "140.00",
-            "benchmark": "533"
-        },
-        "Quadro 4000M": {
-            "price": "232.06",
-            "benchmark": "529"
-        },
         "GeForce 210": {
             "price": "54.92",
             "benchmark": "517"
@@ -1819,41 +1243,13 @@
             "price": "109.99",
             "benchmark": "507"
         },
-        "Quadro 2000": {
-            "price": "213.23",
-            "benchmark": "505"
-        },
         "Radeon R7 240": {
             "price": "109.99",
             "benchmark": "480"
         },
-        "Quadro K420": {
-            "price": "269.00",
-            "benchmark": "334"
-        },
         "Radeon R5 240": {
             "price": "85.00",
             "benchmark": "472"
-        },
-        "GeForce GT 545": {
-            "price": "55.59",
-            "benchmark": "471"
-        },
-        "GeForce GT 555M": {
-            "price": "177.20",
-            "benchmark": "334"
-        },
-        "Radeon HD 7650A": {
-            "price": "262.00",
-            "benchmark": "310"
-        },
-        "Quadro K1000M": {
-            "price": "69.95",
-            "benchmark": "350"
-        },
-        "Radeon E6760": {
-            "price": "239.99",
-            "benchmark": "452"
         },
         "Radeon R5 330": {
             "price": "339.99",
@@ -1863,77 +1259,17 @@
             "price": "79.99",
             "benchmark": "452"
         },
-        "Radeon 520": {
-            "price": "89.99",
-            "benchmark": "124"
-        },
-        "Radeon Vega 3": {
-            "price": "2,677.99*",
-            "benchmark": "448"
-        },
-        "FirePro V4900": {
-            "price": "149.99",
-            "benchmark": "446"
-        },
         "Radeon HD 6570": {
             "price": "63.81",
             "benchmark": "311"
-        },
-        "Radeon R7 M445": {
-            "price": "744.00",
-            "benchmark": "432"
-        },
-        "FirePro V5900": {
-            "price": "86.00",
-            "benchmark": "419"
-        },
-        "GRID K1": {
-            "price": "395.00",
-            "benchmark": "419"
-        },
-        "Quadro 3000M": {
-            "price": "69.99",
-            "benchmark": "407"
-        },
-        "Quadro 2000M": {
-            "price": "229.74",
-            "benchmark": "403"
         },
         "Radeon HD 6670": {
             "price": "68.99",
             "benchmark": "399"
         },
-        "Intel HD 5000": {
-            "price": "625.00",
-            "benchmark": "384"
-        },
-        "Barco MXRT 2600": {
-            "price": "199.00",
-            "benchmark": "370"
-        },
-        "Radeon HD 7670M": {
-            "price": "629.99",
-            "benchmark": "282"
-        },
-        "Radeon R5 420": {
-            "price": "39.95",
-            "benchmark": "366"
-        },
-        "FirePro V3900": {
-            "price": "238.44",
-            "benchmark": "362"
-        },
         "GeForce GT 630": {
             "price": "147.01",
             "benchmark": "360"
-        },
-        "FirePro 3D V4800": {
-            "price": "159.99",
-            "benchmark": "360"
-        },
-        "GeForce GT 540M": {
-            "price": "87.95",
-            "benchmark": "261"
         },
         "GeForce GT 440": {
             "price": "225.00",
@@ -1943,93 +1279,25 @@
             "price": "67.00",
             "benchmark": "350"
         },
-        "NVS 4200M": {
-            "price": "399.00",
-            "benchmark": "180"
-        },
         "Radeon HD 7570": {
             "price": "102.49",
             "benchmark": "343"
-        },
-        "Quadro K600": {
-            "price": "60.24",
-            "benchmark": "343"
-        },
-        "Intel HD 3000": {
-            "price": "945.00",
-            "benchmark": "259"
-        },
-        "FirePro 3D V3800": {
-            "price": "149.99",
-            "benchmark": "327"
-        },
-        "NVS 510": {
-            "price": "255.53",
-            "benchmark": "319"
         },
         "GeForce GT 530": {
             "price": "49.00",
             "benchmark": "316"
         },
-        "Radeon R7 M260": {
-            "price": "799.00",
-            "benchmark": "316"
-        },
-        "Quadro 1000M": {
-            "price": "54.50",
-            "benchmark": "293"
-        },
-        "Quadro 600": {
-            "price": "76.00",
-            "benchmark": "292"
-        },
-        "FirePro V3800": {
-            "price": "124.99",
-            "benchmark": "287"
-        },
         "GeForce GT 430": {
             "price": "139.99",
             "benchmark": "287"
-        },
-        "Quadro 410": {
-            "price": "129.00",
-            "benchmark": "281"
         },
         "Radeon HD 5570": {
             "price": "183.34",
             "benchmark": "273"
         },
-        "Quadro 500M": {
-            "price": "275.14",
-            "benchmark": "263"
-        },
-        "Mobile Intel HD": {
-            "price": "479.98",
-            "benchmark": "253"
-        },
-        "Intel HD 4000": {
-            "price": "1,592.95*",
-            "benchmark": "242"
-        },
-        "Radeon R5 310": {
-            "price": "499.00",
-            "benchmark": "238"
-        },
-        "Radeon R4": {
-            "price": "396.99",
-            "benchmark": "222"
-        },
         "Radeon HD 5550": {
             "price": "54.99",
             "benchmark": "222"
-        },
-        "Radeon R5 230": {
-            "price": "81.10",
-            "benchmark": "220"
-        },
-        "NVS 315": {
-            "price": "69.99",
-            "benchmark": "216"
         },
         "GeForce GT 620": {
             "price": "154.00",
@@ -2059,37 +1327,17 @@
             "price": "69.99",
             "benchmark": "181"
         },
-        "GeForce GT 520M": {
-            "price": "29.95",
-            "benchmark": "179"
-        },
         "GeForce GT 610": {
             "price": "139.99",
             "benchmark": "176"
-        },
-        "HD6450": {
-            "price": "108.20",
-            "benchmark": "172"
         },
         "GeForce GT 420": {
             "price": "155.00",
             "benchmark": "169"
         },
-        "GeForce 605": {
-            "price": "136.83",
-            "benchmark": "148"
-        },
         "Radeon HD 7450": {
             "price": "49.99",
             "benchmark": "147"
-        },
-        "NVS 310": {
-            "price": "62.06",
-            "benchmark": "146"
-        },
-        "Radeon HD 6470M": {
-            "price": "569.99",
-            "benchmark": "145"
         },
         "GeForce 510": {
             "price": "69.99",
@@ -2099,18 +1347,6 @@
             "price": "89.00",
             "benchmark": "133"
         },
-        "Radeon HD 7340": {
-            "price": "552.69",
-            "benchmark": "96"
-        },
-        "Radeon HD 6380G": {
-            "price": "399.99",
-            "benchmark": "95"
-        },
-        "Radeon HD 6320": {
-            "price": "554.99",
-            "benchmark": "87"
-        },
         "Radeon HD 8350": {
             "price": "99.81",
             "benchmark": "41"
@@ -2118,18 +1354,6 @@
         "RADEON HD 6350": {
             "price": "59.00",
             "benchmark": "79"
-        },
-        "FirePro 2270": {
-            "price": "134.00",
-            "benchmark": "74"
-        },
-        "Quadro FX 580": {
-            "price": "130.00",
-            "benchmark": "66"
-        },
-        "FirePro 2460": {
-            "price": "83.99",
-            "benchmark": "59"
         },
         "GeForce 8400 GS": {
             "price": "85.97",
@@ -2143,10 +1367,6 @@
             "price": "94.96",
             "benchmark": "47"
         },
-        "Quadro FX 570": {
-            "price": "115.00",
-            "benchmark": "42"
-        },
         "Radeon R5 220": {
             "price": "85.26",
             "benchmark": "41"
@@ -2158,10 +1378,6 @@
         "GeForce 8600 GT": {
             "price": "196.00",
             "benchmark": "33"
-        },
-        "ION": {
-            "price": "229.99",
-            "benchmark": "9"
         }
     },
     "motherboard": [],
