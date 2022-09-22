@@ -6,6 +6,13 @@ from evolutionary_algorithm.Evolutionary_Algorithm import PC_Build
 
 if __name__ == "__main__":
     
-    temp = PC_Build(num_of_parents=5)
-    print(temp.run(num_of_generations=300))
+    with open('Data.json', 'r') as file:
+        parts_data = json.load(file)
+    file.close()
+    
+    s = Scraper()
+    
+    
+    # temp = PC_Build(num_of_parents=5)
+    # print(temp.run(num_of_generations=300))
     

@@ -82,7 +82,7 @@ class Scraper:
     def get_ram_benchmark(self, ram_name):
         benchmark_response = get("https://www.memorybenchmark.net/ram.php?ram=" + ram_name)
         
-        benchmark_html = bs(benchmark_response, 'html.parser')
+        benchmark_html = bs(benchmark_response.context, 'html.parser')
         
         ram_benchmark_tag = benchmark_html.find_all('span', attrs={'style': 'font-family: Arial, Helvetica, sans-serif;font-size: 44px;	font-weight: bold; color: #F48A18;'})
         
@@ -97,47 +97,47 @@ class Scraper:
         # }
         ram_info = {}
         
-        intel_html = bs(self.ram_intel_response, 'html.parser')
+        intel_html = bs(self.ram_intel_response.context, 'html.parser')
         
         # get data from html page containing name, price, benchmark
-        # intel_name_tag = intel_html.find_all('span', attrs={'class': 'prdname'})
-        # intel_price_tag = intel_html.find_all('span', attrs={'class': 'price-neww'})
+        intel_name_tag = intel_html.find_all('span', attrs={'class': 'prdname'})
+        intel_price_tag = intel_html.find_all('span', attrs={'class': 'price-neww'})
         
         # places the attributes into the dictionary according to format
-        # for ii in range(len(intel_name_tag)):
-        #     benchmark = self.get_ram_benchmark(intel_name_tag[ii].text.replace(' ', '+'))
-        #     # if price doesn't exists then we move on cause we can't use it
-        #     if intel_price_tag[ii].text == 'NA':
-        #         continue
-        #     # removes the '*' from price
-        #     elif re.match(r'\$[\d]*.[\d]*\*', intel_price_tag[ii].text):
-        #         price = intel_price_tag[ii].text.replace('*', '')
-        #         ram_info[intel_name_tag[ii].text] = {"price": price,
-        #                                             "benchmark": benchmark}                
-        #     else:
-        #         ram_info[intel_name_tag[ii].text] = {"price": intel_price_tag[ii].text,
-        #                                             "benchmark": benchmark}
+        for ii in range(len(intel_name_tag)):
+            benchmark = self.get_ram_benchmark(intel_name_tag[ii].text.replace(' ', '+'))
+            # if price doesn't exists then we move on cause we can't use it
+            if intel_price_tag[ii].text == 'NA':
+                continue
+            # removes the '*' from price
+            elif re.match(r'\$[\d]*.[\d]*\*', intel_price_tag[ii].text):
+                price = intel_price_tag[ii].text.replace('*', '')
+                ram_info[intel_name_tag[ii].text] = {"price": price,
+                                                    "benchmark": benchmark}                
+            else:
+                ram_info[intel_name_tag[ii].text] = {"price": intel_price_tag[ii].text,
+                                                    "benchmark": benchmark}
         
-        # amd_html = bs(self.ram_amd_response, 'html.parser')
+        amd_html = bs(self.ram_amd_response, 'html.parser')
         
-        # # get data from html page containing name, price, benchmark
-        # amd_name_tag = amd_html.find_all('span', attrs={'class': 'prdname'})
-        # amd_price_tag = amd_html.find_all('span', attrs={'class': 'price-neww'})
+        # get data from html page containing name, price, benchmark
+        amd_name_tag = amd_html.find_all('span', attrs={'class': 'prdname'})
+        amd_price_tag = amd_html.find_all('span', attrs={'class': 'price-neww'})
         
-        # # places the attributes into the dictionary according to format
-        # for ii in range(len(amd_name_tag)):
-        #     benchmark = self.get_ram_benchmark(amd_name_tag[ii].text.replace(' ', '+'))
-        #     # if price doesn't exists then we move on cause we can't use it
-        #     if amd_price_tag[ii].text == 'NA':
-        #         continue
-        #     # removes the '*' from price
-        #     elif re.match(r'\$[\d]*.[\d]*\*', amd_price_tag[ii].text):
-        #         print("hi")
-        #         price = amd_price_tag[ii].text.replace('*', '')
-        #         ram_info[amd_name_tag[ii].text] = {"price": price,
-        #                                             "benchmark": benchmark}                
-        #     else:
-        #         ram_info[amd_name_tag[ii].text] = {"price": amd_price_tag[ii].text,
-        #                                             "benchmark": benchmark}
+        # places the attributes into the dictionary according to format
+        for ii in range(len(amd_name_tag)):
+            benchmark = self.get_ram_benchmark(amd_name_tag[ii].text.replace(' ', '+'))
+            # if price doesn't exists then we move on cause we can't use it
+            if amd_price_tag[ii].text == 'NA':
+                continue
+            # removes the '*' from price
+            elif re.match(r'\$[\d]*.[\d]*\*', amd_price_tag[ii].text):
+                print("hi")
+                price = amd_price_tag[ii].text.replace('*', '')
+                ram_info[amd_name_tag[ii].text] = {"price": price,
+                                                    "benchmark": benchmark}                
+            else:
+                ram_info[amd_name_tag[ii].text] = {"price": amd_price_tag[ii].text,
+                                                    "benchmark": benchmark}
                 
         return ram_info
