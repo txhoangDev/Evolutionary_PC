@@ -1381,7 +1381,2676 @@
         }
     },
     "motherboard": [],
-    "ram": [],
+    "ram": {
+        "A-DATA Technology DDR4 3000 8GB": {
+            "price": "389.99",
+            "benchmark": "3249"
+        },
+        "Corsair CMD128GX4M8A2400C14 16GB": {
+            "price": "999.99",
+            "benchmark": "2585"
+        },
+        "Corsair CMD128GX4M8A2666C15 16GB": {
+            "price": "879.99",
+            "benchmark": "2888"
+        },
+        "Corsair CMD128GX4M8B2800C14 16GB": {
+            "price": "969.99",
+            "benchmark": "2955"
+        },
+        "Corsair CMD128GX4M8B3000C16 16GB": {
+            "price": "977.79",
+            "benchmark": "3035"
+        },
+        "Corsair CMD128GX4M8B3200C16 16GB": {
+            "price": "999.99",
+            "benchmark": "2869"
+        },
+        "Corsair CMD16GX4M2A2666C15 8GB": {
+            "price": "115.99",
+            "benchmark": "3350"
+        },
+        "Corsair CMD16GX4M2B2400C10 8GB": {
+            "price": "192.99",
+            "benchmark": "3538"
+        },
+        "Corsair CMD16GX4M2B3000C15 8GB": {
+            "price": "100.98",
+            "benchmark": "3346"
+        },
+        "Corsair CMD16GX4M2B3200C14 8GB": {
+            "price": "219.99",
+            "benchmark": "2963"
+        },
+        "Corsair CMD16GX4M2B3200C16 8GB": {
+            "price": "129.99",
+            "benchmark": "3343"
+        },
+        "Corsair CMD16GX4M2B3466C16 8GB": {
+            "price": "351.58",
+            "benchmark": "3891"
+        },
+        "Corsair CMD16GX4M2B3600C18 8GB": {
+            "price": "239.99",
+            "benchmark": "3601"
+        },
+        "Corsair CMD16GX4M2B3733C17 8GB": {
+            "price": "259.99",
+            "benchmark": "3204"
+        },
+        "Corsair CMD16GX4M2B3866C18 8GB": {
+            "price": "259.99",
+            "benchmark": "3925"
+        },
+        "Corsair CMD16GX4M2C3333C16 8GB": {
+            "price": "169.99",
+            "benchmark": "3117"
+        },
+        "Corsair CMD16GX4M2E4000C19 8GB": {
+            "price": "279.99",
+            "benchmark": "3446"
+        },
+        "Corsair CMD16GX4M4A2666C15 4GB": {
+            "price": "371.91",
+            "benchmark": "2934"
+        },
+        "Corsair CMD16GX4M4A2666C16 4GB": {
+            "price": "399.99",
+            "benchmark": "2847"
+        },
+        "Corsair CMD16GX4M4A2800C16 4GB": {
+            "price": "253.19",
+            "benchmark": "2807"
+        },
+        "Corsair CMD16GX4M4B2133C10 4GB": {
+            "price": "204.67",
+            "benchmark": "2971"
+        },
+        "Corsair CMD16GX4M4B2400C10 4GB": {
+            "price": "145.99",
+            "benchmark": "2792"
+        },
+        "Corsair CMD16GX4M4B3000C14 4GB": {
+            "price": "452.44",
+            "benchmark": "2991"
+        },
+        "Corsair CMD16GX4M4B3000C15 4GB": {
+            "price": "445.07",
+            "benchmark": "3144"
+        },
+        "Corsair CMD16GX4M4B3200C14 4GB": {
+            "price": "199.99",
+            "benchmark": "2586"
+        },
+        "Corsair CMD16GX4M4B3200C15 4GB": {
+            "price": "297.49",
+            "benchmark": "3237"
+        },
+        "Corsair CMD16GX4M4B3200C16 4GB": {
+            "price": "259.99",
+            "benchmark": "3226"
+        },
+        "Corsair CMD16GX4M4B3300C16 4GB": {
+            "price": "270.78",
+            "benchmark": "3130"
+        },
+        "Corsair CMD16GX4M4B3400C16 4GB": {
+            "price": "249.99",
+            "benchmark": "3637"
+        },
+        "Corsair CMD16GX4M4B3600C18 4GB": {
+            "price": "583.80",
+            "benchmark": "3279"
+        },
+        "Corsair CMD16GX4M4C3200C15 4GB": {
+            "price": "194.99",
+            "benchmark": "2870"
+        },
+        "Corsair CMD16GX4M4C3200C16 4GB": {
+            "price": "429.99",
+            "benchmark": "3535"
+        },
+        "Corsair CMD32GX4M2A2666C15 16GB": {
+            "price": "440.19",
+            "benchmark": "3340"
+        },
+        "Corsair CMD32GX4M2A2800C16 16GB": {
+            "price": "229.99",
+            "benchmark": "3011"
+        },
+        "Corsair CMD32GX4M2B2800C14 16GB": {
+            "price": "259.99",
+            "benchmark": "3160"
+        },
+        "Corsair CMD32GX4M2B3000C15 16GB": {
+            "price": "196.99",
+            "benchmark": "3590"
+        },
+        "Corsair CMD32GX4M2B3466C16 16GB": {
+            "price": "699.99",
+            "benchmark": "2938"
+        },
+        "Corsair CMD32GX4M2C3200C16 16GB": {
+            "price": "209.99",
+            "benchmark": "3498"
+        },
+        "Corsair CMD32GX4M4A2400C12 8GB": {
+            "price": "259.99",
+            "benchmark": "3232"
+        },
+        "Corsair CMD32GX4M4A2400C14 8GB": {
+            "price": "917.99",
+            "benchmark": "3120"
+        },
+        "Corsair CMD32GX4M4A2666C15 8GB": {
+            "price": "219.99",
+            "benchmark": "3165"
+        },
+        "Corsair CMD32GX4M4A2666C16 8GB": {
+            "price": "671.25",
+            "benchmark": "2839"
+        },
+        "Corsair CMD32GX4M4A2800C16 8GB": {
+            "price": "439.95",
+            "benchmark": "3130"
+        },
+        "Corsair CMD32GX4M4B2400C10 8GB": {
+            "price": "639.99",
+            "benchmark": "3130"
+        },
+        "Corsair CMD32GX4M4B3000C15 8GB": {
+            "price": "249.99",
+            "benchmark": "3169"
+        },
+        "Corsair CMD32GX4M4B3200C16 8GB": {
+            "price": "379.99",
+            "benchmark": "3488"
+        },
+        "Corsair CMD32GX4M4B3333C16 8GB": {
+            "price": "799.99",
+            "benchmark": "3550"
+        },
+        "Corsair CMD32GX4M4B3466C16 8GB": {
+            "price": "644.50",
+            "benchmark": "3671"
+        },
+        "Corsair CMD32GX4M4B3600C16 8GB": {
+            "price": "897.66",
+            "benchmark": "3652"
+        },
+        "Corsair CMD32GX4M4C3000C15 8GB": {
+            "price": "699.99",
+            "benchmark": "3094"
+        },
+        "Corsair CMD32GX4M4C3200C16 8GB": {
+            "price": "289.99",
+            "benchmark": "3843"
+        },
+        "Corsair CMD32GX4M4C3200C16-R 8GB": {
+            "price": "369.99",
+            "benchmark": "3582"
+        },
+        "Corsair CMD64GX4M4A2400C14 16GB": {
+            "price": "489.99",
+            "benchmark": "2987"
+        },
+        "Corsair CMD64GX4M4A2666C15 16GB": {
+            "price": "369.99",
+            "benchmark": "3100"
+        },
+        "Corsair CMD64GX4M4B2800C14 16GB": {
+            "price": "479.99",
+            "benchmark": "3085"
+        },
+        "Corsair CMD64GX4M4B3000C15 16GB": {
+            "price": "459.99",
+            "benchmark": "3247"
+        },
+        "Corsair CMD64GX4M4B3333C16 16GB": {
+            "price": "958.08",
+            "benchmark": "3099"
+        },
+        "Corsair CMD64GX4M4B3466C16 16GB": {
+            "price": "849.99",
+            "benchmark": "3755"
+        },
+        "Corsair CMD64GX4M4C3000C15 16GB": {
+            "price": "417.80",
+            "benchmark": "3415"
+        },
+        "Corsair CMD64GX4M4C3200C16 16GB": {
+            "price": "429.99",
+            "benchmark": "3183"
+        },
+        "Corsair CMD64GX4M8A2400C14 8GB": {
+            "price": "894.83",
+            "benchmark": "2846"
+        },
+        "Corsair CMD64GX4M8A2666C15 8GB": {
+            "price": "728.99",
+            "benchmark": "3018"
+        },
+        "Corsair CMD64GX4M8B2800C14 8GB": {
+            "price": "699.89",
+            "benchmark": "3078"
+        },
+        "Corsair CMD64GX4M8B3200C16 8GB": {
+            "price": "549.99",
+            "benchmark": "3073"
+        },
+        "Corsair CMD64GX4M8X4000C19 8GB": {
+            "price": "899.99",
+            "benchmark": "3199"
+        },
+        "Corsair CMD8GX4M2B3000C15 4GB": {
+            "price": "291.02",
+            "benchmark": "2930"
+        },
+        "Corsair CMD8GX4M2B3200C16 4GB": {
+            "price": "79.99",
+            "benchmark": "3718"
+        },
+        "Corsair CMD8GX4M2B3600C18 4GB": {
+            "price": "179.99",
+            "benchmark": "3010"
+        },
+        "Corsair CMD8GX4M2B3866C18 4GB": {
+            "price": "257.22",
+            "benchmark": "3663"
+        },
+        "Corsair CMD8GX4M2B4000C19 4GB": {
+            "price": "415.63",
+            "benchmark": "3625"
+        },
+        "Corsair CMG16GX4M2D3600C18 8GB": {
+            "price": "125.00",
+            "benchmark": "3475"
+        },
+        "Corsair CMG16GX4M2E3200C16 8GB": {
+            "price": "115.00",
+            "benchmark": "3344"
+        },
+        "Corsair CMG32GX4M2D3600C18 16GB": {
+            "price": "209.00",
+            "benchmark": "3624"
+        },
+        "Corsair CMG32GX4M2E3200C16 16GB": {
+            "price": "199.00",
+            "benchmark": "3499"
+        },
+        "Corsair CMG64GX4M2D3600C18 32GB": {
+            "price": "729.00",
+            "benchmark": "3858"
+        },
+        "Corsair CMG64GX4M2E3200C16 32GB": {
+            "price": "443.98",
+            "benchmark": "3345"
+        },
+        "Corsair CMH16GX4M2D3600C18 8GB": {
+            "price": "122.98",
+            "benchmark": "3481"
+        },
+        "Corsair CMH16GX4M2E3200C16 8GB": {
+            "price": "118.98",
+            "benchmark": "3436"
+        },
+        "Corsair CMH16GX4M2Z3200C16 8GB": {
+            "price": "179.00",
+            "benchmark": "3739"
+        },
+        "Corsair CMH16GX4M2Z3600C18 8GB": {
+            "price": "122.98",
+            "benchmark": "3789"
+        },
+        "Corsair CMH32GX4M2D3600C18 16GB": {
+            "price": "189.00",
+            "benchmark": "3593"
+        },
+        "Corsair CMH32GX4M2E3200C16 16GB": {
+            "price": "205.00",
+            "benchmark": "3431"
+        },
+        "Corsair CMH32GX4M2Z3200C16 16GB": {
+            "price": "213.98",
+            "benchmark": "3760"
+        },
+        "Corsair CMH32GX4M2Z3600C18 16GB": {
+            "price": "205.98",
+            "benchmark": "3617"
+        },
+        "Corsair CMK128GX4M4A2400C16 32GB": {
+            "price": "888.98",
+            "benchmark": "3576"
+        },
+        "Corsair CMK128GX4M8A2133C13 16GB": {
+            "price": "999.99",
+            "benchmark": "2930"
+        },
+        "Corsair CMK128GX4M8A2666C16 16GB": {
+            "price": "999.99",
+            "benchmark": "2753"
+        },
+        "Corsair CMK128GX4M8B3000C16 16GB": {
+            "price": "764.99",
+            "benchmark": "3014"
+        },
+        "Corsair CMK128GX4M8B3200C16 16GB": {
+            "price": "949.99",
+            "benchmark": "2979"
+        },
+        "Corsair CMK16GX4M1A2400C14 16GB": {
+            "price": "72.99",
+            "benchmark": "2779"
+        },
+        "Corsair CMK16GX4M1A2400C16 16GB": {
+            "price": "71.99",
+            "benchmark": "2798"
+        },
+        "Corsair CMK16GX4M1A2666C16 16GB": {
+            "price": "73.99",
+            "benchmark": "3018"
+        },
+        "Corsair CMK16GX4M1B3000C15 16GB": {
+            "price": "81.99",
+            "benchmark": "3360"
+        },
+        "Corsair CMK16GX4M1C3000C16 16GB": {
+            "price": "383.96",
+            "benchmark": "2929"
+        },
+        "Corsair CMK16GX4M1D3000C16 16GB": {
+            "price": "109.99",
+            "benchmark": "3186"
+        },
+        "Corsair CMK16GX4M2A2133C13 8GB": {
+            "price": "95.00",
+            "benchmark": "2909"
+        },
+        "Corsair CMK16GX4M2A2400C14 8GB": {
+            "price": "115.00",
+            "benchmark": "3013"
+        },
+        "Corsair CMK16GX4M2A2400C16 8GB": {
+            "price": "99.00",
+            "benchmark": "3049"
+        },
+        "Corsair CMK16GX4M2A2666C16 8GB": {
+            "price": "69.99",
+            "benchmark": "3155"
+        },
+        "Corsair CMK16GX4M2A2800C16 8GB": {
+            "price": "122.99",
+            "benchmark": "3091"
+        },
+        "Corsair CMK16GX4M2B2800C14 8GB": {
+            "price": "126.99",
+            "benchmark": "3124"
+        },
+        "Corsair CMK16GX4M2B3000C15 8GB": {
+            "price": "115.00",
+            "benchmark": "3330"
+        },
+        "Corsair CMK16GX4M2B3200C14 8GB": {
+            "price": "174.99",
+            "benchmark": "3138"
+        },
+        "Corsair CMK16GX4M2B3200C16 8GB": {
+            "price": "119.00",
+            "benchmark": "3450"
+        },
+        "Corsair CMK16GX4M2B3333C16 8GB": {
+            "price": "521.41",
+            "benchmark": "3203"
+        },
+        "Corsair CMK16GX4M2B3466C16 8GB": {
+            "price": "189.99",
+            "benchmark": "3351"
+        },
+        "Corsair CMK16GX4M2B3600C18 8GB": {
+            "price": "178.20",
+            "benchmark": "3322"
+        },
+        "Corsair CMK16GX4M2B3733C17 8GB": {
+            "price": "199.99",
+            "benchmark": "4035"
+        },
+        "Corsair CMK16GX4M2C3000C16 8GB": {
+            "price": "200.99",
+            "benchmark": "3199"
+        },
+        "Corsair CMK16GX4M2C3333C16 8GB": {
+            "price": "93.99",
+            "benchmark": "4251"
+        },
+        "Corsair CMK16GX4M2D3000C16 8GB": {
+            "price": "100.98",
+            "benchmark": "3307"
+        },
+        "Corsair CMK16GX4M2D3200C16 8GB": {
+            "price": "131.80",
+            "benchmark": "3437"
+        },
+        "Corsair CMK16GX4M2D3600C18 8GB": {
+            "price": "105.00",
+            "benchmark": "3427"
+        },
+        "Corsair CMK16GX4M2E3200C16 8GB": {
+            "price": "99.00",
+            "benchmark": "3336"
+        },
+        "Corsair CMK16GX4M2E4000C19 8GB": {
+            "price": "249.99",
+            "benchmark": "2983"
+        },
+        "Corsair CMK16GX4M2E4333C19 8GB": {
+            "price": "530.27",
+            "benchmark": "3065"
+        },
+        "Corsair CMK16GX4M2F4500C19 8GB": {
+            "price": "898.15",
+            "benchmark": "3834"
+        },
+        "Corsair CMK16GX4M2K4133C19 8GB": {
+            "price": "226.99",
+            "benchmark": "3155"
+        },
+        "Corsair CMK16GX4M2K4266C19 8GB": {
+            "price": "269.99",
+            "benchmark": "3355"
+        },
+        "Corsair CMK16GX4M2K4400C19 8GB": {
+            "price": "692.66",
+            "benchmark": "4181"
+        },
+        "Corsair CMK16GX4M2L3000C15 8GB": {
+            "price": "199.99",
+            "benchmark": "3492"
+        },
+        "Corsair CMK16GX4M2Z2400C16 8GB": {
+            "price": "95.98",
+            "benchmark": "3145"
+        },
+        "Corsair CMK16GX4M2Z2666C16 8GB": {
+            "price": "99.00",
+            "benchmark": "3098"
+        },
+        "Corsair CMK16GX4M2Z2933C16 8GB": {
+            "price": "201.43",
+            "benchmark": "3429"
+        },
+        "Corsair CMK16GX4M2Z3200C16 8GB": {
+            "price": "99.00",
+            "benchmark": "3550"
+        },
+        "Corsair CMK16GX4M2Z3466C16 8GB": {
+            "price": "132.99",
+            "benchmark": "2674"
+        },
+        "Corsair CMK16GX4M2Z3600C18 8GB": {
+            "price": "109.00",
+            "benchmark": "3477"
+        },
+        "Corsair CMK16GX4M2Z3600C20 8GB": {
+            "price": "155.00",
+            "benchmark": "3434"
+        },
+        "Corsair CMK16GX4M4A2133C13 4GB": {
+            "price": "94.99",
+            "benchmark": "2812"
+        },
+        "Corsair CMK16GX4M4A2133C15 4GB": {
+            "price": "132.99",
+            "benchmark": "2573"
+        },
+        "Corsair CMK16GX4M4A2400C14 4GB": {
+            "price": "252.02",
+            "benchmark": "2890"
+        },
+        "Corsair CMK16GX4M4A2400C16 4GB": {
+            "price": "210.03",
+            "benchmark": "2905"
+        },
+        "Corsair CMK16GX4M4A2666C15 4GB": {
+            "price": "176.04",
+            "benchmark": "2749"
+        },
+        "Corsair CMK16GX4M4A2666C16 4GB": {
+            "price": "319.00",
+            "benchmark": "2881"
+        },
+        "Corsair CMK16GX4M4A2800C16 4GB": {
+            "price": "204.99",
+            "benchmark": "2847"
+        },
+        "Corsair CMK16GX4M4B3000C15 4GB": {
+            "price": "359.99",
+            "benchmark": "3190"
+        },
+        "Corsair CMK16GX4M4B3200C15 4GB": {
+            "price": "169.99",
+            "benchmark": "3179"
+        },
+        "Corsair CMK16GX4M4B3200C16 4GB": {
+            "price": "119.99",
+            "benchmark": "2868"
+        },
+        "Corsair CMK16GX4M4B3300C16 4GB": {
+            "price": "159.99",
+            "benchmark": "3072"
+        },
+        "Corsair CMK16GX4M4B3400C16 4GB": {
+            "price": "199.99",
+            "benchmark": "3073"
+        },
+        "Corsair CMK16GX4M4B3600C18 4GB": {
+            "price": "159.99",
+            "benchmark": "2929"
+        },
+        "Corsair CMK16GX4M4B3733C17 4GB": {
+            "price": "209.99",
+            "benchmark": "3966"
+        },
+        "Corsair CMK16GX4M4C3000C16 4GB": {
+            "price": "96.99",
+            "benchmark": "2689"
+        },
+        "Corsair CMK16GX4M4C3200C15 4GB": {
+            "price": "104.99",
+            "benchmark": "2917"
+        },
+        "Corsair CMK16GX4M4C3200C16 4GB": {
+            "price": "399.99",
+            "benchmark": "3071"
+        },
+        "Corsair CMK32GX4M2A2133C13 16GB": {
+            "price": "179.99",
+            "benchmark": "2981"
+        },
+        "Corsair CMK32GX4M2A2400C14 16GB": {
+            "price": "229.00",
+            "benchmark": "3107"
+        },
+        "Corsair CMK32GX4M2A2400C16 16GB": {
+            "price": "193.98",
+            "benchmark": "3151"
+        },
+        "Corsair CMK32GX4M2A2666C16 16GB": {
+            "price": "189.00",
+            "benchmark": "3294"
+        },
+        "Corsair CMK32GX4M2A2800C16 16GB": {
+            "price": "289.29",
+            "benchmark": "2991"
+        },
+        "Corsair CMK32GX4M2B3000C15 16GB": {
+            "price": "169.99",
+            "benchmark": "3520"
+        },
+        "Corsair CMK32GX4M2B3200C16 16GB": {
+            "price": "179.99",
+            "benchmark": "3613"
+        },
+        "Corsair CMK32GX4M2B3333C16 16GB": {
+            "price": "349.99",
+            "benchmark": "3735"
+        },
+        "Corsair CMK32GX4M2B3466C16 16GB": {
+            "price": "764.01",
+            "benchmark": "3393"
+        },
+        "Corsair CMK32GX4M2C3200C18 16GB": {
+            "price": "179.00",
+            "benchmark": "3455"
+        },
+        "Corsair CMK32GX4M2C3333C16 16GB": {
+            "price": "189.99",
+            "benchmark": "4110"
+        },
+        "Corsair CMK32GX4M2D3000C16 16GB": {
+            "price": "179.00",
+            "benchmark": "3479"
+        },
+        "Corsair CMK32GX4M2D3200C16 16GB": {
+            "price": "413.25",
+            "benchmark": "3581"
+        },
+        "Corsair CMK32GX4M2D3600C18 16GB": {
+            "price": "195.00",
+            "benchmark": "3598"
+        },
+        "Corsair CMK32GX4M2F4000C19 16GB": {
+            "price": "655.39",
+            "benchmark": "3776"
+        },
+        "Corsair CMK32GX4M2K4133C19 16GB": {
+            "price": "849.99",
+            "benchmark": "3656"
+        },
+        "Corsair CMK32GX4M2L3000C15 16GB": {
+            "price": "744.26",
+            "benchmark": "3752"
+        },
+        "Corsair CMK32GX4M2L3200C16 16GB": {
+            "price": "456.81",
+            "benchmark": "4063"
+        },
+        "Corsair CMK32GX4M2Z2400C16 16GB": {
+            "price": "178.98",
+            "benchmark": "3059"
+        },
+        "Corsair CMK32GX4M4A2133C13 8GB": {
+            "price": "179.99",
+            "benchmark": "2993"
+        },
+        "Corsair CMK32GX4M4A2133C15 8GB": {
+            "price": "241.99",
+            "benchmark": "2791"
+        },
+        "Corsair CMK32GX4M4A2400C12 8GB": {
+            "price": "189.99",
+            "benchmark": "2849"
+        },
+        "Corsair CMK32GX4M4A2400C14 8GB": {
+            "price": "399.99",
+            "benchmark": "2998"
+        },
+        "Corsair CMK32GX4M4A2400C16 8GB": {
+            "price": "272.76",
+            "benchmark": "2916"
+        },
+        "Corsair CMK32GX4M4A2666C15 8GB": {
+            "price": "152.99",
+            "benchmark": "3184"
+        },
+        "Corsair CMK32GX4M4A2666C16 8GB": {
+            "price": "144.99",
+            "benchmark": "3052"
+        },
+        "Corsair CMK32GX4M4A2800C16 8GB": {
+            "price": "249.99",
+            "benchmark": "3091"
+        },
+        "Corsair CMK32GX4M4B2800C14 8GB": {
+            "price": "224.99",
+            "benchmark": "3038"
+        },
+        "Corsair CMK32GX4M4B3000C15 8GB": {
+            "price": "194.99",
+            "benchmark": "3349"
+        },
+        "Corsair CMK32GX4M4B3200C14 8GB": {
+            "price": "284.99",
+            "benchmark": "3462"
+        },
+        "Corsair CMK32GX4M4B3200C16 8GB": {
+            "price": "169.99",
+            "benchmark": "3425"
+        },
+        "Corsair CMK32GX4M4B3333C16 8GB": {
+            "price": "349.99",
+            "benchmark": "3604"
+        },
+        "Corsair CMK32GX4M4B3466C16 8GB": {
+            "price": "389.99",
+            "benchmark": "3915"
+        },
+        "Corsair CMK32GX4M4B3600C18 8GB": {
+            "price": "289.99",
+            "benchmark": "3449"
+        },
+        "Corsair CMK32GX4M4B3733C17 8GB": {
+            "price": "668.23",
+            "benchmark": "3470"
+        },
+        "Corsair CMK32GX4M4B3866C18 8GB": {
+            "price": "883.15",
+            "benchmark": "3558"
+        },
+        "Corsair CMK32GX4M4C3000C15 8GB": {
+            "price": "169.99",
+            "benchmark": "3415"
+        },
+        "Corsair CMK32GX4M4C3333C16 8GB": {
+            "price": "340.24",
+            "benchmark": "3187"
+        },
+        "Corsair CMK32GX4M4C3400C16 8GB": {
+            "price": "319.99",
+            "benchmark": "3058"
+        },
+        "Corsair CMK32GX4M4D3000C16 8GB": {
+            "price": "152.99",
+            "benchmark": "3488"
+        },
+        "Corsair CMK32GX4M4E4133C19 8GB": {
+            "price": "499.99",
+            "benchmark": "2523"
+        },
+        "Corsair CMK32GX4M4K4133C19 8GB": {
+            "price": "519.99",
+            "benchmark": "2980"
+        },
+        "Corsair CMK32GX4M4Z2933C16 8GB": {
+            "price": "167.99",
+            "benchmark": "3275"
+        },
+        "Corsair CMK32GX4M4Z3200C16 8GB": {
+            "price": "346.52",
+            "benchmark": "3533"
+        },
+        "Corsair CMK4GX4M1A2400C14 4GB": {
+            "price": "26.99",
+            "benchmark": "2947"
+        },
+        "Corsair CMK4GX4M1A2400C16 4GB": {
+            "price": "26.99",
+            "benchmark": "2491"
+        },
+        "Corsair CMK4GX4M1D2400C14 4GB": {
+            "price": "69.99",
+            "benchmark": "1682"
+        },
+        "Corsair CMK64GX4M2A2400C16 32GB": {
+            "price": "463.98",
+            "benchmark": "3159"
+        },
+        "Corsair CMK64GX4M2A2666C16 32GB": {
+            "price": "353.98",
+            "benchmark": "3523"
+        },
+        "Corsair CMK64GX4M2D3600C18 32GB": {
+            "price": "499.00",
+            "benchmark": "3654"
+        },
+        "Corsair CMK64GX4M2E3200C16 32GB": {
+            "price": "349.00",
+            "benchmark": "3537"
+        },
+        "Corsair CMK64GX4M4A2133C13 16GB": {
+            "price": "289.99",
+            "benchmark": "3037"
+        },
+        "Corsair CMK64GX4M4A2400C14 16GB": {
+            "price": "449.99",
+            "benchmark": "2803"
+        },
+        "Corsair CMK64GX4M4A2400C16 16GB": {
+            "price": "454.99",
+            "benchmark": "3230"
+        },
+        "Corsair CMK64GX4M4A2666C16 16GB": {
+            "price": "399.99",
+            "benchmark": "3354"
+        },
+        "Corsair CMK64GX4M4B2800C14 16GB": {
+            "price": "464.99",
+            "benchmark": "2918"
+        },
+        "Corsair CMK64GX4M4B3000C15 16GB": {
+            "price": "359.99",
+            "benchmark": "2956"
+        },
+        "Corsair CMK64GX4M4B3200C16 16GB": {
+            "price": "349.99",
+            "benchmark": "3571"
+        },
+        "Corsair CMK64GX4M4B3333C16 16GB": {
+            "price": "673.64",
+            "benchmark": "3601"
+        },
+        "Corsair CMK64GX4M4B3466C16 16GB": {
+            "price": "579.99",
+            "benchmark": "3567"
+        },
+        "Corsair CMK64GX4M4C3000C15 16GB": {
+            "price": "449.99",
+            "benchmark": "3185"
+        },
+        "Corsair CMK64GX4M4C3200C16 16GB": {
+            "price": "499.99",
+            "benchmark": "3621"
+        },
+        "Corsair CMK64GX4M4D3000C16 16GB": {
+            "price": "299.99",
+            "benchmark": "3285"
+        },
+        "Corsair CMK64GX4M4E3200C16 16GB": {
+            "price": "623.98",
+            "benchmark": "3265"
+        },
+        "Corsair CMK64GX4M4K3733C17 16GB": {
+            "price": "839.99",
+            "benchmark": "3659"
+        },
+        "Corsair CMK64GX4M8A2133C13 8GB": {
+            "price": "269.99",
+            "benchmark": "2814"
+        },
+        "Corsair CMK64GX4M8A2400C14 8GB": {
+            "price": "499.95",
+            "benchmark": "3010"
+        },
+        "Corsair CMK64GX4M8A2666C16 8GB": {
+            "price": "519.99",
+            "benchmark": "2820"
+        },
+        "Corsair CMK64GX4M8B2800C14 8GB": {
+            "price": "379.99",
+            "benchmark": "3023"
+        },
+        "Corsair CMK64GX4M8X3600C18 8GB": {
+            "price": "729.99",
+            "benchmark": "3550"
+        },
+        "Corsair CMK64GX4M8X4000C19 8GB": {
+            "price": "879.99",
+            "benchmark": "3077"
+        },
+        "Corsair CMK64GX4M8X4133C19 8GB": {
+            "price": "899.99",
+            "benchmark": "3153"
+        },
+        "Corsair CMK64GX4M8X4200C19 8GB": {
+            "price": "919.99",
+            "benchmark": "3152"
+        },
+        "Corsair CMK64GX4M8Z2933C16 8GB": {
+            "price": "459.99",
+            "benchmark": "1932"
+        },
+        "Corsair CMK8GX4M1A2400C14 8GB": {
+            "price": "55.00",
+            "benchmark": "2849"
+        },
+        "Corsair CMK8GX4M1A2400C16 8GB": {
+            "price": "37.99",
+            "benchmark": "2826"
+        },
+        "Corsair CMK8GX4M1A2666C16 8GB": {
+            "price": "48.98",
+            "benchmark": "2963"
+        },
+        "Corsair CMK8GX4M1D3000C16 8GB": {
+            "price": "69.00",
+            "benchmark": "3128"
+        },
+        "Corsair CMK8GX4M2A2133C13 4GB": {
+            "price": "79.00",
+            "benchmark": "2746"
+        },
+        "Corsair CMK8GX4M2A2400C14 4GB": {
+            "price": "69.00",
+            "benchmark": "2707"
+        },
+        "Corsair CMK8GX4M2A2400C16 4GB": {
+            "price": "59.00",
+            "benchmark": "2854"
+        },
+        "Corsair CMK8GX4M2A2666C16 4GB": {
+            "price": "69.00",
+            "benchmark": "2805"
+        },
+        "Corsair CMK8GX4M2A2800C16 4GB": {
+            "price": "68.99",
+            "benchmark": "2846"
+        },
+        "Corsair CMK8GX4M2B3000C15 4GB": {
+            "price": "237.75",
+            "benchmark": "3093"
+        },
+        "Corsair CMK8GX4M2B3200C16 4GB": {
+            "price": "199.99",
+            "benchmark": "3015"
+        },
+        "Corsair CMK8GX4M2B3600C18 4GB": {
+            "price": "167.34",
+            "benchmark": "3561"
+        },
+        "Corsair CMK8GX4M2B3733C17 4GB": {
+            "price": "226.10",
+            "benchmark": "2981"
+        },
+        "Corsair CMK8GX4M2B3866C18 4GB": {
+            "price": "107.99",
+            "benchmark": "2640"
+        },
+        "Corsair CMK8GX4M2B4000C19 4GB": {
+            "price": "140.34",
+            "benchmark": "3033"
+        },
+        "Corsair CMK8GX4M2B4200C19 4GB": {
+            "price": "438.37",
+            "benchmark": "2170"
+        },
+        "Corsair CMK8GX4M2C3000C16 4GB": {
+            "price": "96.93",
+            "benchmark": "2909"
+        },
+        "Corsair CMK8GX4M2D2666C16 4GB": {
+            "price": "119.99",
+            "benchmark": "2624"
+        },
+        "Corsair CMN16GX4M2Z3200C16 8GB": {
+            "price": "119.00",
+            "benchmark": "3314"
+        },
+        "Corsair CMN16GX4M2Z3600C18 8GB": {
+            "price": "122.98",
+            "benchmark": "3638"
+        },
+        "Corsair CMN32GX4M2Z3200C16 16GB": {
+            "price": "199.00",
+            "benchmark": "3588"
+        },
+        "Corsair CMN32GX4M2Z3600C16 16GB": {
+            "price": "299.00",
+            "benchmark": "3790"
+        },
+        "Corsair CMN32GX4M2Z3600C18 16GB": {
+            "price": "269.00",
+            "benchmark": "3519"
+        },
+        "Corsair CMN32GX4M2Z4600C18 16GB": {
+            "price": "499.00",
+            "benchmark": "3860"
+        },
+        "Corsair CMN64GX4M4Z3600C18 16GB": {
+            "price": "559.00",
+            "benchmark": "2831"
+        },
+        "Corsair CMR128GX4M8C3000C16 16GB": {
+            "price": "999.99",
+            "benchmark": "3594"
+        },
+        "Corsair CMR16GX4M2A2666C16 8GB": {
+            "price": "476.99",
+            "benchmark": "3157"
+        },
+        "Corsair CMR16GX4M2C 8GB": {
+            "price": "115.30",
+            "benchmark": "1604"
+        },
+        "Corsair CMR16GX4M2C3000C15 8GB": {
+            "price": "136.65",
+            "benchmark": "3364"
+        },
+        "Corsair CMR16GX4M2C3000C16 8GB": {
+            "price": "258.96",
+            "benchmark": "3371"
+        },
+        "Corsair CMR16GX4M2C3200C16 8GB": {
+            "price": "275.36",
+            "benchmark": "3267"
+        },
+        "Corsair CMR16GX4M2C3466C16 8GB": {
+            "price": "369.66",
+            "benchmark": "3559"
+        },
+        "Corsair CMR16GX4M2C3600C18 8GB": {
+            "price": "359.98",
+            "benchmark": "3453"
+        },
+        "Corsair CMR16GX4M2D3000C16 8GB": {
+            "price": "146.59",
+            "benchmark": "3302"
+        },
+        "Corsair CMR16GX4M2D3200C16 8GB": {
+            "price": "194.38",
+            "benchmark": "3456"
+        },
+        "Corsair CMR16GX4M2Z3200C16 8GB": {
+            "price": "293.34",
+            "benchmark": "3291"
+        },
+        "Corsair CMR32GX4M2C3000C15 16GB": {
+            "price": "383.69",
+            "benchmark": "3474"
+        },
+        "Corsair CMR32GX4M2C3200C16 16GB": {
+            "price": "298.28",
+            "benchmark": "3793"
+        },
+        "Corsair CMR32GX4M2C3333C16 16GB": {
+            "price": "507.67",
+            "benchmark": "3629"
+        },
+        "Corsair CMR32GX4M2D3000C16 16GB": {
+            "price": "235.99",
+            "benchmark": "3596"
+        },
+        "Corsair CMR32GX4M2F3600C18 16GB": {
+            "price": "761.99",
+            "benchmark": "4052"
+        },
+        "Corsair CMR32GX4M4A2666C16 8GB": {
+            "price": "538.38",
+            "benchmark": "3155"
+        },
+        "Corsair CMR32GX4M4C3000C15 8GB": {
+            "price": "638.54",
+            "benchmark": "3336"
+        },
+        "Corsair CMR32GX4M4C3000C16 8GB": {
+            "price": "764.40",
+            "benchmark": "3549"
+        },
+        "Corsair CMR32GX4M4C3200C16 8GB": {
+            "price": "532.75",
+            "benchmark": "3884"
+        },
+        "Corsair CMR32GX4M4C3333C16 8GB": {
+            "price": "848.06",
+            "benchmark": "3990"
+        },
+        "Corsair CMR32GX4M4C3466C16 8GB": {
+            "price": "523.32",
+            "benchmark": "3820"
+        },
+        "Corsair CMR32GX4M4C3600C18 8GB": {
+            "price": "649.99",
+            "benchmark": "3459"
+        },
+        "Corsair CMR32GX4M4D3000C16 8GB": {
+            "price": "470.88",
+            "benchmark": "3299"
+        },
+        "Corsair CMR64GX4M4C3000C15 16GB": {
+            "price": "769.99",
+            "benchmark": "3387"
+        },
+        "Corsair CMR64GX4M4C3200C16 16GB": {
+            "price": "499.99",
+            "benchmark": "3472"
+        },
+        "Corsair CMR64GX4M8C3000C15 8GB": {
+            "price": "969.99",
+            "benchmark": "1679"
+        },
+        "Corsair CMR64GX4M8X3800C19 8GB": {
+            "price": "889.99",
+            "benchmark": "3090"
+        },
+        "Corsair CMSO16GX4M1A2133C15 16GB": {
+            "price": "139.00",
+            "benchmark": "2577"
+        },
+        "Corsair CMSO16GX4M2A2133C15 8GB": {
+            "price": "444.99",
+            "benchmark": "2599"
+        },
+        "Corsair CMSO32GX4M2A2133C15 16GB": {
+            "price": "373.83",
+            "benchmark": "2395"
+        },
+        "Corsair CMSO4GX4M1A2133C15 4GB": {
+            "price": "38.98",
+            "benchmark": "2018"
+        },
+        "Corsair CMSO8GX4M1A2133C15 8GB": {
+            "price": "49.00",
+            "benchmark": "2407"
+        },
+        "Corsair CMSX16GX4M1A2400C16 16GB": {
+            "price": "125.50",
+            "benchmark": "2873"
+        },
+        "Corsair CMSX16GX4M1A2666C18 16GB": {
+            "price": "73.99",
+            "benchmark": "3007"
+        },
+        "Corsair CMSX16GX4M1A3200C22 16GB": {
+            "price": "99.00",
+            "benchmark": "2413"
+        },
+        "Corsair CMSX16GX4M2A2400C16 8GB": {
+            "price": "115.00",
+            "benchmark": "2741"
+        },
+        "Corsair CMSX16GX4M2A2666C18 8GB": {
+            "price": "99.99",
+            "benchmark": "2580"
+        },
+        "Corsair CMSX16GX4M2A3000C16 8GB": {
+            "price": "129.99",
+            "benchmark": "3102"
+        },
+        "Corsair CMSX16GX4M2A3200C22 8GB": {
+            "price": "119.00",
+            "benchmark": "3015"
+        },
+        "Corsair CMSX32GX4M2A2400C16 16GB": {
+            "price": "137.99",
+            "benchmark": "2865"
+        },
+        "Corsair CMSX32GX4M2A2666C18 16GB": {
+            "price": "139.99",
+            "benchmark": "2899"
+        },
+        "Corsair CMSX32GX4M2A3000C16 16GB": {
+            "price": "249.99",
+            "benchmark": "3344"
+        },
+        "Corsair CMSX32GX4M2A3200C22 16GB": {
+            "price": "219.00",
+            "benchmark": "3042"
+        },
+        "Corsair CMSX64GX4M2A2666C18 32GB": {
+            "price": "461.98",
+            "benchmark": "3060"
+        },
+        "Corsair CMSX64GX4M2A3200C22 32GB": {
+            "price": "499.00",
+            "benchmark": "2863"
+        },
+        "Corsair CMSX64GX4M4A2400C16 16GB": {
+            "price": "289.99",
+            "benchmark": "2839"
+        },
+        "Corsair CMSX64GX4M4A2666C18 16GB": {
+            "price": "559.99",
+            "benchmark": "3209"
+        },
+        "Corsair CMSX8GX4M1A2400C16 8GB": {
+            "price": "38.99",
+            "benchmark": "2674"
+        },
+        "Corsair CMSX8GX4M2A2400C16 4GB": {
+            "price": "65.99",
+            "benchmark": "2310"
+        },
+        "Corsair CMSX8GX4M2A2666C18 4GB": {
+            "price": "134.83",
+            "benchmark": "2460"
+        },
+        "Corsair CMT16GX4M2C3000C15 8GB": {
+            "price": "193.98",
+            "benchmark": "3168"
+        },
+        "Corsair CMT16GX4M2C3200C16 8GB": {
+            "price": "169.00",
+            "benchmark": "3550"
+        },
+        "Corsair CMT16GX4M2C3600C18 8GB": {
+            "price": "189.00",
+            "benchmark": "3795"
+        },
+        "Corsair CMT16GX4M2K3600C16 8GB": {
+            "price": "259.99",
+            "benchmark": "3889"
+        },
+        "Corsair CMT16GX4M2Z3200C16 8GB": {
+            "price": "179.00",
+            "benchmark": "3413"
+        },
+        "Corsair CMT32GX4M2C3000C15 16GB": {
+            "price": "254.99",
+            "benchmark": "3626"
+        },
+        "Corsair CMT32GX4M2C3200C16 16GB": {
+            "price": "379.00",
+            "benchmark": "3769"
+        },
+        "Corsair CMT32GX4M2C3466C16 16GB": {
+            "price": "299.99",
+            "benchmark": "3649"
+        },
+        "Corsair CMT32GX4M2D3600C18 16GB": {
+            "price": "459.00",
+            "benchmark": "3657"
+        },
+        "Corsair CMT32GX4M2E3200C16 16GB": {
+            "price": "279.00",
+            "benchmark": "3442"
+        },
+        "Corsair CMT32GX4M4C3000C15 8GB": {
+            "price": "413.98",
+            "benchmark": "3330"
+        },
+        "Corsair CMT32GX4M4C3200C14 8GB": {
+            "price": "519.99",
+            "benchmark": "3936"
+        },
+        "Corsair CMT32GX4M4C3200C16 8GB": {
+            "price": "381.98",
+            "benchmark": "3748"
+        },
+        "Corsair CMT32GX4M4C3600C18 8GB": {
+            "price": "373.98",
+            "benchmark": "3749"
+        },
+        "Corsair CMT32GX4M4K3600C16 8GB": {
+            "price": "529.99",
+            "benchmark": "4042"
+        },
+        "Corsair CMT32GX4M4Z3200C16 8GB": {
+            "price": "398.98",
+            "benchmark": "3869"
+        },
+        "Corsair CMT64GX4M4E3200C16 16GB": {
+            "price": "719.98",
+            "benchmark": "3384"
+        },
+        "Corsair CMT64GX4M4K3600C18 16GB": {
+            "price": "636.98",
+            "benchmark": "3541"
+        },
+        "Corsair CMU16GX4M2A2666C16 8GB": {
+            "price": "213.99",
+            "benchmark": "3106"
+        },
+        "Corsair CMU16GX4M2C3000C15 8GB": {
+            "price": "159.63",
+            "benchmark": "3258"
+        },
+        "Corsair CMU16GX4M2C3200C16 8GB": {
+            "price": "199.99",
+            "benchmark": "3572"
+        },
+        "Corsair CMU16GX4M2D3000C16 8GB": {
+            "price": "335.01",
+            "benchmark": "3400"
+        },
+        "Corsair CMU32GX4M2A2666C16 16GB": {
+            "price": "177.98",
+            "benchmark": "3397"
+        },
+        "Corsair CMU32GX4M2C3000C15 16GB": {
+            "price": "435.90",
+            "benchmark": "3409"
+        },
+        "Corsair CMU32GX4M2C3000C16 16GB": {
+            "price": "623.84",
+            "benchmark": "3265"
+        },
+        "Corsair CMU32GX4M2C3200C16 16GB": {
+            "price": "399.99",
+            "benchmark": "3424"
+        },
+        "Corsair CMU32GX4M2D3200C16 16GB": {
+            "price": "732.22",
+            "benchmark": "2875"
+        },
+        "Corsair CMU32GX4M4A2666C16 8GB": {
+            "price": "349.99",
+            "benchmark": "3428"
+        },
+        "Corsair CMU32GX4M4C3000C15 8GB": {
+            "price": "377.16",
+            "benchmark": "3268"
+        },
+        "Corsair CMU32GX4M4C3200C16 8GB": {
+            "price": "358.17",
+            "benchmark": "3550"
+        },
+        "Corsair CMU32GX4M4C3400C16 8GB": {
+            "price": "329.99",
+            "benchmark": "3739"
+        },
+        "Corsair CMU32GX4M4C3466C16 8GB": {
+            "price": "349.99",
+            "benchmark": "2967"
+        },
+        "Corsair CMU32GX4M4D3000C16 8GB": {
+            "price": "575.48",
+            "benchmark": "1699"
+        },
+        "Corsair CMU64GX4M4A2666C16 16GB": {
+            "price": "699.99",
+            "benchmark": "3028"
+        },
+        "Corsair CMU64GX4M4C3000C15 16GB": {
+            "price": "951.50",
+            "benchmark": "3450"
+        },
+        "Corsair CMU64GX4M4C3200C16 16GB": {
+            "price": "583.44",
+            "benchmark": "3121"
+        },
+        "Corsair CMU64GX4M4D3000C16 16GB": {
+            "price": "829.99",
+            "benchmark": "3297"
+        },
+        "Corsair CMV16GX4M1A2133C15 16GB": {
+            "price": "66.99",
+            "benchmark": "2854"
+        },
+        "Corsair CMV16GX4M1A2666C18 16GB": {
+            "price": "68.99",
+            "benchmark": "2660"
+        },
+        "Corsair CMV4GX4M1A2133C15 4GB": {
+            "price": "24.99",
+            "benchmark": "2417"
+        },
+        "Corsair CMV4GX4M1A2666C18 4GB": {
+            "price": "24.99",
+            "benchmark": "2035"
+        },
+        "Corsair CMV8GX4M1A2133C15 8GB": {
+            "price": "45.00",
+            "benchmark": "2611"
+        },
+        "Corsair CMV8GX4M1A2400C16 8GB": {
+            "price": "59.00",
+            "benchmark": "2511"
+        },
+        "Corsair CMV8GX4M1A2666C18 8GB": {
+            "price": "49.00",
+            "benchmark": "3315"
+        },
+        "Corsair CMW128GX4M4E3200C16 32GB": {
+            "price": "1,149.00",
+            "benchmark": "3348"
+        },
+        "Corsair CMW128GX4M8C3000C16 16GB": {
+            "price": "979.99",
+            "benchmark": "3007"
+        },
+        "Corsair CMW128GX4M8C3200C16 16GB": {
+            "price": "819.99",
+            "benchmark": "3174"
+        },
+        "Corsair CMW16GX4M2A2666C16 8GB": {
+            "price": "118.98",
+            "benchmark": "3241"
+        },
+        "Corsair CMW16GX4M2C3000C15 8GB": {
+            "price": "124.98",
+            "benchmark": "3474"
+        },
+        "Corsair CMW16GX4M2C3200C14 8GB": {
+            "price": "214.99",
+            "benchmark": "3902"
+        },
+        "Corsair CMW16GX4M2C3200C16 8GB": {
+            "price": "129.00",
+            "benchmark": "3514"
+        },
+        "Corsair CMW16GX4M2C3466C16 8GB": {
+            "price": "219.98",
+            "benchmark": "3511"
+        },
+        "Corsair CMW16GX4M2C3600C18 8GB": {
+            "price": "149.00",
+            "benchmark": "3632"
+        },
+        "Corsair CMW16GX4M2D3000C16 8GB": {
+            "price": "119.00",
+            "benchmark": "3301"
+        },
+        "Corsair CMW16GX4M2D3600C18 8GB": {
+            "price": "139.00",
+            "benchmark": "3521"
+        },
+        "Corsair CMW16GX4M2E3200C16 8GB": {
+            "price": "125.00",
+            "benchmark": "3416"
+        },
+        "Corsair CMW16GX4M2K3600C16 8GB": {
+            "price": "229.99",
+            "benchmark": "3205"
+        },
+        "Corsair CMW16GX4M2K4000C19 8GB": {
+            "price": "256.98",
+            "benchmark": "3781"
+        },
+        "Corsair CMW16GX4M2K4266C19 8GB": {
+            "price": "478.59",
+            "benchmark": "3894"
+        },
+        "Corsair CMW16GX4M2Z2933C16 8GB": {
+            "price": "94.99",
+            "benchmark": "3461"
+        },
+        "Corsair CMW16GX4M2Z3200C16 8GB": {
+            "price": "129.00",
+            "benchmark": "3500"
+        },
+        "Corsair CMW16GX4M2Z3600C18 8GB": {
+            "price": "148.98",
+            "benchmark": "3529"
+        },
+        "Corsair CMW32GX4M2A2666C16 16GB": {
+            "price": "209.00",
+            "benchmark": "3439"
+        },
+        "Corsair CMW32GX4M2C3000C15 16GB": {
+            "price": "174.99",
+            "benchmark": "3573"
+        },
+        "Corsair CMW32GX4M2C3200C16 16GB": {
+            "price": "199.99",
+            "benchmark": "3642"
+        },
+        "Corsair CMW32GX4M2C3200C18 16GB": {
+            "price": "179.00",
+            "benchmark": "3523"
+        },
+        "Corsair CMW32GX4M2C3466C16 16GB": {
+            "price": "269.99",
+            "benchmark": "4008"
+        },
+        "Corsair CMW32GX4M2D3600C18 16GB": {
+            "price": "209.00",
+            "benchmark": "3614"
+        },
+        "Corsair CMW32GX4M2E3200C16 16GB": {
+            "price": "189.00",
+            "benchmark": "3526"
+        },
+        "Corsair CMW32GX4M2Z2933C16 16GB": {
+            "price": "169.99",
+            "benchmark": "3558"
+        },
+        "Corsair CMW32GX4M2Z3200C16 16GB": {
+            "price": "268.89",
+            "benchmark": "3637"
+        },
+        "Corsair CMW32GX4M2Z3600C18 16GB": {
+            "price": "209.00",
+            "benchmark": "3641"
+        },
+        "Corsair CMW32GX4M4A2666C16 8GB": {
+            "price": "218.98",
+            "benchmark": "3354"
+        },
+        "Corsair CMW32GX4M4C3000C15 8GB": {
+            "price": "318.98",
+            "benchmark": "3612"
+        },
+        "Corsair CMW32GX4M4C3200C14 8GB": {
+            "price": "409.99",
+            "benchmark": "4006"
+        },
+        "Corsair CMW32GX4M4C3200C16 8GB": {
+            "price": "239.00",
+            "benchmark": "3650"
+        },
+        "Corsair CMW32GX4M4C3466C16 8GB": {
+            "price": "279.99",
+            "benchmark": "3471"
+        },
+        "Corsair CMW32GX4M4C3600C18 8GB": {
+            "price": "298.98",
+            "benchmark": "3760"
+        },
+        "Corsair CMW32GX4M4K4000C19 8GB": {
+            "price": "755.99",
+            "benchmark": "3808"
+        },
+        "Corsair CMW32GX4M4Z2933C16 8GB": {
+            "price": "209.99",
+            "benchmark": "3402"
+        },
+        "Corsair CMW64GX4M2E3200C16 32GB": {
+            "price": "389.00",
+            "benchmark": "3556"
+        },
+        "Corsair CMW64GX4M4A2666C16 16GB": {
+            "price": "299.99",
+            "benchmark": "3537"
+        },
+        "Corsair CMW64GX4M4C3000C15 16GB": {
+            "price": "349.99",
+            "benchmark": "3494"
+        },
+        "Corsair CMW64GX4M4C3200C16 16GB": {
+            "price": "399.99",
+            "benchmark": "3621"
+        },
+        "Corsair CMW64GX4M4C3466C16 16GB": {
+            "price": "499.99",
+            "benchmark": "3529"
+        },
+        "Corsair CMW64GX4M4D3600C18 16GB": {
+            "price": "604.98",
+            "benchmark": "3581"
+        },
+        "Corsair CMW64GX4M4E3200C16 16GB": {
+            "price": "446.98",
+            "benchmark": "3723"
+        },
+        "Corsair CMW64GX4M4K3600C18 16GB": {
+            "price": "649.99",
+            "benchmark": "3606"
+        },
+        "Corsair CMW64GX4M4Z2933C16 16GB": {
+            "price": "379.99",
+            "benchmark": "3603"
+        },
+        "Corsair CMW64GX4M8A2666C16 8GB": {
+            "price": "379.99",
+            "benchmark": "2843"
+        },
+        "Corsair CMW64GX4M8C3000C15 8GB": {
+            "price": "575.39",
+            "benchmark": "3295"
+        },
+        "Corsair CMW64GX4M8C3200C16 8GB": {
+            "price": "399.99",
+            "benchmark": "3050"
+        },
+        "Corsair CMW64GX4M8X3600C18 8GB": {
+            "price": "619.99",
+            "benchmark": "3460"
+        },
+        "Corsair CMW64GX4M8Z2933C16 8GB": {
+            "price": "439.99",
+            "benchmark": "2575"
+        },
+        "Crucial Technology BLE4G4D26AFEA.8FAD 4GB": {
+            "price": "94.13",
+            "benchmark": "2934"
+        },
+        "Crucial Technology BLE4G4D30AEEA.K8FE 4GB": {
+            "price": "56.67",
+            "benchmark": "3252"
+        },
+        "Crucial Technology BLE4G4D32AEEA.K8FD 4GB": {
+            "price": "107.83",
+            "benchmark": "2993"
+        },
+        "Crucial Technology BLE4G4D32AEEA.K8FE 4GB": {
+            "price": "144.21",
+            "benchmark": "3992"
+        },
+        "Crucial Technology BLE8G4D26AFEA.16FAD 8GB": {
+            "price": "129.74",
+            "benchmark": "2933"
+        },
+        "Crucial Technology BLE8G4D30AEEA.K16FD 8GB": {
+            "price": "156.15",
+            "benchmark": "2018"
+        },
+        "Crucial Technology BLE8G4D30AEEA.K16FE 8GB": {
+            "price": "49.99",
+            "benchmark": "3860"
+        },
+        "Crucial Technology BLE8G4D34AEEAK.K8FB 8GB": {
+            "price": "135.77",
+            "benchmark": "3485"
+        },
+        "Crucial Technology BLE8G4D36BEEAK.M8FE1 8GB": {
+            "price": "118.03",
+            "benchmark": "4015"
+        },
+        "Crucial Technology BLS16G4D240FSB.16FAD 16GB": {
+            "price": "65.99",
+            "benchmark": "3270"
+        },
+        "Crucial Technology BLS16G4D240FSC.16FAD 16GB": {
+            "price": "62.99",
+            "benchmark": "3052"
+        },
+        "Crucial Technology BLS16G4D240FSE.16FAD 16GB": {
+            "price": "63.99",
+            "benchmark": "2995"
+        },
+        "Crucial Technology BLS16G4D26BFSB.16FBD 16GB": {
+            "price": "169.89",
+            "benchmark": "3021"
+        },
+        "Crucial Technology BLS16G4D26BFSE.16FBD 16GB": {
+            "price": "248.72",
+            "benchmark": "3220"
+        },
+        "Crucial Technology BLS16G4D26BFST.16FD 16GB": {
+            "price": "94.99",
+            "benchmark": "3072"
+        },
+        "Crucial Technology BLS16G4D30AESB.M16FE 16GB": {
+            "price": "74.99",
+            "benchmark": "3568"
+        },
+        "Crucial Technology BLS16G4D30AESC.M16FE 16GB": {
+            "price": "96.04",
+            "benchmark": "3412"
+        },
+        "Crucial Technology BLS16G4D30AESE.M16FE 16GB": {
+            "price": "74.99",
+            "benchmark": "3565"
+        },
+        "Crucial Technology BLS16G4D30BESB.16FD 16GB": {
+            "price": "100.20",
+            "benchmark": "3277"
+        },
+        "Crucial Technology BLS16G4D30CEST.16FD 16GB": {
+            "price": "69.99",
+            "benchmark": "3413"
+        },
+        "Crucial Technology BLS16G4D32AESB.M16FE 16GB": {
+            "price": "94.99",
+            "benchmark": "3776"
+        },
+        "Crucial Technology BLS16G4D32AESC.M16FE 16GB": {
+            "price": "89.99",
+            "benchmark": "3701"
+        },
+        "Crucial Technology BLS16G4D32AESE.M16FE 16GB": {
+            "price": "94.49",
+            "benchmark": "3863"
+        },
+        "Crucial Technology BLS16G4D32AEST.M16FE 16GB": {
+            "price": "77.99",
+            "benchmark": "3655"
+        },
+        "Crucial Technology BLS16G4S240FSD.16FAD 16GB": {
+            "price": "119.99",
+            "benchmark": "2039"
+        },
+        "Crucial Technology BLS16G4S26BFSD.16FBD 16GB": {
+            "price": "71.00",
+            "benchmark": "2505"
+        },
+        "Crucial Technology BLS4G4D240FSA.8FAD 4GB": {
+            "price": "27.99",
+            "benchmark": "2545"
+        },
+        "Crucial Technology BLS4G4D240FSA.M8FADM 4GB": {
+            "price": "68.99",
+            "benchmark": "2703"
+        },
+        "Crucial Technology BLS4G4D240FSB.8FADG 4GB": {
+            "price": "39.00",
+            "benchmark": "2699"
+        },
+        "Crucial Technology BLS4G4D240FSC.8FARG 4GB": {
+            "price": "26.99",
+            "benchmark": "2672"
+        },
+        "Crucial Technology BLS4G4D240FSE.8FAR 4GB": {
+            "price": "27.99",
+            "benchmark": "2601"
+        },
+        "Crucial Technology BLS4G4D240FSE.8FBD 4GB": {
+            "price": "18.99",
+            "benchmark": "2548"
+        },
+        "Crucial Technology BLS4G4D26BFSB.8FBD2 4GB": {
+            "price": "36.97",
+            "benchmark": "2634"
+        },
+        "Crucial Technology BLS4G4D26BFSB.8FBR2 4GB": {
+            "price": "115.37",
+            "benchmark": "2822"
+        },
+        "Crucial Technology BLS4G4S240FSD.8FAR 4GB": {
+            "price": "18.00",
+            "benchmark": "2372"
+        },
+        "Crucial Technology BLS4G4S240FSD.M8FADM 4GB": {
+            "price": "19.99",
+            "benchmark": "2481"
+        },
+        "Crucial Technology BLS4G4S26BFSD.8FBD2 4GB": {
+            "price": "18.99",
+            "benchmark": "1794"
+        },
+        "Crucial Technology BLS4G4S26BFSD.8FBR2 4GB": {
+            "price": "85.35",
+            "benchmark": "2291"
+        },
+        "Crucial Technology BLS8G4D240FSA.16FAD 8GB": {
+            "price": "134.99",
+            "benchmark": "2846"
+        },
+        "Crucial Technology BLS8G4D240FSA.M16FAD 8GB": {
+            "price": "134.99",
+            "benchmark": "2902"
+        },
+        "Crucial Technology BLS8G4D240FSB.16FADG 8GB": {
+            "price": "125.28",
+            "benchmark": "2756"
+        },
+        "Crucial Technology BLS8G4D240FSC.16FARG 8GB": {
+            "price": "55.34",
+            "benchmark": "2947"
+        },
+        "Crucial Technology BLS8G4D240FSE.16FAR 8GB": {
+            "price": "130.08",
+            "benchmark": "2851"
+        },
+        "Crucial Technology BLS8G4D26BFSB.16FBD2 8GB": {
+            "price": "130.98",
+            "benchmark": "3063"
+        },
+        "Crucial Technology BLS8G4D26BFSC.16FB 8GB": {
+            "price": "44.99",
+            "benchmark": "3258"
+        },
+        "Crucial Technology BLS8G4D26BFSE.16FB 8GB": {
+            "price": "84.99",
+            "benchmark": "3025"
+        },
+        "Crucial Technology BLS8G4D26BFSTK.8FD 8GB": {
+            "price": "32.99",
+            "benchmark": "3297"
+        },
+        "Crucial Technology BLS8G4D30AESBK.M8FE 8GB": {
+            "price": "146.01",
+            "benchmark": "3404"
+        },
+        "Crucial Technology BLS8G4D30AESCK.M8FE 8GB": {
+            "price": "137.84",
+            "benchmark": "3417"
+        },
+        "Crucial Technology BLS8G4D30AESEK.M8FE 8GB": {
+            "price": "127.30",
+            "benchmark": "3608"
+        },
+        "Crucial Technology BLS8G4D30BESBK.8FB 8GB": {
+            "price": "32.66",
+            "benchmark": "3246"
+        },
+        "Crucial Technology BLS8G4D30CESTK.8FD 8GB": {
+            "price": "38.99",
+            "benchmark": "3238"
+        },
+        "Crucial Technology BLS8G4D32AESBK.M8FE 8GB": {
+            "price": "39.99",
+            "benchmark": "3536"
+        },
+        "Crucial Technology BLS8G4D32AESCK.M8FE 8GB": {
+            "price": "150.98",
+            "benchmark": "2969"
+        },
+        "Crucial Technology BLS8G4D32AESEK.M8FE 8GB": {
+            "price": "150.98",
+            "benchmark": "3696"
+        },
+        "Crucial Technology BLS8G4D32AESTK.M8FE 8GB": {
+            "price": "38.99",
+            "benchmark": "3327"
+        },
+        "Crucial Technology BLS8G4S240FSD.16FAR 8GB": {
+            "price": "94.37",
+            "benchmark": "2685"
+        },
+        "Crucial Technology BLS8G4S26BFSD.16FBD2 8GB": {
+            "price": "86.39",
+            "benchmark": "2635"
+        },
+        "Crucial Technology BLT16G4D30AETA.K16FB 16GB": {
+            "price": "277.72",
+            "benchmark": "3524"
+        },
+        "Crucial Technology BLT4G4D26AFTA.8FADG 4GB": {
+            "price": "33.99",
+            "benchmark": "2755"
+        },
+        "Crucial Technology BLT4G4D30AETA.K8FE 4GB": {
+            "price": "34.99",
+            "benchmark": "2965"
+        },
+        "Crucial Technology BLT8G4D26AFTA.16FAD 8GB": {
+            "price": "39.99",
+            "benchmark": "2813"
+        },
+        "Crucial Technology BLT8G4D30AETA.K16FD 8GB": {
+            "price": "82.39",
+            "benchmark": "3623"
+        },
+        "Crucial Technology BLT8G4D30AETA.K16FE 8GB": {
+            "price": "59.99",
+            "benchmark": "3247"
+        },
+        "Crucial Technology BLT8G4D30BET4K.C8FD 8GB": {
+            "price": "37.70",
+            "benchmark": "3372"
+        },
+        "Crucial Technology CB8GS2400.C8D 8GB": {
+            "price": "43.97",
+            "benchmark": "1518"
+        },
+        "Crucial Technology CT16G4DFD8213.16FDD1 16GB": {
+            "price": "88.16",
+            "benchmark": "1624"
+        },
+        "Crucial Technology CT16G4DFD8213.C16FAD 16GB": {
+            "price": "109.99",
+            "benchmark": "2795"
+        },
+        "Crucial Technology CT16G4DFD8213.C16FBD 16GB": {
+            "price": "63.99",
+            "benchmark": "2896"
+        },
+        "Crucial Technology CT16G4DFD8213.M16FA 16GB": {
+            "price": "69.99",
+            "benchmark": "2689"
+        },
+        "Crucial Technology CT16G4DFD8213.M16FB 16GB": {
+            "price": "58.70",
+            "benchmark": "2236"
+        },
+        "Crucial Technology CT16G4DFD824A.C16FAD 16GB": {
+            "price": "217.35",
+            "benchmark": "2880"
+        },
+        "Crucial Technology CT16G4DFD824A.C16FBD 16GB": {
+            "price": "96.99",
+            "benchmark": "2825"
+        },
+        "Crucial Technology CT16G4DFD8266.C16FD1 16GB": {
+            "price": "106.07",
+            "benchmark": "3132"
+        },
+        "Crucial Technology CT16G4DFD832A.C16FJ 16GB": {
+            "price": "86.99",
+            "benchmark": "3537"
+        },
+        "Crucial Technology CT16G4DFD832A.M16FJ 16GB": {
+            "price": "61.97",
+            "benchmark": "3399"
+        },
+        "Crucial Technology CT16G4DFRA266.C8FB 16GB": {
+            "price": "63.99",
+            "benchmark": "3299"
+        },
+        "Crucial Technology CT16G4DFRA32A.C16FP 16GB": {
+            "price": "67.99",
+            "benchmark": "3562"
+        },
+        "Crucial Technology CT16G4DFRA32A.C8FE 16GB": {
+            "price": "67.99",
+            "benchmark": "3444"
+        },
+        "Crucial Technology CT16G4DFS8266.C8FB 16GB": {
+            "price": "77.43",
+            "benchmark": "3344"
+        },
+        "Crucial Technology CT16G4DFS832A.C8FE 16GB": {
+            "price": "220.60",
+            "benchmark": "3489"
+        },
+        "Crucial Technology CT16G4SFD8213.C16FAD 16GB": {
+            "price": "60.60",
+            "benchmark": "2302"
+        },
+        "Crucial Technology CT16G4SFD8213.C16FBD 16GB": {
+            "price": "63.99",
+            "benchmark": "2464"
+        },
+        "Crucial Technology CT16G4SFD8213.M16FA 16GB": {
+            "price": "51.99",
+            "benchmark": "2758"
+        },
+        "Crucial Technology CT16G4SFD8213.M16FB 16GB": {
+            "price": "62.33",
+            "benchmark": "2505"
+        },
+        "Crucial Technology CT16G4SFD824A.C16FBD 16GB": {
+            "price": "119.99",
+            "benchmark": "2458"
+        },
+        "Crucial Technology CT16G4SFD824A.C16FBR 16GB": {
+            "price": "112.81",
+            "benchmark": "2709"
+        },
+        "Crucial Technology CT16G4SFD824A.M16FA 16GB": {
+            "price": "81.77",
+            "benchmark": "2907"
+        },
+        "Crucial Technology CT16G4SFD8266 16GB": {
+            "price": "109.00",
+            "benchmark": "1718"
+        },
+        "Crucial Technology CT16G4SFD8266.16FE1 16GB": {
+            "price": "215.88",
+            "benchmark": "2755"
+        },
+        "Crucial Technology CT16G4SFD8266.C16FD1 16GB": {
+            "price": "66.34",
+            "benchmark": "2907"
+        },
+        "Crucial Technology CT16G4SFD832A.M16FJ 16GB": {
+            "price": "79.99",
+            "benchmark": "3458"
+        },
+        "Crucial Technology CT16G4SFRA266.C8FB 16GB": {
+            "price": "63.99",
+            "benchmark": "2749"
+        },
+        "Crucial Technology CT16G4SFRA266.C8FE 16GB": {
+            "price": "63.99",
+            "benchmark": "2772"
+        },
+        "Crucial Technology CT16G4SFRA32A.C16FJ 16GB": {
+            "price": "48.59",
+            "benchmark": "2597"
+        },
+        "Crucial Technology CT16G4SFRA32A.C8FB 16GB": {
+            "price": "67.99",
+            "benchmark": "2939"
+        },
+        "Crucial Technology CT16G4SFRA32A.C8FE 16GB": {
+            "price": "67.99",
+            "benchmark": "2899"
+        },
+        "Crucial Technology CT16G4SFS8266.C8FB 16GB": {
+            "price": "117.01",
+            "benchmark": "2571"
+        },
+        "Crucial Technology CT16G4SFS8266.C8FE 16GB": {
+            "price": "55.99",
+            "benchmark": "2971"
+        },
+        "Crucial Technology CT16G4SFS832A.C8FB 16GB": {
+            "price": "62.70",
+            "benchmark": "2976"
+        },
+        "Crucial Technology CT16G4SFS832A.C8FE 16GB": {
+            "price": "429.99",
+            "benchmark": "3180"
+        },
+        "Crucial Technology CT32G4DFD8266.C16FE 32GB": {
+            "price": "174.99",
+            "benchmark": "3597"
+        },
+        "Crucial Technology CT32G4SFD8266.C16FB 32GB": {
+            "price": "153.39",
+            "benchmark": "3032"
+        },
+        "Crucial Technology CT32G4SFD832A.C16FB 32GB": {
+            "price": "197.63",
+            "benchmark": "3238"
+        },
+        "Crucial Technology CT4G4DFS8213.8FA11 4GB": {
+            "price": "14.58",
+            "benchmark": "2534"
+        },
+        "Crucial Technology CT4G4DFS8213.C8FAD1 4GB": {
+            "price": "20.99",
+            "benchmark": "2475"
+        },
+        "Crucial Technology CT4G4DFS8213.C8FAR 4GB": {
+            "price": "41.99",
+            "benchmark": "2490"
+        },
+        "Crucial Technology CT4G4DFS824A.C8FADP 4GB": {
+            "price": "15.04",
+            "benchmark": "2544"
+        },
+        "Crucial Technology CT4G4DFS824A.C8FBD1 4GB": {
+            "price": "38.33",
+            "benchmark": "2953"
+        },
+        "Crucial Technology CT4G4DFS8266.C8FB 4GB": {
+            "price": "27.13",
+            "benchmark": "2025"
+        },
+        "Crucial Technology CT4G4DFS8266.C8FE 4GB": {
+            "price": "22.98",
+            "benchmark": "2640"
+        },
+        "Crucial Technology CT4G4SFS624A.C4FB 4GB": {
+            "price": "18.99",
+            "benchmark": "1574"
+        },
+        "Crucial Technology CT4G4SFS8213.C8FADP 4GB": {
+            "price": "20.31",
+            "benchmark": "2313"
+        },
+        "Crucial Technology CT4G4SFS8213.C8FBD1 4GB": {
+            "price": "51.99",
+            "benchmark": "1816"
+        },
+        "Crucial Technology CT8G4DFD8213.16FA11 8GB": {
+            "price": "22.55",
+            "benchmark": "2780"
+        },
+        "Crucial Technology CT8G4DFD8213.C16FA11 8GB": {
+            "price": "36.99",
+            "benchmark": "2974"
+        },
+        "Crucial Technology CT8G4DFD8213.C16FAD1 8GB": {
+            "price": "44.99",
+            "benchmark": "2595"
+        },
+        "Crucial Technology CT8G4DFD8213.C16FAR1 8GB": {
+            "price": "82.99",
+            "benchmark": "2772"
+        },
+        "Crucial Technology CT8G4DFD824A.C16FADP 8GB": {
+            "price": "22.58",
+            "benchmark": "3079"
+        },
+        "Crucial Technology CT8G4DFD824A.C16FBD1 8GB": {
+            "price": "63.14",
+            "benchmark": "2824"
+        },
+        "Crucial Technology CT8G4DFRA266.C4FE 8GB": {
+            "price": "32.99",
+            "benchmark": "2553"
+        },
+        "Crucial Technology CT8G4DFRA266.C8FN 8GB": {
+            "price": "28.99",
+            "benchmark": "3091"
+        },
+        "Crucial Technology CT8G4DFRA32A.C4FE 8GB": {
+            "price": "43.99",
+            "benchmark": "2930"
+        },
+        "Crucial Technology CT8G4DFS632A.M4FB 8GB": {
+            "price": "189.49",
+            "benchmark": "2813"
+        },
+        "Crucial Technology CT8G4DFS8213.C8FAD1 8GB": {
+            "price": "57.74",
+            "benchmark": "2290"
+        },
+        "Crucial Technology CT8G4DFS8213.C8FBD1 8GB": {
+            "price": "49.99",
+            "benchmark": "2543"
+        },
+        "Crucial Technology CT8G4DFS8213.M8FA 8GB": {
+            "price": "28.99",
+            "benchmark": "2962"
+        },
+        "Crucial Technology CT8G4DFS824A.C8FAD1 8GB": {
+            "price": "36.99",
+            "benchmark": "2792"
+        },
+        "Crucial Technology CT8G4DFS8266.C8FD1 8GB": {
+            "price": "203.36",
+            "benchmark": "3031"
+        },
+        "Crucial Technology CT8G4DFS832A.C8FE 8GB": {
+            "price": "38.13",
+            "benchmark": "3684"
+        },
+        "Crucial Technology CT8G4DFS832A.C8FJ 8GB": {
+            "price": "55.88",
+            "benchmark": "3443"
+        },
+        "Crucial Technology CT8G4SFD8213.C16FADP 8GB": {
+            "price": "49.00",
+            "benchmark": "2243"
+        },
+        "Crucial Technology CT8G4SFD8213.C16FBD1 8GB": {
+            "price": "77.99",
+            "benchmark": "2459"
+        },
+        "Crucial Technology CT8G4SFD824A.C16FADP 8GB": {
+            "price": "29.00",
+            "benchmark": "2535"
+        },
+        "Crucial Technology CT8G4SFRA266.C4FE 8GB": {
+            "price": "36.99",
+            "benchmark": "2535"
+        },
+        "Crucial Technology CT8G4SFRA266.C8FE 8GB": {
+            "price": "28.99",
+            "benchmark": "2510"
+        },
+        "Crucial Technology CT8G4SFRA32A.C16FG 8GB": {
+            "price": "34.82",
+            "benchmark": "2477"
+        },
+        "Crucial Technology CT8G4SFRA32A.C4FE 8GB": {
+            "price": "33.99",
+            "benchmark": "2567"
+        },
+        "Crucial Technology CT8G4SFS632A.C4FE 8GB": {
+            "price": "51.84",
+            "benchmark": "2182"
+        },
+        "Crucial Technology CT8G4SFS632A.M4FE 8GB": {
+            "price": "49.31",
+            "benchmark": "2765"
+        },
+        "Crucial Technology CT8G4SFS8213.C8FAD1 8GB": {
+            "price": "49.00",
+            "benchmark": "2509"
+        },
+        "Crucial Technology CT8G4SFS8213.M8FB 8GB": {
+            "price": "54.67",
+            "benchmark": "2610"
+        },
+        "Crucial Technology CT8G4SFS824A.C8FAD1 8GB": {
+            "price": "40.72",
+            "benchmark": "2437"
+        },
+        "Crucial Technology CT8G4SFS824A.C8FBD1 8GB": {
+            "price": "35.59",
+            "benchmark": "2055"
+        },
+        "Crucial Technology CT8G4SFS824A.M8FA 8GB": {
+            "price": "54.67",
+            "benchmark": "2052"
+        },
+        "Crucial Technology CT8G4SFS8266.C8FD1 8GB": {
+            "price": "68.15",
+            "benchmark": "2660"
+        },
+        "Crucial Technology CT8G4SFS832A.C8FE 8GB": {
+            "price": "34.29",
+            "benchmark": "2847"
+        },
+        "G Skill Intl F4-2133C15-8GRK 8GB": {
+            "price": "139.99",
+            "benchmark": "2501"
+        },
+        "G Skill Intl F4-2400C15-4GNT 4GB": {
+            "price": "71.99",
+            "benchmark": "2815"
+        },
+        "G Skill Intl F4-2400C15-4GRK 4GB": {
+            "price": "120.43",
+            "benchmark": "2651"
+        },
+        "G Skill Intl F4-2400C15-4GRR 4GB": {
+            "price": "132.99",
+            "benchmark": "2716"
+        },
+        "G Skill Intl F4-2400C15-8GNT 8GB": {
+            "price": "183.22",
+            "benchmark": "2875"
+        },
+        "G Skill Intl F4-2400C15-8GRK 8GB": {
+            "price": "356.99",
+            "benchmark": "2927"
+        },
+        "G Skill Intl F4-2400C15-8GRR 8GB": {
+            "price": "142.99",
+            "benchmark": "2925"
+        },
+        "G Skill Intl F4-2666C15-4GRR 4GB": {
+            "price": "98.97",
+            "benchmark": "2927"
+        },
+        "G Skill Intl F4-2666C15-8GRR 8GB": {
+            "price": "360.99",
+            "benchmark": "3052"
+        },
+        "G Skill Intl F4-2800C16-4GRK 4GB": {
+            "price": "103.26",
+            "benchmark": "2810"
+        },
+        "G Skill Intl F4-3000C15-4GRR 4GB": {
+            "price": "224.11",
+            "benchmark": "2933"
+        },
+        "G Skill Intl F4-3000C15-8GRK 8GB": {
+            "price": "164.99",
+            "benchmark": "3219"
+        },
+        "G Skill Intl F4-3600C18D-32GVK 16GB": {
+            "price": "199.00",
+            "benchmark": "3122"
+        },
+        "GIGA - BYTE Technology Co Ltd GP-ARS16G33 8GB": {
+            "price": "129.00",
+            "benchmark": "3779"
+        },
+        "GIGA - BYTE Technology Co Ltd GP-ARS16G37 8GB": {
+            "price": "169.00",
+            "benchmark": "3422"
+        },
+        "GIGA - BYTE Technology Co Ltd GP-ARS16G44 8GB": {
+            "price": "179.00",
+            "benchmark": "3486"
+        },
+        "GIGA - BYTE Technology Co Ltd GP-GR26C16S8K1HU408 8GB": {
+            "price": "65.00",
+            "benchmark": "3265"
+        },
+        "Kingston HP24D4S7S8MBP-8 8GB": {
+            "price": "67.99",
+            "benchmark": "2140"
+        },
+        "Kingston HP26D4S9S8ME-8 8GB": {
+            "price": "41.99",
+            "benchmark": "2579"
+        },
+        "Kingston HP26D4S9S8MH-8 8GB": {
+            "price": "69.99",
+            "benchmark": "2554"
+        },
+        "Kingston KMKYF9-MID 8GB": {
+            "price": "54.99",
+            "benchmark": "2499"
+        },
+        "Kingston KMKYF9-MIH 8GB": {
+            "price": "50.00",
+            "benchmark": "2174"
+        },
+        "Kingston KVR26N19D8/16 16GB": {
+            "price": "99.00",
+            "benchmark": "1611"
+        },
+        "Kingston M378A1K43CB2-CRC 8GB": {
+            "price": "50.11",
+            "benchmark": "2197"
+        },
+        "Micron Technology 16ATF1G64AZ-2G1B1 8GB": {
+            "price": "74.81",
+            "benchmark": "2630"
+        },
+        "Micron Technology 16ATF2G64HZ-2G3H1 16GB": {
+            "price": "89.26",
+            "benchmark": "2266"
+        },
+        "Micron Technology 8ATF1G64HZ-2G6B1 8GB": {
+            "price": "79.95",
+            "benchmark": "2560"
+        },
+        "Mushkin 99[2/7/4]183 8GB": {
+            "price": "68.97",
+            "benchmark": "2809"
+        },
+        "Mushkin 99[2/7/4]190F 4GB": {
+            "price": "49.92",
+            "benchmark": "2679"
+        },
+        "Mushkin 99[2/7/4]191[F/T] 4GB": {
+            "price": "46.99",
+            "benchmark": "2480"
+        },
+        "Mushkin 99[2/7/4]191F 4GB": {
+            "price": "119.89",
+            "benchmark": "2755"
+        },
+        "Mushkin 99[2/7/4]197F 8GB": {
+            "price": "88.32",
+            "benchmark": "2785"
+        },
+        "Mushkin 99[2/7/4]198F 8GB": {
+            "price": "229.99",
+            "benchmark": "2257"
+        },
+        "Mushkin 99[2/7/4]199[F/T] 8GB": {
+            "price": "89.99",
+            "benchmark": "2910"
+        },
+        "Mushkin 99[2/7/4]199F 8GB": {
+            "price": "82.99",
+            "benchmark": "2536"
+        },
+        "Mushkin 99[2/7/4]200[F/T] 8GB": {
+            "price": "101.51",
+            "benchmark": "2368"
+        },
+        "Mushkin 99[2/7/4]200F 8GB": {
+            "price": "86.99",
+            "benchmark": "2740"
+        },
+        "Mushkin 99[2/7/4]204F 4GB": {
+            "price": "36.97",
+            "benchmark": "2825"
+        },
+        "Mushkin 99[2/7/4]205[F/T] 8GB": {
+            "price": "88.99",
+            "benchmark": "3169"
+        },
+        "Mushkin 99[2/7/4]205F 8GB": {
+            "price": "229.99",
+            "benchmark": "2891"
+        },
+        "Mushkin 99[2/7/4]209F 8GB": {
+            "price": "110.04",
+            "benchmark": "2588"
+        },
+        "Mushkin MB[A/B]4U240FFFF16G 16GB": {
+            "price": "239.99",
+            "benchmark": "3286"
+        },
+        "Mushkin MES4S213FF16G28 16GB": {
+            "price": "58.99",
+            "benchmark": "2550"
+        },
+        "Mushkin MR[A/B]4U266GHHF8G 8GB": {
+            "price": "281.39",
+            "benchmark": "3113"
+        },
+        "Mushkin MR[A/B]4U300JJJM16G 16GB": {
+            "price": "214.99",
+            "benchmark": "3556"
+        },
+        "Nanya Technology M471A5143EB1-CRC 4GB": {
+            "price": "31.00",
+            "benchmark": "1710"
+        },
+        "Patriot Memory (PDP Systems) PSD416G21332 16GB": {
+            "price": "239.95",
+            "benchmark": "2971"
+        },
+        "Patriot Memory (PDP Systems) PSD416G24002 16GB": {
+            "price": "179.99",
+            "benchmark": "2979"
+        },
+        "Patriot Memory (PDP Systems) PSD416G26662 16GB": {
+            "price": "59.99",
+            "benchmark": "3146"
+        },
+        "Patriot Memory (PDP Systems) PSD44G213381 4GB": {
+            "price": "58.47",
+            "benchmark": "2622"
+        },
+        "Patriot Memory (PDP Systems) PSD44G240041 4GB": {
+            "price": "39.89",
+            "benchmark": "1792"
+        },
+        "Patriot Memory (PDP Systems) PSD44G240081 4GB": {
+            "price": "75.88",
+            "benchmark": "2274"
+        },
+        "Patriot Memory (PDP Systems) PSD44G240082 4GB": {
+            "price": "18.99",
+            "benchmark": "2583"
+        },
+        "Patriot Memory (PDP Systems) PSD48G21332 8GB": {
+            "price": "64.99",
+            "benchmark": "2439"
+        },
+        "Patriot Memory (PDP Systems) PSD48G213381 8GB": {
+            "price": "108.35",
+            "benchmark": "2740"
+        },
+        "Patriot Memory (PDP Systems) PSD48G213382 8GB": {
+            "price": "105.21",
+            "benchmark": "2782"
+        },
+        "Patriot Memory (PDP Systems) PSD48G24002 8GB": {
+            "price": "59.99",
+            "benchmark": "2873"
+        },
+        "Patriot Memory (PDP Systems) PSD48G240081 8GB": {
+            "price": "35.99",
+            "benchmark": "2720"
+        },
+        "Patriot Memory (PDP Systems) PSD48G240082 8GB": {
+            "price": "109.99",
+            "benchmark": "2754"
+        },
+        "Patriot Memory (PDP Systems) PSD48G266681 8GB": {
+            "price": "34.99",
+            "benchmark": "3032"
+        },
+        "Samsung M378A1G43DB0-CPB 8GB": {
+            "price": "99.00",
+            "benchmark": "2572"
+        },
+        "Samsung M378A1K43BB1-CPB 8GB": {
+            "price": "42.00",
+            "benchmark": "2610"
+        },
+        "Samsung M378A1K43CB2-CTD 8GB": {
+            "price": "36.94",
+            "benchmark": "2964"
+        },
+        "Samsung M378A1K43DB2-CTD 8GB": {
+            "price": "57.95",
+            "benchmark": "2953"
+        },
+        "Samsung M378A2K43BB1-CPB 16GB": {
+            "price": "109.00",
+            "benchmark": "2815"
+        },
+        "Samsung M378A2K43BB1-CRC 16GB": {
+            "price": "115.00",
+            "benchmark": "2816"
+        },
+        "Samsung M378A2K43CB1-CTD 16GB": {
+            "price": "68.45",
+            "benchmark": "3101"
+        },
+        "Samsung M378A2K43DB1-CTD 16GB": {
+            "price": "94.95",
+            "benchmark": "3012"
+        },
+        "Samsung M378A5143DB0-CPB 4GB": {
+            "price": "34.00",
+            "benchmark": "2518"
+        },
+        "Samsung M378A5244CB0-CRC 4GB": {
+            "price": "21.99",
+            "benchmark": "2246"
+        },
+        "Samsung M378A5244CB0-CTD 4GB": {
+            "price": "21.37",
+            "benchmark": "2553"
+        },
+        "Samsung M386A4G40DM0-CPB 32GB": {
+            "price": "161.75",
+            "benchmark": "2108"
+        },
+        "Samsung M386A8K40BM1-CRC 64GB": {
+            "price": "329.99",
+            "benchmark": "2297"
+        },
+        "Samsung M391A1G43DB0-CPB 8GB": {
+            "price": "99.99",
+            "benchmark": "1763"
+        },
+        "Samsung M391A2K43BB1-CPB 16GB": {
+            "price": "119.99",
+            "benchmark": "3075"
+        },
+        "Samsung M393A1G40DB0-CPB 8GB": {
+            "price": "114.33",
+            "benchmark": "2423"
+        },
+        "Samsung M393A1G40DB1-CRC 8GB": {
+            "price": "62.99",
+            "benchmark": "2377"
+        },
+        "Samsung M393A1G43DB0-CPB 8GB": {
+            "price": "60.27",
+            "benchmark": "2365"
+        },
+        "Samsung M393A1G43EB1-CRC 8GB": {
+            "price": "121.83",
+            "benchmark": "2477"
+        },
+        "Samsung M393A1K43BB0-CRC 8GB": {
+            "price": "83.06",
+            "benchmark": "2508"
+        },
+        "Samsung M393A2G40DB0-CPB 16GB": {
+            "price": "59.75",
+            "benchmark": "2318"
+        },
+        "Samsung M393A2G40DB1-CRC 16GB": {
+            "price": "169.99",
+            "benchmark": "1684"
+        },
+        "Samsung M393A2G40EB1-CRC 16GB": {
+            "price": "175.01",
+            "benchmark": "2098"
+        },
+        "Samsung M393A2G40EB2-CTD 16GB": {
+            "price": "107.99",
+            "benchmark": "1660"
+        },
+        "Samsung M393A2K40BB0-CPB 16GB": {
+            "price": "59.98",
+            "benchmark": "1277"
+        },
+        "Samsung M393A2K40BB1-CRC 16GB": {
+            "price": "137.99",
+            "benchmark": "2166"
+        },
+        "Samsung M393A2K40BB2-CTD 16GB": {
+            "price": "110.48",
+            "benchmark": "2095"
+        },
+        "Samsung M393A2K43BB1-CRC 16GB": {
+            "price": "215.92",
+            "benchmark": "2368"
+        },
+        "Samsung M393A2K43BB1-CTD 16GB": {
+            "price": "217.94",
+            "benchmark": "2617"
+        },
+        "Samsung M393A4K40BB0-CPB 32GB": {
+            "price": "203.52",
+            "benchmark": "2299"
+        },
+        "Samsung M393A4K40BB1-CRC 32GB": {
+            "price": "367.95",
+            "benchmark": "2336"
+        },
+        "Samsung M393A4K40BB2-CTD 32GB": {
+            "price": "189.18",
+            "benchmark": "2727"
+        },
+        "Samsung M393A4K40CB1-CRC 32GB": {
+            "price": "242.50",
+            "benchmark": "2490"
+        },
+        "Samsung M393A4K40CB2-CTD 32GB": {
+            "price": "369.00",
+            "benchmark": "2318"
+        },
+        "Samsung M393A5143DB0-CPB 4GB": {
+            "price": "44.40",
+            "benchmark": "2200"
+        },
+        "Samsung M471A1G43DB0-CPB 8GB": {
+            "price": "45.00",
+            "benchmark": "2402"
+        },
+        "Samsung M471A1G43EB1-CRC 8GB": {
+            "price": "37.66",
+            "benchmark": "2340"
+        },
+        "Samsung M471A1K43BB0-CPB 8GB": {
+            "price": "29.00",
+            "benchmark": "2292"
+        },
+        "Samsung M471A1K43BB1-CRC 8GB": {
+            "price": "38.00",
+            "benchmark": "2423"
+        },
+        "Samsung M471A1K43CB1-CRC 8GB": {
+            "price": "40.49",
+            "benchmark": "2405"
+        },
+        "Samsung M471A1K43CB1-CTD 8GB": {
+            "price": "35.51",
+            "benchmark": "2809"
+        },
+        "Samsung M471A1K43DB1-CTD 8GB": {
+            "price": "45.00",
+            "benchmark": "2739"
+        },
+        "Samsung M471A2K43BB1-CPB 16GB": {
+            "price": "164.99",
+            "benchmark": "2431"
+        },
+        "Samsung M471A2K43CB1-CRC 16GB": {
+            "price": "60.00",
+            "benchmark": "2415"
+        },
+        "Samsung M471A2K43CB1-CTD 16GB": {
+            "price": "30.99",
+            "benchmark": "2828"
+        },
+        "Samsung M471A5143DB0-CPB 4GB": {
+            "price": "43.75",
+            "benchmark": "2210"
+        },
+        "Samsung M471A5143EB0-CPB 4GB": {
+            "price": "26.77",
+            "benchmark": "2184"
+        },
+        "Samsung M471A5143EB1-CRC 4GB": {
+            "price": "46.99",
+            "benchmark": "1518"
+        },
+        "Samsung M471A5244CB0-CRC 4GB": {
+            "price": "23.99",
+            "benchmark": "2215"
+        },
+        "Samsung M471A5244CB0-CTD 4GB": {
+            "price": "15.89",
+            "benchmark": "2269"
+        },
+        "Samsung M474A2K43BB1-CRC 16GB": {
+            "price": "159.44",
+            "benchmark": "2711"
+        },
+        "Silicon Power Computer & Communications SP008GBLFU266B02 8GB": {
+            "price": "34.00",
+            "benchmark": "3168"
+        },
+        "Super Talent F24EA8GS 8GB": {
+            "price": "88.76",
+            "benchmark": "1776"
+        },
+        "Super Talent F24EB8GS 8GB": {
+            "price": "127.34",
+            "benchmark": "2754"
+        },
+        "Super Talent F26UB16GH 16GB": {
+            "price": "102.42",
+            "benchmark": "1769"
+        },
+        "Thermaltake Technology Co Ltd R009D408GX2-3200C16A 8GB": {
+            "price": "139.00",
+            "benchmark": "3434"
+        },
+        "Thermaltake Technology Co Ltd R009D408GX2-3600C18B 8GB": {
+            "price": "159.00",
+            "benchmark": "3594"
+        },
+        "Thermaltake Technology Co Ltd R009D408GX2-4000C19A 8GB": {
+            "price": "189.00",
+            "benchmark": "3729"
+        },
+        "Thermaltake Technology Co Ltd R009D408GX2-4400C19A 8GB": {
+            "price": "199.00",
+            "benchmark": "3154"
+        },
+        "Thermaltake Technology Co Ltd R009D408GX2-4600C19A 8GB": {
+            "price": "259.00",
+            "benchmark": "3963"
+        },
+        "Thermaltake Technology Co Ltd R009D416GX2-3600C18A 16GB": {
+            "price": "259.00",
+            "benchmark": "3909"
+        },
+        "Thermaltake Technology Co Ltd R017D408GX2-4000C19A 8GB": {
+            "price": "179.00",
+            "benchmark": "4046"
+        },
+        "Thermaltake Technology Co Ltd R017D408GX2-4400C19A 8GB": {
+            "price": "229.00",
+            "benchmark": "3613"
+        },
+        "Thermaltake Technology Co Ltd R019D408GX2-3200C16A 8GB": {
+            "price": "119.00",
+            "benchmark": "3692"
+        },
+        "Thermaltake Technology Co Ltd R019D408GX2-3600C18A 8GB": {
+            "price": "139.00",
+            "benchmark": "2875"
+        },
+        "Thermaltake Technology Co Ltd R022D408GX2-3200C16A 8GB": {
+            "price": "139.00",
+            "benchmark": "3372"
+        },
+        "Thermaltake Technology Co Ltd R022D408GX2-3600C18A 8GB": {
+            "price": "169.00",
+            "benchmark": "3866"
+        },
+        "Thermaltake Technology Co Ltd R022D408GX2-4600C19A 8GB": {
+            "price": "259.00",
+            "benchmark": "3890"
+        },
+        "Thermaltake Technology Co Ltd R022R432GX2-3600C18A 32GB": {
+            "price": "559.00",
+            "benchmark": "3979"
+        },
+        "Thermaltake Technology Co Ltd RA24D408GX2-3600C18A 8GB": {
+            "price": "139.00",
+            "benchmark": "3757"
+        },
+        "Thermaltake Technology Co Ltd RA24D408GX2-4400C19A 8GB": {
+            "price": "189.00",
+            "benchmark": "3826"
+        }
+    },
     "ssd": [],
     "case": [],
     "psu": [],

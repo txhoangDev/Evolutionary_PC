@@ -1,23 +1,17 @@
-import numpy as np
 import random
-import json
 import itertools
 
 class PC_Build:
-    
-    # this will read in the parts from the json file into a dictionary
-    with open("Data.json", 'r') as file:
-        parts_data = json.load(file)
-    file.close()
     
     # class variable initializations
     population = []
     parents = []
     children = []
     solution = []
+    parts_data = {}
     num_parents = 0
     
-    def __init__(self, num_of_parents):
+    def __init__(self, num_of_parents, parts):
         
         """
         
@@ -38,15 +32,17 @@ class PC_Build:
         self.children = []
         self.solution = []
         self.num_parents = 0
+        self.parts_data = parts
         
         # get the list of CPUs and GPUs and randomize them
         cpus = list(self.parts_data['cpu'].keys())
         random.shuffle(cpus)
         gpus = list(self.parts_data['gpu'].keys())
         random.shuffle(gpus)
+        rams = list(self.parts_data['ram'].keys())
         
         # find the max length from all of the lists
-        max_list = max(len(cpus), len(gpus))
+        max_list = max(len(cpus), len(gpus), len(rams))
 
         # from the maximum amount of numbers from max function
         # create a permutation of each element in each list
@@ -56,19 +52,35 @@ class PC_Build:
         
         # index of smaller list for iteration
         jj = 0
+        kk = 0
         if max_list == len(cpus):
             # loops through bigger list
             for ii in range(len(cpus)):
                 if jj == len(gpus):
                     jj = 0
-                self.population.append([cpus[ii], gpus[jj]])
+                if kk == len(rams):
+                    kk = 0
+                self.population.append([cpus[ii], gpus[jj], rams[kk]])
                 jj += 1
-        else:
+                kk += 1
+        elif max_list == len(gpus):
             for ii in range(len(gpus)):
                 if jj == len(cpus):
                     jj = 0
-                self.population.append([cpus[jj], gpus[ii]])
+                if kk == len(rams):
+                    kk = 0
+                self.population.append([cpus[jj], gpus[ii], rams[kk]])
                 jj += 1
+                kk += 1
+        else:
+            for ii in range(len(rams)):
+                if jj == len(cpus):
+                    jj = 0
+                if kk == len(gpus):
+                    kk = 0
+                self.population.append([cpus[jj], gpus[kk], rams[ii]])
+                jj += 1
+                kk += 1
         
         # initialize the passed in param to correct class variable
         self.num_parents = num_of_parents
@@ -87,7 +99,8 @@ class PC_Build:
                  parts, aka the benchmark
         """
         return int(self.parts_data['cpu'][parents[0]]['benchmark']) + \
-               int(self.parts_data['gpu'][parents[1]]['benchmark'])
+               int(self.parts_data['gpu'][parents[1]]['benchmark']) + \
+               int(self.parts_data['ram'][parents[2]]['benchmark'])
     
     def Generate_Parents(self):
         
@@ -114,7 +127,7 @@ class PC_Build:
                 # the parents list
                 for ii in range(self.num_parents):
                     # checks to make sure no duplicate CPU or GPU is listed for better variety
-                    if self.parents[ii][0] != group[0] and self.parents[ii][1] != group[1]:
+                    if self.parents[ii][0] != group[0] and self.parents[ii][1] != group[1] and self.parents[ii][2] != group[2]:
                         # only change parents if current group's fitness is higher
                         if self.Calculate_Fitness(self.parents[ii]) < self.Calculate_Fitness(group):
                             self.parents[ii] = group
@@ -138,11 +151,13 @@ class PC_Build:
         # finds list of CPUs and GPUs from parents
         cpus = []
         gpus = []
+        rams = []
         for parent in self.parents:
             cpus.append(parent[0])
             gpus.append(parent[1])
+            rams.append(parent[2])
         # gets the combination for offsprings of parents
-        self.children = list(itertools.product(cpus, gpus))
+        self.children = list(itertools.product(cpus, gpus, rams))
         # loops through each child
         for child in self.children:
             # makes sure the child isn't already in the parent
@@ -166,17 +181,20 @@ class PC_Build:
         
         # initializes the random numbers for indexes of gene pool
         # and parent 
-        ran_num = random.randint(0, len(self.parents)-1)
-        ran_num2 = random.randint(0, len(self.population)-1)
-        rand_num3 = random.randint(0, len(self.parents)-1)
-        while rand_num3 == ran_num:
-            rand_num3 = random.randint(0, len(self.parents)-1)
-        rand_num4 = random.randint(0, len(self.population)-1)
-        while rand_num4 == ran_num2:
-            rand_num4 = random.randint(0, len(self.population)-1)
+        parent1_ran = random.randint(0, len(self.parents)-1)
+        cpu_ran = random.randint(0, len(self.population)-1)
+        parent2_ran = random.randint(0, len(self.parents)-1)
+        while parent2_ran == parent1_ran:
+            parent2_ran = random.randint(0, len(self.parents)-1)
+        gpu_ran = random.randint(0, len(self.population)-1)
+        parent3_ran = random.randint(0, len(self.parents)-1)
+        while parent3_ran == parent2_ran or parent3_ran == parent1_ran:
+            parent3_ran = random.randint(0, len(self.parents)-1)
+        ram_ran = random.randint(0, len(self.population)-1)
         # changes genes of parent/children
-        self.parents[ran_num][0] = self.population[ran_num2][0]
-        self.parents[rand_num3][1] = self.population[rand_num4][1]
+        self.parents[parent1_ran][0] = self.population[cpu_ran][0]
+        self.parents[parent2_ran][1] = self.population[gpu_ran][1]
+        self.parents[parent3_ran][2] = self.population[ram_ran][2]
                 
     def run(self, num_of_generations):
         
