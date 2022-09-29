@@ -1,6 +1,8 @@
 import json
+from operator import attrgetter
 from requests import get
 from bs4 import BeautifulSoup as bs
+import re
 
 class Scraper:
     
@@ -26,21 +28,39 @@ class Scraper:
         cpu_html = bs(self.cpu_page_response.content, 'html.parser')
 
         # get data from html page containing name, price, benchmark
-        cpu_names_tag = cpu_html.find_all('span', attrs={'class': 'prdname'})
-        cpu_price_tag = cpu_html.find_all('span', attrs={'class': 'price-neww'})
-        cpu_benchmark_tag = cpu_html.find_all('span', attrs={'class': 'count'})
-        
-        
+        cpu_href_tag = cpu_html.find('ul', attrs={'class': 'chartlist'}).find_all('a', href=True)
+        cpu_names_tag = cpu_html.find('ul', attrs={'class': 'chartlist'}).find_all('span', attrs={'class': 'prdname'})
+        cpu_price_tag = cpu_html.find('ul', attrs={'class': 'chartlist'}).find_all('span', attrs={'class': 'price-neww'})
+        cpu_benchmark_tag = cpu_html.find('ul', attrs={'class': 'chartlist'}).find_all('span', attrs={'class': 'count'})
+
         # places the attributes into the dictionary according to format
         for ii in range(len(cpu_names_tag)):
             # if price doesn't exists then we move on cause we can't use it
             if cpu_price_tag[ii].text == 'NA' or cpu_benchmark_tag[ii].text == 'NA':
                 continue
             # removes the '*' from price
-            if cpu_names_tag[ii].text in list(self.parts_data['cpu'].keys()):
-                price = cpu_price_tag[ii].text.replace('$', '').replace(',', '').replace('*', '')
-                cpu_info[cpu_names_tag[ii].text] = {"price": price,
-                                                    "benchmark": cpu_benchmark_tag[ii].text.replace(',', '')}
+            cpu_data = bs(get('https://www.cpubenchmark.net/' + cpu_href_tag[ii]['href']).content, 'html.parser')
+            description_info = cpu_data.find_all('div', attrs={'class': 'left-desc-cpu'})
+            if len(description_info) == 2:
+                if 'Desktop' in description_info[0].text:
+                    socket = description_info[0].find_all('p')[1].text.replace('Socket: ', '')
+                    wattage = description_info[1].find('p', attrs={'class': 'bg-table-row'}).text.replace('Typical TDP: ', '').replace(' W', '')
+                    price = cpu_price_tag[ii].text.replace('$', '').replace(',', '').replace('*', '')
+                    cpu_info[cpu_names_tag[ii].text] = {"price": price,
+                                                        "benchmark": cpu_benchmark_tag[ii].text.replace(',', ''),
+                                                        "wattage": wattage,
+                                                        'Socket': socket}
+            else:
+                if 'Desktop' in description_info[0].text:
+                    socket = description_info[0].find_all('p')[1].text.replace('Socket: ', '')
+                    wattage = description_info[0].find_all('p', attrs={'class': 'bg-table-row'})
+                    for watt in wattage:
+                        if 'Typical TDP: ' in watt.text:
+                            price = cpu_price_tag[ii].text.replace('$', '').replace(',', '').replace('*', '')
+                            cpu_info[cpu_names_tag[ii].text] = {"price": price,
+                                                                "benchmark": cpu_benchmark_tag[ii].text.replace(',', ''),
+                                                                "wattage": watt.text.replace('Typical TDP: ', '').replace(' W', ''),
+                                                                'Socket': socket}
         return cpu_info
     
     def scrape_gpu(self):
@@ -63,16 +83,23 @@ class Scraper:
             gpu_names = tag.find_all('span', attrs={'class': 'prdname'})
             gpu_prices = tag.find_all('span', attrs={'class': 'price-neww'})
             gpu_benchmark = tag.find_all('span', attrs={'class': 'count'})
+            gpu_href_tag = tag.find_all('a', href=True)
         
         for ii in range(len(gpu_names)):
             # if price doesn't exists then we move on cause we can't use it
             if gpu_prices[ii].text == 'NA' or gpu_benchmark[ii].text == 'NA':
                 continue
             # removes the '*' from price
-            if gpu_names[ii].text in list(self.parts_data['gpu'].keys()):
-                price = gpu_prices[ii].text.replace('$', '').replace(',', '').replace('*', '')
-                gpu_info[gpu_names[ii].text] = {"price": price,
-                                                "benchmark": gpu_benchmark[ii].text.replace(',', '')}
+            gpu_data = bs(get('https://www.videocardbenchmark.net/gpu.php?gpu='+gpu_href_tag[ii].text).content, 'html.parser')
+            type_gpu = gpu_data.find_all('div', attrs={'class': 'desc-foot'})
+            if 'Desktop' in type_gpu[0].text:
+                wattage_info = gpu_data.find_all('em', attrs={'class': 'left-desc-cpu'})
+                for info in wattage_info:
+                    if 'Max TDP: ' in info.text:
+                        wattage = info.text.replace('Max TDP: ', '').replace(' W', '')
+                        gpu_info[gpu_names[ii].text] = {'price': gpu_prices[ii].text.replace('$', '').replace('*', ''),
+                                                        'benchmark': gpu_benchmark[ii].text.replace(',', ''),
+                                                        'wattage': wattage}
         return gpu_info
     
     def scrape_ram(self):

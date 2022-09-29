@@ -1,17 +1,22 @@
 import random
 import itertools
+import json
 
 class PC_Build:
+    
+    parts_data = {}
+    with open("Data.json", 'r') as file:
+        parts_data = json.load(file)
+    file.close()
     
     # class variable initializations
     population = []
     parents = []
     children = []
     solution = []
-    parts_data = {}
     num_parents = 0
     
-    def __init__(self, num_of_parents, parts):
+    def __init__(self, num_of_parents):
         
         """
         
@@ -25,14 +30,6 @@ class PC_Build:
                          have
         
         """
-        
-        # initialize everything to empty or 0
-        self.population = []
-        self.parents = []
-        self.children = []
-        self.solution = []
-        self.num_parents = 0
-        self.parts_data = parts
         
         # get the list of CPUs and GPUs and randomize them
         cpus = list(self.parts_data['cpu'].keys())
@@ -175,7 +172,7 @@ class PC_Build:
         
         """
         
-        This function changes the genes of 2 random parents/children
+        This function changes the genes of 3 random parents/children
         
         """
         
@@ -186,11 +183,17 @@ class PC_Build:
         parent2_ran = random.randint(0, len(self.parents)-1)
         while parent2_ran == parent1_ran:
             parent2_ran = random.randint(0, len(self.parents)-1)
+        while int(self.parts_data['cpu'][self.parents[parent1_ran][0]]['benchmark']) > int(self.parts_data['cpu'][self.population[cpu_ran][0]]['benchmark']):
+            cpu_ran = random.randint(0, len(self.population)-1)
         gpu_ran = random.randint(0, len(self.population)-1)
         parent3_ran = random.randint(0, len(self.parents)-1)
         while parent3_ran == parent2_ran or parent3_ran == parent1_ran:
             parent3_ran = random.randint(0, len(self.parents)-1)
+        while int(self.parts_data['gpu'][self.parents[parent2_ran][1]]['benchmark']) > int(self.parts_data['gpu'][self.population[gpu_ran][1]]['benchmark']):
+            gpu_ran = random.randint(0, len(self.population)-1)
         ram_ran = random.randint(0, len(self.population)-1)
+        while int(self.parts_data['ram'][self.parents[parent3_ran][2]]['benchmark']) > int(self.parts_data['ram'][self.population[ram_ran][2]]['benchmark']):
+            ram_ran = random.randint(0, len(self.population)-1)
         # changes genes of parent/children
         self.parents[parent1_ran][0] = self.population[cpu_ran][0]
         self.parents[parent2_ran][1] = self.population[gpu_ran][1]
