@@ -3,1384 +3,1886 @@
     "cpu": {
         "AMD Ryzen Threadripper PRO 5995WX": {
             "price": "9018.00",
-            "benchmark": "97275"
+            "benchmark": "97275",
+            "wattage": "280",
+            "Socket": "sWRX8"
         },
         "AMD Ryzen Threadripper PRO 3995WX": {
-            "price": "7542.24",
-            "benchmark": "83153"
+            "price": "7208.00",
+            "benchmark": "83153",
+            "wattage": "280",
+            "Socket": "sWRX8"
         },
         "AMD Ryzen Threadripper 3990X": {
-            "price": "7462.95",
-            "benchmark": "81304"
+            "price": "6531.98",
+            "benchmark": "81235",
+            "wattage": "280",
+            "Socket": "sTRX4"
         },
         "AMD Ryzen Threadripper PRO 5975WX": {
             "price": "3299.00",
-            "benchmark": "78077"
+            "benchmark": "78077",
+            "wattage": "280",
+            "Socket": "sWRX8"
         },
         "AMD Ryzen Threadripper PRO 5965WX": {
-            "price": "2729.99",
-            "benchmark": "67848"
+            "price": "2763.98",
+            "benchmark": "67610",
+            "wattage": "280",
+            "Socket": "sWRX8"
+        },
+        "AMD Ryzen 9 7950X": {
+            "price": "739.99",
+            "benchmark": "65574",
+            "wattage": "170",
+            "Socket": "AM5"
         },
         "AMD Ryzen Threadripper 3970X": {
             "price": "1999.99",
-            "benchmark": "63556"
+            "benchmark": "63546",
+            "wattage": "280",
+            "Socket": "sTRX4"
         },
         "AMD Ryzen Threadripper PRO 3975WX": {
-            "price": "3278.99",
-            "benchmark": "62819"
+            "price": "3276.99",
+            "benchmark": "62790",
+            "wattage": "280",
+            "Socket": "sWRX8"
         },
         "AMD Ryzen Threadripper 3960X": {
             "price": "1355.00",
-            "benchmark": "54802"
+            "benchmark": "54803",
+            "wattage": "280",
+            "Socket": "sTRX4"
+        },
+        "AMD Ryzen 9 7900X": {
+            "price": "549.00",
+            "benchmark": "52516",
+            "wattage": "170",
+            "Socket": "AM5"
+        },
+        "AMD Ryzen Threadripper PRO 5955WX": {
+            "price": "1407.35",
+            "benchmark": "49726",
+            "wattage": "280",
+            "Socket": "sWRX8"
         },
         "AMD Ryzen 9 5950X": {
-            "price": "549.00",
-            "benchmark": "45857"
+            "price": "599.96",
+            "benchmark": "45853",
+            "wattage": "105",
+            "Socket": "AM4"
         },
         "Intel Core i9-12900KS": {
-            "price": "713.99",
-            "benchmark": "44805"
+            "price": "729.99",
+            "benchmark": "44794",
+            "wattage": "150",
+            "Socket": "LGA 1700"
         },
         "Intel Core i9-12900KF": {
-            "price": "549.49",
-            "benchmark": "41524"
+            "price": "559.89",
+            "benchmark": "41504",
+            "wattage": "241",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i9-12900K": {
-            "price": "588.00",
-            "benchmark": "41446"
+            "price": "584.98",
+            "benchmark": "41460",
+            "wattage": "241",
+            "Socket": "FCLGA1700"
         },
         "AMD Ryzen Threadripper PRO 3955WX": {
-            "price": "1330.00",
-            "benchmark": "39937"
+            "price": "1316.00",
+            "benchmark": "39937",
+            "wattage": "280",
+            "Socket": "sWRX8"
         },
         "Intel Xeon W-3265M @ 2.70GHz": {
             "price": "6353.00",
-            "benchmark": "39618"
+            "benchmark": "39618",
+            "wattage": "205",
+            "Socket": "FCLGA3647"
         },
         "AMD Ryzen 9 5900X": {
-            "price": "387.99",
-            "benchmark": "39320"
+            "price": "350.96",
+            "benchmark": "39318",
+            "wattage": "105",
+            "Socket": "AM4"
         },
         "AMD Ryzen 9 3950X": {
-            "price": "629.99",
-            "benchmark": "39041"
+            "price": "680.00",
+            "benchmark": "39034",
+            "wattage": "105",
+            "Socket": "AM4"
         },
         "Intel Core i9-12900F": {
-            "price": "483.99",
-            "benchmark": "36831"
+            "price": "482.99",
+            "benchmark": "37179",
+            "wattage": "65",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i9-12900": {
             "price": "499.99",
-            "benchmark": "36493"
+            "benchmark": "36371",
+            "wattage": "65",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i7-12700K": {
             "price": "409.00",
-            "benchmark": "34602"
+            "benchmark": "34600",
+            "wattage": "190",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i7-12700KF": {
             "price": "377.98",
-            "benchmark": "34381"
-        },
-        "Intel Core i9-12900T": {
-            "price": "489.00",
-            "benchmark": "33481"
+            "benchmark": "34355",
+            "wattage": "190",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i9-10980XE @ 3.00GHz": {
-            "price": "992.00",
-            "benchmark": "33279"
+            "price": "999.01",
+            "benchmark": "33263",
+            "wattage": "165",
+            "Socket": "FCLGA2066"
         },
         "AMD Ryzen 9 3900XT": {
             "price": "368.93",
-            "benchmark": "32957"
+            "benchmark": "32952",
+            "wattage": "105",
+            "Socket": "AM4"
+        },
+        "Intel Core i9-12900T": {
+            "price": "489.00",
+            "benchmark": "32897",
+            "wattage": "35",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i7-12700F": {
-            "price": "312.96",
-            "benchmark": "31574"
+            "price": "310.00",
+            "benchmark": "31521",
+            "wattage": "65",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i7-12700": {
             "price": "342.98",
-            "benchmark": "31293"
+            "benchmark": "31240",
+            "wattage": "65",
+            "Socket": "FCLGA1700"
         },
         "AMD Ryzen 9 3900": {
             "price": "501.00",
-            "benchmark": "30631"
+            "benchmark": "30631",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i9-9990XE @ 4.00GHz": {
             "price": "2163.00",
-            "benchmark": "30162"
+            "benchmark": "30162",
+            "wattage": "255",
+            "Socket": "LGA2066"
         },
         "Intel Core i9-10940X @ 3.30GHz": {
             "price": "739.99",
-            "benchmark": "28417"
-        },
-        "AMD Ryzen 7 5800X": {
-            "price": "257.00",
-            "benchmark": "28147"
+            "benchmark": "28417",
+            "wattage": "165",
+            "Socket": "FCLGA2066"
         },
         "Intel Core i7-12700E": {
             "price": "344.00",
-            "benchmark": "28043"
+            "benchmark": "28217",
+            "wattage": "65",
+            "Socket": "FCLGA1700"
+        },
+        "AMD Ryzen 7 5800X": {
+            "price": "260.00",
+            "benchmark": "28143",
+            "wattage": "105",
+            "Socket": "AM4"
         },
         "Intel Xeon W-2275 @ 3.30GHz": {
             "price": "1112.00",
-            "benchmark": "27917"
+            "benchmark": "27918",
+            "wattage": "165",
+            "Socket": "FCLGA2066"
         },
         "Intel Core i5-12600K": {
             "price": "277.99",
-            "benchmark": "27668"
+            "benchmark": "27675",
+            "wattage": "150",
+            "Socket": "FCLGA1700"
         },
         "AMD Ryzen 7 5800X3D": {
             "price": "419.99",
-            "benchmark": "27608"
+            "benchmark": "27585",
+            "wattage": "105",
+            "Socket": "AM4"
         },
         "Intel Core i5-12600KF": {
-            "price": "259.99",
-            "benchmark": "27213"
+            "price": "247.99",
+            "benchmark": "27215",
+            "wattage": "150",
+            "Socket": "FCLGA1700"
         },
         "AMD Ryzen 7 5700X": {
-            "price": "227.35",
-            "benchmark": "26626"
+            "price": "224.61",
+            "benchmark": "26602",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i9-10920X @ 3.50GHz": {
             "price": "659.99",
-            "benchmark": "26544"
+            "benchmark": "26544",
+            "wattage": "165",
+            "Socket": "FCLGA2066"
         },
         "Intel Xeon W-3323 @ 3.50GHz": {
             "price": "949.00",
-            "benchmark": "25875"
+            "benchmark": "25875",
+            "wattage": "220",
+            "Socket": "FCLGA4189"
         },
         "Intel Core i9-11900K @ 3.50GHz": {
             "price": "327.99",
-            "benchmark": "25539"
+            "benchmark": "25549",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i9-11900KF @ 3.50GHz": {
-            "price": "342.99",
-            "benchmark": "25407"
+            "price": "339.99",
+            "benchmark": "25423",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Xeon W-1370P @ 3.60GHz": {
-            "price": "453.99",
-            "benchmark": "24975"
+            "price": "431.55",
+            "benchmark": "24975",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i7-11700K @ 3.60GHz": {
-            "price": "279.99",
-            "benchmark": "24673"
+            "price": "277.00",
+            "benchmark": "24668",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "AMD Ryzen 7 5700G": {
-            "price": "212.43",
-            "benchmark": "24549"
+            "price": "249.91",
+            "benchmark": "24562",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i7-11700KF @ 3.60GHz": {
-            "price": "269.99",
-            "benchmark": "24153"
+            "price": "255.99",
+            "benchmark": "24109",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Xeon W-1370 @ 2.90GHz": {
-            "price": "391.99",
-            "benchmark": "23908"
+            "price": "369.99",
+            "benchmark": "23908",
+            "wattage": "80",
+            "Socket": "FCLGA1200"
         },
         "AMD Ryzen 7 3800XT": {
-            "price": "419.99",
-            "benchmark": "23771"
+            "price": "529.95",
+            "benchmark": "23771",
+            "wattage": "105",
+            "Socket": "AM4"
         },
         "Intel Core i9-10900K @ 3.70GHz": {
-            "price": "349.00",
-            "benchmark": "23598"
+            "price": "343.95",
+            "benchmark": "23576",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i9-10900KF @ 3.70GHz": {
-            "price": "329.99",
-            "benchmark": "23328"
-        },
-        "AMD Ryzen 7 PRO 3700": {
-            "price": "329.99",
-            "benchmark": "23045"
-        },
-        "Intel Core i9-11900 @ 2.50GHz": {
-            "price": "349.95",
-            "benchmark": "23040"
-        },
-        "Intel Core i9-11900F @ 2.50GHz": {
-            "price": "439.99",
-            "benchmark": "22973"
-        },
-        "Intel Core i9-10850K @ 3.60GHz": {
-            "price": "349.95",
-            "benchmark": "22917"
+            "price": "319.00",
+            "benchmark": "23328",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i7-12700T": {
             "price": "339.00",
-            "benchmark": "22858"
+            "benchmark": "23210",
+            "wattage": "35",
+            "Socket": "FCLGA1700"
+        },
+        "AMD Ryzen 7 PRO 3700": {
+            "price": "329.99",
+            "benchmark": "23045",
+            "wattage": "65",
+            "Socket": "AM4"
+        },
+        "Intel Core i9-11900 @ 2.50GHz": {
+            "price": "348.95",
+            "benchmark": "22999",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
+        },
+        "Intel Core i9-11900F @ 2.50GHz": {
+            "price": "400.99",
+            "benchmark": "22995",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
+        },
+        "Intel Core i9-10850K @ 3.60GHz": {
+            "price": "349.98",
+            "benchmark": "22905",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i9-11900KB @ 3.30GHz": {
             "price": "539.00",
-            "benchmark": "22695"
+            "benchmark": "22695",
+            "wattage": "65",
+            "Socket": "FCBGA1787"
         },
         "Intel Core i9-10900X @ 3.70GHz": {
-            "price": "553.56",
-            "benchmark": "22663"
+            "price": "550.00",
+            "benchmark": "22657",
+            "wattage": "165",
+            "Socket": "FCLGA2066"
         },
         "Intel Xeon W-2255 @ 3.70GHz": {
             "price": "778.00",
-            "benchmark": "22333"
+            "benchmark": "22333",
+            "wattage": "165",
+            "Socket": "FCLGA2066"
         },
         "AMD Ryzen 5 5600X": {
-            "price": "194.00",
-            "benchmark": "21975"
+            "price": "176.75",
+            "benchmark": "21972",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i5-12490F": {
-            "price": "229.99",
-            "benchmark": "21596"
+            "price": "166.41",
+            "benchmark": "21596",
+            "wattage": "65",
+            "Socket": "LGA1700"
         },
         "AMD Ryzen 5 5600": {
-            "price": "159.00",
-            "benchmark": "21496"
+            "price": "179.97",
+            "benchmark": "21511",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i7-11700F @ 2.50GHz": {
-            "price": "313.46",
-            "benchmark": "21225"
+            "price": "288.99",
+            "benchmark": "21210",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-12600": {
             "price": "229.98",
-            "benchmark": "21120"
+            "benchmark": "21182",
+            "wattage": "65",
+            "Socket": "LGA 1700"
         },
         "Intel Core i9-10900F @ 2.80GHz": {
-            "price": "358.99",
-            "benchmark": "20678"
+            "price": "402.99",
+            "benchmark": "20675",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i9-10900E @ 2.80GHz": {
             "price": "444.00",
-            "benchmark": "20658"
+            "benchmark": "20658",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "AMD Ryzen 7 PRO 4750G": {
             "price": "249.98",
-            "benchmark": "20561"
+            "benchmark": "20561",
+            "wattage": "65",
+            "Socket": "AM4"
+        },
+        "Intel Core i5-12500": {
+            "price": "202.00",
+            "benchmark": "20297",
+            "wattage": "65",
+            "Socket": "LGA 1700"
         },
         "Intel Core i9-10900 @ 2.80GHz": {
-            "price": "402.90",
-            "benchmark": "20285"
+            "price": "399.99",
+            "benchmark": "20290",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "AMD Ryzen 7 4700G": {
             "price": "238.16",
-            "benchmark": "20177"
+            "benchmark": "20207",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i7-11700 @ 2.50GHz": {
             "price": "339.99",
-            "benchmark": "20105"
+            "benchmark": "20112",
+            "wattage": "95",
+            "Socket": "FCLGA1200"
         },
         "AMD Ryzen 5 5600G": {
-            "price": "141.00",
-            "benchmark": "19831"
+            "price": "150.41",
+            "benchmark": "19833",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i5-12400F": {
-            "price": "170.99",
-            "benchmark": "19792"
+            "price": "174.99",
+            "benchmark": "19797",
+            "wattage": "65",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i5-11600K @ 3.90GHz": {
-            "price": "200.00",
-            "benchmark": "19735"
+            "price": "179.99",
+            "benchmark": "19734",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-11600KF @ 3.90GHz": {
             "price": "208.99",
-            "benchmark": "19695"
+            "benchmark": "19699",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i9-9900KS @ 4.00GHz": {
-            "price": "860.00",
-            "benchmark": "19553"
+            "price": "831.63",
+            "benchmark": "19557",
+            "wattage": "127",
+            "Socket": "FCLGA1151-2"
         },
         "Intel Core i5-12400": {
             "price": "192.00",
-            "benchmark": "19507"
+            "benchmark": "19492",
+            "wattage": "65",
+            "Socket": "LGA 1700"
         },
         "AMD Ryzen 5 5500": {
-            "price": "138.00",
-            "benchmark": "19491"
-        },
-        "Intel Core i9-11900T @ 1.50GHz": {
-            "price": "439.00",
-            "benchmark": "19346"
+            "price": "119.12",
+            "benchmark": "19479",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i7-10700K @ 3.80GHz": {
             "price": "259.99",
-            "benchmark": "19197"
+            "benchmark": "19194",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i7-10700KF @ 3.80GHz": {
-            "price": "259.99",
-            "benchmark": "19043"
+            "price": "249.99",
+            "benchmark": "19043",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "AMD Ryzen 5 3600XT": {
-            "price": "349.00",
-            "benchmark": "18738"
+            "price": "329.99",
+            "benchmark": "18734",
+            "wattage": "95",
+            "Socket": "AM4"
+        },
+        "Intel Core i9-11900T @ 1.50GHz": {
+            "price": "439.00",
+            "benchmark": "18444",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-11600 @ 2.80GHz": {
-            "price": "240.00",
-            "benchmark": "18236"
+            "price": "252.82",
+            "benchmark": "18249",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-11500 @ 2.70GHz": {
-            "price": "217.30",
-            "benchmark": "17629"
+            "price": "215.87",
+            "benchmark": "17628",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-12500T": {
             "price": "202.00",
-            "benchmark": "17534"
+            "benchmark": "17534",
+            "wattage": "35",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i5-11400F @ 2.60GHz": {
-            "price": "139.99",
-            "benchmark": "17196"
+            "price": "144.00",
+            "benchmark": "17194",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-11400 @ 2.60GHz": {
             "price": "144.83",
-            "benchmark": "17065"
+            "benchmark": "17075",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i7-10700F @ 2.90GHz": {
-            "price": "245.95",
-            "benchmark": "17027"
+            "price": "245.72",
+            "benchmark": "17019",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i7-10700 @ 2.90GHz": {
-            "price": "291.32",
-            "benchmark": "16819"
+            "price": "243.00",
+            "benchmark": "16816",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-12400T": {
             "price": "169.99",
-            "benchmark": "16492"
+            "benchmark": "16405",
+            "wattage": "74",
+            "Socket": "FCLGA1700"
         },
         "AMD Ryzen 5 PRO 4650G": {
-            "price": "138.58",
-            "benchmark": "16341"
+            "price": "219.96",
+            "benchmark": "16330",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "AMD Ryzen 5 4500": {
-            "price": "124.99",
-            "benchmark": "15829"
+            "price": "129.00",
+            "benchmark": "15858",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "AMD Ryzen 5 4600G": {
-            "price": "120.48",
-            "benchmark": "15585"
+            "price": "124.39",
+            "benchmark": "15600",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i7-11700T @ 1.40GHz": {
             "price": "323.00",
-            "benchmark": "15537"
+            "benchmark": "15537",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-11600T @ 1.70GHz": {
             "price": "213.00",
-            "benchmark": "15352"
+            "benchmark": "15352",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i9-10900T @ 1.90GHz": {
             "price": "349.99",
-            "benchmark": "15209"
+            "benchmark": "15209",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-12300": {
             "price": "143.00",
-            "benchmark": "14990"
+            "benchmark": "15023",
+            "wattage": "60",
+            "Socket": "LGA 1700"
         },
         "Intel Core i5-10600KF @ 4.10GHz": {
             "price": "179.99",
-            "benchmark": "14532"
+            "benchmark": "14524",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-10600K @ 4.10GHz": {
-            "price": "209.99",
-            "benchmark": "14507"
+            "price": "206.19",
+            "benchmark": "14506",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Xeon W-1250P @ 4.10GHz": {
             "price": "321.50",
-            "benchmark": "14476"
+            "benchmark": "14476",
+            "wattage": "125",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-12100F": {
-            "price": "345.99",
-            "benchmark": "14391"
+            "price": "106.99",
+            "benchmark": "14378",
+            "wattage": "58",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i3-12100": {
             "price": "122.00",
-            "benchmark": "14357"
+            "benchmark": "14358",
+            "wattage": "60",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i9-9900T @ 2.10GHz": {
             "price": "439.00",
-            "benchmark": "14085"
+            "benchmark": "14085",
+            "wattage": "35",
+            "Socket": "FCLGA1151-2"
         },
         "Intel Core i5-10600 @ 3.30GHz": {
-            "price": "218.00",
-            "benchmark": "13845"
-        },
-        "Intel Core i5-11500T @ 1.50GHz": {
-            "price": "192.00",
-            "benchmark": "13397"
+            "price": "184.99",
+            "benchmark": "13835",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-11400T @ 1.30GHz": {
             "price": "182.00",
-            "benchmark": "13330"
+            "benchmark": "13330",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "AMD Ryzen 5 3500X": {
-            "price": "138.99",
-            "benchmark": "13277"
+            "price": "148.95",
+            "benchmark": "13266",
+            "wattage": "65",
+            "Socket": "AM4"
+        },
+        "Intel Core i5-11500T @ 1.50GHz": {
+            "price": "192.00",
+            "benchmark": "13190",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i7-10700T @ 2.00GHz": {
             "price": "413.99",
-            "benchmark": "13202"
+            "benchmark": "13164",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-10500 @ 3.10GHz": {
-            "price": "208.79",
-            "benchmark": "12961"
+            "price": "226.69",
+            "benchmark": "12955",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
+        },
+        "Intel Core i3-12100T": {
+            "price": "122.00",
+            "benchmark": "12840",
+            "wattage": "35",
+            "Socket": "FCLGA1700"
         },
         "Intel Core i7-9700E @ 2.60GHz": {
             "price": "323.00",
-            "benchmark": "12751"
+            "benchmark": "12751",
+            "wattage": "65",
+            "Socket": "FCLGA1151-2"
         },
         "AMD Ryzen 3 3300X": {
             "price": "250.00",
-            "benchmark": "12690"
+            "benchmark": "12694",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i5-10400F @ 2.90GHz": {
-            "price": "128.98",
-            "benchmark": "12390"
+            "price": "127.99",
+            "benchmark": "12392",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-10400 @ 2.90GHz": {
-            "price": "119.99",
-            "benchmark": "12305"
+            "price": "157.99",
+            "benchmark": "12307",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "AMD Ryzen 3 3100": {
-            "price": "149.95",
-            "benchmark": "11650"
+            "price": "138.50",
+            "benchmark": "11649",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "AMD Ryzen 3 4100": {
-            "price": "108.00",
-            "benchmark": "11336"
+            "price": "119.99",
+            "benchmark": "11336",
+            "wattage": "65",
+            "Socket": "AM4"
         },
         "Intel Core i5-10600T @ 2.40GHz": {
             "price": "213.00",
-            "benchmark": "11210"
+            "benchmark": "11210",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i7-9700TE @ 1.80GHz": {
             "price": "323.00",
-            "benchmark": "10740"
+            "benchmark": "10740",
+            "wattage": "35",
+            "Socket": "FCLGA1151-2"
         },
         "Intel Core i3-10325 @ 3.90GHz": {
             "price": "190.10",
-            "benchmark": "10308"
+            "benchmark": "10308",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-10500T @ 2.30GHz": {
             "price": "192.00",
-            "benchmark": "10292"
+            "benchmark": "10292",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-10320 @ 3.80GHz": {
             "price": "143.00",
-            "benchmark": "10027"
+            "benchmark": "10027",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-10400T @ 2.00GHz": {
             "price": "182.00",
-            "benchmark": "9975"
+            "benchmark": "9991",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-10305 @ 3.80GHz": {
-            "price": "151.99",
-            "benchmark": "9689"
+            "price": "159.99",
+            "benchmark": "9689",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-10300 @ 3.70GHz": {
-            "price": "169.99",
-            "benchmark": "9153"
+            "price": "164.97",
+            "benchmark": "9153",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i7-9850HL @ 1.90GHz": {
             "price": "395.00",
-            "benchmark": "9112"
-        },
-        "Intel Core i3-10105F @ 3.70GHz": {
-            "price": "78.99",
-            "benchmark": "9101"
+            "benchmark": "9112",
+            "wattage": "25",
+            "Socket": "FCBGA1440"
         },
         "Intel Core i3-10100F @ 3.60GHz": {
-            "price": "69.99",
-            "benchmark": "8854"
+            "price": "72.99",
+            "benchmark": "8849",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-10105 @ 3.70GHz": {
-            "price": "111.31",
-            "benchmark": "8840"
+            "price": "109.00",
+            "benchmark": "8831",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-10100 @ 3.60GHz": {
-            "price": "110.99",
-            "benchmark": "8770"
+            "price": "103.00",
+            "benchmark": "8766",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i5-10300H @ 2.50GHz": {
             "price": "250.00",
-            "benchmark": "8647"
+            "benchmark": "8646",
+            "wattage": "45",
+            "Socket": "FCBGA1440"
         },
         "Intel Core i5-9600T @ 2.30GHz": {
             "price": "213.00",
-            "benchmark": "8464"
+            "benchmark": "8464",
+            "wattage": "35",
+            "Socket": "FCLGA1151-2"
         },
         "Intel Core i3-10100E @ 3.20GHz": {
             "price": "125.00",
-            "benchmark": "8229"
+            "benchmark": "8229",
+            "wattage": "65",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-10305T @ 3.00GHz": {
             "price": "143.00",
-            "benchmark": "8136"
+            "benchmark": "8136",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-10300T @ 3.00GHz": {
             "price": "177.72",
-            "benchmark": "8119"
+            "benchmark": "8119",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-10105T @ 3.00GHz": {
             "price": "122.00",
-            "benchmark": "7850"
+            "benchmark": "7850",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Core i3-9350K @ 4.00GHz": {
             "price": "293.22",
-            "benchmark": "7694"
+            "benchmark": "7694",
+            "wattage": "91",
+            "Socket": "FCLGA1151"
         },
         "Intel Pentium Gold G7400": {
             "price": "75.95",
-            "benchmark": "6812"
+            "benchmark": "6792",
+            "wattage": "46",
+            "Socket": "LGA1700,BGA1700"
         },
         "Intel Pentium Gold G7400T": {
             "price": "64.00",
-            "benchmark": "5883"
+            "benchmark": "5883",
+            "wattage": "35",
+            "Socket": ""
         },
         "Intel Pentium Gold G6605 @ 4.30GHz": {
             "price": "114.99",
-            "benchmark": "4526"
+            "benchmark": "4526",
+            "wattage": "58",
+            "Socket": "FCLGA1200"
         },
         "AMD Athlon 3000G": {
             "price": "89.99",
-            "benchmark": "4483"
+            "benchmark": "4482",
+            "wattage": "35",
+            "Socket": "AM4"
         },
         "Intel Pentium Gold G6600 @ 4.20GHz": {
-            "price": "115.97",
-            "benchmark": "4396"
+            "price": "109.62",
+            "benchmark": "4396",
+            "wattage": "58",
+            "Socket": "FCLGA1200"
         },
         "Intel Pentium Gold G6505 @ 4.20GHz": {
             "price": "75.00",
-            "benchmark": "4378"
+            "benchmark": "4378",
+            "wattage": "58",
+            "Socket": "FCLGA1200"
         },
         "Intel Celeron G6900": {
             "price": "54.95",
-            "benchmark": "4333"
+            "benchmark": "4333",
+            "wattage": "46",
+            "Socket": "LGA1700,BGA1700"
         },
         "Intel Pentium Gold G6405 @ 4.10GHz": {
             "price": "52.00",
-            "benchmark": "4290"
+            "benchmark": "4292",
+            "wattage": "58",
+            "Socket": "FCLGA1200"
         },
         "Intel Pentium Gold G5600F @ 3.90GHz": {
-            "price": "89.99",
-            "benchmark": "4160"
+            "price": "90.99",
+            "benchmark": "4160",
+            "wattage": "54",
+            "Socket": "FCLGA1151-2"
         },
         "Intel Pentium Gold G6500 @ 4.10GHz": {
             "price": "96.99",
-            "benchmark": "4147"
+            "benchmark": "4147",
+            "wattage": "58",
+            "Socket": "FCLGA1200"
         },
         "Intel Pentium Gold G6400 @ 4.00GHz": {
             "price": "68.99",
-            "benchmark": "4137"
+            "benchmark": "4137",
+            "wattage": "58",
+            "Socket": "FCLGA1200"
         },
         "Intel Pentium Gold G5620 @ 4.00GHz": {
             "price": "125.00",
-            "benchmark": "4102"
+            "benchmark": "4102",
+            "wattage": "54",
+            "Socket": "FCLGA1151-2"
         },
         "Intel Celeron G6900T": {
             "price": "42.00",
-            "benchmark": "4024"
+            "benchmark": "4024",
+            "wattage": "35",
+            "Socket": "FCLGA1700"
         },
         "Intel Pentium Gold G6500T @ 3.50GHz": {
             "price": "75.00",
-            "benchmark": "4005"
+            "benchmark": "4005",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Pentium Gold G6405T @ 3.50GHz": {
             "price": "64.00",
-            "benchmark": "3746"
+            "benchmark": "3746",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Pentium Gold G6400T @ 3.40GHz": {
             "price": "64.00",
-            "benchmark": "3586"
+            "benchmark": "3586",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Pentium Gold G5420T @ 3.20GHz": {
             "price": "64.00",
-            "benchmark": "3508"
+            "benchmark": "3508",
+            "wattage": "35",
+            "Socket": "FCLGA1151-2"
         },
         "Intel Celeron G5905 @ 3.50GHz": {
-            "price": "49.94",
-            "benchmark": "2816"
+            "price": "48.00",
+            "benchmark": "2816",
+            "wattage": "58",
+            "Socket": "FCLGA1200"
         },
         "Intel Celeron G5925 @ 3.60GHz": {
-            "price": "64.99",
-            "benchmark": "2727"
+            "price": "39.99",
+            "benchmark": "2721",
+            "wattage": "58",
+            "Socket": "FCLGA1200"
         },
         "Intel Celeron G4950 @ 3.30GHz": {
             "price": "1008.65",
-            "benchmark": "2714"
+            "benchmark": "2714",
+            "wattage": "54",
+            "Socket": "FCLGA1151"
         },
         "Intel Celeron G5900 @ 3.40GHz": {
             "price": "57.99",
-            "benchmark": "2672"
+            "benchmark": "2672",
+            "wattage": "58",
+            "Socket": "FCLGA1200"
         },
         "Intel Celeron G5900T @ 3.20GHz": {
             "price": "42.00",
-            "benchmark": "2620"
-        },
-        "Intel Celeron G4930 @ 3.20GHz": {
-            "price": "120.85",
-            "benchmark": "2571"
+            "benchmark": "2620",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Celeron G5920 @ 3.50GHz": {
             "price": "53.88",
-            "benchmark": "2482"
+            "benchmark": "2482",
+            "wattage": "58",
+            "Socket": "FCLGA1200"
         },
         "Intel Celeron G5905T @ 3.30GHz": {
             "price": "42.00",
-            "benchmark": "2313"
+            "benchmark": "2313",
+            "wattage": "35",
+            "Socket": "FCLGA1200"
         },
         "Intel Celeron G4930T @ 3.00GHz": {
             "price": "42.00",
-            "benchmark": "2250"
+            "benchmark": "2280",
+            "wattage": "35",
+            "Socket": "FCLGA1151"
         }
     },
     "gpu": {
         "GeForce RTX 3090 Ti": {
-            "price": "1099.99",
-            "benchmark": "17974"
+            "price": "1,099.99",
+            "benchmark": "18048",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 24576 MB Core Clock(s): 1560 MHz Memory Clock(s): 1313 MHz DirectX: 12 OpenGL: 4.6 450"
         },
         "Radeon RX 6950 XT": {
-            "price": "982.79",
-            "benchmark": "16593"
+            "price": "999.99",
+            "benchmark": "16605",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 16384 MB Core Clock(s): 1925 MHz Memory Clock(s): 2250 MHz DirectX: 12_2 OpenGL: 4.6 335"
         },
         "GeForce RTX 3080 Ti": {
-            "price": "849.99",
-            "benchmark": "16516"
+            "price": "839.99",
+            "benchmark": "16529",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 12288 MB Core Clock(s): 1370 MHz  DirectX: 12 OpenGL: 4.6 350"
         },
         "GeForce RTX 3090": {
-            "price": "1053.99",
-            "benchmark": "16456"
+            "price": "995.00",
+            "benchmark": "16452",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 24576 MB Core Clock(s): 1400 MHz Memory Clock(s): 19500 MHz DirectX: 12 OpenGL: 4.6 350"
         },
         "Radeon RX 6900 XT": {
-            "price": "733.92",
-            "benchmark": "15667"
+            "price": "769.99",
+            "benchmark": "15678",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 16384 MB Core Clock(s): 1825 MHz Memory Clock(s): 16000 MHz DirectX: 12 OpenGL: 4.6 300"
         },
         "GeForce RTX 3080": {
-            "price": "733.87",
-            "benchmark": "15506"
+            "price": "703.87",
+            "benchmark": "15445",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 10240 MB Core Clock(s): 1440 MHz Memory Clock(s): 19000 MHz DirectX: 12 OpenGL: 4.6 320"
         },
         "Radeon RX 6800 XT": {
             "price": "599.99",
-            "benchmark": "14594"
+            "benchmark": "14591",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 16384 MB Core Clock(s): 2015 MHz Memory Clock(s): 16000 MHz DirectX: 12 OpenGL: 4.6 300"
         },
         "GeForce RTX 3070 Ti": {
-            "price": "609.99",
-            "benchmark": "12497"
+            "price": "599.99",
+            "benchmark": "12500",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1575 MHz  DirectX: 12_2 OpenGL: 4.6 290"
         },
         "Radeon RX 6800": {
             "price": "549.99",
-            "benchmark": "11853"
+            "benchmark": "11856",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 16384 MB Core Clock(s): 1815 MHz Memory Clock(s): 16000 MHz DirectX: 12 OpenGL: 4.6 250"
         },
         "GeForce RTX 3070": {
             "price": "499.99",
-            "benchmark": "11836"
+            "benchmark": "11841",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1500 MHz Memory Clock(s): 14000 MHz DirectX: 12 OpenGL: 4.6 220"
         },
         "Radeon RX 6750 XT": {
-            "price": "429.99",
-            "benchmark": "11058"
+            "price": "499.99",
+            "benchmark": "11052",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 12288 MB Core Clock(s): 2150 MHz Memory Clock(s): 2250 MHz DirectX: 12_2 OpenGL: 4.6 250"
         },
         "GeForce RTX 2080 Ti": {
             "price": "998.59",
-            "benchmark": "10669"
+            "benchmark": "10673",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 11264 MB Core Clock(s): 1350 MHz Memory Clock(s): 14000 (1750x8) MHz DirectX: 12 OpenGL: 4.6 250"
         },
         "GeForce RTX 3060 Ti": {
-            "price": "449.99",
-            "benchmark": "10484"
+            "price": "399.99",
+            "benchmark": "10484",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1410 MHz Memory Clock(s): 14000 MHz DirectX: 12 OpenGL: 4.6 200"
         },
         "Radeon RX 6700 XT": {
-            "price": "369.10",
-            "benchmark": "10383"
+            "price": "429.99",
+            "benchmark": "10387",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 12288 MB Core Clock(s): 2321 MHz  DirectX: 12 OpenGL: 4.6 230"
         },
         "GeForce GTX 1080 Ti": {
             "price": "483.82",
-            "benchmark": "9749"
+            "benchmark": "9747",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 11264 MB Core Clock(s): 1480 MHz Memory Clock(s): 2750 MHz DirectX: 12.0 OpenGL: 4.5 250"
         },
         "NVIDIA TITAN Xp": {
-            "price": "1645.00",
-            "benchmark": "9463"
+            "price": "1,645.00",
+            "benchmark": "9463",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 12288 MB Core Clock(s): 1405 MHz Memory Clock(s): 1426 MHz DirectX: 12.0 OpenGL: 4.5 250"
         },
         "TITAN V": {
-            "price": "1999.99",
-            "benchmark": "9414"
+            "price": "1,999.99",
+            "benchmark": "9414",
+            "wattage": "Bus Interface: PCIe 3.0 x16\t Max Memory Size: 12288 MB Core Clock(s): 1200 MHz Memory Clock(s): 850 MHz DirectX: 12 OpenGL: 4.6 250"
         },
         "NVIDIA TITAN X": {
             "price": "608.10",
-            "benchmark": "9224"
+            "benchmark": "9224",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 12288 MB Core Clock(s): 1417 MHz Memory Clock(s): 2500 (10000) MHz DirectX: 12.0 OpenGL: 4.5 250"
         },
         "GeForce RTX 3060": {
             "price": "329.00",
-            "benchmark": "8959"
+            "benchmark": "8956",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 12288 MB Core Clock(s): 1320 MHz Memory Clock(s): 15000 MHz DirectX: 12 OpenGL: 4.6 170"
         },
         "GeForce RTX 2080 SUPER": {
             "price": "683.99",
-            "benchmark": "8654"
+            "benchmark": "8653",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1650 MHz Memory Clock(s): 15500 MHz DirectX: 12 OpenGL: 4.6 250"
         },
         "Radeon RX 6650 XT": {
-            "price": "309.26",
-            "benchmark": "8624"
+            "price": "328.67",
+            "benchmark": "8638",
+            "wattage": "Bus Interface: PCIe 4.0 x8 Max Memory Size: 8192 MB Core Clock(s): 2055 MHz Memory Clock(s): 2190 MHz DirectX: 12 OpenGL: 4.6 176"
         },
         "Radeon RX 6600 XT": {
             "price": "299.99",
-            "benchmark": "8369"
+            "benchmark": "8370",
+            "wattage": "Bus Interface: PCIe 4.0 x8 Max Memory Size: 8192 MB Core Clock(s): 1968 MHz Memory Clock(s): 16000 MHz DirectX: 12_2 OpenGL: 4.6 160"
         },
         "GeForce RTX 2080": {
             "price": "797.05",
-            "benchmark": "8230"
+            "benchmark": "8229",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8096 MB Core Clock(s): 1515 MHz Memory Clock(s): 14000 (1750x8) MHz DirectX: 12 OpenGL: 4.6 250"
         },
         "Radeon RX 5700 XT": {
             "price": "799.00",
-            "benchmark": "8163"
+            "benchmark": "8164",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1605 MHz Memory Clock(s): 14000 MHz DirectX: 12 225"
         },
         "GeForce RTX 2070 SUPER": {
             "price": "515.82",
-            "benchmark": "7895"
+            "benchmark": "7893",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1605 MHz Memory Clock(s): 14000 (1750x8) MHz DirectX: 12 OpenGL: 4.6 215"
         },
         "Radeon VII": {
-            "price": "1899.95",
-            "benchmark": "7106"
+            "price": "1,899.95",
+            "benchmark": "7106",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 16384 MB Core Clock(s): 1400 MHz  DirectX: 12 OpenGL: 4.6 300"
         },
         "GeForce GTX 1080": {
             "price": "442.79",
-            "benchmark": "7588"
+            "benchmark": "7590",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1607 MHz Memory Clock(s): 2500 MHz DirectX: 12 OpenGL: 4.5 180"
         },
         "Radeon RX 6600": {
             "price": "329.00",
-            "benchmark": "7449"
+            "benchmark": "7451",
+            "wattage": "Bus Interface: PCIe 4.0 x8 Max Memory Size: 8192 MB Core Clock(s): 1626 MHz Memory Clock(s): 1750 MHz DirectX: 12 OpenGL: 4.6 132"
         },
         "GeForce GTX 1070 Ti": {
             "price": "389.00",
-            "benchmark": "7201"
+            "benchmark": "7198",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1607 MHz Memory Clock(s): 2002 MHz DirectX: 12 OpenGL: 4.6 180"
         },
         "Radeon Pro W5700": {
-            "price": "1649.99",
-            "benchmark": "7161"
+            "price": "1,649.99",
+            "benchmark": "7160",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1243 MHz Memory Clock(s): 14000 MHz DirectX: 12 OpenGL: 4.6 205"
         },
         "GeForce RTX 2060 SUPER": {
-            "price": "339.99",
-            "benchmark": "6961"
+            "price": "336.88",
+            "benchmark": "6959",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1407 MHz Memory Clock(s): 14000 (1750x8) MHz DirectX: 12 OpenGL: 4.6 175"
         },
         "Radeon RX 5700": {
             "price": "899.95",
-            "benchmark": "6817"
+            "benchmark": "6817",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1465 MHz Memory Clock(s): 14000 MHz DirectX: 12 180"
         },
         "Radeon RX 5600 XT": {
             "price": "545.00",
-            "benchmark": "6675"
+            "benchmark": "6676",
+            "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 6144 MB Core Clock(s): 1130 MHz Memory Clock(s): 12000 MHz DirectX: 12 OpenGL: 4.6 150"
         },
         "Radeon RX Vega 64": {
-            "price": "716.89",
-            "benchmark": "6594"
+            "price": "749.99",
+            "benchmark": "6594",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1247 MHz Memory Clock(s): 1890 MHz DirectX: 12 OpenGL: 4.5 295"
         },
         "GeForce RTX 2070": {
             "price": "627.44",
-            "benchmark": "6573"
+            "benchmark": "6571",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1410 MHz Memory Clock(s): 14000 (1750x8) MHz DirectX: 12 OpenGL: 4.6 175"
         },
         "GeForce GTX 980 Ti": {
             "price": "828.97",
-            "benchmark": "6156"
+            "benchmark": "6157",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 6144 MB Core Clock(s): 1076 MHz Memory Clock(s): 1753 (7012) MHz DirectX: 12 OpenGL: 4.5 250"
         },
         "Radeon RX Vega 56": {
             "price": "752.99",
-            "benchmark": "6150"
+            "benchmark": "6149",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1471 MHz Memory Clock(s): 1600 MHz DirectX: 12 OpenGL: 4.5 210"
         },
         "GeForce GTX 1070": {
             "price": "342.55",
-            "benchmark": "6076"
+            "benchmark": "6075",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1506 MHz Memory Clock(s): 2002 MHz DirectX: 12.0 OpenGL: 4.5 150"
         },
         "Radeon Pro WX 8200": {
-            "price": "1599.39",
-            "benchmark": "5889"
+            "price": "1,599.39",
+            "benchmark": "5889",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1200 MHz Memory Clock(s): 2000 MHz DirectX: 12 OpenGL: 4.6 230"
         },
         "Radeon Vega Frontier Edition": {
-            "price": "1679.99",
-            "benchmark": "5853"
+            "price": "1,679.99",
+            "benchmark": "5853",
+            "wattage": "Bus Interface: PCIe 3.0 x16  Max Memory Size: 16384 MB Core Clock(s): 1382 MHz Memory Clock(s): 945 MHz DirectX: 12 OpenGL: 4.5 350"
         },
         "GeForce GTX TITAN X": {
-            "price": "1096.99",
-            "benchmark": "5841"
+            "price": "1,096.99",
+            "benchmark": "5841",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 12288 MB Core Clock(s): 1000 MHz Memory Clock(s): 1753 (7012) MHz DirectX: 12 OpenGL: 4.5 250"
         },
         "GeForce RTX 2060": {
-            "price": "229.99",
-            "benchmark": "5617"
+            "price": "239.99",
+            "benchmark": "5579",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 6144 MB Core Clock(s): 1365 MHz Memory Clock(s): 14000 (1750x8) MHz DirectX: 12 OpenGL: 4.6 160"
         },
         "GeForce GTX 1660 SUPER": {
             "price": "209.99",
-            "benchmark": "5253"
+            "benchmark": "5251",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 6144 MB Core Clock(s): 1530 MHz Memory Clock(s): 14000 MHz DirectX: 12 OpenGL: 4.6 125"
         },
         "Radeon Pro Duo": {
-            "price": "1199.06",
-            "benchmark": "3487"
+            "price": "1,199.06",
+            "benchmark": "3487",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1000 MHz Memory Clock(s): 500 MHz DirectX: 12 OpenGL: 4.5 350"
         },
         "GeForce GTX 1660": {
-            "price": "209.99",
-            "benchmark": "5102"
+            "price": "189.99",
+            "benchmark": "5103",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 6144 MB Core Clock(s): 1530 MHz Memory Clock(s): 8000 MHz DirectX: 12 OpenGL: 4.5 120"
         },
         "Radeon RX 6500 XT": {
-            "price": "160.00",
-            "benchmark": "5031"
+            "price": "169.99",
+            "benchmark": "5026",
+            "wattage": "Bus Interface: PCIe 4.0 x4 Max Memory Size: 4096 MB Core Clock(s): 2310 MHz Memory Clock(s): 2248 MHz DirectX: 12_2 OpenGL: 4.6 107"
         },
         "Radeon Pro W5500": {
             "price": "480.99",
-            "benchmark": "4936"
+            "benchmark": "4940",
+            "wattage": "Bus Interface: PCIe 4.0 x8 Max Memory Size: 8192 MB Core Clock(s): 1187 MHz Memory Clock(s): 14000 MHz DirectX: 12 OpenGL: 4.6 125"
         },
         "GeForce GTX 980": {
             "price": "247.35",
-            "benchmark": "4840"
+            "benchmark": "4840",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1126 MHz Memory Clock(s): 1752.5 MHz DirectX: 12 OpenGL: 4.5 165"
         },
         "Radeon RX 5500 XT": {
             "price": "184.99",
-            "benchmark": "4808"
+            "benchmark": "4809",
+            "wattage": "Bus Interface: PCIe 4.0 x8 Max Memory Size: 8192 MB Core Clock(s): 1607 MHz Memory Clock(s): 1750 MHz DirectX: 12 OpenGL: 4.6 130"
         },
         "GeForce GTX 1660 Ti": {
-            "price": "218.99",
-            "benchmark": "4753"
+            "price": "229.99",
+            "benchmark": "4754",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 6144 MB Core Clock(s): 1500 MHz Memory Clock(s): 12000 MHz DirectX: 12.0 OpenGL: 4.6 120"
         },
         "GeForce GTX 1650 SUPER": {
             "price": "441.05",
-            "benchmark": "4544"
+            "benchmark": "4544",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1530 MHz Memory Clock(s): 12000 MHz DirectX: 12 OpenGL: 4.6 100"
         },
         "Radeon R9 Fury + Fury X": {
             "price": "449.99",
-            "benchmark": "4355"
+            "benchmark": "4355",
+            "wattage": "Bus Interface: PCIe 3.0x16 Max Memory Size: 4096 MB Core Clock(s): 1050 MHz  DirectX: 12 OpenGL: 4.58 275"
         },
         "GeForce GTX 1060": {
             "price": "279.99",
-            "benchmark": "4305"
+            "benchmark": "4304",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 6144 MB Core Clock(s): 1708 MHz Memory Clock(s): 2002 MHz DirectX: 12.0 OpenGL: 4.5 120"
         },
         "Radeon RX 590": {
             "price": "549.99",
-            "benchmark": "4221"
+            "benchmark": "4223",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1545 MHz Memory Clock(s): 2000 MHz DirectX: 12.0 OpenGL: 4.5 175"
         },
         "GeForce GTX 1060 5GB": {
             "price": "487.99",
-            "benchmark": "4160"
+            "benchmark": "4161",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 5120 MB Core Clock(s): 1556 MHz Memory Clock(s): 2002 MHz DirectX: 12 OpenGL: 4.6 120"
         },
         "GeForce GTX Titan": {
             "price": "745.00",
-            "benchmark": "3460"
+            "benchmark": "3460",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 6144 MB Core Clock(s): 837 MHz Memory Clock(s): 1502 MHz DirectX: 11 OpenGL: 4.5 250"
         },
         "GeForce GTX 1060 3GB": {
             "price": "269.99",
-            "benchmark": "4099"
+            "benchmark": "4100",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 3072 MB Core Clock(s): 1708 MHz Memory Clock(s): 2000 MHz DirectX: 12.0 OpenGL: 4.5 120"
         },
         "GeForce GTX 970": {
             "price": "237.99",
-            "benchmark": "4080"
+            "benchmark": "4079",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1050 MHz Memory Clock(s): 1752.5 MHz DirectX: 12 OpenGL: 4.5 145"
         },
         "GeForce GTX 780 Ti": {
             "price": "339.99",
-            "benchmark": "4037"
+            "benchmark": "4041",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 3072 MB Core Clock(s): 875 MHz Memory Clock(s): 1750 MHz DirectX: 11.0 OpenGL: 4.5 250"
         },
         "Radeon RX 470/570": {
             "price": "388.99",
-            "benchmark": "3142"
+            "benchmark": "3144",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 926 MHz Memory Clock(s): 1650 MHz DirectX: 12.0 OpenGL: 4.5 120"
         },
         "Radeon RX 580": {
             "price": "364.01",
-            "benchmark": "3759"
+            "benchmark": "3760",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1257 MHz Memory Clock(s): 2000 MHz DirectX: 12.0 OpenGL: 4.5 185"
         },
         "GeForce GTX TITAN Black": {
             "price": "524.99",
-            "benchmark": "3749"
+            "benchmark": "3749",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 6144 MB Core Clock(s): 889 MHz Memory Clock(s): 1750 MHz DirectX: 11 OpenGL: 4.5 250"
         },
         "Radeon RX 480": {
             "price": "339.99",
-            "benchmark": "3677"
+            "benchmark": "3679",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1266 MHz Memory Clock(s): 2000 MHz DirectX: 12.0 OpenGL: 4.5 150"
         },
         "GeForce GTX TITAN Z": {
-            "price": "1515.00",
-            "benchmark": "3366"
+            "price": "1,515.00",
+            "benchmark": "3366",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 12288 MB Core Clock(s): 705 MHz Memory Clock(s): 1750 MHz DirectX: 11 OpenGL: 4.5 375"
         },
         "GeForce GTX 780": {
             "price": "279.99",
-            "benchmark": "3320"
+            "benchmark": "3317",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 6144 MB Core Clock(s): 863 MHz Memory Clock(s): 1502 MHz DirectX: 11 OpenGL: 4.5 250"
         },
         "Radeon R9 290X / 390X": {
             "price": "319.99",
-            "benchmark": "3300"
+            "benchmark": "3300",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1000 MHz Memory Clock(s): 5000 MHz DirectX: 12 OpenGL: 4.4 290"
         },
         "Radeon R9 295X2": {
             "price": "499.10",
-            "benchmark": "3294"
+            "benchmark": "3294",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1018 MHz Memory Clock(s): 5000 MHz DirectX: 12 OpenGL: 4.4 500"
         },
         "Radeon RX 6400": {
-            "price": "157.10",
-            "benchmark": "3243"
+            "price": "159.99",
+            "benchmark": "3249",
+            "wattage": "Bus Interface: PCIe 4.0 x4 Max Memory Size: 4096 MB Core Clock(s): 1923 MHz Memory Clock(s): 2000 MHz DirectX: 12_2 OpenGL: 4.6 53"
         },
         "Radeon HD 7970 / R9 280X": {
             "price": "246.99",
-            "benchmark": "3168"
+            "benchmark": "3168",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 3072 MB Core Clock(s): 1000 MHz Memory Clock(s): 1500 MHz DirectX: 11.2/12.0 OpenGL: 4.4 250"
         },
         "Radeon R9 290 / 390": {
             "price": "380.00",
-            "benchmark": "3137"
+            "benchmark": "3137",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 947 MHz Memory Clock(s): 5000 MHz DirectX: 12 OpenGL: 4.4 275"
         },
         "GeForce GTX 1650": {
-            "price": "175.19",
-            "benchmark": "3106"
+            "price": "176.20",
+            "benchmark": "3106",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1485 MHz Memory Clock(s): 800 MHz DirectX: 12 OpenGL: 4.6 75"
         },
         "Radeon HD 7990": {
             "price": "399.99",
-            "benchmark": "2939"
+            "benchmark": "2939",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 3072 MB Core Clock(s): 950 MHz Memory Clock(s): 1500 MHz DirectX: 11.2 OpenGL: 4.4 375"
         },
         "GeForce GTX 960": {
             "price": "172.00",
-            "benchmark": "2791"
+            "benchmark": "2792",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1127 MHz Memory Clock(s): 1753 MHz DirectX: 12.0 OpenGL: 4.5 120"
         },
         "GeForce GTX 770": {
             "price": "249.00",
-            "benchmark": "2738"
+            "benchmark": "2738",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1046 MHz Memory Clock(s): 1752.5 MHz DirectX: 11 OpenGL: 4.5 230"
         },
         "Radeon HD 7950 / R9 280": {
             "price": "132.20",
-            "benchmark": "2725"
+            "benchmark": "2725",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 3072 MB Core Clock(s): 850 MHz Memory Clock(s): 1250 MHz DirectX: 11.2/12.0 OpenGL: 4.4 200"
+        },
+        "GeForce GTX 1050 Ti": {
+            "price": "178.90",
+            "benchmark": "2626",
+            "wattage": "Bus Interface: PCI-E 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1290 MHz Memory Clock(s): 1752 MHz DirectX: 12.0 OpenGL: 4.5 75"
         },
         "GeForce GTX 680": {
             "price": "399.00",
-            "benchmark": "2629"
-        },
-        "GeForce GTX 1050 Ti": {
-            "price": "187.90",
-            "benchmark": "2627"
+            "benchmark": "2625",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1006 MHz Memory Clock(s): 1502 MHz DirectX: 11 OpenGL: 4.5 195"
         },
         "Radeon R9 270X": {
             "price": "326.50",
-            "benchmark": "2272"
-        },
-        "GeForce GTX 690": {
-            "price": "280.99",
-            "benchmark": "2401"
+            "benchmark": "2271",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1000 MHz Memory Clock(s): 5600 MHz DirectX: 12 OpenGL: 4.4 180"
         },
         "Radeon R9 380X": {
             "price": "349.99",
-            "benchmark": "2523"
+            "benchmark": "2524",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 970 MHz  DirectX: 12.0 OpenGL: 4.5 190"
+        },
+        "GeForce GTX 690": {
+            "price": "280.99",
+            "benchmark": "2401",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 915 MHz Memory Clock(s): 1502 MHz DirectX: 11 OpenGL: 4.5 300"
         },
         "Radeon R9 285 / 380": {
             "price": "485.00",
-            "benchmark": "2447"
+            "benchmark": "2447",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 918 MHz  DirectX: 12.0 OpenGL: 4.4 190"
         },
         "GeForce GTX 760": {
             "price": "149.00",
-            "benchmark": "2145"
+            "benchmark": "2145",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 980 MHz Memory Clock(s): 1502 MHz DirectX: 11 OpenGL: 4.5 170"
         },
         "Radeon R9 380": {
             "price": "89.99",
-            "benchmark": "2404"
+            "benchmark": "2405",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 970 MHz Memory Clock(s): 1375 MHz DirectX: 12.0 OpenGL: 4.6 190"
         },
         "GeForce GTX 670": {
             "price": "193.98",
-            "benchmark": "2380"
+            "benchmark": "2381",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 915 MHz Memory Clock(s): 1502 MHz DirectX: 11 OpenGL: 4.5 170"
         },
         "GeForce GTX 760 Ti": {
             "price": "297.50",
-            "benchmark": "2325"
+            "benchmark": "2326",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 915 MHz Memory Clock(s): 1502 MHz DirectX: 11 OpenGL: 4.5 170"
         },
         "GeForce GTX 480": {
             "price": "169.99",
-            "benchmark": "2322"
-        },
-        "GeForce GTX 950": {
-            "price": "141.99",
-            "benchmark": "2265"
+            "benchmark": "2322",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1536 MB Core Clock(s): 700 MHz Memory Clock(s): 3696 MHz DirectX: 11 OpenGL: 4.5 250"
         },
         "GeForce GTX 660 Ti": {
             "price": "144.00",
-            "benchmark": "2265"
+            "benchmark": "2267",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 3072 MB Core Clock(s): 915 MHz Memory Clock(s): 1502 MHz DirectX: 11 OpenGL: 4.5 150"
+        },
+        "GeForce GTX 950": {
+            "price": "141.99",
+            "benchmark": "2264",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1024 MHz Memory Clock(s): 1653 MHz DirectX: 12 OpenGL: 4.5 90"
         },
         "Radeon R9 270 / R7 370": {
             "price": "213.16",
-            "benchmark": "2228"
+            "benchmark": "2228",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 900,975 MHz Memory Clock(s): 1400 MHz DirectX: 12 OpenGL: 4.4 150"
         },
         "Radeon R9 370": {
             "price": "159.99",
-            "benchmark": "2206"
+            "benchmark": "2206",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 950 MHz Memory Clock(s): 1150 MHz DirectX: 12.0 OpenGL: 4.5 150"
         },
         "Radeon HD 7870": {
             "price": "176.00",
-            "benchmark": "2168"
+            "benchmark": "2169",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1000 MHz Memory Clock(s): 1200 MHz DirectX: 11.2 OpenGL: 4.4 175"
         },
         "GeForce GTX 1050": {
-            "price": "178.91",
-            "benchmark": "2097"
+            "price": "179.99",
+            "benchmark": "2091",
+            "wattage": "Bus Interface: PCI-E 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1354 MHz Memory Clock(s): 1752 MHz DirectX: 12 OpenGL: 4.5 75"
         },
         "GeForce GTX 580": {
             "price": "139.92",
-            "benchmark": "1528"
+            "benchmark": "1528",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 3072 MB Core Clock(s): 772 MHz Memory Clock(s): 4008 MHz DirectX: 11 OpenGL: 4.5 244"
         },
         "GeForce GTX 660": {
             "price": "167.95",
-            "benchmark": "1814"
+            "benchmark": "1813",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 3072 MB Core Clock(s): 980 MHz Memory Clock(s): 1502 MHz DirectX: 11 OpenGL: 4.5 140"
         },
         "GeForce GTX 750 Ti": {
             "price": "88.11",
-            "benchmark": "1761"
+            "benchmark": "1762",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1020 MHz Memory Clock(s): 1350 MHz DirectX: 12.0 OpenGL: 4.5 60"
         },
         "Radeon RX 460": {
             "price": "166.81",
-            "benchmark": "1714"
+            "benchmark": "1715",
+            "wattage": "Bus Interface: PCIe 3.0 x8 Max Memory Size: 4096 MB Core Clock(s): 1090 MHz Memory Clock(s): 1750 MHz DirectX: 12.0 OpenGL: 4.5 75"
         },
         "Radeon HD 7850": {
             "price": "169.99",
-            "benchmark": "1689"
+            "benchmark": "1690",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 860 MHz Memory Clock(s): 1200 MHz DirectX: 11.2 OpenGL: 4.4 130"
         },
         "Radeon Pro WX 4100": {
             "price": "499.99",
-            "benchmark": "1624"
+            "benchmark": "1624",
+            "wattage": "Bus Interface: PCIe 3.0 x8 Max Memory Size: 4096 MB Core Clock(s): 1125 MHz Memory Clock(s): 6000 MHz DirectX: 12 OpenGL: 4.6 50"
         },
         "GeForce GTX 750": {
             "price": "79.99",
-            "benchmark": "1455"
+            "benchmark": "1456",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1020 MHz Memory Clock(s): 1250 MHz DirectX: 12.0 OpenGL: 4.5 55"
         },
         "Radeon HD 7790": {
             "price": "139.99",
-            "benchmark": "1571"
+            "benchmark": "1571",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1000 MHz Memory Clock(s): 1500 MHz DirectX: 11.2 OpenGL: 4.4 85"
         },
         "Radeon RX 560": {
             "price": "219.99",
-            "benchmark": "1504"
+            "benchmark": "1503",
+            "wattage": "Bus Interface: PCIe 3.0 x8 Max Memory Size: 4096 MB Core Clock(s): 1175 MHz Memory Clock(s): 1750 MHz DirectX: 12.0 OpenGL: 4.5 80"
         },
         "GeForce 8800 GTX": {
             "price": "119.99",
-            "benchmark": "1471"
+            "benchmark": "1471",
+            "wattage": "Bus Interface: PCIe 1.0 x16 Max Memory Size: 768 MB Core Clock(s): 575 MHz Memory Clock(s): 1800 MHz DirectX: 10 OpenGL: 3.3 155"
         },
         "Radeon R7 260X": {
             "price": "139.99",
-            "benchmark": "1443"
-        },
-        "Radeon RX Vega 11": {
-            "price": "1002.00",
-            "benchmark": "1398"
+            "benchmark": "1445",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1100 MHz Memory Clock(s): 6500 MHz DirectX: 12 OpenGL: 4.4 115"
         },
         "GeForce GTX 590": {
             "price": "435.00",
-            "benchmark": "1153"
+            "benchmark": "1153",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 3072 MB Core Clock(s): 607 MHz Memory Clock(s): 3414 MHz DirectX: 11 OpenGL: 4.5 365"
         },
         "GeForce GTX 570": {
             "price": "149.99",
-            "benchmark": "1366"
+            "benchmark": "1366",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 2560 MB Core Clock(s): 732 MHz Memory Clock(s): 3800 MHz DirectX: 11 OpenGL: 4.5 219"
         },
         "Radeon R7 260": {
             "price": "89.99",
-            "benchmark": "1361"
+            "benchmark": "1361",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 1024 MB Core Clock(s): 1000 MHz Memory Clock(s): 6000 MHz DirectX: 12 OpenGL: 4.4 95"
         },
         "Radeon R9 360": {
             "price": "133.89",
-            "benchmark": "1329"
+            "benchmark": "1329",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1000 MHz  DirectX: 12.0 OpenGL: 4.4 85"
         },
         "GeForce GTX 650 Ti": {
             "price": "93.05",
-            "benchmark": "1320"
+            "benchmark": "1320",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 928 MHz Memory Clock(s): 1350 MHz DirectX: 11 OpenGL: 4.5 110"
         },
         "Radeon R7 360": {
             "price": "145.99",
-            "benchmark": "1294"
+            "benchmark": "1292",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1050 MHz Memory Clock(s): 1425 MHz DirectX: 12 OpenGL: 4.5 100"
         },
         "GeForce GT 1030": {
             "price": "109.99",
-            "benchmark": "1264"
+            "benchmark": "1263",
+            "wattage": "Bus Interface: PCIe 3.0 x4  Max Memory Size: 2048 MB Core Clock(s): 1227 MHz Memory Clock(s): 1250 MHz DirectX: 12.0 OpenGL: 4.5 30"
         },
         "Radeon HD 6990": {
             "price": "498.49",
-            "benchmark": "1255"
+            "benchmark": "1255",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 830 MHz Memory Clock(s): 1250 MHz DirectX: 11 OpenGL: 4.4 375"
         },
         "GeForce GTX 560 Ti": {
             "price": "129.99",
-            "benchmark": "1247"
+            "benchmark": "1246",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 2048 MB Core Clock(s): 822 MHz Memory Clock(s): 4008 MHz DirectX: 11 OpenGL: 4.5 170"
         },
         "Radeon HD 5970": {
             "price": "179.99",
-            "benchmark": "919"
+            "benchmark": "919",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 725,725 MHz Memory Clock(s): 1000,1000 MHz DirectX: 11 OpenGL: 4.4 294"
         },
         "Radeon HD 7770": {
             "price": "300.00",
-            "benchmark": "1185"
+            "benchmark": "1185",
+            "wattage": "Bus Interface: PCI Express 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1020 MHz Memory Clock(s): 1150 MHz DirectX: 11.2 OpenGL: 4.2 80"
         },
         "Radeon HD 5870": {
             "price": "295.00",
-            "benchmark": "1134"
+            "benchmark": "1134",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 850,850 MHz Memory Clock(s): 1200,1200 MHz DirectX: 11 OpenGL: 4.4 228"
         },
         "GeForce GTX 460": {
             "price": "89.99",
-            "benchmark": "1053"
+            "benchmark": "1053",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 768 MB Core Clock(s): 675 MHz Memory Clock(s): 3600 MHz DirectX: 11 OpenGL: 4.5 150"
         },
         "GeForce GTX 470": {
             "price": "59.99",
-            "benchmark": "1108"
+            "benchmark": "1108",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1280 MB Core Clock(s): 607 MHz Memory Clock(s): 3348 MHz DirectX: 11 OpenGL: 4.5 215"
         },
         "Radeon HD 6970": {
             "price": "149.99",
-            "benchmark": "1094"
+            "benchmark": "1094",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 880 MHz Memory Clock(s): 1375 MHz DirectX: 11 OpenGL: 4.4 250"
         },
         "GeForce GTX 460 v2": {
             "price": "199.99",
-            "benchmark": "1054"
+            "benchmark": "1054",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 778 MHz Memory Clock(s): 4008 MHz DirectX: 11 OpenGL: 4.5 160"
         },
         "GeForce GTX 560": {
             "price": "205.00",
-            "benchmark": "1043"
+            "benchmark": "1044",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 810 MHz Memory Clock(s): 4008 MHz DirectX: 11 OpenGL: 4.5 150"
         },
         "Radeon RX 550": {
             "price": "170.09",
-            "benchmark": "1041"
+            "benchmark": "1042",
+            "wattage": "Bus Interface: PCIe 3.0 x8 Max Memory Size: 4096 MB Core Clock(s): 1100 MHz Memory Clock(s): 1750 MHz DirectX: 12.0 OpenGL: 4.5 50"
         },
         "Radeon HD 6950": {
             "price": "139.99",
-            "benchmark": "1007"
+            "benchmark": "1008",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 800 MHz Memory Clock(s): 1250 MHz DirectX: 11.0 OpenGL: 4.4 200"
         },
         "Radeon HD 6870": {
             "price": "275.00",
-            "benchmark": "986"
+            "benchmark": "987",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 900 MHz Memory Clock(s): 1050 MHz DirectX: 11 OpenGL: 4.4 151"
         },
         "GeForce GTX 560 SE": {
             "price": "89.99",
-            "benchmark": "937"
+            "benchmark": "937",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 736 MHz Memory Clock(s): 3828 MHz DirectX: 11 OpenGL: 4.5 150"
         },
         "GeForce GTX 465": {
             "price": "195.00",
-            "benchmark": "936"
+            "benchmark": "936",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 607 MHz Memory Clock(s): 3206 MHz DirectX: 11 OpenGL: 4.5 200"
         },
         "Radeon HD 5850": {
             "price": "288.99",
-            "benchmark": "934"
+            "benchmark": "935",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 725,725 MHz Memory Clock(s): 1000,1000 MHz DirectX: 11 OpenGL: 4.4 151"
         },
         "Radeon R9 350": {
             "price": "299.00",
-            "benchmark": "918"
+            "benchmark": "918",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 925 MHz Memory Clock(s): 1125 MHz DirectX: 12 OpenGL: 4.3 60"
         },
         "GeForce GTX 745": {
             "price": "284.95",
-            "benchmark": "915"
-        },
-        "Radeon Vega 8": {
-            "price": "126.86",
-            "benchmark": "886"
+            "benchmark": "916",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 1033 MHz Memory Clock(s): 900 MHz DirectX: 12.0 OpenGL: 4.5 55"
         },
         "Radeon HD 5830": {
             "price": "258.99",
-            "benchmark": "883"
+            "benchmark": "883",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 800 MHz Memory Clock(s): 1000 MHz DirectX: 11 OpenGL: 4.4 175"
         },
         "Radeon R7 450": {
             "price": "299.00",
-            "benchmark": "872"
+            "benchmark": "872",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1050 MHz Memory Clock(s): 1125 MHz DirectX: 12 OpenGL: 4.3 65"
         },
         "Radeon HD 7750": {
             "price": "99.99",
-            "benchmark": "847"
+            "benchmark": "847",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 800,900 MHz Memory Clock(s): 800,1125 MHz DirectX: 11.2 OpenGL: 4.4 55"
         },
         "GeForce GT 740": {
             "price": "236.99",
-            "benchmark": "730"
+            "benchmark": "730",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 1024 MB Core Clock(s): 993 MHz Memory Clock(s): 1250 MHz DirectX: 12.0 OpenGL: 4.4 64"
         },
         "GeForce GTX 650": {
             "price": "109.98",
-            "benchmark": "779"
+            "benchmark": "778",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1058 MHz Memory Clock(s): 1250 MHz DirectX: 11 OpenGL: 4.5 64"
         },
         "GeForce GTX 460 SE": {
             "price": "159.99",
-            "benchmark": "774"
+            "benchmark": "774",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 650 MHz Memory Clock(s): 3400 MHz DirectX: 11 OpenGL: 4.5 150"
         },
         "Radeon HD 6850": {
             "price": "85.00",
-            "benchmark": "762"
-        },
-        "Radeon R9 255": {
-            "price": "344.16",
-            "benchmark": "760"
+            "benchmark": "762",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 775 MHz Memory Clock(s): 1000 MHz DirectX: 11 OpenGL: 4.4 127"
         },
         "GeForce GTX 550 Ti": {
             "price": "99.99",
-            "benchmark": "721"
+            "benchmark": "721",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 3072 MB Core Clock(s): 900 MHz Memory Clock(s): 4104 MHz DirectX: 11 OpenGL: 4.5 116"
         },
         "Radeon HD 6790": {
             "price": "294.00",
-            "benchmark": "704"
+            "benchmark": "704",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 840 MHz Memory Clock(s): 1050 MHz DirectX: 11 OpenGL: 4.4 150"
         },
         "Radeon HD 5770": {
             "price": "189.99",
-            "benchmark": "657"
+            "benchmark": "657",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 650 MHz Memory Clock(s): 400, 900 MHz DirectX: 11.0 OpenGL: 4.4 108"
         },
         "GeForce GT 240": {
             "price": "160.97",
-            "benchmark": "638"
+            "benchmark": "638",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 550 MHz Memory Clock(s): 1800,2000,3400 MHz DirectX: 10.1 OpenGL: 3.3 69"
         },
         "Radeon HD 7730": {
             "price": "232.70",
-            "benchmark": "637"
+            "benchmark": "634",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 1024 MB Core Clock(s): 800 MHz Memory Clock(s): 900-1125 MHz DirectX: 11.2 OpenGL: 4.2 47"
         },
         "Radeon HD 6770": {
             "price": "264.99",
-            "benchmark": "633"
-        },
-        "Radeon R7 250": {
-            "price": "189.97",
-            "benchmark": "629"
+            "benchmark": "633",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 850,850 MHz Memory Clock(s): 1200,1050 MHz DirectX: 11 OpenGL: 4.4 108"
         },
         "GeForce GT 640": {
             "price": "109.99",
-            "benchmark": "628"
+            "benchmark": "629",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 4096 MB Core Clock(s): 900 MHz Memory Clock(s): 891 MHz DirectX: 11.0 OpenGL: 4.5 65"
+        },
+        "Radeon R7 250": {
+            "price": "189.97",
+            "benchmark": "628",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 1000 MHz Memory Clock(s): 1800,4600 MHz DirectX: 12 OpenGL: 4.4 75"
         },
         "GeForce GTS 450": {
             "price": "79.99",
-            "benchmark": "625"
+            "benchmark": "626",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 783 MHz Memory Clock(s): 3608 MHz DirectX: 11 OpenGL: 4.5 106"
         },
         "Radeon HD 4650": {
             "price": "69.99",
-            "benchmark": "607"
+            "benchmark": "607",
+            "wattage": "Bus Interface: PCIe 2.0 x16,AGP 8x Max Memory Size: 1024 MB Core Clock(s): 600,650 MHz Memory Clock(s): 400,500,700 MHz DirectX: 10.1 OpenGL: 3.3 48"
         },
         "GeForce GT 710": {
             "price": "102.99",
-            "benchmark": "363"
+            "benchmark": "363",
+            "wattage": "Bus Interface: PCIe 2.0 x8 Max Memory Size: 2048 MB Core Clock(s): 823 MHz Memory Clock(s): 900 MHz DirectX: 12.0 OpenGL: 4.5 25"
         },
         "Radeon HD 8570": {
             "price": "98.68",
-            "benchmark": "570"
+            "benchmark": "570",
+            "wattage": "Bus Interface: PCIe 3.0 x8 Max Memory Size: 2048 MB Core Clock(s): 730 MHz Memory Clock(s): 900,1150 MHz DirectX: 11.1 OpenGL: 4.4 66"
         },
         "GeForce GT 720": {
             "price": "99.99",
-            "benchmark": "382"
+            "benchmark": "383",
+            "wattage": "Bus Interface: PCIe 2.0 x8 Max Memory Size: 2048 MB Core Clock(s): 797 MHz Memory Clock(s): 900 MHz DirectX: 12.0 OpenGL: 4.5 19"
         },
         "Radeon HD 5750": {
             "price": "69.99",
-            "benchmark": "538"
+            "benchmark": "537",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 700,700 MHz Memory Clock(s): 1150,1150 MHz DirectX: 11 OpenGL: 4.4 86"
         },
         "GeForce 210": {
             "price": "54.92",
-            "benchmark": "517"
+            "benchmark": "517",
+            "wattage": "Bus Interface: PCIe 2.0 x16,PCIe x1,PCI Max Memory Size: 1024 MB Core Clock(s): 520,589 MHz Memory Clock(s): 1000\u20131600 MHz DirectX: 10.1 OpenGL: 3.3 30.5"
         },
         "GeForce GT 730": {
             "price": "109.99",
-            "benchmark": "507"
+            "benchmark": "507",
+            "wattage": "Bus Interface: PCIe 2.0 x8 x16 Max Memory Size: 2048 MB Core Clock(s): 700-902 MHz Memory Clock(s): 550-1250 MHz DirectX: 12.0 OpenGL: 4.5 49"
         },
         "Radeon R7 240": {
             "price": "109.99",
-            "benchmark": "480"
+            "benchmark": "480",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 730 MHz Memory Clock(s): 1800,4500 MHz DirectX: 12 OpenGL: 4.4 30"
         },
         "Radeon R5 240": {
             "price": "85.00",
-            "benchmark": "472"
+            "benchmark": "471",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 730 MHz Memory Clock(s): 1800 MHz DirectX: 11.2 OpenGL: 4.4 50"
         },
         "Radeon R5 330": {
             "price": "339.99",
-            "benchmark": "369"
+            "benchmark": "369",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB  DirectX: 12.0 OpenGL: 4.4 30"
         },
         "Radeon HD 6750": {
             "price": "79.99",
-            "benchmark": "452"
+            "benchmark": "452",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 700,700 MHz Memory Clock(s): 1150,1150 MHz DirectX: 11 OpenGL: 4.4 86"
         },
         "Radeon HD 6570": {
             "price": "63.81",
-            "benchmark": "311"
+            "benchmark": "311",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 650 MHz Memory Clock(s): 900 MHz DirectX: 11 OpenGL: 4.4 44"
         },
         "Radeon HD 6670": {
             "price": "68.99",
-            "benchmark": "399"
+            "benchmark": "399",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 800,800 MHz Memory Clock(s): 800,1000 MHz DirectX: 11 OpenGL: 4.4 66"
         },
         "GeForce GT 630": {
             "price": "147.01",
-            "benchmark": "360"
+            "benchmark": "362",
+            "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 2048 MB Core Clock(s): 875 MHz Memory Clock(s): 891 MHz DirectX: 11 OpenGL: 4.5 50"
         },
         "GeForce GT 440": {
             "price": "225.00",
-            "benchmark": "353"
+            "benchmark": "354",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 2048 MB Core Clock(s): 810 MHz Memory Clock(s): 1800,3200 MHz DirectX: 11 OpenGL: 4.5 65"
         },
         "Radeon HD 5670": {
             "price": "67.00",
-            "benchmark": "350"
+            "benchmark": "350",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 775,775 MHz Memory Clock(s): 800,1000 MHz DirectX: 11 OpenGL: 4.4 64"
         },
         "Radeon HD 7570": {
             "price": "102.49",
-            "benchmark": "343"
+            "benchmark": "343",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 650 MHz Memory Clock(s): 900,1000 MHz DirectX: 11 OpenGL: 4.4 44"
         },
         "GeForce GT 530": {
             "price": "49.00",
-            "benchmark": "316"
+            "benchmark": "316",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 2048 MB Core Clock(s): 700 MHz Memory Clock(s): 1800 MHz DirectX: 11 OpenGL: 4.5 50"
         },
         "GeForce GT 430": {
             "price": "139.99",
-            "benchmark": "287"
+            "benchmark": "286",
+            "wattage": "Bus Interface: PCIe 2.0 x16,PCI Max Memory Size: 1024 MB Core Clock(s): 700 MHz Memory Clock(s): 1800 MHz DirectX: 11 OpenGL: 4.5 49"
         },
         "Radeon HD 5570": {
-            "price": "183.34",
-            "benchmark": "273"
+            "price": "183.30",
+            "benchmark": "273",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 650,650 MHz Memory Clock(s): 400,900 MHz DirectX: 11 OpenGL: 4.4 39"
         },
         "Radeon HD 5550": {
             "price": "54.99",
-            "benchmark": "222"
+            "benchmark": "222",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 550,550,550 MHz Memory Clock(s): 400,800,800 MHz DirectX: 11 OpenGL: 4.4 39"
         },
         "GeForce GT 620": {
             "price": "154.00",
-            "benchmark": "208"
-        },
-        "GeForce GT 705": {
-            "price": "296.76",
-            "benchmark": "191"
+            "benchmark": "208",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 512 MB Core Clock(s): 700-810 MHz Memory Clock(s): 898 MHz DirectX: 11.0 OpenGL: 4.5 30"
         },
         "Radeon HD 8490": {
             "price": "89.99",
-            "benchmark": "189"
+            "benchmark": "189",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 875 MHz Memory Clock(s): 900 MHz DirectX: 11 OpenGL: 4.4 35"
+        },
+        "GeForce GT 705": {
+            "price": "296.76",
+            "benchmark": "186",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 810 MHz Memory Clock(s): 898 MHz DirectX: 12.0 OpenGL: 4.5 29"
         },
         "Radeon HD 7470": {
             "price": "81.37",
-            "benchmark": "185"
+            "benchmark": "185",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 627,750 MHz Memory Clock(s): 800,900 MHz DirectX: 11 OpenGL: 4.4 27"
         },
         "Radeon R5 235": {
             "price": "60.13",
-            "benchmark": "184"
-        },
-        "GeForce GT 520": {
-            "price": "304.00",
-            "benchmark": "181"
+            "benchmark": "184",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 775 MHz Memory Clock(s): 1800 MHz DirectX: 11 OpenGL: 4.4 35"
         },
         "GeForce GTS 250": {
             "price": "69.99",
-            "benchmark": "181"
+            "benchmark": "181",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 738 MHz Memory Clock(s): 2000,2200 MHz DirectX: 10 OpenGL: 3.3 150"
+        },
+        "GeForce GT 520": {
+            "price": "304.00",
+            "benchmark": "180",
+            "wattage": "Bus Interface: PCIe 2.0 x16,PCIe 2.0 x1,PCI Max Memory Size: 2048 MB Core Clock(s): 810 MHz Memory Clock(s): 1800 MHz DirectX: 11 OpenGL: 4.5 29"
         },
         "GeForce GT 610": {
             "price": "139.99",
-            "benchmark": "176"
+            "benchmark": "176",
+            "wattage": "Bus Interface: PCIe 2.0 x16, PCIe x1, PCI Max Memory Size: 2048 MB Core Clock(s): 810 MHz Memory Clock(s): 1000,1800 MHz DirectX: 11 OpenGL: 4.5 29"
         },
         "GeForce GT 420": {
             "price": "155.00",
-            "benchmark": "169"
+            "benchmark": "169",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 700 MHz Memory Clock(s): 900 MHz DirectX: 11 OpenGL: 4.1 50"
         },
         "Radeon HD 7450": {
             "price": "49.99",
-            "benchmark": "147"
+            "benchmark": "147",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 1024 MB Core Clock(s): 627,750 MHz Memory Clock(s): 533,800 MHz DirectX: 11 OpenGL: 4.4 18"
         },
         "GeForce 510": {
             "price": "69.99",
-            "benchmark": "136"
+            "benchmark": "136",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 2048 MB Core Clock(s): 523 MHz Memory Clock(s): 1800 MHz DirectX: 11 OpenGL: 4.5 25"
         },
         "Radeon HD 6450": {
             "price": "89.00",
-            "benchmark": "133"
+            "benchmark": "133",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 512 MB Core Clock(s): 627,750 MHz Memory Clock(s): 533,800 MHz DirectX: 11 OpenGL: 4.4 18"
         },
         "Radeon HD 8350": {
             "price": "99.81",
-            "benchmark": "41"
+            "benchmark": "41",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 512 MB Core Clock(s): 400 MHz Memory Clock(s): 650 MHz DirectX: 80:08:04 OpenGL: 11 4.4"
         },
         "RADEON HD 6350": {
             "price": "59.00",
-            "benchmark": "79"
+            "benchmark": "79",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 512 MB Core Clock(s): 650 MHz Memory Clock(s): 800 MHz DirectX: 11 OpenGL: 4.4 19.1"
         },
         "GeForce 8400 GS": {
             "price": "85.97",
-            "benchmark": "58"
+            "benchmark": "58",
+            "wattage": "Bus Interface: PCIe 1.0 x16,PCI Max Memory Size: 512 MB Core Clock(s): 450 MHz Memory Clock(s): 800 MHz DirectX: 10 OpenGL: 3.3 40"
         },
         "GeForce 9500 GT": {
             "price": "85.99",
-            "benchmark": "52"
+            "benchmark": "52",
+            "wattage": "Bus Interface: PCIe 2.0 x16,PCI Max Memory Size: 1024 MB Core Clock(s): 550 MHz Memory Clock(s): 1000,1600 MHz DirectX: 10 OpenGL: 3.3 50"
         },
         "Radeon HD 5450": {
             "price": "94.96",
-            "benchmark": "47"
+            "benchmark": "47",
+            "wattage": "Bus Interface: PCIe 2.1 x16 Max Memory Size: 2048 MB Core Clock(s): 650 MHz Memory Clock(s): 400,800 MHz DirectX: 11.0 OpenGL: 4.4 19.1"
         },
         "Radeon R5 220": {
             "price": "85.26",
-            "benchmark": "41"
+            "benchmark": "41",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 650 MHz Memory Clock(s): 533 MHz DirectX: 11 OpenGL: 3.2 19"
         },
         "GeForce GT 220": {
             "price": "39.99",
-            "benchmark": "35"
+            "benchmark": "35",
+            "wattage": "Bus Interface: PCIe 2.0 x16 Max Memory Size: 1024 MB Core Clock(s): 625 MHz Memory Clock(s): 1000,1580 MHz DirectX: 10.1 OpenGL: 3.3 58"
         },
         "GeForce 8600 GT": {
             "price": "196.00",
-            "benchmark": "33"
+            "benchmark": "33",
+            "wattage": "Bus Interface: PCIe 1.0 x16,PCI Max Memory Size: 1024 MB Core Clock(s): 540 MHz Memory Clock(s): 800,1400 MHz DirectX: 10 OpenGL: 3.3 47"
         }
     },
-    "motherboard": [],
     "ram": {
         "A-DATA Technology DDR4 3000 8GB": {
             "price": "389.99",
@@ -1664,15 +2166,15 @@
         },
         "Corsair CMG16GX4M2D3600C18 8GB": {
             "price": "125.00",
-            "benchmark": "3475"
+            "benchmark": "3499"
         },
         "Corsair CMG16GX4M2E3200C16 8GB": {
             "price": "115.00",
-            "benchmark": "3344"
+            "benchmark": "3358"
         },
         "Corsair CMG32GX4M2D3600C18 16GB": {
             "price": "209.00",
-            "benchmark": "3624"
+            "benchmark": "3608"
         },
         "Corsair CMG32GX4M2E3200C16 16GB": {
             "price": "199.00",
@@ -1688,11 +2190,11 @@
         },
         "Corsair CMH16GX4M2D3600C18 8GB": {
             "price": "122.98",
-            "benchmark": "3481"
+            "benchmark": "3474"
         },
         "Corsair CMH16GX4M2E3200C16 8GB": {
             "price": "118.98",
-            "benchmark": "3436"
+            "benchmark": "3437"
         },
         "Corsair CMH16GX4M2Z3200C16 8GB": {
             "price": "179.00",
@@ -1704,7 +2206,7 @@
         },
         "Corsair CMH32GX4M2D3600C18 16GB": {
             "price": "189.00",
-            "benchmark": "3593"
+            "benchmark": "3594"
         },
         "Corsair CMH32GX4M2E3200C16 16GB": {
             "price": "205.00",
@@ -1740,11 +2242,11 @@
         },
         "Corsair CMK16GX4M1A2400C14 16GB": {
             "price": "72.99",
-            "benchmark": "2779"
+            "benchmark": "2776"
         },
         "Corsair CMK16GX4M1A2400C16 16GB": {
             "price": "71.99",
-            "benchmark": "2798"
+            "benchmark": "2821"
         },
         "Corsair CMK16GX4M1A2666C16 16GB": {
             "price": "73.99",
@@ -1752,7 +2254,7 @@
         },
         "Corsair CMK16GX4M1B3000C15 16GB": {
             "price": "81.99",
-            "benchmark": "3360"
+            "benchmark": "3354"
         },
         "Corsair CMK16GX4M1C3000C16 16GB": {
             "price": "383.96",
@@ -1760,7 +2262,7 @@
         },
         "Corsair CMK16GX4M1D3000C16 16GB": {
             "price": "109.99",
-            "benchmark": "3186"
+            "benchmark": "3177"
         },
         "Corsair CMK16GX4M2A2133C13 8GB": {
             "price": "95.00",
@@ -1768,7 +2270,7 @@
         },
         "Corsair CMK16GX4M2A2400C14 8GB": {
             "price": "115.00",
-            "benchmark": "3013"
+            "benchmark": "3012"
         },
         "Corsair CMK16GX4M2A2400C16 8GB": {
             "price": "99.00",
@@ -1796,7 +2298,7 @@
         },
         "Corsair CMK16GX4M2B3200C16 8GB": {
             "price": "119.00",
-            "benchmark": "3450"
+            "benchmark": "3451"
         },
         "Corsair CMK16GX4M2B3333C16 8GB": {
             "price": "521.41",
@@ -1832,11 +2334,11 @@
         },
         "Corsair CMK16GX4M2D3600C18 8GB": {
             "price": "105.00",
-            "benchmark": "3427"
+            "benchmark": "3429"
         },
         "Corsair CMK16GX4M2E3200C16 8GB": {
             "price": "99.00",
-            "benchmark": "3336"
+            "benchmark": "3331"
         },
         "Corsair CMK16GX4M2E4000C19 8GB": {
             "price": "249.99",
@@ -1856,7 +2358,7 @@
         },
         "Corsair CMK16GX4M2K4266C19 8GB": {
             "price": "269.99",
-            "benchmark": "3355"
+            "benchmark": "3376"
         },
         "Corsair CMK16GX4M2K4400C19 8GB": {
             "price": "692.66",
@@ -1864,7 +2366,7 @@
         },
         "Corsair CMK16GX4M2L3000C15 8GB": {
             "price": "199.99",
-            "benchmark": "3492"
+            "benchmark": "3458"
         },
         "Corsair CMK16GX4M2Z2400C16 8GB": {
             "price": "95.98",
@@ -1880,7 +2382,7 @@
         },
         "Corsair CMK16GX4M2Z3200C16 8GB": {
             "price": "99.00",
-            "benchmark": "3550"
+            "benchmark": "3546"
         },
         "Corsair CMK16GX4M2Z3466C16 8GB": {
             "price": "132.99",
@@ -1924,7 +2426,7 @@
         },
         "Corsair CMK16GX4M4B3000C15 4GB": {
             "price": "359.99",
-            "benchmark": "3190"
+            "benchmark": "3183"
         },
         "Corsair CMK16GX4M4B3200C15 4GB": {
             "price": "169.99",
@@ -1976,7 +2478,7 @@
         },
         "Corsair CMK32GX4M2A2666C16 16GB": {
             "price": "189.00",
-            "benchmark": "3294"
+            "benchmark": "3295"
         },
         "Corsair CMK32GX4M2A2800C16 16GB": {
             "price": "289.29",
@@ -1984,11 +2486,11 @@
         },
         "Corsair CMK32GX4M2B3000C15 16GB": {
             "price": "169.99",
-            "benchmark": "3520"
+            "benchmark": "3522"
         },
         "Corsair CMK32GX4M2B3200C16 16GB": {
             "price": "179.99",
-            "benchmark": "3613"
+            "benchmark": "3612"
         },
         "Corsair CMK32GX4M2B3333C16 16GB": {
             "price": "349.99",
@@ -2008,7 +2510,7 @@
         },
         "Corsair CMK32GX4M2D3000C16 16GB": {
             "price": "179.00",
-            "benchmark": "3479"
+            "benchmark": "3476"
         },
         "Corsair CMK32GX4M2D3200C16 16GB": {
             "price": "413.25",
@@ -2016,7 +2518,7 @@
         },
         "Corsair CMK32GX4M2D3600C18 16GB": {
             "price": "195.00",
-            "benchmark": "3598"
+            "benchmark": "3596"
         },
         "Corsair CMK32GX4M2F4000C19 16GB": {
             "price": "655.39",
@@ -2052,7 +2554,7 @@
         },
         "Corsair CMK32GX4M4A2400C14 8GB": {
             "price": "399.99",
-            "benchmark": "2998"
+            "benchmark": "2992"
         },
         "Corsair CMK32GX4M4A2400C16 8GB": {
             "price": "272.76",
@@ -2164,7 +2666,7 @@
         },
         "Corsair CMK64GX4M2E3200C16 32GB": {
             "price": "349.00",
-            "benchmark": "3537"
+            "benchmark": "3539"
         },
         "Corsair CMK64GX4M4A2133C13 16GB": {
             "price": "289.99",
@@ -2264,7 +2766,7 @@
         },
         "Corsair CMK8GX4M1A2400C16 8GB": {
             "price": "37.99",
-            "benchmark": "2826"
+            "benchmark": "2815"
         },
         "Corsair CMK8GX4M1A2666C16 8GB": {
             "price": "48.98",
@@ -2276,7 +2778,7 @@
         },
         "Corsair CMK8GX4M2A2133C13 4GB": {
             "price": "79.00",
-            "benchmark": "2746"
+            "benchmark": "2753"
         },
         "Corsair CMK8GX4M2A2400C14 4GB": {
             "price": "69.00",
@@ -2288,7 +2790,7 @@
         },
         "Corsair CMK8GX4M2A2666C16 4GB": {
             "price": "69.00",
-            "benchmark": "2805"
+            "benchmark": "2817"
         },
         "Corsair CMK8GX4M2A2800C16 4GB": {
             "price": "68.99",
@@ -2344,7 +2846,7 @@
         },
         "Corsair CMN32GX4M2Z3600C16 16GB": {
             "price": "299.00",
-            "benchmark": "3790"
+            "benchmark": "3794"
         },
         "Corsair CMN32GX4M2Z3600C18 16GB": {
             "price": "269.00",
@@ -2524,7 +3026,7 @@
         },
         "Corsair CMSX32GX4M2A2666C18 16GB": {
             "price": "139.99",
-            "benchmark": "2899"
+            "benchmark": "2901"
         },
         "Corsair CMSX32GX4M2A3000C16 16GB": {
             "price": "249.99",
@@ -2584,7 +3086,7 @@
         },
         "Corsair CMT32GX4M2C3000C15 16GB": {
             "price": "254.99",
-            "benchmark": "3626"
+            "benchmark": "3620"
         },
         "Corsair CMT32GX4M2C3200C16 16GB": {
             "price": "379.00",
@@ -2596,7 +3098,7 @@
         },
         "Corsair CMT32GX4M2D3600C18 16GB": {
             "price": "459.00",
-            "benchmark": "3657"
+            "benchmark": "3631"
         },
         "Corsair CMT32GX4M2E3200C16 16GB": {
             "price": "279.00",
@@ -2636,7 +3138,7 @@
         },
         "Corsair CMU16GX4M2A2666C16 8GB": {
             "price": "213.99",
-            "benchmark": "3106"
+            "benchmark": "3081"
         },
         "Corsair CMU16GX4M2C3000C15 8GB": {
             "price": "159.63",
@@ -2656,7 +3158,7 @@
         },
         "Corsair CMU32GX4M2C3000C15 16GB": {
             "price": "435.90",
-            "benchmark": "3409"
+            "benchmark": "3406"
         },
         "Corsair CMU32GX4M2C3000C16 16GB": {
             "price": "623.84",
@@ -2760,11 +3262,11 @@
         },
         "Corsair CMW16GX4M2C3200C14 8GB": {
             "price": "214.99",
-            "benchmark": "3902"
+            "benchmark": "3876"
         },
         "Corsair CMW16GX4M2C3200C16 8GB": {
             "price": "129.00",
-            "benchmark": "3514"
+            "benchmark": "3512"
         },
         "Corsair CMW16GX4M2C3466C16 8GB": {
             "price": "219.98",
@@ -2772,7 +3274,7 @@
         },
         "Corsair CMW16GX4M2C3600C18 8GB": {
             "price": "149.00",
-            "benchmark": "3632"
+            "benchmark": "3627"
         },
         "Corsair CMW16GX4M2D3000C16 8GB": {
             "price": "119.00",
@@ -2780,7 +3282,7 @@
         },
         "Corsair CMW16GX4M2D3600C18 8GB": {
             "price": "139.00",
-            "benchmark": "3521"
+            "benchmark": "3522"
         },
         "Corsair CMW16GX4M2E3200C16 8GB": {
             "price": "125.00",
@@ -2808,11 +3310,11 @@
         },
         "Corsair CMW16GX4M2Z3600C18 8GB": {
             "price": "148.98",
-            "benchmark": "3529"
+            "benchmark": "3528"
         },
         "Corsair CMW32GX4M2A2666C16 16GB": {
             "price": "209.00",
-            "benchmark": "3439"
+            "benchmark": "3433"
         },
         "Corsair CMW32GX4M2C3000C15 16GB": {
             "price": "174.99",
@@ -2820,7 +3322,7 @@
         },
         "Corsair CMW32GX4M2C3200C16 16GB": {
             "price": "199.99",
-            "benchmark": "3642"
+            "benchmark": "3640"
         },
         "Corsair CMW32GX4M2C3200C18 16GB": {
             "price": "179.00",
@@ -2832,11 +3334,11 @@
         },
         "Corsair CMW32GX4M2D3600C18 16GB": {
             "price": "209.00",
-            "benchmark": "3614"
+            "benchmark": "3605"
         },
         "Corsair CMW32GX4M2E3200C16 16GB": {
             "price": "189.00",
-            "benchmark": "3526"
+            "benchmark": "3518"
         },
         "Corsair CMW32GX4M2Z2933C16 16GB": {
             "price": "169.99",
@@ -2848,7 +3350,7 @@
         },
         "Corsair CMW32GX4M2Z3600C18 16GB": {
             "price": "209.00",
-            "benchmark": "3641"
+            "benchmark": "3646"
         },
         "Corsair CMW32GX4M4A2666C16 8GB": {
             "price": "218.98",
@@ -2864,14 +3366,14 @@
         },
         "Corsair CMW32GX4M4C3200C16 8GB": {
             "price": "239.00",
-            "benchmark": "3650"
+            "benchmark": "3651"
         },
         "Corsair CMW32GX4M4C3466C16 8GB": {
             "price": "279.99",
             "benchmark": "3471"
         },
         "Corsair CMW32GX4M4C3600C18 8GB": {
-            "price": "298.98",
+            "price": "273.98",
             "benchmark": "3760"
         },
         "Corsair CMW32GX4M4K4000C19 8GB": {
@@ -2883,7 +3385,7 @@
             "benchmark": "3402"
         },
         "Corsair CMW64GX4M2E3200C16 32GB": {
-            "price": "389.00",
+            "price": "359.00",
             "benchmark": "3556"
         },
         "Corsair CMW64GX4M4A2666C16 16GB": {
@@ -2924,7 +3426,7 @@
         },
         "Corsair CMW64GX4M8C3000C15 8GB": {
             "price": "575.39",
-            "benchmark": "3295"
+            "benchmark": "3164"
         },
         "Corsair CMW64GX4M8C3200C16 8GB": {
             "price": "399.99",
@@ -2972,7 +3474,7 @@
         },
         "Crucial Technology BLE8G4D36BEEAK.M8FE1 8GB": {
             "price": "118.03",
-            "benchmark": "4015"
+            "benchmark": "4017"
         },
         "Crucial Technology BLS16G4D240FSB.16FAD 16GB": {
             "price": "65.99",
@@ -3020,7 +3522,7 @@
         },
         "Crucial Technology BLS16G4D32AESB.M16FE 16GB": {
             "price": "94.99",
-            "benchmark": "3776"
+            "benchmark": "3793"
         },
         "Crucial Technology BLS16G4D32AESC.M16FE 16GB": {
             "price": "89.99",
@@ -3048,7 +3550,7 @@
         },
         "Crucial Technology BLS4G4D240FSA.M8FADM 4GB": {
             "price": "68.99",
-            "benchmark": "2703"
+            "benchmark": "2701"
         },
         "Crucial Technology BLS4G4D240FSB.8FADG 4GB": {
             "price": "39.00",
@@ -3103,11 +3605,11 @@
             "benchmark": "2756"
         },
         "Crucial Technology BLS8G4D240FSC.16FARG 8GB": {
-            "price": "55.34",
+            "price": "55.32",
             "benchmark": "2947"
         },
         "Crucial Technology BLS8G4D240FSE.16FAR 8GB": {
-            "price": "130.08",
+            "price": "167.28",
             "benchmark": "2851"
         },
         "Crucial Technology BLS8G4D26BFSB.16FBD2 8GB": {
@@ -3128,7 +3630,7 @@
         },
         "Crucial Technology BLS8G4D30AESBK.M8FE 8GB": {
             "price": "146.01",
-            "benchmark": "3404"
+            "benchmark": "3395"
         },
         "Crucial Technology BLS8G4D30AESCK.M8FE 8GB": {
             "price": "137.84",
@@ -3167,7 +3669,7 @@
             "benchmark": "2685"
         },
         "Crucial Technology BLS8G4S26BFSD.16FBD2 8GB": {
-            "price": "86.39",
+            "price": "81.63",
             "benchmark": "2635"
         },
         "Crucial Technology BLT16G4D30AETA.K16FB 16GB": {
@@ -3252,7 +3754,7 @@
         },
         "Crucial Technology CT16G4DFRA32A.C8FE 16GB": {
             "price": "67.99",
-            "benchmark": "3444"
+            "benchmark": "3424"
         },
         "Crucial Technology CT16G4DFS8266.C8FB 16GB": {
             "price": "77.43",
@@ -3315,7 +3817,7 @@
             "benchmark": "2772"
         },
         "Crucial Technology CT16G4SFRA32A.C16FJ 16GB": {
-            "price": "48.59",
+            "price": "55.99",
             "benchmark": "2597"
         },
         "Crucial Technology CT16G4SFRA32A.C8FB 16GB": {
@@ -3327,7 +3829,7 @@
             "benchmark": "2899"
         },
         "Crucial Technology CT16G4SFS8266.C8FB 16GB": {
-            "price": "117.01",
+            "price": "67.54",
             "benchmark": "2571"
         },
         "Crucial Technology CT16G4SFS8266.C8FE 16GB": {
@@ -3395,7 +3897,7 @@
             "benchmark": "1816"
         },
         "Crucial Technology CT8G4DFD8213.16FA11 8GB": {
-            "price": "22.55",
+            "price": "22.35",
             "benchmark": "2780"
         },
         "Crucial Technology CT8G4DFD8213.C16FA11 8GB": {
@@ -3452,7 +3954,7 @@
         },
         "Crucial Technology CT8G4DFS8266.C8FD1 8GB": {
             "price": "203.36",
-            "benchmark": "3031"
+            "benchmark": "3028"
         },
         "Crucial Technology CT8G4DFS832A.C8FE 8GB": {
             "price": "38.13",
@@ -3483,7 +3985,7 @@
             "benchmark": "2510"
         },
         "Crucial Technology CT8G4SFRA32A.C16FG 8GB": {
-            "price": "34.82",
+            "price": "23.21",
             "benchmark": "2477"
         },
         "Crucial Technology CT8G4SFRA32A.C4FE 8GB": {
@@ -3519,7 +4021,7 @@
             "benchmark": "2052"
         },
         "Crucial Technology CT8G4SFS8266.C8FD1 8GB": {
-            "price": "68.15",
+            "price": "64.24",
             "benchmark": "2660"
         },
         "Crucial Technology CT8G4SFS832A.C8FE 8GB": {
@@ -3548,7 +4050,7 @@
         },
         "G Skill Intl F4-2400C15-8GRK 8GB": {
             "price": "356.99",
-            "benchmark": "2927"
+            "benchmark": "2958"
         },
         "G Skill Intl F4-2400C15-8GRR 8GB": {
             "price": "142.99",
@@ -3580,7 +4082,7 @@
         },
         "GIGA - BYTE Technology Co Ltd GP-ARS16G33 8GB": {
             "price": "129.00",
-            "benchmark": "3779"
+            "benchmark": "3898"
         },
         "GIGA - BYTE Technology Co Ltd GP-ARS16G37 8GB": {
             "price": "169.00",
@@ -3600,7 +4102,7 @@
         },
         "Kingston HP26D4S9S8ME-8 8GB": {
             "price": "41.99",
-            "benchmark": "2579"
+            "benchmark": "2586"
         },
         "Kingston HP26D4S9S8MH-8 8GB": {
             "price": "69.99",
@@ -3766,13 +4268,17 @@
             "price": "34.99",
             "benchmark": "3032"
         },
+        "PNY Technologies, Inc. 8GBF2X04JEEE36-12-K 8GB": {
+            "price": "83.95",
+            "benchmark": "NA"
+        },
         "Samsung M378A1G43DB0-CPB 8GB": {
             "price": "99.00",
             "benchmark": "2572"
         },
         "Samsung M378A1K43BB1-CPB 8GB": {
             "price": "42.00",
-            "benchmark": "2610"
+            "benchmark": "2612"
         },
         "Samsung M378A1K43CB2-CTD 8GB": {
             "price": "36.94",
@@ -3796,7 +4302,7 @@
         },
         "Samsung M378A2K43DB1-CTD 16GB": {
             "price": "94.95",
-            "benchmark": "3012"
+            "benchmark": "3013"
         },
         "Samsung M378A5143DB0-CPB 4GB": {
             "price": "34.00",
@@ -3828,7 +4334,7 @@
         },
         "Samsung M393A1G40DB0-CPB 8GB": {
             "price": "114.33",
-            "benchmark": "2423"
+            "benchmark": "2422"
         },
         "Samsung M393A1G40DB1-CRC 8GB": {
             "price": "62.99",
@@ -3836,7 +4342,7 @@
         },
         "Samsung M393A1G43DB0-CPB 8GB": {
             "price": "60.27",
-            "benchmark": "2365"
+            "benchmark": "2364"
         },
         "Samsung M393A1G43EB1-CRC 8GB": {
             "price": "121.83",
@@ -3848,7 +4354,7 @@
         },
         "Samsung M393A2G40DB0-CPB 16GB": {
             "price": "59.75",
-            "benchmark": "2318"
+            "benchmark": "2319"
         },
         "Samsung M393A2G40DB1-CRC 16GB": {
             "price": "169.99",
@@ -3916,35 +4422,35 @@
         },
         "Samsung M471A1K43BB0-CPB 8GB": {
             "price": "29.00",
-            "benchmark": "2292"
+            "benchmark": "2289"
         },
         "Samsung M471A1K43BB1-CRC 8GB": {
             "price": "38.00",
-            "benchmark": "2423"
+            "benchmark": "2428"
         },
         "Samsung M471A1K43CB1-CRC 8GB": {
             "price": "40.49",
-            "benchmark": "2405"
+            "benchmark": "2403"
         },
         "Samsung M471A1K43CB1-CTD 8GB": {
             "price": "35.51",
-            "benchmark": "2809"
+            "benchmark": "2807"
         },
         "Samsung M471A1K43DB1-CTD 8GB": {
             "price": "45.00",
-            "benchmark": "2739"
+            "benchmark": "2743"
         },
         "Samsung M471A2K43BB1-CPB 16GB": {
             "price": "164.99",
-            "benchmark": "2431"
+            "benchmark": "2423"
         },
         "Samsung M471A2K43CB1-CRC 16GB": {
             "price": "60.00",
-            "benchmark": "2415"
+            "benchmark": "2414"
         },
         "Samsung M471A2K43CB1-CTD 16GB": {
             "price": "30.99",
-            "benchmark": "2828"
+            "benchmark": "2827"
         },
         "Samsung M471A5143DB0-CPB 4GB": {
             "price": "43.75",
@@ -4048,11 +4554,7 @@
         },
         "Thermaltake Technology Co Ltd RA24D408GX2-4400C19A 8GB": {
             "price": "189.00",
-            "benchmark": "3826"
+            "benchmark": "3764"
         }
-    },
-    "ssd": [],
-    "case": [],
-    "psu": [],
-    "cooler": []
+    }
 }

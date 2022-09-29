@@ -1,8 +1,8 @@
 import json
 from operator import attrgetter
+from attr import attr
 from requests import get
 from bs4 import BeautifulSoup as bs
-import re
 
 class Scraper:
     
@@ -90,9 +90,9 @@ class Scraper:
             if gpu_prices[ii].text == 'NA' or gpu_benchmark[ii].text == 'NA':
                 continue
             # removes the '*' from price
-            gpu_data = bs(get('https://www.videocardbenchmark.net/gpu.php?gpu='+gpu_href_tag[ii].text).content, 'html.parser')
-            type_gpu = gpu_data.find_all('div', attrs={'class': 'desc-foot'})
-            if 'Desktop' in type_gpu[0].text:
+            gpu_data = bs(get('https://www.videocardbenchmark.net/gpu.php?gpu='+gpu_href_tag[ii]['href']).content, 'html.parser')
+            type_gpu = gpu_data.find('div', attrs={'class': 'desc-foot'})
+            if 'Desktop' in type_gpu.text:
                 wattage_info = gpu_data.find_all('em', attrs={'class': 'left-desc-cpu'})
                 for info in wattage_info:
                     if 'Max TDP: ' in info.text:
