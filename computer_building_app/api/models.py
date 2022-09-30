@@ -23,8 +23,16 @@ class Builds(models.Model):
     """
     This creates a model for a given build with the given attributes
     """
-    hash = models.CharField(max_length=8, default="", unique=True)
+    hash = models.CharField(max_length=8, default=generate_unique_code, unique=True)
     budget = models.IntegerField(null=False, default=1000)
     cpu_type = models.CharField(max_length=5, default="")
     gpu_type = models.CharField(max_length=7, default="")
     aio_pref = models.CharField(max_length=1, default="")
+    cpu_name = models.CharField(max_length=50, default="", null=False)
+    gpu_name = models.CharField(max_length=50, default="", null=False)
+    ram_name = models.CharField(max_length=50, default="", null=False)
+    mb_name = models.CharField(max_length=50, default="", null=False)
+    case_name = models.CharField(max_length=50, default="", null=False)
+    psu_name = models.CharField(max_length=50, default="", null=False)
+    ssd_name = models.CharField(max_length=50, default="", null=False)
+    aio_name = models.CharField(max_length=50, default="")
