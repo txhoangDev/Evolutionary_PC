@@ -5,7 +5,7 @@ import json
 class PC_Build:
     
     parts_data = {}
-    with open("/Users/thuonghoang/Desktop/Projects/Computer_Building/api/Data.json", 'r') as file:
+    with open("/Users/thuonghoang/Desktop/Projects/Computer_Building/api/parts_generator/Data.json", 'r') as file:
         parts_data = json.load(file)
     file.close()
     

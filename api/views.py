@@ -7,7 +7,7 @@ from .serializers import *
 from .models import Builds
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .Computer_Building import run_evolution
+from .parts_generator.Computer_Building import run_evolution
 
 # Create your views here.
 class BuildView(generics.ListAPIView):
