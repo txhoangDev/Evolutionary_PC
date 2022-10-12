@@ -958,7 +958,7 @@
     },
     "gpu": {
         "GeForce RTX 3090 Ti": {
-            "price": "1,099.99",
+            "price": "1099.99",
             "benchmark": "18048",
             "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 24576 MB Core Clock(s): 1560 MHz Memory Clock(s): 1313 MHz DirectX: 12 OpenGL: 4.6 450"
         },
@@ -1033,12 +1033,12 @@
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 11264 MB Core Clock(s): 1480 MHz Memory Clock(s): 2750 MHz DirectX: 12.0 OpenGL: 4.5 250"
         },
         "NVIDIA TITAN Xp": {
-            "price": "1,645.00",
+            "price": "1645.00",
             "benchmark": "9463",
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 12288 MB Core Clock(s): 1405 MHz Memory Clock(s): 1426 MHz DirectX: 12.0 OpenGL: 4.5 250"
         },
         "TITAN V": {
-            "price": "1,999.99",
+            "price": "1999.99",
             "benchmark": "9414",
             "wattage": "Bus Interface: PCIe 3.0 x16\t Max Memory Size: 12288 MB Core Clock(s): 1200 MHz Memory Clock(s): 850 MHz DirectX: 12 OpenGL: 4.6 250"
         },
@@ -1083,7 +1083,7 @@
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1605 MHz Memory Clock(s): 14000 (1750x8) MHz DirectX: 12 OpenGL: 4.6 215"
         },
         "Radeon VII": {
-            "price": "1,899.95",
+            "price": "1899.95",
             "benchmark": "7106",
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 16384 MB Core Clock(s): 1400 MHz  DirectX: 12 OpenGL: 4.6 300"
         },
@@ -1103,7 +1103,7 @@
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1607 MHz Memory Clock(s): 2002 MHz DirectX: 12 OpenGL: 4.6 180"
         },
         "Radeon Pro W5700": {
-            "price": "1,649.99",
+            "price": "1649.99",
             "benchmark": "7160",
             "wattage": "Bus Interface: PCIe 4.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1243 MHz Memory Clock(s): 14000 MHz DirectX: 12 OpenGL: 4.6 205"
         },
@@ -1148,17 +1148,17 @@
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1506 MHz Memory Clock(s): 2002 MHz DirectX: 12.0 OpenGL: 4.5 150"
         },
         "Radeon Pro WX 8200": {
-            "price": "1,599.39",
+            "price": "1599.39",
             "benchmark": "5889",
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1200 MHz Memory Clock(s): 2000 MHz DirectX: 12 OpenGL: 4.6 230"
         },
         "Radeon Vega Frontier Edition": {
-            "price": "1,679.99",
+            "price": "1679.99",
             "benchmark": "5853",
             "wattage": "Bus Interface: PCIe 3.0 x16  Max Memory Size: 16384 MB Core Clock(s): 1382 MHz Memory Clock(s): 945 MHz DirectX: 12 OpenGL: 4.5 350"
         },
         "GeForce GTX TITAN X": {
-            "price": "1,096.99",
+            "price": "1096.99",
             "benchmark": "5841",
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 12288 MB Core Clock(s): 1000 MHz Memory Clock(s): 1753 (7012) MHz DirectX: 12 OpenGL: 4.5 250"
         },
@@ -1173,7 +1173,7 @@
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 6144 MB Core Clock(s): 1530 MHz Memory Clock(s): 14000 MHz DirectX: 12 OpenGL: 4.6 125"
         },
         "Radeon Pro Duo": {
-            "price": "1,199.06",
+            "price": "1199.06",
             "benchmark": "3487",
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1000 MHz Memory Clock(s): 500 MHz DirectX: 12 OpenGL: 4.5 350"
         },
@@ -1273,7 +1273,7 @@
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 8192 MB Core Clock(s): 1266 MHz Memory Clock(s): 2000 MHz DirectX: 12.0 OpenGL: 4.5 150"
         },
         "GeForce GTX TITAN Z": {
-            "price": "1,515.00",
+            "price": "1515.00",
             "benchmark": "3366",
             "wattage": "Bus Interface: PCIe 3.0 x16 Max Memory Size: 12288 MB Core Clock(s): 705 MHz Memory Clock(s): 1750 MHz DirectX: 11 OpenGL: 4.5 375"
         },
@@ -3241,7 +3241,7 @@
             "benchmark": "3315"
         },
         "Corsair CMW128GX4M4E3200C16 32GB": {
-            "price": "1,149.00",
+            "price": "1149.00",
             "benchmark": "3348"
         },
         "Corsair CMW128GX4M8C3000C16 16GB": {
@@ -4267,10 +4267,6 @@
         "Patriot Memory (PDP Systems) PSD48G266681 8GB": {
             "price": "34.99",
             "benchmark": "3032"
-        },
-        "PNY Technologies, Inc. 8GBF2X04JEEE36-12-K 8GB": {
-            "price": "83.95",
-            "benchmark": "NA"
         },
         "Samsung M378A1G43DB0-CPB 8GB": {
             "price": "99.00",

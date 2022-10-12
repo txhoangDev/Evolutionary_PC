@@ -16,7 +16,7 @@ class PC_Build:
     solution = []
     num_parents = 0
     
-    def __init__(self, num_of_parents):
+    def __init__(self, num_of_parents, budget, cpu_type, gpu_type, cpu_budget, gpu_budget, ram_budget):
         
         """
         
@@ -32,11 +32,21 @@ class PC_Build:
         """
         
         # get the list of CPUs and GPUs and randomize them
-        cpus = list(self.parts_data['cpu'].keys())
+        if cpu_budget == 0:
+            cpu_budget = float(budget) * 0.25
+        if gpu_budget == 0:
+            gpu_budget = float(budget) * 0.35
+        if ram_budget == 0:
+            ram_budget = float(budget) * 0.1
+        cpus = list(cpu for cpu in self.parts_data['cpu'].keys() if float(self.parts_data['cpu'][cpu]["price"]) <= cpu_budget)
+        if cpu_type != "":
+            cpus = list(cpu for cpu in cpus if cpu_type in cpu)
         random.shuffle(cpus)
-        gpus = list(self.parts_data['gpu'].keys())
+        gpus = list(gpu for gpu in self.parts_data['gpu'].keys() if float(self.parts_data['gpu'][gpu]["price"]) <= gpu_budget)
+        if gpu_type != "":
+            gpus = list(gpu for gpu in gpus if gpu_type in gpu)
         random.shuffle(gpus)
-        rams = list(self.parts_data['ram'].keys())
+        rams = list(ram for ram in self.parts_data['ram'].keys() if float(self.parts_data['ram'][ram]["price"]) <= ram_budget)
         
         # find the max length from all of the lists
         max_list = max(len(cpus), len(gpus), len(rams))
@@ -221,4 +231,7 @@ class PC_Build:
         for parent in self.parents:
             if self.Calculate_Fitness(parent) > self.Calculate_Fitness(self.solution):
                 self.solution = parent
-        return self.solution
+        solution_with_price = {self.solution[0]: self.parts_data['cpu'][self.solution[0]]['price'],
+                               self.solution[1]: self.parts_data['gpu'][self.solution[1]]['price'],
+                               self.solution[2]: self.parts_data['ram'][self.solution[2]]['price']}
+        return solution_with_price

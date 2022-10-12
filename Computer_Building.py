@@ -2,6 +2,7 @@
 import json
 from datetime import datetime
 from Data_Scraper.scraper import Scraper
+from evolutionary_algorithm.Evolutionary_Algorithm import PC_Build
 
 def update_json(parts):
     scraper = Scraper()
@@ -15,16 +16,8 @@ def update_json(parts):
         json_string = json.dumps(parts, indent=4)
         file.write(json_string)
     file.close()
-
-if __name__ == "__main__":
-    s = Scraper()
-    with open('Data.json', 'r') as file:
-        parts = json.load(file)
-    file.close()
-    date1 = datetime.strptime(parts['Last Update'], "%Y-%m-%d")
-    today = datetime.today()
-
-    change = today - date1
     
-    if change.days > 7:
-        update_json(parts)
+def run_evolution(budget, cpu_type, gpu_type, cpu_budget, gpu_budget, ram_budget):
+    temp = PC_Build(num_of_parents=10, budget=budget, cpu_type=cpu_type, gpu_type=gpu_type, cpu_budget=cpu_budget, gpu_budget=gpu_budget, ram_budget=ram_budget)
+    temp.Generate_Parents()
+    return temp.run(num_of_generations=500)
