@@ -1,4 +1,5 @@
 /computer_building_app/frontend/node_modules/*
+/computer_building_app/node_modules/*
 /computer_building_app/frontend/__pycache__/*
 /backend/Data_Scraper/__pycache__/*
 /backend/evolutionary_algorithm/__pycache__/*
