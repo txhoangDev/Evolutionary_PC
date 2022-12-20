@@ -1,2 +1,4 @@
 evolution_builder
 evolution_builder/*
+backend/evolution_builder/__pycache__/*
+backend/api/__pycache__/*
