@@ -1,7 +1,4 @@
-/computer_building_app/frontend/node_modules/*
-/computer_building_app/node_modules/*
-/computer_building_app/frontend/__pycache__/*
-/backend/Data_Scraper/__pycache__/*
-/backend/evolutionary_algorithm/__pycache__/*
-/computer_building_app/api/__pycache__/*
-/computer_building_app/computer_building_app/__pycache__/*
+evolution_builder
+evolution_builder/*
+backend/evolution_builder/__pycache__/*
+backend/api/__pycache__/*
