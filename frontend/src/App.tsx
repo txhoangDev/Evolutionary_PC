@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, CssBaseline, ThemeProvider } from "@mui/material";
+import { Box, CssBaseline, ThemeProvider, Container } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { routes as appRoutes } from "./routes";
@@ -52,8 +52,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <React.Fragment>
-        <Box height="100vh" display="flex" flexDirection="column">
-          <NavBar />
+        <NavBar />
+        <Box height="100vh" display="flex" flexDirection="column" sx={{ mt: 2 }}>
           <Router>
             <Routes>
               {appRoutes.map((route) => (
