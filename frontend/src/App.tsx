@@ -3,22 +3,16 @@ import { Box, CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { routes as appRoutes } from "./routes";
+import NavBar from "./components/Navigation/NavBar";
+
 function App() {
 
   // define theme
   const theme = createTheme({
     palette: {
       primary: {
-        light: "#63b8ff",
-        main: "#c6a6dc",
-        dark: "#005db0",
-        contrastText: "#ffffff",
-      },
-      secondary: {
-        main: "#4db6ac",
-        light: "#82e9de",
-        dark: "#00867d",
-        contrastText: "#000",
+        main: "#FFFFFF",
+        contrastText: "#000000",
       },
     },
     components: {
@@ -27,11 +21,11 @@ function App() {
           root: {
             "&": {
               position: 'relative',
-              color: 'white',
+              color: 'black',
               textDecoration: 'none'
             },
             "&:hover": {
-              color: 'white'
+              color: 'black'
             },
             "&::before": {
               content: '""',
@@ -41,7 +35,7 @@ function App() {
               height: "2px",
               bottom: '0',
               left: '0',
-              backgroundColor: 'white',
+              backgroundColor: 'black',
               transform: 'scaleX(0)',
               transition: 'transform 0.3s ease'
             },
@@ -59,6 +53,7 @@ function App() {
       <CssBaseline />
       <React.Fragment>
         <Box height="100vh" display="flex" flexDirection="column">
+          <NavBar />
           <Router>
             <Routes>
               {appRoutes.map((route) => (
