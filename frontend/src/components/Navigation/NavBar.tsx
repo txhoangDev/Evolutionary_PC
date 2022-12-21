@@ -13,9 +13,12 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
+// pages for navigation
 const pages: string[] = ['About', 'FAQ', 'Build'];
 
+// navbar component
 const NavBar: React.FC = () => {
+    // used for when the nav bar needs to be clicked on for navigation
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
 
     const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
