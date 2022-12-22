@@ -30,7 +30,7 @@ const NavBar: React.FC = () => {
     };
 
     return (
-        <AppBar position="static" elevation={0}>
+        <AppBar position="static" elevation={0} sx={{ backgroundColor: 'white', height: 50, position: "sticky", top: 0, zIndex: 1030 }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, CssBaseline, ThemeProvider, Container } from "@mui/material";
+import { Box, CssBaseline, ThemeProvider, Grid } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { routes as appRoutes } from "./routes";
@@ -11,7 +11,7 @@ function App() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#FFFFFF",
+        main: "#03B0FD",
         contrastText: "#000000",
       },
     },
@@ -44,15 +44,14 @@ function App() {
             }
           }
         }
-      }
+      },
     }
   });
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <React.Fragment>
-        <NavBar />
+      <NavBar />
         <Box height="100vh" display="flex" flexDirection="column" sx={{ mt: 2 }}>
           <Router>
             <Routes>
@@ -66,7 +65,6 @@ function App() {
             </Routes>
           </Router>
         </Box>
-      </React.Fragment>
     </ThemeProvider>
   );
 }
