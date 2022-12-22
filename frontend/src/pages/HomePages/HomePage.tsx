@@ -10,10 +10,8 @@ const HomePage = () => {
                 backgroundImage: `url(${bg})`, 
                 backgroundRepeat: "no-repeat", 
                 backgroundSize:"cover", 
-                width: '100%',
-                height: '100%',
-                paddingLeft: 0,
-                paddingRight: 0
+                flex: "auto",
+                height: "100%",
             }}
         >
             <Container>
