@@ -3,11 +3,9 @@ import {
     Typography,
     Grid,
     Fade,
-    useMediaQuery,
     Box,
     Button
 } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
 import white1 from '../../assets/images/white_pc1.png';
 import white2 from '../../assets/images/white_pc2.png';
 import white3 from '../../assets/images/white_pc3.png';
@@ -17,13 +15,8 @@ import white5 from '../../assets/images/white_pc5.png';
 const images: string[] = [white1, white2, white3, white4, white5]
 
 const Home: React.FC = () => {
-    const theme = useTheme();
     const [index, setIndex] = useState(0);
     const [image, setImage] = useState(true);
-
-    const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-        defaultMatches: true,
-    });
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -96,7 +89,7 @@ const Home: React.FC = () => {
                     justifyContent="center"
                     alignItems="center"
                     textAlign="center"
-                    sx={{ mt: 4 }}
+                    sx={{ mt: 4, mb: 4 }}
                 >
                     <Fade in={image} timeout={1000}>
                         <img src={images[index]} alt="image" loading="lazy" />
