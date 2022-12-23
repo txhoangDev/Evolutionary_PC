@@ -1,5 +1,5 @@
 import React from "react";
-import { CssBaseline, ThemeProvider, responsiveFontSizes, Box } from "@mui/material";
+import { CssBaseline, ThemeProvider, responsiveFontSizes, Container, Box } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { routes as appRoutes } from "./routes";
@@ -66,16 +66,7 @@ function App() {
         }}
       >
         <NavBar />
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          flex="1 0 auto"
-        >
-          <Box
-            display="block"
-            height="100%"
-            width="100%"
-          >
+        <Container disableGutters maxWidth={false}>
             <Router>
               <Routes>
                 {appRoutes.map((route) => (
@@ -87,8 +78,7 @@ function App() {
                 ))}
               </Routes>
             </Router>
-          </Box>
-        </Box>
+        </Container>
         <Footer />
       </Box>
     </ThemeProvider>
