@@ -12,8 +12,7 @@ const Footer: React.FC = () => {
                 height: "30px",
                 width: "100%",
                 bottom: 0,
-                position: 'relative',
-                mt: 1
+                marginTop: "auto"
             }}
         >
             <Typography variant="h6" component="p">

@@ -2,6 +2,7 @@ import { FC, lazy } from "react";
 
 const HomePage = lazy(() => import('./pages/HomePages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage'));
+const FAQPage = lazy(() => import('./pages/FAQPage/FAQPage'));
 
 // interface
 interface Route {
@@ -26,5 +27,12 @@ export const routes: Array<Route> = [
         path: '/about',
         enabled: true,
         component: AboutPage
+    },
+    {
+        key: 'FAQ-route',
+        title: 'FAQ',
+        path: '/faq',
+        enabled: true,
+        component: FAQPage
     }
 ]
