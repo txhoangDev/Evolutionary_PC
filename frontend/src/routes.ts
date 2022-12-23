@@ -1,6 +1,7 @@
 import { FC, lazy } from "react";
 
 const HomePage = lazy(() => import('./pages/HomePages/HomePage'));
+const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage'));
 
 // interface
 interface Route {
@@ -19,4 +20,11 @@ export const routes: Array<Route> = [
         enabled: true,
         component: HomePage
     },
+    {
+        key: 'aboute-route',
+        title: 'About',
+        path: '/about',
+        enabled: true,
+        component: AboutPage
+    }
 ]
