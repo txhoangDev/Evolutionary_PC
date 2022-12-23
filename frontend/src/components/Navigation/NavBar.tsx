@@ -13,9 +13,6 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-// pages for navigation
-const pages: string[] = ['About', 'FAQ', 'Build'];
-
 // navbar component
 const NavBar: React.FC = () => {
     // used for when the nav bar needs to be clicked on for navigation
@@ -41,7 +38,7 @@ const NavBar: React.FC = () => {
             }}
         >
             <Container maxWidth="xl">
-                <Toolbar disableGutters>
+                <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
                     <Typography
                         variant="h6"
                         noWrap
@@ -56,7 +53,7 @@ const NavBar: React.FC = () => {
                             textDecoration: 'none',
                         }}
                     >
-                        Evolution PC
+                        Evolutionary PC
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -113,16 +110,31 @@ const NavBar: React.FC = () => {
                     >
                         Evolutionary PC
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                <Link>{page}</Link>
-                            </Button>
-                        ))}
+                    <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }, textAlign: "center" }}>
+                        <Button
+                            key='About'
+                            onClick={handleCloseNavMenu}
+                            href="/about"
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                        >
+                            <Link>About</Link>
+                        </Button>
+                        <Button
+                            key='FAQ'
+                            onClick={handleCloseNavMenu}
+                            href="/faq"
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                        >
+                            <Link>FAQ</Link>
+                        </Button>
+                        <Button
+                            key='Build'
+                            onClick={handleCloseNavMenu}
+                            href="/build"
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                        >
+                            <Link>Build</Link>
+                        </Button>
                     </Box>
                 </Toolbar>
             </Container>

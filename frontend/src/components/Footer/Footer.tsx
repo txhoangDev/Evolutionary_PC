@@ -10,9 +10,10 @@ const Footer: React.FC = () => {
             sx={{
                 backgroundColor: 'white',
                 height: "30px",
-                left: 0,
-                position: "static",
-                overflow: "hidden"
+                width: "100%",
+                bottom: 0,
+                position: 'relative',
+                mt: 1
             }}
         >
             <Typography variant="h6" component="p">

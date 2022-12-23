@@ -2,22 +2,21 @@ import React from 'react';
 import { Container, Box } from '@mui/material';
 import Home from '../../components/Home/Home';
 import bg from '../../assets/images/trianglify-lowres.png';
+import './HomePage.css';
 
 const HomePage = () => {
     return (
-        <div
+        <Box
             style={{ 
                 backgroundImage: `url(${bg})`, 
                 backgroundRepeat: "no-repeat", 
                 backgroundSize:"cover", 
-                flex: "auto",
-                height: "100%",
             }}
         >
             <Container>
                 <Home />
             </Container>
-        </div>
+        </Box>
     )
 }
 

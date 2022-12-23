@@ -1,5 +1,5 @@
 import React from "react";
-import { CssBaseline, ThemeProvider, Box } from "@mui/material";
+import { CssBaseline, ThemeProvider, responsiveFontSizes, Box } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { routes as appRoutes } from "./routes";
@@ -9,12 +9,15 @@ import Footer from './components/Footer/Footer';
 function App() {
 
   // define theme
-  const theme = createTheme({
+  let theme = createTheme({
     palette: {
       primary: {
-        main: "#7241FF",
+        main: "#547793",
         contrastText: "#FFFFFF",
       },
+      secondary: {
+        main: "#F7F2EF"
+      }
     },
     components: {
       MuiLink: {
@@ -48,23 +51,46 @@ function App() {
       },
     }
   });
+  theme = responsiveFontSizes(theme);
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <NavBar />
-      <Router>
-        <Routes>
-          {appRoutes.map((route) => (
-            <Route
-              key={route.key}
-              path={route.path}
-              element={<route.component />}
-            />
-          ))}
-        </Routes>
-      </Router>
-      <Footer />
+      <Box
+        display="flex"
+        minHeight="100vh"
+        sx={{
+          margin: 0,
+          padding: 0,
+          flexDirection: "column"
+        }}
+      >
+        <NavBar />
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          flex="1 0 auto"
+        >
+          <Box
+            display="block"
+            height="100%"
+            width="100%"
+          >
+            <Router>
+              <Routes>
+                {appRoutes.map((route) => (
+                  <Route
+                    key={route.key}
+                    path={route.path}
+                    element={<route.component />}
+                  />
+                ))}
+              </Routes>
+            </Router>
+          </Box>
+        </Box>
+        <Footer />
+      </Box>
     </ThemeProvider>
   );
 }
