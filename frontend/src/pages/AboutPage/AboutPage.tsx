@@ -26,7 +26,7 @@ const AboutPage = () => {
                 <Build />
             </Container>
         </Container>
-    )
+    );
 }
 
 export default AboutPage;
