@@ -3,6 +3,7 @@ import { FC, lazy } from "react";
 const HomePage = lazy(() => import('./pages/HomePages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage'));
 const FAQPage = lazy(() => import('./pages/FAQPage/FAQPage'));
+const BuildPage = lazy(() => import('./pages/BuildPage/BuildPage'));
 
 // interface
 interface Route {
@@ -34,5 +35,12 @@ export const routes: Array<Route> = [
         path: '/faq',
         enabled: true,
         component: FAQPage
-    }
+    },
+    {
+        key: 'build-route',
+        title: 'Build',
+        path: '/build',
+        enabled: true,
+        component: BuildPage
+    },
 ]
