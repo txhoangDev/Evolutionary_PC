@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup as bs
 
 class Scraper:
     
-    with open("Data.json", "r") as file:
+    with open("backend/algorithm/Data.json", "r") as file:
         parts_data = json.load(file)
     file.close()
     

@@ -2,11 +2,11 @@ import React from 'react';
 import { Container } from '@mui/material';
 import Build from '../../components/Build/Build';
 
-const BuildPage: React.FC = () => {
+const BuildPage = () => {
     return(
-        <Container>
-            <Build />
-        </Container>
+            <Container>
+                <Build />
+            </Container>
     )
 }
 

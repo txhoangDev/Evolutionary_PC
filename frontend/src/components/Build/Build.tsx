@@ -15,6 +15,8 @@ import {
     FormControl,
     FormLabel,
 } from '@mui/material';
+import { createNewBuild } from '../../http-common';
+import { useNavigate } from 'react-router-dom';
 
 const steps = ["Budget", "CPU Configuration", "GPU Configuration", "RAM budget"]
 
@@ -29,6 +31,7 @@ const Build: React.FC = () => {
     const [completed, setCompleted] = useState<{
         [k: number]: boolean;
     }>({});
+    const navigate = useNavigate();
 
     const validateInput = () => {
         if (validateBudget(budget)){
@@ -214,11 +217,31 @@ const Build: React.FC = () => {
     };
 
     const handleBack = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep - 1);
+        setActiveStep((prevActiveStep: number) => prevActiveStep - 1);
     };
 
     const handleBuild = () => {
-        
+        let cBudget: number = 0;
+        let gBudget: number = 0;
+        let rBudget: number = 0;
+        if (cpuBudget !== "") {
+            cBudget = Number(cpuBudget);
+        }
+        if (gpuBudget !== "") {
+            gBudget = Number(gpuBudget);
+        }
+        if (ramBudget !== "") {
+            rBudget = Number(ramBudget);
+        }
+        const result = createNewBuild(Number(budget), cpuBrand, cBudget, gpuBrand, gBudget, rBudget);
+        result.then(
+            function(res) {
+                navigate(`/final/${res}`);
+            },
+            function(err) {
+                console.log(err);
+            }
+        )
     };
 
     return(

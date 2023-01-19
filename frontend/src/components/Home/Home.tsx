@@ -39,6 +39,7 @@ const Home: React.FC = () => {
             container 
             direction="column"
             alignItems="center"
+            style={{ minHeight: '100vh' }}
         >
             <Grid item xs={12} md={6}>
                 <Box
@@ -79,7 +80,7 @@ const Home: React.FC = () => {
                 </Box>
             </Grid>
             <Grid item xs={12} md={6}>
-                <Button variant="contained" sx={{ mt: 2 }}>
+                <Button variant="contained" sx={{ mt: 2 }} href='/build'>
                     Get Started
                 </Button>
             </Grid>
@@ -92,7 +93,7 @@ const Home: React.FC = () => {
                     sx={{ mt: 4, mb: 4 }}
                 >
                     <Fade in={image} timeout={1000}>
-                        <img src={images[index]} alt="image" loading="lazy" />
+                        <img src={images[index]} alt="computer" loading="lazy" />
                     </Fade>
                 </Box>
             </Grid>
