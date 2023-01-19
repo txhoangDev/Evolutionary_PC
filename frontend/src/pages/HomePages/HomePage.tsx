@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Box } from '@mui/material';
 import Home from '../../components/Home/Home';
-import bg from '../../assets/images/trianglify-lowres.png';
+import bg from '../../assets/images/bg.svg';
 
 const HomePage = () => {
     return (
@@ -10,6 +10,7 @@ const HomePage = () => {
                 backgroundImage: `url(${bg})`, 
                 backgroundRepeat: "no-repeat", 
                 backgroundSize:"cover", 
+                height: '100vh'
             }}
         >
             <Container>

@@ -44,12 +44,12 @@ const NavBar: React.FC = () => {
                         noWrap
                         component="a"
                         href="/"
+                        color="primary"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
                             fontFamily: 'monospace',
                             fontWeight: 700,
-                            color: 'black',
                             textDecoration: 'none',
                         }}
                     >
@@ -99,6 +99,7 @@ const NavBar: React.FC = () => {
                         noWrap
                         component="a"
                         href="/"
+                        color="primary"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },

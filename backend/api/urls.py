@@ -14,11 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, re_path
-from evolutionary_builder import views
+from django.urls import path, re_path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/builds', views.builds_list),
-    # re_path(r'^api/builds/([0-9])$', views.builds_detail),
+    re_path('api/', include('evolutionary_builder.urls')),
 ]

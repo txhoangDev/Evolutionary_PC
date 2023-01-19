@@ -49,6 +49,15 @@ function App() {
           }
         }
       },
+      MuiIconButton: {
+        styleOverrides: {
+          root: {
+            "&:hover": {
+              backgroundColor: 'transparent'
+            },
+          }
+        }
+      }
     }
   });
   theme = responsiveFontSizes(theme);

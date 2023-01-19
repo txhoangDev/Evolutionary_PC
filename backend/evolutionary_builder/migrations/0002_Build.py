@@ -4,10 +4,9 @@ from django.db import migrations
 
 def create_data(apps, schema_editor):
     Build = apps.get_model('evolutionary_builder', 'Build')
-    Build(budget=1000, cpu_brand="AMD", gpu_brand="GeForce", cooler_type="LIQUID",
-          cpu="AMD Ryzen 7 5800X", gpu="GeForce 3060ti", ram="Corsair",
-          mb="NZXT b550", case="HYTE", psu="Corsair", storage="980",
-          cooler="NZXT Z73").save()
+    Build(budget=1000, cpu_brand="AMD", gpu_brand="GeForce", cpu_budget=100,
+          gpu_budget=100, ram_budget=100,
+          cpu="AMD Ryzen 7 5800X", gpu="GeForce 3060ti", ram="Corsair").save()
 
 class Migration(migrations.Migration):
 
