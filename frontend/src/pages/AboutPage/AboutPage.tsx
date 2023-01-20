@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from '@mui/material';
-import About from '../../components/About/About';
-import Workings from '../../components/About/Workings';
-import Technology from '../../components/About/Technology';
-import Testmony from '../../components/About/Testmony';
-import Build from '../../components/About/Build';
+import About from './components/About';
+import Workings from './components/Workings';
+import Technology from './components/Technology';
+import Testmony from './components/Testmony';
+import Build from './components/Build';
 
 const AboutPage = () => {
 
