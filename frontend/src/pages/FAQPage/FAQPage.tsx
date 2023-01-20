@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Box } from '@mui/material';
-import FAQ from '../../components/FAQ/FAQ';
-import FAQTitle from '../../components/FAQ/FAQTitle';
+import FAQ from './components/FAQ';
+import FAQTitle from './components/FAQTitle';
 
 const FAQPage: React.FC = () => {
     return(
