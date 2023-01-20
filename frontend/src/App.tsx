@@ -29,7 +29,8 @@ function App() {
               textDecoration: 'none'
             },
             "&:hover": {
-              color: 'black'
+              color: 'black',
+
             },
             "&::before": {
               content: '""',
@@ -57,7 +58,7 @@ function App() {
             },
           }
         }
-      }
+      },
     }
   });
   theme = responsiveFontSizes(theme);

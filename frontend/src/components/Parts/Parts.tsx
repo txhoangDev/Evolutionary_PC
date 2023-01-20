@@ -3,7 +3,14 @@ import { getBuild } from "../../http-common";
 import { useParams } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { Box, Grid, Typography, IconButton, Slide } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  IconButton,
+  Slide,
+  Button,
+} from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CPU from "../../assets/images/cpu.png";
@@ -36,6 +43,8 @@ const descriptions: string[] = [
   "This component holds all your components and makes your computer look good or not. This one is a no brainer and is mostly just for looks and differs per person. The only complication would be if the motherboard fits or not. Remember to look at the size of your motherboard and the size of the case. Make sure the case can fit the motherboard.",
 ];
 
+const maxLength = 250;
+
 const Parts: React.FC = () => {
   const { id } = useParams();
   const theme = useTheme();
@@ -47,10 +56,9 @@ const Parts: React.FC = () => {
   const [index, setIndex] = React.useState(0);
   const [image, setImage] = React.useState(CPU);
   const [checked, setChecked] = React.useState(false);
+  const [showFull, setShowFull] = React.useState(false);
 
-  const isMd = useMediaQuery(theme.breakpoints.up("md"), {
-    defaultMatches: true,
-  });
+  const isMd = useMediaQuery(theme.breakpoints.up("md"));
 
   React.useEffect(() => {
     const result = getBuild(Number(id));
@@ -117,86 +125,108 @@ const Parts: React.FC = () => {
     }, 250);
   };
 
+  const handleShow = () => {
+    setShowFull(!showFull);
+  };
+
   return (
-    <Grid container spacing={9} style={{ minHeight: "100vh" }}>
-      <Grid item container xs={1} md={1} alignItems={"center"}>
-        <IconButton size="large" disableRipple onClick={handleLeft}>
+    <Grid
+      container
+      spacing={9}
+      style={{ minHeight: "100vh" }}
+      alignItems="center"
+      justifyContent="space-between"
+      direction={window.innerWidth ? "row" : "column"}
+    >
+      <Grid item xs={1} alignItems={"center"}>
+        <IconButton
+          size="large"
+          disableRipple
+          onClick={handleLeft}
+          style={{
+            position: "absolute",
+            left: "5px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            display: "flex",
+          }}
+        >
           <ChevronLeftIcon />
         </IconButton>
       </Grid>
-      <Grid
-        item
-        container
-        xs={12}
-        md={6}
-        alignItems={"center"}
-        style={{ width: "100%", zIndex: "2" }}
-      >
-        <Slide direction="right" in={checked} mountOnEnter unmountOnExit>
-          <Box data-aos={isMd ? "fade-right" : "fade-up"} maxWidth="100%">
-            <Box marginBottom={2}>
-              <Typography
-                variant="h3"
-                style={{
-                    backgroundImage: 'linear-gradient(to right, #F7F2EF, #547793)',
-        color: 'transparent',
-        WebkitBackgroundClip: 'text',
-        backgroundClip: 'text',
+      <Grid item xs={8} md={10} container direction={window.innerWidth > theme.breakpoints.values.sm ? "row" : "column"} alignItems="center">
+          <Grid item xs={12} md={6}>
+            <Slide direction="right" in={checked} mountOnEnter unmountOnExit>
+              <Box data-aos={isMd ? "fade-right" : "fade-up"}>
+                <Box marginBottom={2}>
+                  <Typography variant="h3">{components[index]}</Typography>
+                  <Typography
+                    variant="h1"
+                    sx={{ fontWeight: 700, fontSize: 80 }}
+                  >
+                    {component}
+                  </Typography>
+                </Box>
+                <Box marginBottom={2}>
+                  <Typography variant="h4">${prices[index]}</Typography>
+                </Box>
+                <Box marginBottom={3}>
+                  <Typography variant="h6" component="p">
+                    {showFull
+                      ? descriptions[index]
+                      : descriptions[index].slice(
+                          0,
+                          descriptions[index].lastIndexOf(".", maxLength)
+                        )}
+                    {descriptions[index].length > maxLength &&
+                      !showFull &&
+                      "..."}
+                    {descriptions[index].length > maxLength && (
+                    <Button onClick={handleShow} sx={{ color: 'black'}}>
+                      {showFull ? "Show Less" : "Show More"}
+                    </Button>
+                  )}
+                  </Typography>
+                </Box>
+              </Box>
+            </Slide>
+          </Grid>
+          <Grid item xs={12} md={6} alignItems="center" justifyContent="center">
+            <Slide direction="left" in={checked} mountOnEnter unmountOnExit>
+              <Box
+                component="img"
+                loading="lazy"
+                height={1}
+                width={1}
+                src={image}
+                alt="gpu"
+                borderRadius={2}
+                maxWidth={700}
+                maxHeight={600}
+                sx={{
+                  objectFit: "cover",
                 }}
-              >
-                {components[index]}
-              </Typography>
-              <Typography variant="h1" sx={{ fontWeight: 700, fontSize: 80 }}>
-                {component}
-              </Typography>
-            </Box>
-            <Box marginBottom={2}>
-              <Typography variant="h4">${prices[index]}</Typography>
-            </Box>
-            <Box marginBottom={3}>
-              <Typography
-                variant="h6"
-                component="p"
-                style={{ display: "inline-block" }}
-              >
-                {descriptions[index]}
-              </Typography>
-            </Box>
-          </Box>
-        </Slide>
+                style={{
+                  height: "auto",
+                  width: "100%",
+                }}
+              />
+            </Slide>
+          </Grid>
       </Grid>
-      <Grid
-        item
-        container
-        alignItems={"center"}
-        justifyContent={"center"}
-        xs={12}
-        md={4}
-      >
-        <Slide direction="left" in={checked} mountOnEnter unmountOnExit>
-          <Box
-            component="img"
-            loading="lazy"
-            height={1}
-            width={1}
-            src={image}
-            alt="gpu"
-            borderRadius={2}
-            maxWidth={700}
-            maxHeight={600}
-            sx={{
-              objectFit: "cover",
-            }}
-            style={{
-              position: "absolute",
-              margin: "auto",
-              zIndex: "1",
-            }}
-          />
-        </Slide>
-      </Grid>
-      <Grid item container xs={12} md={1} justifyContent="right">
-        <IconButton size="large" disableRipple onClick={handleRight}>
+      <Grid item xs={1}>
+        <IconButton
+          size="large"
+          disableRipple
+          onClick={handleRight}
+          style={{
+            position: "absolute",
+            right: "5px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            display: "flex",
+          }}
+        >
           <ChevronRightIcon />
         </IconButton>
       </Grid>

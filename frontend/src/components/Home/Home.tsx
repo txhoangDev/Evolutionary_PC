@@ -93,7 +93,7 @@ const Home: React.FC = () => {
                     sx={{ mt: 4, mb: 4 }}
                 >
                     <Fade in={image} timeout={1000}>
-                        <img src={images[index]} alt="computer" loading="lazy" />
+                        <img src={images[index]} alt="computer" loading="lazy" style={{ width: '100%', height: 'auto'}} />
                     </Fade>
                 </Box>
             </Grid>
