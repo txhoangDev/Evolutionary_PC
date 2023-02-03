@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class Build(models.Model):
@@ -18,6 +19,13 @@ class Build(models.Model):
     # psu = models.CharField(max_length=100, default="", null=False)
     # storage = models.CharField(max_length=100, default="", null=False)
     # cooler = models.CharField(max_length=100, default="")
+    
+    def __str__(self):
+        return self.id
+
+class User(AbstractUser):
+    id = models.AutoField(primary_key=True)
+    build = models.ManyToManyField(Build)
     
     def __str__(self):
         return self.id
