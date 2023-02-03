@@ -17,6 +17,7 @@ import {
 } from "@mui/material";
 import { createNewBuild } from "../../http-common";
 import { useNavigate } from "react-router-dom";
+import Main from "../../layouts/main/Main";
 
 const steps = [
   "Budget",
@@ -252,63 +253,58 @@ const BuildPage: React.FC = () => {
   };
 
   return (
-    <Container>
-      <Box sx={{ width: "100%" }}>
-        <Stepper nonLinear activeStep={activeStep}>
-          <Step key="Budget" completed={completed[0]}>
-            <StepLabel color="inherit">Budget</StepLabel>
-          </Step>
-          <Step key="CPU Configuration" completed={completed[1]}>
-            <StepLabel color="inherit">CPU Configuration</StepLabel>
-          </Step>
-          <Step key="GPU Configuration" completed={completed[2]}>
-            <StepLabel color="inherit">GPU Configuration</StepLabel>
-          </Step>
-          <Step key="RAM Configuration" completed={completed[3]}>
-            <StepLabel color="inherit">RAM Configuration</StepLabel>
-          </Step>
-        </Stepper>
-        <Container>
-          {allStepsCompleted() ? (
-            <React.Fragment>
-              <Typography sx={{ mt: 2, mb: 1 }}>
-                All steps completed - you&apos;re finished
-              </Typography>
-              <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-                <Box sx={{ flex: "1 1 auto" }} />
-                <Button onClick={handleBuild}>Build</Button>
-              </Box>
-            </React.Fragment>
-          ) : (
-            <React.Fragment>
-              <Typography sx={{ mt: 2, mb: 1, py: 1 }}>
-                Step {activeStep + 1}
-              </Typography>
-              <Container disableGutters maxWidth={false}>
-                {content[activeStep]}
-              </Container>
-              <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-                <Button
-                  disabled={activeStep === 0}
-                  onClick={handleBack}
-                  sx={{ mr: 1 }}
-                >
-                  Back
-                </Button>
-                <Box sx={{ flex: "1 1 auto" }} />
-                <Button
-                  disabled={validateInput()}
-                  onClick={handleNext}
-                  sx={{ mr: 1 }}
-                >
-                  Next
-                </Button>
-              </Box>
-            </React.Fragment>
-          )}
-        </Container>
-      </Box>
-    </Container>
+    <Main>
+      <Container>
+        <Box sx={{ width: "100%" }}>
+          <Stepper nonLinear activeStep={activeStep}>
+            {steps.map((label, index) => (
+              <Step key={label} completed={completed[index]}>
+                <StepLabel color="inherit">{label}</StepLabel>
+              </Step>
+            ))}
+          </Stepper>
+          <Container>
+            {allStepsCompleted() ? (
+              <React.Fragment>
+                <Typography sx={{ mt: 2, mb: 1 }}>
+                  All steps completed - you&apos;re finished
+                </Typography>
+                <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+                  <Box sx={{ flex: "1 1 auto" }} />
+                  <Button onClick={handleBuild}>Build</Button>
+                </Box>
+              </React.Fragment>
+            ) : (
+              <React.Fragment>
+                <Typography sx={{ mt: 2, mb: 1, py: 1 }}>
+                  Step {activeStep + 1}
+                </Typography>
+                <Container disableGutters maxWidth={false}>
+                  {content[activeStep]}
+                </Container>
+                <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+                  <Button
+                    disabled={activeStep === 0}
+                    onClick={handleBack}
+                    sx={{ mr: 1 }}
+                  >
+                    Back
+                  </Button>
+                  <Box sx={{ flex: "1 1 auto" }} />
+                  <Button
+                    disabled={validateInput()}
+                    onClick={handleNext}
+                    sx={{ mr: 1 }}
+                  >
+                    Next
+                  </Button>
+                </Box>
+              </React.Fragment>
+            )}
+          </Container>
+        </Box>
+      </Container>
+    </Main>
   );
 };
 

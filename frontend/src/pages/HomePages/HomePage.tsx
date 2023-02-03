@@ -1,6 +1,8 @@
 import React from "react";
+import { Box, Typography, Grid, Fade, Button } from "@mui/material";
 import bg from "../../assets/backgrounds/bg.svg";
-import { Typography, Grid, Fade, Box, Button, Container } from "@mui/material";
+import Main from "../../layouts/main/Main";
+
 import white1 from "../../assets/images/white_pc1.png";
 import white2 from "../../assets/images/white_pc2.png";
 import white3 from "../../assets/images/white_pc3.png";
@@ -9,7 +11,7 @@ import white5 from "../../assets/images/white_pc5.png";
 
 const images: string[] = [white1, white2, white3, white4, white5];
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   const [index, setIndex] = React.useState(0);
   const [image, setImage] = React.useState(true);
 
@@ -30,15 +32,15 @@ const HomePage = () => {
   }, []);
 
   return (
-    <Box
-      style={{
-        backgroundImage: `url(${bg})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        height: "100vh",
-      }}
-    >
-      <Container>
+    <Main>
+      <Box
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: "100vh",
+        }}
+      >
         <Grid
           container
           direction="column"
@@ -91,18 +93,13 @@ const HomePage = () => {
               sx={{ mt: 4, mb: 4 }}
             >
               <Fade in={image} timeout={1000}>
-                <img
-                  src={images[index]}
-                  alt="computer"
-                  loading="lazy"
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <img src={images[index]} alt="computer" loading="lazy" />
               </Fade>
             </Box>
           </Grid>
         </Grid>
-      </Container>
-    </Box>
+      </Box>
+    </Main>
   );
 };
 
