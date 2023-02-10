@@ -117,16 +117,25 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES':[
-        'rest_framework.authentication.SessionAuthentication',
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'dj_rest_auth.jwt_auth.JWTCookieAuthentication',
     ],
-    'DEFAULT_PERMISSION_CLASSES':[
-        'rest_framework.permissions.IsAuthenticated'
-    ]
 }
 
+AUTHENTICATION_Backends = [
+    'allauth.accound.auth_backends.AuthenticationBackend',
+    'django.contrib.auth.backends.ModelBackend'
+]
+
+REST_USE_JWT = True
 AUTH_USER_MODEL = 'evolutionary_builder.User'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_CONFIRM_EMAIL_ON_GET = True
+JWT_AUTH_COOKIE = 'evolutBuilder'
+JWT_AUTH_REFRESH_COOKIE = 'evolutBuilder'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/

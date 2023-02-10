@@ -57,15 +57,15 @@ const NavBar: React.FC = () => {
           },
         },
       },
-      MuiButton: {
-        styleOverrides: {
-          root: {
-            "&:hover": {
-              backgroundColor: "transparent",
-            },
-          },
-        },
-      },
+      // MuiButton: {
+      //   styleOverrides: {
+      //     root: {
+      //       "&:hover": {
+      //         backgroundColor: "transparent",
+      //       },
+      //     },
+      //   },
+      // },
       MuiIconButton: {
         styleOverrides: {
           root: {
@@ -186,7 +186,7 @@ const NavBar: React.FC = () => {
                 key="About"
                 onClick={handleCloseNavMenu}
                 href="/about"
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block", '& .MuiButton': { 'hover': 'transparent' } }}
               >
                 <Link>About</Link>
               </Button>
@@ -201,10 +201,19 @@ const NavBar: React.FC = () => {
               <Button
                 key="Build"
                 onClick={handleCloseNavMenu}
-                href="/build"
+                href="/Login"
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                <Link>Build</Link>
+                <Link>Log in</Link>
+              </Button>
+              <Button
+                variant="contained"
+                key="Build"
+                onClick={handleCloseNavMenu}
+                href="/signup"
+                sx={{ my: 2, display: "block", '&:hover': '#4a6cb5' }}
+              >
+                <Typography>Sign up</Typography>
               </Button>
             </Box>
           </Toolbar>

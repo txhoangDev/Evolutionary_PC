@@ -80,7 +80,7 @@ const HomePage: React.FC = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Button variant="contained" sx={{ mt: 2 }} href="/build">
+            <Button variant="contained" sx={{ mt: 2 }} href="/signup">
               Get Started
             </Button>
           </Grid>

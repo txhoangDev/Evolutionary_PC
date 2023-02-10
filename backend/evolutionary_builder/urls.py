@@ -13,9 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.urls import path, include
+from django.urls import path, include, re_path
 from .views import *
 from .viewset import *
+from dj_rest_auth.registration.views import VerifyEmailView
 
 urlpatterns = [
     path('setcsrf/', set_csrf_cookie),
@@ -25,4 +26,7 @@ urlpatterns = [
     path('auth/', include('dj_rest_auth.urls')),
     path('auth/registration/', include('dj_rest_auth.registration.urls')),
     path('auth/google/', GoogleLogin.as_view(), name="google_login"),
+    path('auth/verify-email/', VerifyEmailView.as_view(), name="verify email view"),
+    path('auth/account-confirm-email/', VerifyEmailView.as_view(), name="account account verification"),
+    re_path(r'^auth/account-confirm-email/(?P<key>[-:\w]+)/$', VerifyEmailView.as_view(), name="account confirm email"),
 ]
