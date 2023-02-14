@@ -14,7 +14,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 import signup from "../../../assets/images/signup.png";
 import GoogleIcon from "@mui/icons-material/Google";
-import { register } from '../../../components/Api/AuthContext';
+import { register } from '../../../components/Api/Api';
 
 const login = <Link href="/Login">Login</Link>;
 

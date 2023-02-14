@@ -17,11 +17,6 @@ import CPU from "../../assets/images/cpu.png";
 import GPU from "../../assets/images/gpu.png";
 import RAM from "../../assets/images/ram.png";
 import bg from "../../assets/backgrounds/parts_bg.svg";
-// import mb from "../../assets/images/mb.png";
-// import psu from "../../assets/images/psu.png";
-// import storage from "../../assets/images/storage.png";
-// import cooler from "../../assets/images/cooler.png";
-// import c from "../../assets/images/case.png";
 
 const components: string[] = [
   "CPU",

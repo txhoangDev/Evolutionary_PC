@@ -4,23 +4,17 @@ from rest_framework.decorators import api_view, permission_classes, authenticati
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import SessionAuthentication
 from django.views.decorators.csrf import ensure_csrf_cookie
-from django.utils.decorators import method_decorator
 
 from .models import Build
 from evolutionary_builder.serializers import *
 from algorithm.Computer_Building import run_evolution
 from .core import *
 
-ensure_csrf = method_decorator(ensure_csrf_cookie)
-
 # Create your views here.
-@api_view(['GET'])
-@permission_classes([])
-@authentication_classes([])
-@ensure_csrf
-def set_csrf_cookie(request):
-    def get(self, request):
-        return Response("CSRF Cookie set.")
+@ensure_csrf_cookie
+@api_view([])
+def set_csrf_token(request):
+    return Response(data={"details": "CSRF cookie set"}, status=status.HTTP_200_OK)
     
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
