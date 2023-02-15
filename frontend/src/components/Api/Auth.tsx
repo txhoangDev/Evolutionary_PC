@@ -1,33 +1,17 @@
-import React from 'react';
 import axios from 'axios';
 
 const url = 'http://127.0.0.1:8000/api';
 axios.defaults.withCredentials = true;
-axios.defaults.xsrfCookieName = 'csrftoken';
-axios.defaults.xsrfHeaderName = 'x-csrftoken';
-
-export const setCSRF = async () => {
-    try {
-        const { data, status } = await axios.get(url+'/setcsrf');
-        console.log(data);
-        console.log('Response status is: ', status);
-        return;
-    } catch (error) {
-        if(axios.isAxiosError(error)) {
-            console.log('error message: ', error.message);
-            throw new Error('Fail');
-        } else {
-            console.log('unexpected error: ', error);
-            throw new Error('Fail');
-        }
-    }
-}
+// axios.defaults.xsrfCookieName = "csrftoken"
+// axios.defaults.xsrfHeaderName = "X-CSRFTOKEN" 
 
 export async function getUserBuilds() {
     try {
         const { data, status } = await axios.get(
             url+'/allBuilds/',
-            {'withCredentials': true}
+            {
+                withCredentials: true,
+            },
         );
         console.log(JSON.stringify(data));
         console.log('Response status is: ', status);
@@ -50,15 +34,10 @@ export const login = async (username: string, password: string) => {
             'http://127.0.0.1:8000/api/auth/login/',
             { "username": username, "password": password },
             {
-                headers: {
-                  "Content-Type": "application/json",
-                  Accept: "application/json"
-                }
-            }
+                withCredentials: true
+            },
         );
-        console.log(JSON.stringify(data));
-        console.log('Response status is: ', status);
-        return data;
+        return 'success';
     }
     catch (error) {
         if(axios.isAxiosError(error)) {
@@ -79,7 +58,7 @@ export const register = async (username: string, email: string, password1: strin
             {
                 headers: {
                   "Content-Type": "application/json",
-                  Accept: "application/json"
+                  Accept: "application/json",
                 }
             }
         );
