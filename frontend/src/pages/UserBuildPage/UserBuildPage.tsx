@@ -1,5 +1,5 @@
 import React from "react";
-import { getUserBuilds } from "../../components/Api/AuthContext";
+import { getUserBuilds } from "../../components/Api/Api";
 
 const UserBuildPage: React.FC = () => {
   const [builds, setBuilds] = React.useState([]);
@@ -15,7 +15,7 @@ const UserBuildPage: React.FC = () => {
         setError(true);
       }
     );
-  });
+  }, builds);
 
   return <div>{error ? <div>Error</div> : <div>no error</div>}</div>;
 };
