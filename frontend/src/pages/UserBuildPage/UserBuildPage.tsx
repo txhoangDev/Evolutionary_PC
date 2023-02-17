@@ -1,5 +1,5 @@
 import React from "react";
-import { getUserBuilds } from "../../components/Api/Api";
+import { getUserBuilds } from "../../components/Api/Auth";
 
 const UserBuildPage: React.FC = () => {
   const [builds, setBuilds] = React.useState([]);

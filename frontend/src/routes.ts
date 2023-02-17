@@ -9,6 +9,7 @@ const LoginPage = lazy(() => import("./pages/LoginPage/LoginPage"));
 const SignupPage = lazy(() => import("./pages/SignupPage/SignupPage"));
 const UserBuildPage = lazy(() => import("./pages/UserBuildPage/UserBuildPage"));
 const NotFoundPage = lazy(() => import("./pages/ErrorPages/NotFoundPage/NotFoundPage"));
+const VerifyEmailPage = lazy(() => import("./pages/VerifyEmailPage/VerifyEmailPage"));
 
 // interface
 interface Route {
@@ -89,5 +90,12 @@ export const routes: Array<Route> = [
     path: "/*",
     enabled: true,
     component: NotFoundPage,
+  },
+  {
+    key: "verify-route",
+    title: "VerifyEmail",
+    path: "/verify-email/:key",
+    enabled: true,
+    component: VerifyEmailPage,
   }
 ];
