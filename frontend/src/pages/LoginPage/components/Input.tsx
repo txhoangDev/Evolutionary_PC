@@ -14,7 +14,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import robot from "../../../assets/images/robot.png";
 import GoogleIcon from "@mui/icons-material/Google";
-import { login } from "../../../components/Api/Api";
+import { login } from "../../../components/Api/Auth";
 
 const signUp = <Link href="/Signup">Sign up</Link>;
 
@@ -56,7 +56,6 @@ const Input: React.FC = () => {
           navigate('/account');
         },
         function (err) {
-          console.log("hey")
           setAlert(
             <Alert severity="error">
               <AlertTitle>ERROR</AlertTitle>Email and Password combination

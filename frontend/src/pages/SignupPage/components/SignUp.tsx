@@ -11,18 +11,16 @@ import {
   Alert,
   AlertTitle,
 } from "@mui/material";
-import { useNavigate } from 'react-router-dom';
 import signup from "../../../assets/images/signup.png";
 import GoogleIcon from "@mui/icons-material/Google";
-import { register } from '../../../components/Api/Api';
+import { register } from "../../../components/Api/Auth";
 
-const login = <Link href="/Login">Login</Link>;
+const loginLink = <Link href="/Login">Login</Link>;
 
 const passwordRe =
   /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 
 const SignUp: React.FC = () => {
-  const navigate = useNavigate();
   const [alert, setAlert] = React.useState(<></>);
   const [username, setUsername] = React.useState("");
   const [userError, setUserError] = React.useState(false);
@@ -38,7 +36,7 @@ const SignUp: React.FC = () => {
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
-  }
+  };
 
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value);
@@ -76,17 +74,30 @@ const SignUp: React.FC = () => {
       );
     } else if (password2 !== password) {
       setPass2Error(true);
-      setAlert(<Alert severity="error"><AlertTitle>Password Error</AlertTitle>Passwords must match</Alert>)
+      setAlert(
+        <Alert severity="error">
+          <AlertTitle>Password Error</AlertTitle>Passwords must match
+        </Alert>
+      );
     } else {
       const result = register(username, email, password, password2);
       result.then(
-        function(res) {
-          navigate('/Build');
+        function (res) {
+          setUsername("");
+          setPassword("");
+          setPassword2("");
+          setEmail("");
+          setAlert(
+            <Alert severity="success">
+              <AlertTitle>Email Verification</AlertTitle>Before you can use our
+              service, please verify your email.
+            </Alert>
+          );
         },
-        function(err) {
+        function (err) {
           console.log(err);
         }
-      )
+      );
     }
   };
 
@@ -96,7 +107,12 @@ const SignUp: React.FC = () => {
         container
         spacing={2}
         direction="column"
-        sx={{ mt: 1, justifyContent: "center", alignItems: "center", textAlign:"center" }}
+        sx={{
+          mt: 1,
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+        }}
       >
         <Grid item xs={12} md={6}>
           <Box
@@ -107,7 +123,7 @@ const SignUp: React.FC = () => {
             maxWidth={"50%"}
             maxHeight={"auto"}
             sx={{
-              mt: 4
+              mt: 4,
             }}
           />
         </Grid>
@@ -127,6 +143,7 @@ const SignUp: React.FC = () => {
                 <TextField
                   required
                   error={userError}
+                  value={username}
                   onChange={handleUsernameChange}
                   label="Username"
                   variant="filled"
@@ -139,6 +156,7 @@ const SignUp: React.FC = () => {
                 <TextField
                   required
                   error={userError}
+                  value={email}
                   onChange={handleEmailChange}
                   label="Email"
                   variant="filled"
@@ -156,6 +174,7 @@ const SignUp: React.FC = () => {
                 <TextField
                   required
                   error={passError}
+                  value={password}
                   onChange={handlePasswordChange}
                   label="Password"
                   variant="filled"
@@ -174,6 +193,7 @@ const SignUp: React.FC = () => {
                 <TextField
                   required
                   error={pass2Error}
+                  value={password2}
                   onChange={handlePass2Change}
                   label="Confirm Password"
                   variant="filled"
@@ -184,7 +204,17 @@ const SignUp: React.FC = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Box width="400px">
-                <Button variant="contained" fullWidth onClick={handleSignUp}>
+                <Button
+                  onKeyDown={(e) => {
+                    console.log("hi");
+                    // if (e.key === "Enter") {
+                    //   console.log('hi');
+                    // }
+                  }}
+                  variant="contained"
+                  fullWidth
+                  onClick={handleSignUp}
+                >
                   Sign Up
                 </Button>
               </Box>
@@ -203,7 +233,7 @@ const SignUp: React.FC = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Typography variant="subtitle1">
-                Already have an account? {login}
+                Already have an account? {loginLink}
               </Typography>
             </Grid>
           </Grid>
