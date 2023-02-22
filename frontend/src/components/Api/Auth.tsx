@@ -29,7 +29,7 @@ export async function getUserBuilds() {
 export const login = async (username: string, password: string) => {
     try {
         await axios.post(
-            url + '/api/auth/login/',
+            url + '/auth/login/',
             { "username": username, "password": password },
             {
                 withCredentials: true
