@@ -21,7 +21,7 @@ from dj_rest_auth.registration.views import VerifyEmailView
 urlpatterns = [
     path('allBuilds/', all_builds),
     path('createBuild/', create_build),
-    # path('build/<int:pk>/', build_details),
+    path('build/<int:pk>/', build_details),
     path('auth/', include('dj_rest_auth.urls')),
     path('auth/registration/', include('dj_rest_auth.registration.urls')),
     path('auth/google/', GoogleLogin.as_view(), name="google_login"),

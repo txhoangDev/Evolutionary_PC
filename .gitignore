@@ -3,3 +3,4 @@ evolution_builder/*
 backend/evolution_builder/__pycache__/*
 backend/api/__pycache__/*
 .env
+db.sqlite3

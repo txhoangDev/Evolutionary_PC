@@ -32,7 +32,7 @@ def all_builds(request):
 @permission_classes([IsAuthenticated])
 @authentication_classes([SessionAuthentication])
 def create_build(request):
-    print(request)
+    user = User.objects.get(pk=request.user.id)
     try:
         existing = Build.objects.get(budget=request.data['budget'], 
                                      cpu_budget=request.data['cpu_budget'],
@@ -42,7 +42,8 @@ def create_build(request):
                                      ram_budget=request.data['ram_budget'])
         if existing:
             serializer = BuildSerializer(existing, context={'request': request})
-            return Response(data=serializer.data['id'], status=status.HTTP_200_OK)
+            user.build.add(serializer.data['id'])
+            return Response(status=status.HTTP_201_CREATED)
     except:
         parts_dict = run_evolution(budget=request.data['budget'],
                                    cpu_type=request.data['cpu_brand'], 
@@ -65,11 +66,12 @@ def create_build(request):
         serializer = BuildSerializer(data=new_build)
         if serializer.is_valid():
             serializer.save()
-            return Response(data=serializer.data['id'], status=status.HTTP_201_CREATED)
+            user.build.add(serializer.data['id'])
+            return Response(status=status.HTTP_201_CREATED)
         else:
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['GET'])
+@api_view(['GET', 'DELETE'])
 @permission_classes([IsAuthenticated])
 @authentication_classes([SessionAuthentication])
 def build_details(request, pk):
@@ -86,3 +88,8 @@ def build_details(request, pk):
         build_info['gpu_price'] = get_gpu_price(serializers.data['gpu'])
         build_info['ram_price'] = get_ram_price(serializers.data['ram'])
         return Response(data=build_info, status=status.HTTP_200_OK)
+    elif request.method == 'DELETE':
+        build.delete()
+        return Response(status=status.HTTP_200_OK)
+    else:
+        return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)

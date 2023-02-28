@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import signup from "../../../assets/images/signup.png";
 import GoogleIcon from "@mui/icons-material/Google";
-import { register } from "../../../components/Api/Auth";
+import { register } from "../../../http-common";
 
 const loginLink = <Link href="/Login">Login</Link>;
 
