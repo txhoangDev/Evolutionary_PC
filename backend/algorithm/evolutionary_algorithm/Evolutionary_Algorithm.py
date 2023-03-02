@@ -30,35 +30,21 @@ class PC_Build:
                          have
         
         """
-        
         # get the list of CPUs and GPUs and randomize them
         if cpu_budget == 0:
-            if gpu_budget != 0 and ram_budget != 0:
-                cpu_budget = (budget * 0.7) - gpu_budget - ram_budget
-            elif gpu_budget != 0:
-                cpu_budget = ((budget*0.7)-gpu_budget)*(25/(35+25+10))
-            elif ram_budget != 0:
-                cpu_budget = ((budget*0.7)-ram_budget)*(25/(35+25+10))
-            else:
-                cpu_budget = float(budget) * 0.25
+            cpu_budget = float(budget) * 0.25
         if gpu_budget == 0:
-            if cpu_budget != 0 and ram_budget != 0:
-                gpu_budget = (budget * 0.7) - cpu_budget - ram_budget
-            elif cpu_budget != 0:
-                gpu_budget = ((budget*0.7)-cpu_budget)*(35/(35+25+10))
-            elif ram_budget != 0:
-                gpu_budget = ((budget*0.7)-ram_budget)*(35/(35+25+10))
-            else:
-                gpu_budget = float(budget) * 0.35
+            gpu_budget = float(budget) * 0.35
         if ram_budget == 0:
-            if gpu_budget != 0 and cpu_budget != 0:
-                ram_budget = (budget * 0.7) - gpu_budget - cpu_budget
-            elif gpu_budget != 0:
-                cpu_budget = ((budget*0.7)-gpu_budget)*(10/(35+25+10))
-            elif cpu_budget != 0:
-                ram_budget = ((budget*0.7)-cpu_budget)*(10/(35+25+10))
-            else:
-                ram_budget = float(budget) * 0.1
+            ram_budget = float(budget) * 0.1
+        total_budget = cpu_budget + gpu_budget + ram_budget
+        ratio = (0.7 * float(budget)) / total_budget
+        if cpu_budget == float(budget) * 0.25:
+            cpu_budget = cpu_budget * ratio
+        if gpu_budget == float(budget) * 0.35:
+            gpu_budget = gpu_budget * ratio
+        if ram_budget == float(budget) * 0.1:
+            ram_budget = ram_budget * ratio
         cpus = list(cpu for cpu in self.parts_data['cpu'].keys() if float(self.parts_data['cpu'][cpu]["price"]) <= cpu_budget)
         if cpu_type != "None":
             cpus = list(cpu for cpu in cpus if cpu_type in cpu)

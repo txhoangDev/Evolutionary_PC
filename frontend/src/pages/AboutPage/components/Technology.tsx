@@ -143,9 +143,9 @@ const Technology: React.FC = () => {
                 </Avatar>
                 <Typography variant="h6">Mobile Friendly</Typography>
                 <Typography variant="body1" component="p">
-                  Take it on the go! This is build for you
+                  Take it on the go! This is build for
                   <br />
-                  to take anywhere!
+                  you to take anywhere!
                 </Typography>
               </Stack>
             </Grid>

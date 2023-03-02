@@ -9,11 +9,36 @@ import {
   Menu,
   MenuItem,
   Button,
-  Link,
   ThemeProvider,
 } from "@mui/material";
-import { createTheme } from "@mui/material/styles";
+import { createTheme, styled } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
+
+const Link = styled(Typography)({
+  "&": {
+    position: "relative",
+    color: "black",
+    textDecoration: "none",
+  },
+  "&:hover": {
+    color: "black",
+  },
+  "&::before": {
+    content: '""',
+    position: "absolute",
+    display: "block",
+    width: "100%",
+    height: "2px",
+    bottom: "0",
+    left: "0",
+    backgroundColor: "black",
+    transform: "scaleX(0)",
+    transition: "transform 0.3s ease",
+  },
+  "&:hover::before": {
+    transform: "scaleX(1)",
+  },
+})
 
 // navbar component
 const NavBar: React.FC = () => {
@@ -28,44 +53,6 @@ const NavBar: React.FC = () => {
       },
     },
     components: {
-      MuiLink: {
-        styleOverrides: {
-          root: {
-            "&": {
-              position: "relative",
-              color: "black",
-              textDecoration: "none",
-            },
-            "&:hover": {
-              color: "black",
-            },
-            "&::before": {
-              content: '""',
-              position: "absolute",
-              display: "block",
-              width: "100%",
-              height: "2px",
-              bottom: "0",
-              left: "0",
-              backgroundColor: "black",
-              transform: "scaleX(0)",
-              transition: "transform 0.3s ease",
-            },
-            "&:hover::before": {
-              transform: "scaleX(1)",
-            },
-          },
-        },
-      },
-      // MuiButton: {
-      //   styleOverrides: {
-      //     root: {
-      //       "&:hover": {
-      //         backgroundColor: "transparent",
-      //       },
-      //     },
-      //   },
-      // },
       MuiIconButton: {
         styleOverrides: {
           root: {
@@ -122,9 +109,6 @@ const NavBar: React.FC = () => {
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aira-haspopup="true"
                 onClick={handleOpenNavMenu}
               >
                 <MenuIcon />
@@ -147,13 +131,13 @@ const NavBar: React.FC = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                <MenuItem key="About" onClick={handleCloseNavMenu}>
+                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">About</Typography>
                 </MenuItem>
-                <MenuItem key="FAQ" onClick={handleCloseNavMenu}>
+                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">FAQ</Typography>
                 </MenuItem>
-                <MenuItem key="Build" onClick={handleCloseNavMenu}>
+                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">Build</Typography>
                 </MenuItem>
               </Menu>
@@ -183,7 +167,6 @@ const NavBar: React.FC = () => {
               }}
             >
               <Button
-                key="About"
                 onClick={handleCloseNavMenu}
                 href="/about"
                 sx={{ my: 2, color: "white", display: "block", '& .MuiButton': { 'hover': 'transparent' } }}
@@ -191,24 +174,21 @@ const NavBar: React.FC = () => {
                 <Link>About</Link>
               </Button>
               <Button
-                key="FAQ"
                 onClick={handleCloseNavMenu}
                 href="/faq"
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                <Link>FAQ</Link>
+                <Link>{'FAQ'}</Link>
               </Button>
               <Button
-                key="Build"
                 onClick={handleCloseNavMenu}
                 href="/Login"
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                <Link>Log in</Link>
+                <Link>{'Log in'}</Link>
               </Button>
               <Button
                 variant="contained"
-                key="Build"
                 onClick={handleCloseNavMenu}
                 href="/signup"
                 sx={{ my: 2, display: "block", '&:hover': '#4a6cb5' }}

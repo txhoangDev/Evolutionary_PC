@@ -10,7 +10,7 @@ import {
 import { useTheme } from "@mui/material/styles";
 import four from "../../../assets/images/24.svg";
 
-const NotFoundPage = () => {
+const NotFoundPage: React.FC = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true,

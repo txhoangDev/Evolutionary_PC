@@ -27,8 +27,13 @@ SECRET_KEY = os.getenv('DJANGO_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost', '127.0.0.1', '[::1]',
+]
+CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:8000',
+]
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
@@ -141,7 +146,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
-    ]
+    ],
 }
 
 AUTHENTICATION_BACKENDS = [
@@ -151,9 +156,10 @@ AUTHENTICATION_BACKENDS = [
 
 SESSION_COOKIE_SAMESITE = 'None'
 CSRF_COOKIE_SAMESITE = 'None'
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE')
+CSRF_COOKIE_SECURE = os.getenv('CSRF_COOKIE_SECURE')
 REST_USE_JWT = True
+JWT_AUTH_SAMESITE = 'None'
 JWT_AUTH_COOKIE = 'evolutBuilder'
 JWT_AUTH_REFRESH_COOKIE = 'evolutRefresh'
 JWT_AUTH_SECURE = True

@@ -4,7 +4,6 @@ const HomePage = lazy(() => import("./pages/HomePages/HomePage"));
 const AboutPage = lazy(() => import("./pages/AboutPage/AboutPage"));
 const FAQPage = lazy(() => import("./pages/FAQPage/FAQPage"));
 const BuildPage = lazy(() => import("./pages/BuildPage/BuildPage"));
-const BuildDetailPage = lazy(() => import("./pages/BuildDetailPage/BuildDetailPage"));
 const LoginPage = lazy(() => import("./pages/LoginPage/LoginPage"));
 const SignupPage = lazy(() => import("./pages/SignupPage/SignupPage"));
 const UserBuildPage = lazy(() => import("./pages/UserBuildPage/UserBuildPage"));
@@ -29,14 +28,14 @@ export const routes: Array<Route> = [
     component: HomePage,
   },
   {
-    key: "home-route",
+    key: "home-route2",
     title: "Home",
     path: "/Home",
     enabled: true,
     component: HomePage,
   },
   {
-    key: "aboute-route",
+    key: "about-route",
     title: "About",
     path: "/about",
     enabled: true,
@@ -57,13 +56,6 @@ export const routes: Array<Route> = [
     component: BuildPage,
   },
   {
-    key: "final-route",
-    title: "Final",
-    path: "/final/:id",
-    enabled: true,
-    component: BuildDetailPage,
-  },
-  {
     key: "login-route",
     title: "Login",
     path: "/login",
@@ -79,7 +71,7 @@ export const routes: Array<Route> = [
   },
   {
     key: "user-acc-route",
-    title: "Builds",
+    title: "Account",
     path: '/account',
     enabled: true,
     component: UserBuildPage,
