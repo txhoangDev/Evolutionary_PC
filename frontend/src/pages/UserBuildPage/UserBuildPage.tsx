@@ -13,6 +13,8 @@ import BuildDetail from './components/BuildDetail';
 import DesktopDrawer from "./components/DesktopDrawer";
 import MoblieDrawer from "./components/MoblieDrawer";
 import Welcome from './components/Welcome';
+import { logout, deleteBuild } from "../../http-common";
+import { useNavigate } from "react-router";
 
 const NotFound = React.lazy(() => import("../ErrorPages/NotFoundPage/NotFoundPage"));
 
@@ -20,6 +22,7 @@ const UserBuildPage: React.FC = () => {
   const [builds, setBuilds] = React.useState<Build[]>([]);
   const [error, setError] = React.useState<boolean>(false);
   const [component, setComponent] = React.useState<React.ReactElement>(<></>);
+  const navigate = useNavigate();
 
   const isSm = useMediaQuery('(max-width: 600px)');
 
@@ -31,7 +34,24 @@ const UserBuildPage: React.FC = () => {
       setComponent(<>Settings</>);
     }
     else {
-      setComponent(<BuildDetail id={Number(type)} />)
+      if(type.length == 1) {
+        setComponent(<BuildDetail id={Number(type)} />);
+      } else {
+        const res = deleteBuild(type.split(" ")[0]);
+        res.then((result) => {
+          if (result === 'Success') {
+            const result = getUserBuilds();
+            result.then(
+              function(res) {
+                setBuilds(res);
+              },
+              function(err) {
+                setError(true);
+              }
+            )
+          }
+        })
+      }
     }
   }, [builds]);
 
@@ -51,6 +71,18 @@ const UserBuildPage: React.FC = () => {
       setComponent(<Welcome builds={builds} onChange={handleDrawerChange} />);
   }, [builds, handleDrawerChange]);
 
+  const Logout = () => {
+    const result = logout();
+    result.then(
+      function(res) {
+        navigate('/Home');
+      },
+      function(err){
+        console.log(err);
+      }
+    )
+  }
+
   return (
     <Container disableGutters maxWidth={false}>
       {error ? (
@@ -66,7 +98,7 @@ const UserBuildPage: React.FC = () => {
               <Button href="/" variant="text" sx={{ color: "white" }}>
                 Evolutionary PC
               </Button>
-              <Button variant="text" sx={{ color: "white" }}>
+              <Button variant="text" sx={{ color: "white" }} onClick={Logout}>
                 Logout
               </Button>
             </Toolbar>

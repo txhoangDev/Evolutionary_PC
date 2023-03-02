@@ -244,7 +244,7 @@ const BuildPage: React.FC = () => {
     );
     result.then(
       function (res) {
-        navigate(`/final/${res}`);
+        navigate("/account");
       },
       function (err) {
         console.log(err);

@@ -7,7 +7,7 @@ import {
   CardContent,
   Button,
   CardActions,
-  Divider
+  Divider,
 } from "@mui/material";
 import { userProps } from "../../../http-common";
 
@@ -20,9 +20,9 @@ const Welcome: React.FC<userProps> = (props: userProps) => {
             Welcome Back Corgi!
           </Typography>
         </Grid>
-        <Grid item container xs={12} md={6}>
-          {props.builds.map((build) => {
-            return (
+        {props.builds.map((build) => {
+          return (
+            <Grid item container xs={12} md={6} key={build.id}>
               <Card
                 key={build.id}
                 sx={{ maxWidth: 600, backgroundColor: "#E0E0E0" }}
@@ -30,10 +30,10 @@ const Welcome: React.FC<userProps> = (props: userProps) => {
               >
                 <CardContent>
                   <Typography gutterBottom variant="h4" component="div">
-                    Build {build.id}
+                    Budget {build.budget}
                   </Typography>
                   <Divider />
-                  <Typography variant="body1" sx={{ mt: 2}}>
+                  <Typography variant="body1" sx={{ mt: 2 }}>
                     CPU Brand:{" "}
                     {build.cpu_brand.length > 0
                       ? build.cpu_brand
@@ -70,14 +70,23 @@ const Welcome: React.FC<userProps> = (props: userProps) => {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" onClick={() => props.onChange(String(build.id))}>
-                        View Details
-                    </Button>
+                  <Button
+                    size="small"
+                    onClick={() => props.onChange(String(build.id))}
+                  >
+                    View Details
+                  </Button>
+                  <Button
+                    size="small"
+                    onClick={() => props.onChange(String(build.id) + ' DELETE')}
+                  >
+                    Delete
+                  </Button>
                 </CardActions>
               </Card>
-            );
-          })}
-        </Grid>
+            </Grid>
+          );
+        })}
       </Grid>
     </Container>
   );

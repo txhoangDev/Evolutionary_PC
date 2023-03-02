@@ -6,6 +6,9 @@ from rest_framework.authentication import SessionAuthentication
 from allauth.account.signals import email_confirmed
 from django.dispatch import receiver
 from allauth.account.utils import perform_login
+from django.middleware.csrf import get_token
+from django.views.decorators.csrf import csrf_protect 
+from django.http import HttpResponse
 
 from .models import Build
 from evolutionary_builder.serializers import *
@@ -19,6 +22,15 @@ def email_confirmed_(request, email_address, **kwargs):
     user.isactive = True
     user.save()
     perform_login(request, user, 'allauth.account.auth_backends.AuthenticationBackend')
+
+@api_view(['GET'])
+@csrf_protect
+def get_csrf_token(request):
+    csrf_token = get_token(request)
+    response = Response({'message': request.COOKIES.get('csrftoken')})
+    response.set_cookie('csrftoken', value=csrf_token, httponly=True, samesite='None', secure=True)
+    response['x-csrftoken'] = request.COOKIES.get('csrftoken')
+    return response
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
