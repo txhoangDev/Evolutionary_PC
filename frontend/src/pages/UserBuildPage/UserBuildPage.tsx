@@ -34,7 +34,7 @@ const UserBuildPage: React.FC = () => {
       setComponent(<>Settings</>);
     }
     else {
-      if(type.length == 1) {
+      if(type.length === 1) {
         setComponent(<BuildDetail id={Number(type)} />);
       } else {
         const res = deleteBuild(type.split(" ")[0]);
