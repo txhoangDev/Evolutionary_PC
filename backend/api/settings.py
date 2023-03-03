@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+import datetime
 from dotenv import load_dotenv
 load_dotenv(dotenv_path='.env')
 
@@ -156,8 +157,8 @@ AUTHENTICATION_BACKENDS = [
 
 SESSION_COOKIE_SAMESITE = 'None'
 CSRF_COOKIE_SAMESITE = 'None'
-SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE')
-CSRF_COOKIE_SECURE = os.getenv('CSRF_COOKIE_SECURE')
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 REST_USE_JWT = True
 JWT_AUTH_SAMESITE = 'None'
 JWT_AUTH_COOKIE = 'evolutBuilder'

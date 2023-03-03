@@ -1,23 +1,23 @@
 import React from "react";
 import {
   Box,
-  Stepper,
-  Step,
-  StepLabel,
-  Button,
-  Typography,
   Container,
   Grid,
+  Typography,
   TextField,
   Radio,
-  RadioGroup,
-  FormControlLabel,
   FormControl,
   FormLabel,
+  FormControlLabel,
+  RadioGroup,
 } from "@mui/material";
 import { createNewBuild } from "../../http-common";
 import { useNavigate } from "react-router-dom";
 import Main from "../../layouts/main/Main";
+import NotFoundPage from "../ErrorPages/NotFoundPage/NotFoundPage";
+import BuildStepper from "./components/BuildStepper";
+import MobileBuildStepper from "./components/MobileBuildStepper";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const steps = [
   "Budget",
@@ -33,11 +33,23 @@ const BuildPage: React.FC = () => {
   const [gpuBudget, setGpuBudget] = React.useState("");
   const [gpuBrand, setGpuBrand] = React.useState("None");
   const [ramBudget, setRamBudget] = React.useState("");
-  const [activeStep, setActiveStep] = React.useState(0);
-  const [completed, setCompleted] = React.useState<{
-    [k: number]: boolean;
-  }>({});
+  const [loggedIn, setLoggedIn] = React.useState(false);
   const navigate = useNavigate();
+
+  const isSm = useMediaQuery("(max-width: 600px)");
+
+  React.useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/getToken/", {
+      method: "GET",
+      credentials: "include",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data["message"] !== null) {
+          setLoggedIn(true);
+        }
+      });
+  }, []);
 
   const validateInput = () => {
     if (validateBudget(budget)) {
@@ -82,6 +94,37 @@ const BuildPage: React.FC = () => {
     setRamBudget(event.target.value);
   };
 
+  const handleBuild = () => {
+    let cBudget: number = 0;
+    let gBudget: number = 0;
+    let rBudget: number = 0;
+    if (cpuBudget !== "") {
+      cBudget = Number(cpuBudget);
+    }
+    if (gpuBudget !== "") {
+      gBudget = Number(gpuBudget);
+    }
+    if (ramBudget !== "") {
+      rBudget = Number(ramBudget);
+    }
+    const result = createNewBuild(
+      Number(budget),
+      cpuBrand,
+      cBudget,
+      gpuBrand,
+      gBudget,
+      rBudget
+    );
+    result.then(
+      function (res) {
+        navigate("/account");
+      },
+      function (err) {
+        console.log(err);
+      }
+    );
+  };
+
   const content = [
     <Grid container spacing={2} direction="column" alignItems="center">
       <Grid item xs={12} md={6} textAlign="center">
@@ -102,10 +145,7 @@ const BuildPage: React.FC = () => {
     <Grid container spacing={2} direction="column" alignItems="center">
       <Grid item xs={12} md={6} textAlign="center">
         <Typography variant="h5">Enter your CPU budget</Typography>
-        <Typography variant="body1">
-          Default: no limit is placed on CPU price
-        </Typography>
-        <Typography variant="body1">Leave blank for default</Typography>
+        <Typography variant="body1">Default: no limit (leave blank)</Typography>
       </Grid>
       <Grid item xs={12} md={6}>
         <TextField
@@ -136,10 +176,7 @@ const BuildPage: React.FC = () => {
     <Grid container spacing={2} direction="column" alignItems="center">
       <Grid item xs={12} md={6} textAlign="center">
         <Typography variant="h5">Enter your GPU budget</Typography>
-        <Typography variant="body1">
-          Default: no limit is placed on GPU price
-        </Typography>
-        <Typography variant="body1">Leave blank for default</Typography>
+        <Typography variant="body1">Default: no limit (leave blank)</Typography>
       </Grid>
       <Grid item xs={12} md={6}>
         <TextField
@@ -173,11 +210,8 @@ const BuildPage: React.FC = () => {
     </Grid>,
     <Grid container spacing={2} direction="column" alignItems="center">
       <Grid item xs={12} md={6} textAlign="center">
-        <Typography variant="h5">Enter your CPU budget</Typography>
-        <Typography variant="body1">
-          Default: no limit is placed on CPU price
-        </Typography>
-        <Typography variant="body1">Leave blank for default</Typography>
+        <Typography variant="h5">Enter your RAM budget</Typography>
+        <Typography variant="body1">Default: no limit (leave blank)</Typography>
       </Grid>
       <Grid item xs={12} md={6}>
         <TextField
@@ -190,121 +224,32 @@ const BuildPage: React.FC = () => {
     </Grid>,
   ];
 
-  const totalSteps = () => {
-    return steps.length;
-  };
-
-  const completedSteps = () => {
-    return Object.keys(completed).length;
-  };
-
-  const isLastStep = () => {
-    return activeStep === totalSteps() - 1;
-  };
-
-  const allStepsCompleted = () => {
-    return completedSteps() === totalSteps();
-  };
-
-  const handleNext = () => {
-    const newCompleted = completed;
-    newCompleted[activeStep] = true;
-    setCompleted(newCompleted);
-    const newActiveStep =
-      isLastStep() && !allStepsCompleted()
-        ? steps.findIndex((step, i) => !(i in completed))
-        : activeStep + 1;
-    setActiveStep(newActiveStep);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep: number) => prevActiveStep - 1);
-  };
-
-  const handleBuild = () => {
-    let cBudget: number = 0;
-    let gBudget: number = 0;
-    let rBudget: number = 0;
-    if (cpuBudget !== "") {
-      cBudget = Number(cpuBudget);
-    }
-    if (gpuBudget !== "") {
-      gBudget = Number(gpuBudget);
-    }
-    if (ramBudget !== "") {
-      rBudget = Number(ramBudget);
-    }
-    const result = createNewBuild(
-      Number(budget),
-      cpuBrand,
-      cBudget,
-      gpuBrand,
-      gBudget,
-      rBudget
-    );
-    result.then(
-      function (res) {
-        navigate("/account");
-      },
-      function (err) {
-        console.log(err);
-      }
-    );
-  };
-
   return (
-    <Main>
-      <Container>
-        <Box sx={{ width: "100%" }}>
-          <Stepper nonLinear activeStep={activeStep}>
-            {steps.map((label, index) => (
-              <Step key={label} completed={completed[index]}>
-                <StepLabel color="inherit">{label}</StepLabel>
-              </Step>
-            ))}
-          </Stepper>
+    <Box>
+      {loggedIn ? (
+        <Main>
           <Container>
-            {allStepsCompleted() ? (
-              <React.Fragment>
-                <Typography sx={{ mt: 2, mb: 1 }}>
-                  All steps completed - you&apos;re finished
-                </Typography>
-                <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-                  <Box sx={{ flex: "1 1 auto" }} />
-                  <Button onClick={handleBuild}>Build</Button>
-                </Box>
-              </React.Fragment>
+            {isSm ? (
+              <MobileBuildStepper
+                handleBuild={handleBuild}
+                validateInput={validateInput}
+                steps={steps}
+                content={content}
+              />
             ) : (
-              <React.Fragment>
-                <Typography sx={{ mt: 2, mb: 1, py: 1 }}>
-                  Step {activeStep + 1}
-                </Typography>
-                <Container disableGutters maxWidth={false}>
-                  {content[activeStep]}
-                </Container>
-                <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-                  <Button
-                    disabled={activeStep === 0}
-                    onClick={handleBack}
-                    sx={{ mr: 1 }}
-                  >
-                    Back
-                  </Button>
-                  <Box sx={{ flex: "1 1 auto" }} />
-                  <Button
-                    disabled={validateInput()}
-                    onClick={handleNext}
-                    sx={{ mr: 1 }}
-                  >
-                    Next
-                  </Button>
-                </Box>
-              </React.Fragment>
+              <BuildStepper
+                handleBuild={handleBuild}
+                validateInput={validateInput}
+                steps={steps}
+                content={content}
+              />
             )}
           </Container>
-        </Box>
-      </Container>
-    </Main>
+        </Main>
+      ) : (
+        <NotFoundPage />
+      )}
+    </Box>
   );
 };
 
