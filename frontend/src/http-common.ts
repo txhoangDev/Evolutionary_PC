@@ -9,6 +9,13 @@ export interface userProps {
   onChange: (newBuildId: string) => void;
 }
 
+export interface buildStepper {
+  handleBuild: () => void;
+  validateInput: () => boolean;
+  steps: string[];
+  content: JSX.Element[];
+}
+
 export interface Build {
   id: number;
   budget: number;
@@ -156,15 +163,15 @@ export async function getBuild(id: number) {
 
 export async function logout() {
   try {
-    await fetch(url + "/logout/", {
+    await fetch(url + "/auth/logout/", {
       method: "POST",
       credentials: "include",
     });
 
-    return;
+    return 'Success';
   } catch (error) {
     console.log("unexpected error: ", error);
-    return "An unexpected error occurred";
+    return "Error";
   }
 }
 

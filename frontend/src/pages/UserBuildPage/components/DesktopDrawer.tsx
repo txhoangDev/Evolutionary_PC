@@ -15,6 +15,7 @@ import { userProps } from "../../../http-common";
 
 const DesktopDrawer: React.FC<userProps> = (props: userProps) => {
   const [open, setOpen] = React.useState(false);
+  const b = props.builds;
 
   const handleClick = () => {
     setOpen(!open);
@@ -49,7 +50,7 @@ const DesktopDrawer: React.FC<userProps> = (props: userProps) => {
         </ListItemButton>
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List disablePadding>
-            {props.builds.map((build) => (
+            {b.map((build) => (
               <ListItemButton
                 sx={{ ml: 6 }}
                 key={build.id}

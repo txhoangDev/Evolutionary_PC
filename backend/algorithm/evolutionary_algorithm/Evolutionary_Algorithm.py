@@ -31,6 +31,11 @@ class PC_Build:
         
         """
         # get the list of CPUs and GPUs and randomize them
+        self.population = []
+        self.parents = []
+        self.children = []
+        self.solution = []
+        self.num_parents = 0
         if cpu_budget == 0:
             cpu_budget = float(budget) * 0.25
         if gpu_budget == 0:

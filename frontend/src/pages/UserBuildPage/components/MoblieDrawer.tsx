@@ -20,6 +20,7 @@ import { userProps } from "../../../http-common";
 const MoblieDrawer: React.FC<userProps> = (props: userProps) => {
   const [open, setOpen] = React.useState(false);
   const [openBuild, setOpenBuild] = React.useState(false);
+  const b = props.builds;
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
@@ -106,7 +107,7 @@ const MoblieDrawer: React.FC<userProps> = (props: userProps) => {
             </ListItemButton>
             <Collapse in={openBuild} timeout="auto" unmountOnExit>
               <List disablePadding>
-                {props.builds.map((build) => (
+                {b.map((build) => (
                   <ListItemButton
                     sx={{ ml: 6 }}
                     key={build.id}

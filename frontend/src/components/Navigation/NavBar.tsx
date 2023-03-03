@@ -13,6 +13,8 @@ import {
 } from "@mui/material";
 import { createTheme, styled } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
+import { logout } from "../../http-common";
+import { useNavigate } from "react-router-dom";
 
 const Link = styled(Typography)({
   "&": {
@@ -38,7 +40,7 @@ const Link = styled(Typography)({
   "&:hover::before": {
     transform: "scaleX(1)",
   },
-})
+});
 
 // navbar component
 const NavBar: React.FC = () => {
@@ -67,6 +69,9 @@ const NavBar: React.FC = () => {
 
   // used for when the nav bar needs to be clicked on for navigation
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+  const [buttons, setButtons] = useState(<></>);
+  const [menu, setMenu] = useState(<></>);
+  const navigate = useNavigate();
 
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -75,6 +80,125 @@ const NavBar: React.FC = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const handleLogout = () => {
+    setAnchorElNav(null);
+    logout().then((response) => {
+      if (response === "Success") {
+        navigate("/Home");
+      }
+    });
+  };
+
+  React.useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/getToken/", {
+      method: "GET",
+      credentials: "include",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data["message"] === null) {
+          setButtons(
+            <Box>
+              <Button
+                onClick={handleCloseNavMenu}
+                href="/Login"
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <Link>{"Log in"}</Link>
+              </Button>
+              <Button
+                variant="contained"
+                onClick={handleCloseNavMenu}
+                href="/signup"
+                sx={{ my: 2, display: "block", "&:hover": "#4a6cb5" }}
+              >
+                <Typography>Sign up</Typography>
+              </Button>
+            </Box>
+          );
+          setMenu(
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">About</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">FAQ</Typography>
+              </MenuItem>
+              <MenuItem
+                onClick={handleCloseNavMenu}
+                component="a"
+                href="/signup"
+              >
+                Sign Up
+              </MenuItem>
+              <MenuItem
+                onClick={handleCloseNavMenu}
+                component="a"
+                href="/login"
+              >
+                Log in
+              </MenuItem>
+            </Menu>
+          );
+        } else {
+          setButtons(
+            <Button
+              onClick={handleLogout}
+              variant="contained"
+              sx={{ my: 2, display: "block", "&.hover": "#4a6cb5" }}
+            >
+              Logout
+            </Button>
+          );
+          setMenu(
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">About</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">FAQ</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleLogout}>Logout</MenuItem>
+            </Menu>
+          );
+        }
+      });
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
@@ -107,40 +231,10 @@ const NavBar: React.FC = () => {
               Evolutionary PC
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-              <IconButton
-                size="large"
-                onClick={handleOpenNavMenu}
-              >
+              <IconButton size="large" onClick={handleOpenNavMenu}>
                 <MenuIcon />
               </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: "block", md: "none" },
-                }}
-              >
-                <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">About</Typography>
-                </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">FAQ</Typography>
-                </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Build</Typography>
-                </MenuItem>
-              </Menu>
+              {menu}
             </Box>
             <Typography
               variant="h5"
@@ -169,7 +263,12 @@ const NavBar: React.FC = () => {
               <Button
                 onClick={handleCloseNavMenu}
                 href="/about"
-                sx={{ my: 2, color: "white", display: "block", '& .MuiButton': { 'hover': 'transparent' } }}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  "& .MuiButton": { hover: "transparent" },
+                }}
               >
                 <Link>About</Link>
               </Button>
@@ -178,23 +277,9 @@ const NavBar: React.FC = () => {
                 href="/faq"
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                <Link>{'FAQ'}</Link>
+                <Link>{"FAQ"}</Link>
               </Button>
-              <Button
-                onClick={handleCloseNavMenu}
-                href="/Login"
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                <Link>{'Log in'}</Link>
-              </Button>
-              <Button
-                variant="contained"
-                onClick={handleCloseNavMenu}
-                href="/signup"
-                sx={{ my: 2, display: "block", '&:hover': '#4a6cb5' }}
-              >
-                <Typography>Sign up</Typography>
-              </Button>
+              {buttons}
             </Box>
           </Toolbar>
         </Container>
