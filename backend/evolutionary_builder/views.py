@@ -26,11 +26,16 @@ def email_confirmed_(request, email_address, **kwargs):
 @api_view(['GET'])
 @csrf_protect
 def get_csrf_token(request):
-    csrf_token = get_token(request)
     response = Response({'message': request.COOKIES.get('csrftoken')})
-    response.set_cookie('csrftoken', value=csrf_token, httponly=True, samesite='None', secure=True)
     response['x-csrftoken'] = request.COOKIES.get('csrftoken')
     return response
+
+@api_view(['GET'])
+def get_user(request):
+    if request.user.is_authenticated:
+        return Response(data=True, status=status.HTTP_200_OK)
+    else:
+        return Response(data=False, status=status.HTTP_200_OK)
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])

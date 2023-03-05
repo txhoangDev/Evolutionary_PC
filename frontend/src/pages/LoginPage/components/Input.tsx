@@ -51,19 +51,18 @@ const Input: React.FC = () => {
       );
     } else {
       const result = login(username, password);
-      result.then(
-        function (res) {
-          navigate('/account');
-        },
-        function (err) {
+      result.then((response) => {
+        if (response === 'error') {
           setAlert(
             <Alert severity="error">
-              <AlertTitle>ERROR</AlertTitle>Email and Password combination
+              <AlertTitle>ERROR</AlertTitle>Username and Password combination
               doesn't match
             </Alert>
           );
+        } else {
+          navigate('/account');
         }
-      );
+      });
     }
   };
 

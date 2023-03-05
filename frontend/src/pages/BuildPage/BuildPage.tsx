@@ -11,13 +11,16 @@ import {
   FormControlLabel,
   RadioGroup,
 } from "@mui/material";
-import { createNewBuild } from "../../http-common";
+import { createNewBuild, getUser } from "../../http-common";
 import { useNavigate } from "react-router-dom";
 import Main from "../../layouts/main/Main";
-import NotFoundPage from "../ErrorPages/NotFoundPage/NotFoundPage";
 import BuildStepper from "./components/BuildStepper";
 import MobileBuildStepper from "./components/MobileBuildStepper";
 import useMediaQuery from "@mui/material/useMediaQuery";
+
+const Unauthorized = React.lazy(
+  () => import("../ErrorPages/UnauthorizedPage/Unauthorized")
+);
 
 const steps = [
   "Budget",
@@ -39,16 +42,11 @@ const BuildPage: React.FC = () => {
   const isSm = useMediaQuery("(max-width: 600px)");
 
   React.useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/getToken/", {
-      method: "GET",
-      credentials: "include",
+    getUser().then((response) => {
+      if (response) {
+        setLoggedIn(true);
+      }
     })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data["message"] !== null) {
-          setLoggedIn(true);
-        }
-      });
   }, []);
 
   const validateInput = () => {
@@ -247,7 +245,7 @@ const BuildPage: React.FC = () => {
           </Container>
         </Main>
       ) : (
-        <NotFoundPage />
+        <Unauthorized />
       )}
     </Box>
   );

@@ -1,4 +1,4 @@
-import React, { useState, MouseEvent } from "react";
+import React, { MouseEvent } from "react";
 import {
   AppBar,
   Container,
@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import { createTheme, styled } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
-import { logout } from "../../http-common";
+import { logout, getUser, State, Action } from "../../http-common";
 import { useNavigate } from "react-router-dom";
 
 const Link = styled(Typography)({
@@ -42,6 +42,33 @@ const Link = styled(Typography)({
   },
 });
 
+const initialState: State = {
+  logoutButton: <></>,
+  loginButton: <></>,
+  signupButton: <></>,
+  menu: <></>,
+  anchorElNav: null,
+};
+
+const reducer = (state: State, action: Action): State => {
+  switch (action.type) {
+    case "SET_LOGOUT_BUTTON":
+    return { ...state, logoutButton: action.payload };
+  case "SET_LOGIN_BUTTON":
+    return { ...state, loginButton: action.payload };
+  case "SET_SIGNUP_BUTTON":
+    return { ...state, signupButton: action.payload };
+  case "SET_MENU":
+    return { ...state, menu: action.payload };
+  case "SET_ANCHORELNAV":
+    return { ...state, anchorElNav: action.payload };
+  case "RESET_STATE":
+    return initialState;
+  default:
+    throw new Error(`Invalid action type: ${action}`);
+  }
+}
+
 // navbar component
 const NavBar: React.FC = () => {
   let theme = createTheme({
@@ -67,138 +94,146 @@ const NavBar: React.FC = () => {
     },
   });
 
-  // used for when the nav bar needs to be clicked on for navigation
-  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
-  const [buttons, setButtons] = useState(<></>);
-  const [menu, setMenu] = useState(<></>);
   const navigate = useNavigate();
+  const [state, dispatch] = React.useReducer(reducer, initialState);
 
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
+    dispatch({ type: 'SET_ANCHORELNAV', payload: event.currentTarget });
   };
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+    dispatch({ type: 'SET_ANCHORELNAV', payload: null });
   };
 
-  const handleLogout = () => {
-    setAnchorElNav(null);
+  const handleLogout = React.useCallback(() => {
+    dispatch({ type: 'SET_ANCHORELNAV', payload: null });
     logout().then((response) => {
       if (response === "Success") {
         navigate("/Home");
       }
     });
-  };
+  }, [dispatch, navigate]);
 
   React.useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/getToken/", {
-      method: "GET",
-      credentials: "include",
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data["message"] === null) {
-          setButtons(
-            <Box>
-              <Button
-                onClick={handleCloseNavMenu}
-                href="/Login"
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                <Link>{"Log in"}</Link>
-              </Button>
-              <Button
-                variant="contained"
-                onClick={handleCloseNavMenu}
-                href="/signup"
-                sx={{ my: 2, display: "block", "&:hover": "#4a6cb5" }}
-              >
-                <Typography>Sign up</Typography>
-              </Button>
-            </Box>
-          );
-          setMenu(
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">About</Typography>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">FAQ</Typography>
-              </MenuItem>
-              <MenuItem
-                onClick={handleCloseNavMenu}
-                component="a"
-                href="/signup"
-              >
-                Sign Up
-              </MenuItem>
-              <MenuItem
-                onClick={handleCloseNavMenu}
-                component="a"
-                href="/login"
-              >
-                Log in
-              </MenuItem>
-            </Menu>
-          );
-        } else {
-          setButtons(
+    const res = getUser();
+    res.then((response) => {
+      if (response) {
+        dispatch({
+          type: "SET_LOGOUT_BUTTON",
+          payload: (
             <Button
-              onClick={handleLogout}
-              variant="contained"
-              sx={{ my: 2, display: "block", "&.hover": "#4a6cb5" }}
-            >
-              Logout
-            </Button>
-          );
-          setMenu(
+            onClick={handleLogout}
+            variant="contained"
+            sx={{ my: 2, display: "block", "&.hover": "#4a6cb5" }}
+          >
+            Logout
+          </Button>
+          ),
+        });
+        dispatch({
+          type: "SET_MENU",
+          payload: (
             <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
+            id="menu-appbar"
+            anchorEl={state.anchorElNav}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "left",
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+            open={Boolean(state.anchorElNav)}
+            onClose={handleCloseNavMenu}
+            sx={{
+              display: { xs: "block", md: "none" },
+            }}
+          >
+            <MenuItem onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">About</Typography>
+            </MenuItem>
+            <MenuItem onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">FAQ</Typography>
+            </MenuItem>
+            <MenuItem onClick={handleLogout}>Logout</MenuItem>
+          </Menu>
+          )
+        })
+      } else {
+        dispatch({
+          type: "SET_LOGIN_BUTTON",
+          payload: (
+            <Button
+              onClick={handleCloseNavMenu}
+              href="/Login"
+              sx={{ my: 2, color: "white", display: "block" }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">About</Typography>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">FAQ</Typography>
-              </MenuItem>
-              <MenuItem onClick={handleLogout}>Logout</MenuItem>
-            </Menu>
-          );
-        }
-      });
-  }, []);
+              <Link>Log in</Link>
+            </Button>
+          ),
+        });
+        dispatch({
+          type: "SET_SIGNUP_BUTTON",
+          payload: (
+            <Button
+              variant="contained"
+              onClick={handleCloseNavMenu}
+              href="/signup"
+              sx={{ my: 2, display: "block", "&:hover": "#4a6cb5" }}
+            >
+              <Typography>Sign up</Typography>
+            </Button>
+          ),
+        });
+        dispatch({
+          type: "SET_MENU",
+          payload: (
+            <Menu
+            id="menu-appbar"
+            anchorEl={state.anchorElNav}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "left",
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+            open={Boolean(state.anchorElNav)}
+            onClose={handleCloseNavMenu}
+            sx={{
+              display: { xs: "block", md: "none" },
+            }}
+          >
+            <MenuItem onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">About</Typography>
+            </MenuItem>
+            <MenuItem onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">FAQ</Typography>
+            </MenuItem>
+            <MenuItem
+              onClick={handleCloseNavMenu}
+              component="a"
+              href="/signup"
+            >
+              Sign Up
+            </MenuItem>
+            <MenuItem
+              onClick={handleCloseNavMenu}
+              component="a"
+              href="/login"
+            >
+              Log in
+            </MenuItem>
+          </Menu>
+          ),
+        });
+      }
+    });
+  }, [state.anchorElNav, handleLogout]);
 
   return (
     <ThemeProvider theme={theme}>
@@ -234,7 +269,7 @@ const NavBar: React.FC = () => {
               <IconButton size="large" onClick={handleOpenNavMenu}>
                 <MenuIcon />
               </IconButton>
-              {menu}
+              {state.menu}
             </Box>
             <Typography
               variant="h5"
@@ -279,7 +314,9 @@ const NavBar: React.FC = () => {
               >
                 <Link>{"FAQ"}</Link>
               </Button>
-              {buttons}
+              {state.loginButton}
+              {state.signupButton}
+              {state.logoutButton}
             </Box>
           </Toolbar>
         </Container>

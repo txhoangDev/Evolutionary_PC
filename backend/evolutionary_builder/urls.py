@@ -24,6 +24,7 @@ urlpatterns = [
     path('build/<int:pk>/', build_details),
     path('getToken/', get_csrf_token),
     path('auth/', include('dj_rest_auth.urls')),
+    path('auth/user/me/', get_user),
     path('auth/registration/', include('dj_rest_auth.registration.urls')),
     path('auth/google/', GoogleLogin.as_view(), name="google_login"),
     re_path(r'^verify-email/(?P<key>[-:\w]+)/$', VerifyEmailView.as_view(), name='account_verify_email'),

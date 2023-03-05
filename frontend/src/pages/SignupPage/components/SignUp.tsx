@@ -17,14 +17,12 @@ import { register } from "../../../http-common";
 
 const loginLink = <Link href="/Login">Login</Link>;
 
-const passwordRe =
-  /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
-
 const SignUp: React.FC = () => {
   const [alert, setAlert] = React.useState(<></>);
   const [username, setUsername] = React.useState("");
   const [userError, setUserError] = React.useState(false);
   const [email, setEmail] = React.useState("");
+  const [emailError, setEmailError] = React.useState(false);
   const [password, setPassword] = React.useState("");
   const [passError, setPassError] = React.useState(false);
   const [password2, setPassword2] = React.useState("");
@@ -47,7 +45,15 @@ const SignUp: React.FC = () => {
   };
 
   const handleSignUp = () => {
-    if (username.length > 100) {
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+      setEmailError(true);
+      setAlert(
+        <Alert severity="error">
+          <AlertTitle>Email Error</AlertTitle>Email is not in email format (example@company.com)
+          characters
+        </Alert>
+      );
+    } else if (username.length > 100) {
       setUserError(true);
       setAlert(
         <Alert severity="error">
@@ -62,7 +68,7 @@ const SignUp: React.FC = () => {
           <AlertTitle>Username Error</AlertTitle>Username is required
         </Alert>
       );
-    } else if (passwordRe.test(password) === false) {
+    } else if (/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(password) === false) {
       setPassError(true);
       setAlert(
         <Alert severity="error">
@@ -81,8 +87,8 @@ const SignUp: React.FC = () => {
       );
     } else {
       const result = register(username, email, password, password2);
-      result.then(
-        function (res) {
+      result.then((response) => {
+        if (response === 'success') {
           setUsername("");
           setPassword("");
           setPassword2("");
@@ -93,11 +99,14 @@ const SignUp: React.FC = () => {
               service, please verify your email.
             </Alert>
           );
-        },
-        function (err) {
-          console.log(err);
+        } else {
+          setAlert(
+            <Alert severity="error">
+              <AlertTitle>Registration Error</AlertTitle>Something went wrong. Please try again.
+            </Alert>
+          )
         }
-      );
+      });
     }
   };
 
@@ -155,7 +164,7 @@ const SignUp: React.FC = () => {
               <Box maxWidth="400px">
                 <TextField
                   required
-                  error={userError}
+                  error={emailError}
                   value={email}
                   onChange={handleEmailChange}
                   label="Email"
@@ -205,12 +214,6 @@ const SignUp: React.FC = () => {
             <Grid item xs={12} md={6}>
               <Box width="400px">
                 <Button
-                  onKeyDown={(e) => {
-                    console.log("hi");
-                    // if (e.key === "Enter") {
-                    //   console.log('hi');
-                    // }
-                  }}
                   variant="contained"
                   fullWidth
                   onClick={handleSignUp}
