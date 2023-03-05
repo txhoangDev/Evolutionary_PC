@@ -1,5 +1,21 @@
 const url = "http://127.0.0.1:8000/api";
 
+export type State = {
+  logoutButton: JSX.Element;
+  loginButton: JSX.Element;
+  signupButton: JSX.Element;
+  menu: JSX.Element;
+  anchorElNav: HTMLElement | null;
+};
+
+export type Action =
+| { type: "SET_LOGOUT_BUTTON"; payload: JSX.Element }
+| { type: "SET_LOGIN_BUTTON"; payload: JSX.Element }
+| { type: "SET_SIGNUP_BUTTON"; payload: JSX.Element }
+| { type: "SET_MENU"; payload: JSX.Element }
+| { type: "SET_ANCHORELNAV"; payload: HTMLElement | null}
+| { type: "RESET_STATE" };
+
 export interface detailProps {
   id: number;
 }
@@ -29,20 +45,42 @@ export interface Build {
   ram: string;
 }
 
+export const getUser = async () => {
+  try {
+    const data = await fetch(url + "/auth/user/me/", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    }).then((response) => response.json()).then((data) => {return data});
+    return data;
+  } catch (error) {
+    console.log("unexpected error: ", error);
+    throw new Error("Fail");
+  }
+}
+
 export const login = async (username: string, password: string) => {
   try {
-    await fetch(url + "/auth/login/", {
+    const status = await fetch(url + "/auth/login/", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: {
         "Content-Type": "application/json",
       },
       credentials: "include",
+    }).then((response) => {
+      if (response.status === 200) {
+        return 'success';
+      } else {
+        return 'error';
+      }
     });
-    return "success";
+    return status;
   } catch (error) {
     console.log("unexpected error: ", error);
-    throw new Error("Fail");
+    return 'error';
   }
 };
 
@@ -53,24 +91,30 @@ export const register = async (
   password2: string
 ) => {
   try {
-    await fetch(url + "/auth/registration/", {
+    const status = await fetch(url + "/auth/registration/", {
       method: "POST",
       body: JSON.stringify({ username, email, password1, password2 }),
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
+    }).then((response) => {
+      if (response.status === 201) {
+        return 'success';
+      } else {
+        return 'error';
+      }
     });
-    return "success";
+    return status;
   } catch (error) {
     console.log("unexpected error: ", error);
-    throw new Error("Fail");
+    return 'error';
   }
 };
 
 export const verifyEmail = async (key: string) => {
   try {
-    await fetch(url + "/verify-email/" + key + "/", {
+    const status = await fetch(url + "/verify-email/" + key + "/", {
       method: "POST",
       body: JSON.stringify({ key }),
       headers: {
@@ -78,11 +122,17 @@ export const verifyEmail = async (key: string) => {
         Accept: "application/json",
       },
       credentials: "include"
+    }).then((response) => {
+      if (response.status === 200) {
+        return 'success';
+      } else {
+        return 'error';
+      }
     });
-    return "";
+    return status;
   } catch (error) {
     console.log("unexpected error: ", error);
-    throw new Error("Fail");
+    return 'error';
   }
 };
 
@@ -163,12 +213,26 @@ export async function getBuild(id: number) {
 
 export async function logout() {
   try {
-    await fetch(url + "/auth/logout/", {
+    const status = await fetch(url + "/getToken/", {
+      method: "GET",
+      credentials: "include",
+    }).then((response) => response.json()).then((data) => 
+    fetch(url + "/auth/logout/", {
       method: "POST",
       credentials: "include",
-    });
-
-    return 'Success';
+      headers: {
+        'content-type': 'application/json',
+        Accept: 'application/json',
+        'x-csrftoken': data['message']
+      }
+    }).then((response) => {
+      if (response.status === 200) {
+        return 'Success';
+      } else {
+        return 'Error';
+      }
+    }));
+    return status;
   } catch (error) {
     console.log("unexpected error: ", error);
     return "Error";

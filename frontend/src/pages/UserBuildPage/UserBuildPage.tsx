@@ -9,86 +9,90 @@ import {
   CssBaseline,
 } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import BuildDetail from './components/BuildDetail';
+import BuildDetail from "./components/BuildDetail";
 import DesktopDrawer from "./components/DesktopDrawer";
 import MoblieDrawer from "./components/MoblieDrawer";
-import Welcome from './components/Welcome';
-import { logout, deleteBuild } from "../../http-common";
+import Welcome from "./components/Welcome";
+import { logout, deleteBuild, getUser } from "../../http-common";
 import { useNavigate } from "react-router";
 
-const NotFound = React.lazy(() => import("../ErrorPages/NotFoundPage/NotFoundPage"));
+const Unauthorized = React.lazy(
+  () => import("../ErrorPages/UnauthorizedPage/Unauthorized")
+);
 
 const UserBuildPage: React.FC = () => {
   const [builds, setBuilds] = React.useState<Build[]>([]);
-  const [error, setError] = React.useState<boolean>(false);
+  const [authorized, setAuthorized] = React.useState<boolean>(false);
   const [component, setComponent] = React.useState<React.ReactElement>(<></>);
   const navigate = useNavigate();
 
-  const isSm = useMediaQuery('(max-width: 600px)');
+  const isSm = useMediaQuery("(max-width: 600px)");
 
-  const handleDrawerChange = React.useCallback((type: string) => {
-    if (type === "Dashboard") {
-      setComponent(<Welcome builds={builds} onChange={handleDrawerChange} />);
-    }
-    else if (type === "Settings") {
-      setComponent(<>Settings</>);
-    }
-    else {
-      if(type.length === 1) {
-        setComponent(<BuildDetail id={Number(type)} />);
+  const handleDrawerChange = React.useCallback(
+    (type: string) => {
+      if (type === "Dashboard") {
+        setComponent(<Welcome builds={builds} onChange={handleDrawerChange} />);
+      } else if (type === "Settings") {
+        setComponent(<>Settings</>);
       } else {
-        const res = deleteBuild(type.split(" ")[0]);
-        res.then((result) => {
-          if (result === 'Success') {
-            const result = getUserBuilds();
-            result.then(
-              function(res) {
-                setBuilds(res);
-              },
-              function(err) {
-                setError(true);
-              }
-            )
-          }
-        })
+        if (type.length === 1) {
+          setComponent(<BuildDetail id={Number(type)} />);
+        } else {
+          const res = deleteBuild(type.split(" ")[0]);
+          res.then((result) => {
+            if (result === "Success") {
+              const result = getUserBuilds();
+              result.then(
+                function (res) {
+                  setBuilds(res);
+                },
+              );
+            }
+          });
+        }
       }
-    }
-  }, [builds]);
+    },
+    [builds]
+  );
 
   React.useEffect(() => {
-    const result = getUserBuilds();
-    result.then(
-      function (res) {
-        setBuilds(res);
-      },
-      function (err) {
-        setError(true);
+    const user = getUser();
+    user.then((is_authenticated) => {
+      if (is_authenticated) {
+        const result = getUserBuilds();
+        result.then(
+          function (res) {
+            setBuilds(res);
+          },
+        );
+      } else {
+        setAuthorized(true);
       }
-    );
+    });
   }, []);
 
   React.useMemo(() => {
-      setComponent(<Welcome builds={builds} onChange={handleDrawerChange} />);
+    setComponent(<Welcome builds={builds} onChange={handleDrawerChange} />);
   }, [builds, handleDrawerChange]);
 
   const Logout = () => {
     const result = logout();
     result.then(
-      function(res) {
-        navigate('/Home');
+      function (res) {
+        navigate("/Home");
       },
-      function(err){
+      function (err) {
         console.log(err);
       }
-    )
-  }
+    );
+  };
 
   return (
     <Container disableGutters maxWidth={false}>
-      {error ? (
-        <NotFound />
+      {authorized ? (
+        <Unauthorized />
       ) : (
-        <Box sx={{ display: isSm ? '' : 'flex' }}>
+        <Box sx={{ display: isSm ? "" : "flex" }}>
           <CssBaseline />
           <AppBar
             position="fixed"
@@ -103,7 +107,9 @@ const UserBuildPage: React.FC = () => {
               </Button>
             </Toolbar>
           </AppBar>
-          { isSm ? (<MoblieDrawer builds={builds} onChange={handleDrawerChange} />) : (
+          {isSm ? (
+            <MoblieDrawer builds={builds} onChange={handleDrawerChange} />
+          ) : (
             <DesktopDrawer builds={builds} onChange={handleDrawerChange} />
           )}
           <Box>

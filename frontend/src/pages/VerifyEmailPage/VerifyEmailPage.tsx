@@ -15,15 +15,14 @@ const VerifyEmailPage: React.FC = () => {
   React.useEffect(() => {
     const keyString = key ? key.toString() : "";
     const response = verifyEmail(keyString);
-    response.then(
-      function (res) {
+    response.then((response) => {
+      if (response === 'success') {
         setSuccess(true);
-        navigate('/Build');
-      },
-      function (err) {
-        console.log(err);
+        setTimeout(() => {
+          navigate('/build');
+        }, 5000);
       }
-    );
+    });
   }, [key, navigate]);
 
   return (
