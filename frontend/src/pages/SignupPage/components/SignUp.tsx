@@ -49,8 +49,7 @@ const SignUp: React.FC = () => {
       setEmailError(true);
       setAlert(
         <Alert severity="error">
-          <AlertTitle>Email Error</AlertTitle>Email is not in email format (example@company.com)
-          characters
+          <AlertTitle>Email Error</AlertTitle>Email is not in correct format (example@company.com)
         </Alert>
       );
     } else if (username.length > 100) {

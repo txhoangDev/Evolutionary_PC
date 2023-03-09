@@ -52,7 +52,7 @@ const Input: React.FC = () => {
     } else {
       const result = login(username, password);
       result.then((response) => {
-        if (response === 'error') {
+        if (response === "error") {
           setAlert(
             <Alert severity="error">
               <AlertTitle>ERROR</AlertTitle>Username and Password combination
@@ -60,7 +60,7 @@ const Input: React.FC = () => {
             </Alert>
           );
         } else {
-          navigate('/account');
+          navigate("/account");
         }
       });
     }
@@ -114,7 +114,7 @@ const Input: React.FC = () => {
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Link>Forgot Password?</Link>
+          <Link href="/account/forgot">Forgot Password?</Link>
         </Grid>
         <Grid item xs={12} md={6}>
           <Box width="400px" sx={{ mr: 2 }}>
@@ -123,18 +123,25 @@ const Input: React.FC = () => {
             </Button>
           </Box>
         </Grid>
-        <Grid item xs={12} md={6}>
+        {/* <Grid item xs={12} md={6}>
           <Box width="400px" sx={{ mr: 2 }}>
             <Divider>or</Divider>
           </Box>
-        </Grid>
-        <Grid item xs={12} md={6}>
+        </Grid> */}
+        {/* <Grid item xs={12} md={6}>
           <Box width="400px" sx={{ mr: 2 }}>
-            <Button variant="outlined" fullWidth startIcon={<GoogleIcon />}>
+            <Button
+              variant="outlined"
+              onClick={() =>
+                glogin()
+              }
+              fullWidth
+              startIcon={<GoogleIcon />}
+            >
               Sign in with Google
             </Button>
           </Box>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} md={6}>
           <Typography variant="subtitle1">
             Don't have an account? {signUp}

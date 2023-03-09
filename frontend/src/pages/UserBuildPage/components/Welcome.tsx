@@ -9,9 +9,9 @@ import {
   CardActions,
   Divider,
 } from "@mui/material";
-import { userProps } from "../../../http-common";
+import { buildProps } from "../../../http-common";
 
-const Welcome: React.FC<userProps> = (props: userProps) => {
+const Welcome: React.FC<buildProps> = (props: buildProps) => {
   return (
     <Container maxWidth="xl">
       <Grid container spacing={2} direction="column">

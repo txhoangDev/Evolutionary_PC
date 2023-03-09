@@ -5,21 +5,10 @@ import {
   List,
   ListItemButton,
   ListItemText,
-  ListItemIcon,
-  Collapse,
 } from "@mui/material";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import DeviceHubIcon from "@mui/icons-material/DeviceHub";
-import { userProps } from "../../../http-common";
+import { drawerProps } from "../../../http-common";
 
-const DesktopDrawer: React.FC<userProps> = (props: userProps) => {
-  const [open, setOpen] = React.useState(false);
-  const b = props.builds;
-
-  const handleClick = () => {
-    setOpen(!open);
-  };
+const DesktopDrawer: React.FC<drawerProps> = (props: drawerProps) => {
 
   return (
     <Drawer
@@ -41,26 +30,6 @@ const DesktopDrawer: React.FC<userProps> = (props: userProps) => {
         <ListItemButton onClick={() => props.onChange("Settings")}>
           <ListItemText primary="Settings" />
         </ListItemButton>
-        <ListItemButton onClick={handleClick}>
-          <ListItemIcon>
-            <DeviceHubIcon />
-          </ListItemIcon>
-          <ListItemText primary="All Builds" />
-          {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-        </ListItemButton>
-        <Collapse in={open} timeout="auto" unmountOnExit>
-          <List disablePadding>
-            {b.map((build) => (
-              <ListItemButton
-                sx={{ ml: 6 }}
-                key={build.id}
-                onClick={() => props.onChange(String(build.id))}
-              >
-                <ListItemText primary={build.id} />
-              </ListItemButton>
-            ))}
-          </List>
-        </Collapse>
       </List>
     </Drawer>
   );

@@ -36,15 +36,15 @@ const BuildPage: React.FC = () => {
   const [gpuBudget, setGpuBudget] = React.useState("");
   const [gpuBrand, setGpuBrand] = React.useState("None");
   const [ramBudget, setRamBudget] = React.useState("");
-  const [loggedIn, setLoggedIn] = React.useState(false);
+  const [loggedIn, setLoggedIn] = React.useState(true);
   const navigate = useNavigate();
 
   const isSm = useMediaQuery("(max-width: 600px)");
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     getUser().then((response) => {
-      if (response) {
-        setLoggedIn(true);
+      if (!response) {
+        setLoggedIn(false);
       }
     })
   }, []);

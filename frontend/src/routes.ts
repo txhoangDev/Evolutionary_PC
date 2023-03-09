@@ -9,6 +9,7 @@ const SignupPage = lazy(() => import("./pages/SignupPage/SignupPage"));
 const UserBuildPage = lazy(() => import("./pages/UserBuildPage/UserBuildPage"));
 const NotFoundPage = lazy(() => import("./pages/ErrorPages/NotFoundPage/NotFoundPage"));
 const VerifyEmailPage = lazy(() => import("./pages/VerifyEmailPage/VerifyEmailPage"));
+const PasswordForgotPage = lazy(() => import("./pages/PasswordForgotPage/PasswordForgotPage"));
 
 // interface
 interface Route {
@@ -89,5 +90,19 @@ export const routes: Array<Route> = [
     path: "/verify-email/:key",
     enabled: true,
     component: VerifyEmailPage,
+  },
+  {
+    key: "password-forgot-route",
+    title: "PasswordFogot",
+    path: "/account/forgot",
+    enabled: true,
+    component: PasswordForgotPage,
+  },
+  {
+    key: "password-change-route",
+    title: "PasswordChange",
+    path: "/account/forgot/:uid/:token",
+    enabled: true,
+    component: PasswordForgotPage,
   }
 ];
