@@ -7,13 +7,11 @@ import {
   TextField,
   Link,
   Button,
-  Divider,
   Alert,
   AlertTitle,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import robot from "../../../assets/images/robot.png";
-import GoogleIcon from "@mui/icons-material/Google";
 import { login } from "../../../http-common";
 
 const signUp = <Link href="/Signup">Sign up</Link>;
@@ -33,7 +31,7 @@ const Input: React.FC = () => {
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value);
   };
-
+  
   const handleLogin = () => {
     if (username.length === 0) {
       setUserError(true);
@@ -52,7 +50,7 @@ const Input: React.FC = () => {
     } else {
       const result = login(username, password);
       result.then((response) => {
-        if (response === 'error') {
+        if (response === "error") {
           setAlert(
             <Alert severity="error">
               <AlertTitle>ERROR</AlertTitle>Username and Password combination
@@ -60,7 +58,7 @@ const Input: React.FC = () => {
             </Alert>
           );
         } else {
-          navigate('/account');
+          navigate("/account");
         }
       });
     }
@@ -114,24 +112,12 @@ const Input: React.FC = () => {
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Link>Forgot Password?</Link>
+          <Link href="/account/forgot">Forgot Password?</Link>
         </Grid>
         <Grid item xs={12} md={6}>
           <Box width="400px" sx={{ mr: 2 }}>
             <Button variant="contained" fullWidth onClick={handleLogin}>
               Login
-            </Button>
-          </Box>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Box width="400px" sx={{ mr: 2 }}>
-            <Divider>or</Divider>
-          </Box>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Box width="400px" sx={{ mr: 2 }}>
-            <Button variant="outlined" fullWidth startIcon={<GoogleIcon />}>
-              Sign in with Google
             </Button>
           </Box>
         </Grid>

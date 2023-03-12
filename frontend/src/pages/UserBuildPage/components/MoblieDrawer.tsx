@@ -7,27 +7,16 @@ import {
   List,
   ListItemButton,
   ListItemText,
-  ListItemIcon,
-  Collapse,
 } from "@mui/material";
-import DeviceHubIcon from "@mui/icons-material/DeviceHub";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Global } from "@emotion/react";
 import { grey } from "@mui/material/colors";
-import { userProps } from "../../../http-common";
+import { drawerProps } from "../../../http-common";
 
-const MoblieDrawer: React.FC<userProps> = (props: userProps) => {
+const MoblieDrawer: React.FC<drawerProps> = (props: drawerProps) => {
   const [open, setOpen] = React.useState(false);
-  const [openBuild, setOpenBuild] = React.useState(false);
-  const b = props.builds;
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
-  };
-
-  const handleClick = () => {
-    setOpenBuild(!openBuild);
   };
 
   return (
@@ -98,26 +87,6 @@ const MoblieDrawer: React.FC<userProps> = (props: userProps) => {
             <ListItemButton onClick={() => props.onChange("Settings")}>
               <ListItemText primary="Settings" />
             </ListItemButton>
-            <ListItemButton onClick={handleClick}>
-              <ListItemIcon>
-                <DeviceHubIcon />
-              </ListItemIcon>
-              <ListItemText primary="All Builds" />
-              {openBuild ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-            </ListItemButton>
-            <Collapse in={openBuild} timeout="auto" unmountOnExit>
-              <List disablePadding>
-                {b.map((build) => (
-                  <ListItemButton
-                    sx={{ ml: 6 }}
-                    key={build.id}
-                    onClick={() => props.onChange(String(build.id))}
-                  >
-                    <ListItemText primary={build.id} />
-                  </ListItemButton>
-                ))}
-              </List>
-            </Collapse>
           </List>
         </Box>
       </SwipeableDrawer>

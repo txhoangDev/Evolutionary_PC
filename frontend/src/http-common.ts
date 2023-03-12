@@ -20,10 +20,15 @@ export interface detailProps {
   id: number;
 }
 
-export interface userProps {
+export interface drawerProps {
+  onChange: (newBuildId: string) => void;
+}
+
+export interface buildProps {
   builds: Build[];
   onChange: (newBuildId: string) => void;
 }
+
 
 export interface buildStepper {
   handleBuild: () => void;
@@ -47,7 +52,29 @@ export interface Build {
 
 export const getUser = async () => {
   try {
-    const data = await fetch(url + "/auth/user/me/", {
+    const data = await fetch(url + "/auth/user/", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    }).then((response) => response.json()).then((data) => {
+      if (data.hasOwnProperty('detail')) {
+        return false;
+      } else {
+        return true;
+      }
+    });
+    return data;
+  } catch (error) {
+    console.log("unexpected error: ", error);
+    throw new Error("Fail");
+  }
+}
+
+export const getUserInfo = async () => {
+  try {
+    const data = await fetch(url + "/auth/user/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -255,6 +282,95 @@ export async function deleteBuild(id: string) {
       }
     }));
     return 'Success';
+  } catch(error) {
+    console.log(error);
+    return 'Error';
+  }
+}
+
+export async function resetPassword(email: string) {
+  try {
+    await fetch(url + "/auth/password/reset/", {
+      method: "POST",
+      body: JSON.stringify({email}),
+      headers: {
+        'content-type': 'application/json',
+        Accept: 'application/json',
+      }
+    }).then((response) => response.json()).then((data) => console.log(data));
+    return 'Success';
+  } catch(error) {
+    console.log(error);
+    return 'Error';
+  }
+}
+
+export async function changeResetPassword(uid: string, token: string, new_password1: string, new_password2: string) {
+  try {
+    await fetch(url + "/auth/password/reset/confirm/", {
+      method: "POST",
+      body: JSON.stringify({uid, token, new_password1, new_password2}),
+      headers: {
+        'content-type': 'application/json',
+        Accept: 'application/json',
+      }
+    }).then((response) => response.json()).then((data) => console.log(data));
+    return 'Success';
+  } catch(error) {
+    console.log(error);
+    return 'Error';
+  }
+}
+
+export async function putUsername(username: string) {
+  try {
+    await fetch(url + "/getToken/", {
+      method: "GET",
+      credentials: "include",
+    }).then((response) => response.json()).then((data) => {
+      fetch(url + "/auth/user/", {
+        method: "PUT",
+        body: JSON.stringify({username}),
+        headers: {
+          'content-type': 'application/json',
+          Accept: 'application/json',
+          'x-csrftoken': data['message'],
+        },
+        credentials: 'include'
+      }).then((response) => response.json()).then((data) => console.log(data));
+    })
+    return 'Success';
+  } catch(error) {
+    console.log(error);
+    return 'Error';
+  }
+}
+
+export async function changePassword(old_password: string, new_password1: string, new_password2: string) {
+  try {
+    const token = await fetch(url + "/getToken/", {
+      method: "GET",
+      credentials: "include",
+    }).then((response) => response.json()).then((data) => {
+      return data;
+    });
+    const result = await fetch(url + "/auth/password/change/", {
+      method: "POST",
+      body: JSON.stringify({new_password1, new_password2, old_password}),
+      headers: {
+        'content-type': 'application/json',
+        Accept: 'application/json',
+        'x-csrftoken': token['message'],
+      },
+      credentials: 'include'
+    }).then((response) => response.json()).then((data) => {
+      if (data.hasOwnProperty('old_password')) {
+        return 'old_password';
+      } else {
+        return 'success';
+      }
+    });
+    return result;
   } catch(error) {
     console.log(error);
     return 'Error';

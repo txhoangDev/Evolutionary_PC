@@ -13,6 +13,7 @@ import BuildDetail from "./components/BuildDetail";
 import DesktopDrawer from "./components/DesktopDrawer";
 import MoblieDrawer from "./components/MoblieDrawer";
 import Welcome from "./components/Welcome";
+import Settings from "./components/Settings";
 import { logout, deleteBuild, getUser } from "../../http-common";
 import { useNavigate } from "react-router";
 
@@ -22,7 +23,7 @@ const Unauthorized = React.lazy(
 
 const UserBuildPage: React.FC = () => {
   const [builds, setBuilds] = React.useState<Build[]>([]);
-  const [authorized, setAuthorized] = React.useState<boolean>(false);
+  const [authorized, setAuthorized] = React.useState<boolean>(true);
   const [component, setComponent] = React.useState<React.ReactElement>(<></>);
   const navigate = useNavigate();
 
@@ -33,7 +34,7 @@ const UserBuildPage: React.FC = () => {
       if (type === "Dashboard") {
         setComponent(<Welcome builds={builds} onChange={handleDrawerChange} />);
       } else if (type === "Settings") {
-        setComponent(<>Settings</>);
+        setComponent(<Settings />);
       } else {
         if (type.length === 1) {
           setComponent(<BuildDetail id={Number(type)} />);
@@ -42,11 +43,9 @@ const UserBuildPage: React.FC = () => {
           res.then((result) => {
             if (result === "Success") {
               const result = getUserBuilds();
-              result.then(
-                function (res) {
-                  setBuilds(res);
-                },
-              );
+              result.then(function (res) {
+                setBuilds(res);
+              });
             }
           });
         }
@@ -57,16 +56,9 @@ const UserBuildPage: React.FC = () => {
 
   React.useEffect(() => {
     const user = getUser();
-    user.then((is_authenticated) => {
-      if (is_authenticated) {
-        const result = getUserBuilds();
-        result.then(
-          function (res) {
-            setBuilds(res);
-          },
-        );
-      } else {
-        setAuthorized(true);
+    user.then((response) => {
+      if (!response) {
+        setAuthorized(false);
       }
     });
   }, []);
@@ -90,8 +82,6 @@ const UserBuildPage: React.FC = () => {
   return (
     <Container disableGutters maxWidth={false}>
       {authorized ? (
-        <Unauthorized />
-      ) : (
         <Box sx={{ display: isSm ? "" : "flex" }}>
           <CssBaseline />
           <AppBar
@@ -108,15 +98,17 @@ const UserBuildPage: React.FC = () => {
             </Toolbar>
           </AppBar>
           {isSm ? (
-            <MoblieDrawer builds={builds} onChange={handleDrawerChange} />
+            <MoblieDrawer onChange={handleDrawerChange} />
           ) : (
-            <DesktopDrawer builds={builds} onChange={handleDrawerChange} />
+            <DesktopDrawer onChange={handleDrawerChange} />
           )}
           <Box>
             {isSm ? <></> : <Toolbar />}
             {component}
           </Box>
         </Box>
+      ) : (
+        <Unauthorized />
       )}
     </Container>
   );
