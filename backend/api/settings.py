@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-import datetime
 from dotenv import load_dotenv
 load_dotenv(dotenv_path='.env')
 
@@ -122,7 +121,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -155,10 +153,15 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend'
 ]
 
+REST_AUTH_SERIALIZERS = {
+    "PASSWORD_RESET_SERIALIZER": "evolutionary_builder.serializers.CustomPasswordResetConfirmSerializer"
+}
 SESSION_COOKIE_SAMESITE = 'None'
 CSRF_COOKIE_SAMESITE = 'None'
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+LOGOUT_ON_PASSWORD_CHANGE = False
+OLD_PASSWORD_FIELD_ENABLED = True
 REST_USE_JWT = True
 JWT_AUTH_SAMESITE = 'None'
 JWT_AUTH_COOKIE = 'evolutBuilder'

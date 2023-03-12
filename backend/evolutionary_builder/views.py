@@ -8,7 +8,7 @@ from django.dispatch import receiver
 from allauth.account.utils import perform_login
 from django.middleware.csrf import get_token
 from django.views.decorators.csrf import csrf_protect 
-from django.http import HttpResponse
+from django.shortcuts import redirect
 
 from .models import Build
 from evolutionary_builder.serializers import *
@@ -29,13 +29,6 @@ def get_csrf_token(request):
     response = Response({'message': request.COOKIES.get('csrftoken')})
     response['x-csrftoken'] = request.COOKIES.get('csrftoken')
     return response
-
-@api_view(['GET'])
-def get_user(request):
-    if request.user.is_authenticated:
-        return Response(data=True, status=status.HTTP_200_OK)
-    else:
-        return Response(data=False, status=status.HTTP_200_OK)
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])

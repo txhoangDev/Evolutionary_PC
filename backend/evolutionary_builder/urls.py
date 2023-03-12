@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.urls import path, include, re_path
 from .views import *
-from .viewset import *
 from dj_rest_auth.registration.views import VerifyEmailView
+from dj_rest_auth.views import PasswordResetConfirmView
 
 urlpatterns = [
     path('allBuilds/', all_builds),
@@ -24,8 +24,11 @@ urlpatterns = [
     path('build/<int:pk>/', build_details),
     path('getToken/', get_csrf_token),
     path('auth/', include('dj_rest_auth.urls')),
-    path('auth/user/me/', get_user),
+    re_path(
+        r"password/reset/key/(?P<uidb36>[0-9A-Za-z]+)-(?P<key>.+)/",
+        PasswordResetConfirmView.as_view(),
+        name="password_reset_confirm",
+    ),
     path('auth/registration/', include('dj_rest_auth.registration.urls')),
-    path('auth/google/', GoogleLogin.as_view(), name="google_login"),
     re_path(r'^verify-email/(?P<key>[-:\w]+)/$', VerifyEmailView.as_view(), name='account_verify_email'),
 ]

@@ -7,12 +7,10 @@ import {
   TextField,
   Link,
   Button,
-  Divider,
   Alert,
   AlertTitle,
 } from "@mui/material";
 import signup from "../../../assets/images/signup.png";
-import GoogleIcon from "@mui/icons-material/Google";
 import { register } from "../../../http-common";
 
 const loginLink = <Link href="/Login">Login</Link>;
@@ -218,18 +216,6 @@ const SignUp: React.FC = () => {
                   onClick={handleSignUp}
                 >
                   Sign Up
-                </Button>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Box width="400px">
-                <Divider>or</Divider>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Box width="400px">
-                <Button variant="outlined" fullWidth startIcon={<GoogleIcon />}>
-                  Sign up with Google
                 </Button>
               </Box>
             </Grid>

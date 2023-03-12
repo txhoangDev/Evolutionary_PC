@@ -7,13 +7,11 @@ import {
   TextField,
   Link,
   Button,
-  Divider,
   Alert,
   AlertTitle,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import robot from "../../../assets/images/robot.png";
-import GoogleIcon from "@mui/icons-material/Google";
 import { login } from "../../../http-common";
 
 const signUp = <Link href="/Signup">Sign up</Link>;
@@ -33,7 +31,7 @@ const Input: React.FC = () => {
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value);
   };
-
+  
   const handleLogin = () => {
     if (username.length === 0) {
       setUserError(true);
@@ -123,25 +121,6 @@ const Input: React.FC = () => {
             </Button>
           </Box>
         </Grid>
-        {/* <Grid item xs={12} md={6}>
-          <Box width="400px" sx={{ mr: 2 }}>
-            <Divider>or</Divider>
-          </Box>
-        </Grid> */}
-        {/* <Grid item xs={12} md={6}>
-          <Box width="400px" sx={{ mr: 2 }}>
-            <Button
-              variant="outlined"
-              onClick={() =>
-                glogin()
-              }
-              fullWidth
-              startIcon={<GoogleIcon />}
-            >
-              Sign in with Google
-            </Button>
-          </Box>
-        </Grid> */}
         <Grid item xs={12} md={6}>
           <Typography variant="subtitle1">
             Don't have an account? {signUp}
