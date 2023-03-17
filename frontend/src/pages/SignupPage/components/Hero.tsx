@@ -1,7 +1,8 @@
 import React from "react";
 import { Box } from "@mui/material";
-import rc from '../../../assets/images/robot-computer.png';
-import bg from '../../../assets/backgrounds/signup_bg.svg';
+
+import rc from "../../../assets/images/robot-computer.png";
+import bg from "../../../assets/backgrounds/signup_bg.svg";
 
 const Hero: React.FC = () => {
   return (

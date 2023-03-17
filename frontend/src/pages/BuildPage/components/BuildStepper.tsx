@@ -9,7 +9,8 @@ import {
   Container,
   Slide,
 } from "@mui/material";
-import { buildStepper } from "../../../http-common";
+
+import { buildStepper } from "../../../types";
 
 const BuildStepper: React.FC<buildStepper> = (props: buildStepper) => {
   const [checked, setChecked] = React.useState(true);

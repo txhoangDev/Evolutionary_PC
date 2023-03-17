@@ -10,6 +10,7 @@ import {
   Alert,
   AlertTitle,
 } from "@mui/material";
+
 import signup from "../../../assets/images/signup.png";
 import { register } from "../../../http-common";
 
@@ -47,7 +48,8 @@ const SignUp: React.FC = () => {
       setEmailError(true);
       setAlert(
         <Alert severity="error">
-          <AlertTitle>Email Error</AlertTitle>Email is not in correct format (example@company.com)
+          <AlertTitle>Email Error</AlertTitle>Email is not in correct format
+          (example@company.com)
         </Alert>
       );
     } else if (username.length > 100) {
@@ -65,7 +67,11 @@ const SignUp: React.FC = () => {
           <AlertTitle>Username Error</AlertTitle>Username is required
         </Alert>
       );
-    } else if (/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(password) === false) {
+    } else if (
+      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(
+        password
+      ) === false
+    ) {
       setPassError(true);
       setAlert(
         <Alert severity="error">
@@ -85,7 +91,28 @@ const SignUp: React.FC = () => {
     } else {
       const result = register(username, email, password, password2);
       result.then((response) => {
-        if (response === 'success') {
+        if (response.hasOwnProperty('username')){
+          setAlert(
+            <Alert severity="error">
+              <AlertTitle>Registration Error</AlertTitle>Username already exists.
+            </Alert>
+          );
+          setUserError(true);
+        } else if (response.hasOwnProperty('email')) {
+          setAlert(
+            <Alert severity="error">
+              <AlertTitle>Registration Error</AlertTitle>Email already exists.
+            </Alert>
+          );
+          setEmailError(true);
+        } else if (response.hasOwnProperty('non_field_errors')) {
+          setAlert(
+            <Alert severity="error">
+              <AlertTitle>Registration Error</AlertTitle>Password is too similar to username.
+            </Alert>
+          );
+          setPassError(true);
+        } else {
           setUsername("");
           setPassword("");
           setPassword2("");
@@ -96,12 +123,6 @@ const SignUp: React.FC = () => {
               service, please verify your email.
             </Alert>
           );
-        } else {
-          setAlert(
-            <Alert severity="error">
-              <AlertTitle>Registration Error</AlertTitle>Something went wrong. Please try again.
-            </Alert>
-          )
         }
       });
     }
@@ -210,11 +231,7 @@ const SignUp: React.FC = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Box width="400px">
-                <Button
-                  variant="contained"
-                  fullWidth
-                  onClick={handleSignUp}
-                >
+                <Button variant="contained" fullWidth onClick={handleSignUp}>
                   Sign Up
                 </Button>
               </Box>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Typography, Grid, Fade, Button } from "@mui/material";
-import bg from "../../assets/backgrounds/bg.svg";
-import Main from "../../layouts/main/Main";
 
+import Main from "../../layouts/main/Main";
+import bg from "../../assets/backgrounds/bg.svg";
 import white1 from "../../assets/images/white_pc1.png";
 import white2 from "../../assets/images/white_pc2.png";
 import white3 from "../../assets/images/white_pc3.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   CssBaseline,
   ThemeProvider,
@@ -8,10 +7,10 @@ import {
 } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import { routes as appRoutes } from "./routes";
 
 function App() {
-  // define theme
   let theme = createTheme({
     palette: {
       primary: {

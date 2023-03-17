@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Paper, Typography, MobileStepper, Button } from "@mui/material";
-import { buildStepper } from "../../../http-common";
+
+import { buildStepper } from "../../../types";
 
 const MobileBuildStepper: React.FC<buildStepper> = (props: buildStepper) => {
   const [activeStep, setActiveStep] = React.useState(0);

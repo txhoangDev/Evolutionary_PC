@@ -11,12 +11,13 @@ import {
   FormControlLabel,
   RadioGroup,
 } from "@mui/material";
-import { createNewBuild, getUser } from "../../http-common";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { useNavigate } from "react-router-dom";
+
 import Main from "../../layouts/main/Main";
 import BuildStepper from "./components/BuildStepper";
 import MobileBuildStepper from "./components/MobileBuildStepper";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { createNewBuild, getUser } from "../../http-common";
 
 const Unauthorized = React.lazy(
   () => import("../ErrorPages/UnauthorizedPage/Unauthorized")
@@ -46,7 +47,7 @@ const BuildPage: React.FC = () => {
       if (!response) {
         setLoggedIn(false);
       }
-    })
+    });
   }, []);
 
   const validateInput = () => {
@@ -113,14 +114,11 @@ const BuildPage: React.FC = () => {
       gBudget,
       rBudget
     );
-    result.then(
-      function (res) {
-        navigate("/account");
-      },
-      function (err) {
-        console.log(err);
+    result.then((response) => {
+      if (response === 'Success') {
+        navigate('/account');
       }
-    );
+    });
   };
 
   const content = [

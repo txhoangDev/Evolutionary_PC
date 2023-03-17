@@ -1,5 +1,5 @@
 import React from "react";
-import { getUserBuilds, Build } from "../../http-common";
+import { Build } from "../../types";
 import {
   Container,
   Box,
@@ -9,13 +9,14 @@ import {
   CssBaseline,
 } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { useNavigate } from "react-router";
+
+import { getUserBuilds, logout, deleteBuild, getUser } from "../../http-common";
 import BuildDetail from "./components/BuildDetail";
 import DesktopDrawer from "./components/DesktopDrawer";
 import MoblieDrawer from "./components/MoblieDrawer";
 import Welcome from "./components/Welcome";
 import Settings from "./components/Settings";
-import { logout, deleteBuild, getUser } from "../../http-common";
-import { useNavigate } from "react-router";
 
 const Unauthorized = React.lazy(
   () => import("../ErrorPages/UnauthorizedPage/Unauthorized")
@@ -42,9 +43,10 @@ const UserBuildPage: React.FC = () => {
           const res = deleteBuild(type.split(" ")[0]);
           res.then((result) => {
             if (result === "Success") {
-              const result = getUserBuilds();
-              result.then(function (res) {
-                setBuilds(res);
+              getUserBuilds().then((response) => {
+                if (typeof response === "object") {
+                  setBuilds(response);
+                }
               });
             }
           });
@@ -59,11 +61,17 @@ const UserBuildPage: React.FC = () => {
     user.then((response) => {
       if (!response) {
         setAuthorized(false);
+      } else {
+        getUserBuilds().then((response) => {
+          if (typeof response === "object") {
+            setBuilds(response);
+          }
+        });
       }
     });
   }, []);
 
-  React.useMemo(() => {
+  React.useMemo(async () => {
     setComponent(<Welcome builds={builds} onChange={handleDrawerChange} />);
   }, [builds, handleDrawerChange]);
 

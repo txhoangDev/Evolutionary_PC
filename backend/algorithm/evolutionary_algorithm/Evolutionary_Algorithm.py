@@ -188,7 +188,7 @@ class PC_Build:
                         # finds a better fit solution
                         if self.Calculate_Fitness(child) > self.Calculate_Fitness(self.solution):
                             self.solution = list(child)
-                        break;
+                        break
     
     def Mutate(self):
         

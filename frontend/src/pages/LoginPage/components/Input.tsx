@@ -11,6 +11,7 @@ import {
   AlertTitle,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+
 import robot from "../../../assets/images/robot.png";
 import { login } from "../../../http-common";
 
@@ -31,7 +32,7 @@ const Input: React.FC = () => {
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value);
   };
-  
+
   const handleLogin = () => {
     if (username.length === 0) {
       setUserError(true);

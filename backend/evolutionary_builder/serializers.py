@@ -8,6 +8,21 @@ class BuildSerializer(serializers.ModelSerializer):
         model = Build
         fields = ('__all__')
         
+class CPUSerializer(serializers.ModelSerializer):
+    class Meta: 
+        model = CPU
+        fields = ('__all__')
+        
+class GPUSerializer(serializers.ModelSerializer):
+    class Meta: 
+        model = GPU
+        fields = ('__all__')
+        
+class RAMSerializer(serializers.ModelSerializer):
+    class Meta: 
+        model = RAM
+        fields = ('__all__')
+        
 class CustomPasswordResetConfirmSerializer(PasswordResetSerializer):
     def validate_email(self, value):
         # use the custom reset form

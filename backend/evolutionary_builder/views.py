@@ -6,13 +6,10 @@ from rest_framework.authentication import SessionAuthentication
 from allauth.account.signals import email_confirmed
 from django.dispatch import receiver
 from allauth.account.utils import perform_login
-from django.middleware.csrf import get_token
 from django.views.decorators.csrf import csrf_protect 
-from django.shortcuts import redirect
 
-from .models import Build
+from .models import *
 from evolutionary_builder.serializers import *
-from algorithm.Computer_Building import run_evolution
 from .core import *
 
 # Create your views here.
@@ -55,23 +52,22 @@ def create_build(request):
             user.build.add(serializer.data['id'])
             return Response(status=status.HTTP_201_CREATED)
     except:
-        parts_dict = run_evolution(budget=request.data['budget'],
+        components = generate_components(budget=request.data['budget'],
                                    cpu_type=request.data['cpu_brand'], 
                                    gpu_type=request.data['gpu_brand'],
                                    cpu_budget=request.data['cpu_budget'],
                                    gpu_budget=request.data['gpu_budget'],
                                    ram_budget=request.data['ram_budget'])
-        parts = list(parts_dict.keys())
         new_build = {
             'budget': request.data['budget'],
-            'cpu_type': request.data['cpu_brand'], 
-            'gpu_type': request.data['gpu_brand'],
+            'cpu_brand': request.data['cpu_brand'], 
+            'gpu_brand': request.data['gpu_brand'],
             'cpu_budget': request.data['cpu_budget'],
             'gpu_budget': request.data['gpu_budget'],
             'ram_budget': request.data['ram_budget'],
-            'cpu': parts[0],
-            'gpu': parts[1],
-            'ram': parts[2]
+            'cpu_id': [components[0]['id']],
+            'gpu_id': [components[1]['id']],
+            'ram_id': [components[2]['id']]
         }
         serializer = BuildSerializer(data=new_build)
         if serializer.is_valid():
@@ -79,6 +75,7 @@ def create_build(request):
             user.build.add(serializer.data['id'])
             return Response(status=status.HTTP_201_CREATED)
         else:
+            print(serializer.errors)
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['GET', 'DELETE'])
@@ -93,10 +90,18 @@ def build_details(request, pk):
     if request.method == 'GET':
         serializers = BuildSerializer(build, context={'request': request})
         build_info = {}
-        build_info['build'] = serializers.data
-        build_info['cpu_price'] = get_cpu_price(serializers.data['cpu'])
-        build_info['gpu_price'] = get_gpu_price(serializers.data['gpu'])
-        build_info['ram_price'] = get_ram_price(serializers.data['ram'])
+        curr_cpu = CPU.objects.get(id=serializers.data['cpu_id'])
+        cpu_data = CPUSerializer(curr_cpu).data
+        curr_gpu = GPU.objects.get(id=serializers.data['gpu_id'])
+        gpu_data = GPUSerializer(curr_gpu).data
+        curr_ram = RAM.objects.get(id=serializers.data['ram_id'])
+        ram_data = RAMSerializer(curr_ram).data
+        build_info['cpu'] = cpu_data['name']
+        build_info['cpu_price'] = cpu_data['price']
+        build_info['gpu'] = gpu_data['name']
+        build_info['gpu_price'] = gpu_data['price']
+        build_info['ram'] = ram_data['name']
+        build_info['ram_price'] = ram_data['price']
         return Response(data=build_info, status=status.HTTP_200_OK)
     elif request.method == 'DELETE':
         build.delete()

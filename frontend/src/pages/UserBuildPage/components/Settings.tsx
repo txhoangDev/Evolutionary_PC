@@ -9,6 +9,7 @@ import {
   Snackbar,
 } from "@mui/material";
 import MuiAlert, { AlertProps } from "@mui/material/Alert";
+
 import { getUserInfo, putUsername, changePassword } from "../../../http-common";
 
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
@@ -48,13 +49,13 @@ const Settings: React.FC = () => {
       setOpen(true);
     } else {
       putUsername(username).then((response) => {
-        if (response === 'Success') {
-            setAlert("Username changed successfully");
-            setType(false);
-            setOpen(true);
+        if (response === "Success") {
+          setAlert("Username changed successfully");
+          setType(false);
+          setOpen(true);
         } else {
-            setAlert("Oops...something went wrong");
-            setOpen(true);
+          setAlert("Oops...something went wrong");
+          setOpen(true);
         }
       });
     }
@@ -89,8 +90,8 @@ const Settings: React.FC = () => {
           setAlert("Password was changed successfully");
           setOpen(true);
         } else {
-            setAlert("Oops...something went wrong");
-            setOpen(true);
+          setAlert("Oops...something went wrong");
+          setOpen(true);
         }
       });
     }

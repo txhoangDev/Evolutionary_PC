@@ -10,7 +10,8 @@ import {
 } from "@mui/material";
 import { Global } from "@emotion/react";
 import { grey } from "@mui/material/colors";
-import { drawerProps } from "../../../http-common";
+
+import { drawerProps } from "../../../types";
 
 const MoblieDrawer: React.FC<drawerProps> = (props: drawerProps) => {
   const [open, setOpen] = React.useState(false);
