@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
+
 import bg from "../../../assets/backgrounds/login_bg.svg";
 import login from "../../../assets/images/login.png";
 

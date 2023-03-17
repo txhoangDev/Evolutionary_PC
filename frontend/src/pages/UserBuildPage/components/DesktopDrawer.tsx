@@ -6,10 +6,10 @@ import {
   ListItemButton,
   ListItemText,
 } from "@mui/material";
-import { drawerProps } from "../../../http-common";
+
+import { drawerProps } from "../../../types";
 
 const DesktopDrawer: React.FC<drawerProps> = (props: drawerProps) => {
-
   return (
     <Drawer
       variant="permanent"

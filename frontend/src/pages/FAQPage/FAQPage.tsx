@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Box } from "@mui/material";
+
 import FAQ from "./components/FAQ";
 import FAQTitle from "./components/FAQTitle";
 import NavBar from "../../components/Navigation/NavBar";

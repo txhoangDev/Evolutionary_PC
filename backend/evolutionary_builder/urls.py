@@ -19,16 +19,16 @@ from dj_rest_auth.registration.views import VerifyEmailView
 from dj_rest_auth.views import PasswordResetConfirmView
 
 urlpatterns = [
-    path('allBuilds/', all_builds),
-    path('createBuild/', create_build),
+    path('all-builds/', all_builds),
+    path('create-build/', create_build),
     path('build/<int:pk>/', build_details),
-    path('getToken/', get_csrf_token),
-    path('auth/', include('dj_rest_auth.urls')),
+    path('get-token/', get_csrf_token),
+    path('', include('dj_rest_auth.urls')),
     re_path(
         r"password/reset/key/(?P<uidb36>[0-9A-Za-z]+)-(?P<key>.+)/",
         PasswordResetConfirmView.as_view(),
         name="password_reset_confirm",
     ),
-    path('auth/registration/', include('dj_rest_auth.registration.urls')),
+    path('registration/', include('dj_rest_auth.registration.urls')),
     re_path(r'^verify-email/(?P<key>[-:\w]+)/$', VerifyEmailView.as_view(), name='account_verify_email'),
 ]

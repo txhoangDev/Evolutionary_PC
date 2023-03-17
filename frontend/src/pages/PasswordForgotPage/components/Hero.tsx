@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
-import forgotpass from '../../../assets/images/forgotpass.png';
+
+import forgotpass from "../../../assets/images/forgotpass.png";
 
 const Hero: React.FC = () => {
   return (

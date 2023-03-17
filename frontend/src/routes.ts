@@ -7,9 +7,15 @@ const BuildPage = lazy(() => import("./pages/BuildPage/BuildPage"));
 const LoginPage = lazy(() => import("./pages/LoginPage/LoginPage"));
 const SignupPage = lazy(() => import("./pages/SignupPage/SignupPage"));
 const UserBuildPage = lazy(() => import("./pages/UserBuildPage/UserBuildPage"));
-const NotFoundPage = lazy(() => import("./pages/ErrorPages/NotFoundPage/NotFoundPage"));
-const VerifyEmailPage = lazy(() => import("./pages/VerifyEmailPage/VerifyEmailPage"));
-const PasswordForgotPage = lazy(() => import("./pages/PasswordForgotPage/PasswordForgotPage"));
+const NotFoundPage = lazy(
+  () => import("./pages/ErrorPages/NotFoundPage/NotFoundPage")
+);
+const VerifyEmailPage = lazy(
+  () => import("./pages/VerifyEmailPage/VerifyEmailPage")
+);
+const PasswordForgotPage = lazy(
+  () => import("./pages/PasswordForgotPage/PasswordForgotPage")
+);
 
 // interface
 interface Route {
@@ -73,7 +79,7 @@ export const routes: Array<Route> = [
   {
     key: "user-acc-route",
     title: "Account",
-    path: '/account',
+    path: "/account",
     enabled: true,
     component: UserBuildPage,
   },
@@ -104,5 +110,5 @@ export const routes: Array<Route> = [
     path: "/account/forgot/:uid/:token",
     enabled: true,
     component: PasswordForgotPage,
-  }
+  },
 ];

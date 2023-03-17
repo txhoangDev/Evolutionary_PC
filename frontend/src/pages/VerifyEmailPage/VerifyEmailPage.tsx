@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Typography, Box } from "@mui/material";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import { verifyEmail } from "../../http-common";
-import { useNavigate } from 'react-router-dom';
 import email from "../../assets/images/email.png";
 import email_succcess from "../../assets/backgrounds/email_success.svg";
-import sad_shiba from '../../assets/images/sad_shiba.png';
+import sad_shiba from "../../assets/images/sad_shiba.png";
 
 const VerifyEmailPage: React.FC = () => {
   const navigate = useNavigate();
@@ -16,10 +17,10 @@ const VerifyEmailPage: React.FC = () => {
     const keyString = key ? key.toString() : "";
     const response = verifyEmail(keyString);
     response.then((response) => {
-      if (response === 'success') {
+      if (response === "success") {
         setSuccess(true);
         setTimeout(() => {
-          navigate('/build');
+          navigate("/build");
         }, 5000);
       }
     });

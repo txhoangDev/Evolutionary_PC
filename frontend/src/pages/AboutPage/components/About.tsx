@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Typography, useMediaQuery, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+
 import gif from "../../../assets/images/temp.gif";
 
 const About: React.FC = () => {

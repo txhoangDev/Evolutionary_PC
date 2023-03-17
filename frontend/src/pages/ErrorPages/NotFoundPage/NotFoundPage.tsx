@@ -8,6 +8,7 @@ import {
   Container,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+
 import four from "../../../assets/images/24.svg";
 
 const NotFoundPage: React.FC = () => {

@@ -10,6 +10,7 @@ import {
   AlertTitle,
 } from "@mui/material";
 import { useParams, useNavigate } from "react-router-dom";
+
 import { resetPassword, changeResetPassword } from "../../../http-common";
 
 const Input: React.FC = () => {
@@ -34,13 +35,15 @@ const Input: React.FC = () => {
     setPassword(e.target.value);
     setPassError(false);
     setAlert(<></>);
-  }
+  };
 
-  const handleConfirmPasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleConfirmPasswordChange = (
+    e: React.ChangeEvent<HTMLInputElement>
+  ) => {
     setConfirmPass(e.target.value);
     setConfirmError(false);
     setAlert(<></>);
-  }
+  };
 
   const handleNext = () => {
     if (!/^\S+@\S+\.\S+$/.test(email)) {
@@ -53,10 +56,11 @@ const Input: React.FC = () => {
       );
     } else {
       resetPassword(email).then((response) => {
-        if (response === 'Success') {
+        if (response === "Success") {
           setAlert(
             <Alert severity="success" sx={{ ml: 2 }}>
-              <AlertTitle>Email Sent</AlertTitle>An email has been sent to {email} with instructions on how to recover your account
+              <AlertTitle>Email Sent</AlertTitle>An email has been sent to{" "}
+              {email} with instructions on how to recover your account
             </Alert>
           );
         } else {
@@ -64,38 +68,45 @@ const Input: React.FC = () => {
             <Alert severity="error" sx={{ ml: 2 }}>
               <AlertTitle>Something went wrong...</AlertTitle>
             </Alert>
-          )
+          );
         }
       });
     }
   };
 
   const handleResetPassword = () => {
-    if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(password)) {
+    if (
+      !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(
+        password
+      )
+    ) {
       setPassError(true);
     } else if (confirmPass !== password) {
       setConfirmError(true);
     } else if (uid && token) {
-      changeResetPassword(uid, token, password, confirmPass).then((response) => {
-        if (response === 'Success') {
-          setAlert(
-            <Alert severity="success" sx={{ ml: 2 }}>
-              <AlertTitle>Reset Successful</AlertTitle>Your password has been changed!
-            </Alert>
-          );
-          setTimeout(function() {
-            navigate('/login');
-          }, 2000);
-        } else {
-          setAlert(
-            <Alert severity="error" sx={{ ml: 2 }}>
-              <AlertTitle>Something went wrong...</AlertTitle>
-            </Alert>
-          );
+      changeResetPassword(uid, token, password, confirmPass).then(
+        (response) => {
+          if (response === "Success") {
+            setAlert(
+              <Alert severity="success" sx={{ ml: 2 }}>
+                <AlertTitle>Reset Successful</AlertTitle>Your password has been
+                changed!
+              </Alert>
+            );
+            setTimeout(function () {
+              navigate("/login");
+            }, 2000);
+          } else {
+            setAlert(
+              <Alert severity="error" sx={{ ml: 2 }}>
+                <AlertTitle>Something went wrong...</AlertTitle>
+              </Alert>
+            );
+          }
         }
-      });
+      );
     }
-  }
+  };
 
   return (
     <Container
@@ -119,7 +130,7 @@ const Input: React.FC = () => {
             </Typography>
           </Grid>
           <Grid item container xs={12} md={9}>
-            <Box sx={{ ml: 2, width: '45%' }}>
+            <Box sx={{ ml: 2, width: "45%" }}>
               <TextField
                 required
                 error={passError}
@@ -132,7 +143,7 @@ const Input: React.FC = () => {
             </Box>
           </Grid>
           <Grid item container xs={12} md={9}>
-            <Box sx={{ ml: 2, width: '45%' }}>
+            <Box sx={{ ml: 2, width: "45%" }}>
               <TextField
                 required
                 error={confirmError}
@@ -145,7 +156,11 @@ const Input: React.FC = () => {
             </Box>
           </Grid>
           <Grid item container xs={12} md={6}>
-            <Button variant="contained" sx={{ ml: 2 }} onClick={handleResetPassword}>
+            <Button
+              variant="contained"
+              sx={{ ml: 2 }}
+              onClick={handleResetPassword}
+            >
               Reset Password
             </Button>
           </Grid>
@@ -166,7 +181,7 @@ const Input: React.FC = () => {
             </Typography>
           </Grid>
           <Grid item container xs={12} md={9}>
-            <Box sx={{ ml: 2, width: '45%' }}>
+            <Box sx={{ ml: 2, width: "45%" }}>
               <TextField
                 required
                 error={error}

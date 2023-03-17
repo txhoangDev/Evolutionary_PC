@@ -1,96 +1,54 @@
-const url = "http://127.0.0.1:8000/api";
+import { Build } from "./types";
 
-export type State = {
-  logoutButton: JSX.Element;
-  loginButton: JSX.Element;
-  signupButton: JSX.Element;
-  menu: JSX.Element;
-  anchorElNav: HTMLElement | null;
-};
-
-export type Action =
-| { type: "SET_LOGOUT_BUTTON"; payload: JSX.Element }
-| { type: "SET_LOGIN_BUTTON"; payload: JSX.Element }
-| { type: "SET_SIGNUP_BUTTON"; payload: JSX.Element }
-| { type: "SET_MENU"; payload: JSX.Element }
-| { type: "SET_ANCHORELNAV"; payload: HTMLElement | null}
-| { type: "RESET_STATE" };
-
-export interface detailProps {
-  id: number;
-}
-
-export interface drawerProps {
-  onChange: (newBuildId: string) => void;
-}
-
-export interface buildProps {
-  builds: Build[];
-  onChange: (newBuildId: string) => void;
-}
-
-
-export interface buildStepper {
-  handleBuild: () => void;
-  validateInput: () => boolean;
-  steps: string[];
-  content: JSX.Element[];
-}
-
-export interface Build {
-  id: number;
-  budget: number;
-  cpu_brand: string;
-  gpu_brand: string;
-  gpu_budget: string;
-  cpu_budget: string;
-  ram_budget: string;
-  cpu: string;
-  gpu: string;
-  ram: string;
-}
+const url = "http://127.0.0.1:8000/auth";
 
 export const getUser = async () => {
   try {
-    const data = await fetch(url + "/auth/user/", {
+    const data = await fetch(url + "/user/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
       credentials: "include",
-    }).then((response) => response.json()).then((data) => {
-      if (data.hasOwnProperty('detail')) {
-        return false;
-      } else {
-        return true;
-      }
-    });
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.hasOwnProperty("detail")) {
+          return false;
+        } else {
+          return true;
+        }
+      });
     return data;
   } catch (error) {
     console.log("unexpected error: ", error);
     throw new Error("Fail");
   }
-}
+};
 
 export const getUserInfo = async () => {
   try {
-    const data = await fetch(url + "/auth/user/", {
+    const data = await fetch(url + "/user/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
       credentials: "include",
-    }).then((response) => response.json()).then((data) => {return data});
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        return data;
+      });
     return data;
   } catch (error) {
     console.log("unexpected error: ", error);
     throw new Error("Fail");
   }
-}
+};
 
 export const login = async (username: string, password: string) => {
   try {
-    const status = await fetch(url + "/auth/login/", {
+    const status = await fetch(url + "/login/", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: {
@@ -99,15 +57,15 @@ export const login = async (username: string, password: string) => {
       credentials: "include",
     }).then((response) => {
       if (response.status === 200) {
-        return 'success';
+        return "success";
       } else {
-        return 'error';
+        return "error";
       }
     });
     return status;
   } catch (error) {
     console.log("unexpected error: ", error);
-    return 'error';
+    return "error";
   }
 };
 
@@ -118,7 +76,7 @@ export const register = async (
   password2: string
 ) => {
   try {
-    const status = await fetch(url + "/auth/registration/", {
+    const status = await fetch(url + "/registration/", {
       method: "POST",
       body: JSON.stringify({ username, email, password1, password2 }),
       headers: {
@@ -127,15 +85,15 @@ export const register = async (
       },
     }).then((response) => {
       if (response.status === 201) {
-        return 'success';
+        return "success";
       } else {
-        return 'error';
+        return "error";
       }
     });
     return status;
   } catch (error) {
     console.log("unexpected error: ", error);
-    return 'error';
+    return "error";
   }
 };
 
@@ -148,24 +106,24 @@ export const verifyEmail = async (key: string) => {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      credentials: "include"
+      credentials: "include",
     }).then((response) => {
       if (response.status === 200) {
-        return 'success';
+        return "success";
       } else {
-        return 'error';
+        return "error";
       }
     });
     return status;
   } catch (error) {
     console.log("unexpected error: ", error);
-    return 'error';
+    return "error";
   }
 };
 
 export async function getUserBuilds() {
   try {
-    const data = await fetch(url + "/allBuilds/", {
+    const data = await fetch(url + "/all-builds/", {
       method: "GET",
       credentials: "include",
     })
@@ -173,7 +131,7 @@ export async function getUserBuilds() {
       .then((data) => {
         return data;
       });
-    return data;
+    return data as Build[];
   } catch (error) {
     console.log("unexpected error: ", error);
     throw new Error("Fail");
@@ -189,28 +147,37 @@ export async function createNewBuild(
   ram_budget: number
 ) {
   try {
-      await fetch(url + "/getToken/", {
-        method: "GET",
-        credentials: "include",
-      }).then((response) => response.json()).then((data) => 
-      fetch(url + "/createBuild/", {
-        method: "POST",
-        body: JSON.stringify({
-          budget,
-          cpu_brand,
-          cpu_budget,
-          gpu_brand,
-          gpu_budget,
-          ram_budget,
-        }),
-        credentials: "include",
-        headers: {
-          'content-type': 'application/json',
-          Accept: 'application/json',
-          'x-csrftoken': data['message']
-        }
-      }));
-    return 'Success';
+    const result = await fetch(url + "/get-token/", {
+      method: "GET",
+      credentials: "include",
+    })
+      .then((response) => response.json())
+      .then((data) =>
+        fetch(url + "/create-build/", {
+          method: "POST",
+          body: JSON.stringify({
+            budget,
+            cpu_brand,
+            cpu_budget,
+            gpu_brand,
+            gpu_budget,
+            ram_budget,
+          }),
+          credentials: "include",
+          headers: {
+            "content-type": "application/json",
+            Accept: "application/json",
+            "x-csrftoken": data["message"],
+          },
+        }).then((response) => {
+          if (response.status === 200) {
+            return "Success";
+          } else {
+            return "Error";
+          }
+        })
+      );
+    return result;
   } catch (error) {
     console.log(error);
     return "An unexpected error occurred";
@@ -240,25 +207,28 @@ export async function getBuild(id: number) {
 
 export async function logout() {
   try {
-    const status = await fetch(url + "/getToken/", {
+    const status = await fetch(url + "/get-token/", {
       method: "GET",
       credentials: "include",
-    }).then((response) => response.json()).then((data) => 
-    fetch(url + "/auth/logout/", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        'content-type': 'application/json',
-        Accept: 'application/json',
-        'x-csrftoken': data['message']
-      }
-    }).then((response) => {
-      if (response.status === 200) {
-        return 'Success';
-      } else {
-        return 'Error';
-      }
-    }));
+    })
+      .then((response) => response.json())
+      .then((data) =>
+        fetch(url + "/logout/", {
+          method: "POST",
+          credentials: "include",
+          headers: {
+            "content-type": "application/json",
+            Accept: "application/json",
+            "x-csrftoken": data["message"],
+          },
+        }).then((response) => {
+          if (response.status === 200) {
+            return "Success";
+          } else {
+            return "Error";
+          }
+        })
+      );
     return status;
   } catch (error) {
     console.log("unexpected error: ", error);
@@ -268,111 +238,135 @@ export async function logout() {
 
 export async function deleteBuild(id: string) {
   try {
-    await fetch(url + "/getToken/", {
+    await fetch(url + "/get-token/", {
       method: "GET",
       credentials: "include",
-    }).then((response) => response.json()).then((data) => 
-    fetch(url + "/build/" + id + '/', {
-      method: "DELETE",
-      credentials: "include",
-      headers: {
-        'content-type': 'application/json',
-        Accept: 'application/json',
-        'x-csrftoken': data['message']
-      }
-    }));
-    return 'Success';
-  } catch(error) {
+    })
+      .then((response) => response.json())
+      .then((data) =>
+        fetch(url + "/build/" + id + "/", {
+          method: "DELETE",
+          credentials: "include",
+          headers: {
+            "content-type": "application/json",
+            Accept: "application/json",
+            "x-csrftoken": data["message"],
+          },
+        })
+      );
+    return "Success";
+  } catch (error) {
     console.log(error);
-    return 'Error';
+    return "Error";
   }
 }
 
 export async function resetPassword(email: string) {
   try {
-    await fetch(url + "/auth/password/reset/", {
+    await fetch(url + "/password/reset/", {
       method: "POST",
-      body: JSON.stringify({email}),
+      body: JSON.stringify({ email }),
       headers: {
-        'content-type': 'application/json',
-        Accept: 'application/json',
-      }
-    }).then((response) => response.json()).then((data) => console.log(data));
-    return 'Success';
-  } catch(error) {
+        "content-type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+    return "Success";
+  } catch (error) {
     console.log(error);
-    return 'Error';
+    return "Error";
   }
 }
 
-export async function changeResetPassword(uid: string, token: string, new_password1: string, new_password2: string) {
+export async function changeResetPassword(
+  uid: string,
+  token: string,
+  new_password1: string,
+  new_password2: string
+) {
   try {
-    await fetch(url + "/auth/password/reset/confirm/", {
+    await fetch(url + "/password/reset/confirm/", {
       method: "POST",
-      body: JSON.stringify({uid, token, new_password1, new_password2}),
+      body: JSON.stringify({ uid, token, new_password1, new_password2 }),
       headers: {
-        'content-type': 'application/json',
-        Accept: 'application/json',
-      }
-    }).then((response) => response.json()).then((data) => console.log(data));
-    return 'Success';
-  } catch(error) {
+        "content-type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+    return "Success";
+  } catch (error) {
     console.log(error);
-    return 'Error';
+    return "Error";
   }
 }
 
 export async function putUsername(username: string) {
   try {
-    await fetch(url + "/getToken/", {
+    await fetch(url + "/get-token/", {
       method: "GET",
       credentials: "include",
-    }).then((response) => response.json()).then((data) => {
-      fetch(url + "/auth/user/", {
-        method: "PUT",
-        body: JSON.stringify({username}),
-        headers: {
-          'content-type': 'application/json',
-          Accept: 'application/json',
-          'x-csrftoken': data['message'],
-        },
-        credentials: 'include'
-      }).then((response) => response.json()).then((data) => console.log(data));
     })
-    return 'Success';
-  } catch(error) {
+      .then((response) => response.json())
+      .then((data) => {
+        fetch(url + "/user/", {
+          method: "PUT",
+          body: JSON.stringify({ username }),
+          headers: {
+            "content-type": "application/json",
+            Accept: "application/json",
+            "x-csrftoken": data["message"],
+          },
+          credentials: "include",
+        })
+          .then((response) => response.json())
+          .then((data) => console.log(data));
+      });
+    return "Success";
+  } catch (error) {
     console.log(error);
-    return 'Error';
+    return "Error";
   }
 }
 
-export async function changePassword(old_password: string, new_password1: string, new_password2: string) {
+export async function changePassword(
+  old_password: string,
+  new_password1: string,
+  new_password2: string
+) {
   try {
-    const token = await fetch(url + "/getToken/", {
+    const token = await fetch(url + "/get-token/", {
       method: "GET",
       credentials: "include",
-    }).then((response) => response.json()).then((data) => {
-      return data;
-    });
-    const result = await fetch(url + "/auth/password/change/", {
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        return data;
+      });
+    const result = await fetch(url + "/password/change/", {
       method: "POST",
-      body: JSON.stringify({new_password1, new_password2, old_password}),
+      body: JSON.stringify({ new_password1, new_password2, old_password }),
       headers: {
-        'content-type': 'application/json',
-        Accept: 'application/json',
-        'x-csrftoken': token['message'],
+        "content-type": "application/json",
+        Accept: "application/json",
+        "x-csrftoken": token["message"],
       },
-      credentials: 'include'
-    }).then((response) => response.json()).then((data) => {
-      if (data.hasOwnProperty('old_password')) {
-        return 'old_password';
-      } else {
-        return 'success';
-      }
-    });
+      credentials: "include",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.hasOwnProperty("old_password")) {
+          return "old_password";
+        } else {
+          return "success";
+        }
+      });
     return result;
-  } catch(error) {
+  } catch (error) {
     console.log(error);
-    return 'Error';
+    return "Error";
   }
 }

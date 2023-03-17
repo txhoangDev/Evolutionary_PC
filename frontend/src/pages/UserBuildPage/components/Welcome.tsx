@@ -9,7 +9,8 @@ import {
   CardActions,
   Divider,
 } from "@mui/material";
-import { buildProps } from "../../../http-common";
+
+import { buildProps } from "../../../types";
 
 const Welcome: React.FC<buildProps> = (props: buildProps) => {
   return (
@@ -34,11 +35,14 @@ const Welcome: React.FC<buildProps> = (props: buildProps) => {
                   </Typography>
                   <Divider />
                   <Typography variant="body1" sx={{ mt: 2 }}>
-                    CPU Brand:{" "}
-                    {build.cpu_brand.length > 0
-                      ? build.cpu_brand
-                      : build.cpu.split(" ")[0]}
-                    <br />
+                    {build.cpu_brand.length > 0 ? (
+                      <>
+                        CPU Brand: {build.cpu_brand}
+                        <br />
+                      </>
+                    ) : (
+                      <></>
+                    )}
                     {Number(build.cpu_budget) !== 0 ? (
                       <>
                         CPU Budget: {build.cpu_budget}
@@ -47,10 +51,14 @@ const Welcome: React.FC<buildProps> = (props: buildProps) => {
                     ) : (
                       <></>
                     )}
-                    GPU Brand:{" "}
-                    {build.gpu_brand.length > 0
-                      ? build.gpu_brand
-                      : build.gpu.split(" ")[0]}
+                    {build.gpu_brand.length > 0 ? (
+                      <>
+                        GPU Brand: {build.gpu_brand}
+                        <br />
+                      </>
+                    ) : (
+                      <></>
+                    )}
                     {Number(build.gpu_budget) !== 0 ? (
                       <>
                         <br />
@@ -78,7 +86,7 @@ const Welcome: React.FC<buildProps> = (props: buildProps) => {
                   </Button>
                   <Button
                     size="small"
-                    onClick={() => props.onChange(String(build.id) + ' DELETE')}
+                    onClick={() => props.onChange(String(build.id) + " DELETE")}
                   >
                     Delete
                   </Button>

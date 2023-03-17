@@ -13,8 +13,10 @@ import {
 } from "@mui/material";
 import { createTheme, styled } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
-import { logout, getUser, State, Action } from "../../http-common";
 import { useNavigate } from "react-router-dom";
+
+import { logout, getUser } from "../../http-common";
+import { State, Action } from "../../types";
 
 const Link = styled(Typography)({
   "&": {
@@ -53,21 +55,21 @@ const initialState: State = {
 const reducer = (state: State, action: Action): State => {
   switch (action.type) {
     case "SET_LOGOUT_BUTTON":
-    return { ...state, logoutButton: action.payload };
-  case "SET_LOGIN_BUTTON":
-    return { ...state, loginButton: action.payload };
-  case "SET_SIGNUP_BUTTON":
-    return { ...state, signupButton: action.payload };
-  case "SET_MENU":
-    return { ...state, menu: action.payload };
-  case "SET_ANCHORELNAV":
-    return { ...state, anchorElNav: action.payload };
-  case "RESET_STATE":
-    return initialState;
-  default:
-    throw new Error(`Invalid action type: ${action}`);
+      return { ...state, logoutButton: action.payload };
+    case "SET_LOGIN_BUTTON":
+      return { ...state, loginButton: action.payload };
+    case "SET_SIGNUP_BUTTON":
+      return { ...state, signupButton: action.payload };
+    case "SET_MENU":
+      return { ...state, menu: action.payload };
+    case "SET_ANCHORELNAV":
+      return { ...state, anchorElNav: action.payload };
+    case "RESET_STATE":
+      return initialState;
+    default:
+      throw new Error(`Invalid action type: ${action}`);
   }
-}
+};
 
 // navbar component
 const NavBar: React.FC = () => {
@@ -98,15 +100,15 @@ const NavBar: React.FC = () => {
   const [state, dispatch] = React.useReducer(reducer, initialState);
 
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
-    dispatch({ type: 'SET_ANCHORELNAV', payload: event.currentTarget });
+    dispatch({ type: "SET_ANCHORELNAV", payload: event.currentTarget });
   };
 
   const handleCloseNavMenu = () => {
-    dispatch({ type: 'SET_ANCHORELNAV', payload: null });
+    dispatch({ type: "SET_ANCHORELNAV", payload: null });
   };
 
   const handleLogout = React.useCallback(() => {
-    dispatch({ type: 'SET_ANCHORELNAV', payload: null });
+    dispatch({ type: "SET_ANCHORELNAV", payload: null });
     logout().then((response) => {
       if (response === "Success") {
         navigate("/Home");
@@ -122,45 +124,45 @@ const NavBar: React.FC = () => {
           type: "SET_LOGOUT_BUTTON",
           payload: (
             <Button
-            onClick={handleLogout}
-            variant="contained"
-            sx={{ my: 2, display: "block", "&.hover": "#4a6cb5" }}
-          >
-            Logout
-          </Button>
+              onClick={handleLogout}
+              variant="contained"
+              sx={{ my: 2, display: "block", "&.hover": "#4a6cb5" }}
+            >
+              Logout
+            </Button>
           ),
         });
         dispatch({
           type: "SET_MENU",
           payload: (
             <Menu
-            id="menu-appbar"
-            anchorEl={state.anchorElNav}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "left",
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-            open={Boolean(state.anchorElNav)}
-            onClose={handleCloseNavMenu}
-            sx={{
-              display: { xs: "block", md: "none" },
-            }}
-          >
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">About</Typography>
-            </MenuItem>
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">FAQ</Typography>
-            </MenuItem>
-            <MenuItem onClick={handleLogout}>Logout</MenuItem>
-          </Menu>
-          )
-        })
+              id="menu-appbar"
+              anchorEl={state.anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(state.anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">About</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">FAQ</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleLogout}>Logout</MenuItem>
+            </Menu>
+          ),
+        });
       } else {
         dispatch({
           type: "SET_LOGIN_BUTTON",
@@ -191,44 +193,44 @@ const NavBar: React.FC = () => {
           type: "SET_MENU",
           payload: (
             <Menu
-            id="menu-appbar"
-            anchorEl={state.anchorElNav}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "left",
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-            open={Boolean(state.anchorElNav)}
-            onClose={handleCloseNavMenu}
-            sx={{
-              display: { xs: "block", md: "none" },
-            }}
-          >
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">About</Typography>
-            </MenuItem>
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">FAQ</Typography>
-            </MenuItem>
-            <MenuItem
-              onClick={handleCloseNavMenu}
-              component="a"
-              href="/signup"
+              id="menu-appbar"
+              anchorEl={state.anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(state.anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
             >
-              Sign Up
-            </MenuItem>
-            <MenuItem
-              onClick={handleCloseNavMenu}
-              component="a"
-              href="/login"
-            >
-              Log in
-            </MenuItem>
-          </Menu>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">About</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">FAQ</Typography>
+              </MenuItem>
+              <MenuItem
+                onClick={handleCloseNavMenu}
+                component="a"
+                href="/signup"
+              >
+                Sign Up
+              </MenuItem>
+              <MenuItem
+                onClick={handleCloseNavMenu}
+                component="a"
+                href="/login"
+              >
+                Log in
+              </MenuItem>
+            </Menu>
           ),
         });
       }

@@ -7,9 +7,11 @@ import {
   Slide,
   Button,
 } from "@mui/material";
-import { getBuild, detailProps } from "../../../http-common";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
+import { getBuild } from "../../../http-common";
+import { detailProps } from "../../../types";
 import CPU from "../../../assets/images/cpu.png";
 import GPU from "../../../assets/images/gpu.png";
 import RAM from "../../../assets/images/ram_test.png";
@@ -37,10 +39,10 @@ const BuildDetailPage: React.FC<detailProps> = (props: detailProps) => {
     const result = getBuild(props.id);
     result.then(
       function (res) {
-        setCpu(res["build"]["cpu"]);
-        setComponent(res["build"]["cpu"]);
-        setGpu(res["build"]["gpu"]);
-        setRam(res["build"]["ram"]);
+        setCpu(res["cpu"]);
+        setComponent(res["cpu"]);
+        setGpu(res["gpu"]);
+        setRam(res["ram"]);
         setPrices([res["cpu_price"], res["gpu_price"], res["ram_price"]]);
       },
       function (err) {
@@ -108,96 +110,96 @@ const BuildDetailPage: React.FC<detailProps> = (props: detailProps) => {
         zIndex: "-1",
       }}
     >
-    <Grid container spacing={0} style={{ minHeight: "100vh" }}>
-      <Grid item container xs={1} md={1} alignItems={"center"}>
-        <IconButton size="large" disableRipple onClick={handleLeft}>
-          <ChevronLeftIcon />
-        </IconButton>
-      </Grid>
-      <Grid item container xs={10} md={10} alignItems='center'>
-        <Grid container spacing={1}>
-          <Grid
-            item
-            container
-            xs={12}
-            md={6}
-          >
-            <Slide direction="right" in={checked} mountOnEnter unmountOnExit>
-              <Box maxWidth="100%">
-                <Box marginBottom={2}>
-                  <Typography
-                    variant="h3"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(to right, #547793, #F7F2EF)",
-                      color: "transparent",
-                      WebkitBackgroundClip: "text",
-                      backgroundClip: "text",
+      <Grid container spacing={0} style={{ minHeight: "100vh" }}>
+        <Grid item container xs={1} md={1} alignItems={"center"}>
+          <IconButton size="large" disableRipple onClick={handleLeft}>
+            <ChevronLeftIcon />
+          </IconButton>
+        </Grid>
+        <Grid item container xs={10} md={10} alignItems="center">
+          <Grid container spacing={1}>
+            <Grid item container xs={12} md={6}>
+              <Slide direction="right" in={checked} mountOnEnter unmountOnExit>
+                <Box maxWidth="100%">
+                  <Box marginBottom={2}>
+                    <Typography
+                      variant="h3"
+                      style={{
+                        backgroundImage:
+                          "linear-gradient(to right, #547793, #F7F2EF)",
+                        color: "transparent",
+                        WebkitBackgroundClip: "text",
+                        backgroundClip: "text",
+                      }}
+                    >
+                      {components[index]}
+                    </Typography>
+                    <Typography
+                      variant="h1"
+                      sx={{
+                        fontWeight: 700,
+                        fontSize: 80,
+                        wordWrap: "break-word",
+                      }}
+                    >
+                      {component}
+                    </Typography>
+                  </Box>
+                  <Box marginBottom={2}>
+                    <Typography variant="h4">${prices[index]}</Typography>
+                  </Box>
+                  <Box marginBottom={3}>
+                    <Typography
+                      variant="h6"
+                      component="p"
+                      style={{ display: "inline-block" }}
+                    >
+                      {showMore
+                        ? descriptions[index]
+                        : `${descriptions[index]
+                            .split(" ")
+                            .slice(0, 50)
+                            .join(" ")}...`}
+                      {descriptions[index].split(" ").length > 50 && (
+                        <Button onClick={() => setShowMore(!showMore)}>
+                          {showMore ? "Less" : "More"}
+                        </Button>
+                      )}
+                    </Typography>
+                  </Box>
+                </Box>
+              </Slide>
+            </Grid>
+            <Grid item container xs={12} md={6}>
+              <Box position="relative" height="100%" width="100%">
+                <Slide direction="left" in={checked} mountOnEnter unmountOnExit>
+                  <Box
+                    component="img"
+                    loading="lazy"
+                    src={image}
+                    alt="component"
+                    borderRadius={2}
+                    sx={{
+                      objectFit: "contain",
                     }}
-                  >
-                    {components[index]}
-                  </Typography>
-                  <Typography
-                    variant="h1"
-                    sx={{ fontWeight: 700, fontSize: 80, wordWrap: 'break-word', }}
-                  >
-                    {component}
-                  </Typography>
-                </Box>
-                <Box marginBottom={2}>
-                  <Typography variant="h4">${prices[index]}</Typography>
-                </Box>
-                <Box marginBottom={3}>
-                  <Typography
-                    variant="h6"
-                    component="p"
-                    style={{ display: "inline-block" }}
-                  >
-                    {showMore ? descriptions[index] : `${descriptions[index].split(" ").slice(0, 50).join(" ")}...`}
-                    {descriptions[index].split(" ").length > 50 && (
-                      <Button onClick={() => setShowMore(!showMore)}>
-                        {showMore ? "Less" : "More"}
-                      </Button>
-                    )}
-                  </Typography>
-                </Box>
+                    style={{
+                      position: "absolute",
+                      zIndex: "1",
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  />
+                </Slide>
               </Box>
-            </Slide>
-          </Grid>
-          <Grid item container xs={12} md={6}>
-          <Box
-              position="relative"
-              height="100%"
-              width="100%"
-            >
-            <Slide direction="left" in={checked} mountOnEnter unmountOnExit>
-              <Box
-                component="img"
-                loading="lazy"
-                src={image}
-                alt="component"
-                borderRadius={2}
-                sx={{
-                  objectFit: "contain",
-                }}
-                style={{
-                  position: "absolute",
-                  zIndex: "1",
-                  width: '100%',
-                  height: '100%'
-                }}
-              />
-            </Slide>
-            </Box>
+            </Grid>
           </Grid>
         </Grid>
+        <Grid item container xs={1} md={1} justifyContent="right">
+          <IconButton size="large" disableRipple onClick={handleRight}>
+            <ChevronRightIcon />
+          </IconButton>
+        </Grid>
       </Grid>
-      <Grid item container xs={1} md={1} justifyContent="right">
-        <IconButton size="large" disableRipple onClick={handleRight}>
-          <ChevronRightIcon />
-        </IconButton>
-      </Grid>
-    </Grid>
     </Box>
   );
 };
