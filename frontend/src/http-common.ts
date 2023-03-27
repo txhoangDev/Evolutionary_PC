@@ -4,25 +4,24 @@ const url = "http://127.0.0.1:8000/auth";
 
 export const getUser = async () => {
   try {
-    const data = await fetch(url + "/user/", {
+    const res = await fetch(url + "/user/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
       credentials: "include",
     })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.hasOwnProperty("detail")) {
-          return false;
-        } else {
+      .then((response) => {
+        if (response.ok) {
           return true;
+        } else {
+          return false;
         }
       });
-    return data;
+    return res;
   } catch (error) {
     console.log("unexpected error: ", error);
-    throw new Error("Fail");
+    return false;
   }
 };
 
@@ -33,7 +32,7 @@ export const getUserInfo = async () => {
       headers: {
         "Content-Type": "application/json",
       },
-      credentials: "include",
+      credentials: "include"
     })
       .then((response) => response.json())
       .then((data) => {
@@ -46,17 +45,17 @@ export const getUserInfo = async () => {
   }
 };
 
-export const login = async (username: string, password: string) => {
+export const login = async (username: string, password: string, remember: boolean) => {
   try {
     const status = await fetch(url + "/login/", {
       method: "POST",
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ username, password, remember }),
       headers: {
         "Content-Type": "application/json",
       },
       credentials: "include",
     }).then((response) => {
-      if (response.status === 200) {
+      if (response.ok) {
         return "success";
       } else {
         return "error";
@@ -84,7 +83,7 @@ export const register = async (
         Accept: "application/json",
       },
     }).then((response) => {
-      if (response.status === 201) {
+      if (response.ok) {
         return "success";
       } else {
         return "error";
@@ -108,7 +107,7 @@ export const verifyEmail = async (key: string) => {
       },
       credentials: "include",
     }).then((response) => {
-      if (response.status === 200) {
+      if (response.ok) {
         return "success";
       } else {
         return "error";
@@ -170,7 +169,7 @@ export async function createNewBuild(
             "x-csrftoken": data["message"],
           },
         }).then((response) => {
-          if (response.status === 200) {
+          if (response.ok) {
             return "Success";
           } else {
             return "Error";
@@ -197,7 +196,7 @@ export async function getBuild(id: number) {
       .then((response) => response.json())
       .then((data) => {
         return data;
-      });
+      }).catch((error) => { return 'Error' });
     return data;
   } catch (error) {
     console.log("unexpected error: ", error);
@@ -222,7 +221,7 @@ export async function logout() {
             "x-csrftoken": data["message"],
           },
         }).then((response) => {
-          if (response.status === 200) {
+          if (response.ok) {
             return "Success";
           } else {
             return "Error";
@@ -238,7 +237,7 @@ export async function logout() {
 
 export async function deleteBuild(id: string) {
   try {
-    await fetch(url + "/get-token/", {
+    const res = await fetch(url + "/get-token/", {
       method: "GET",
       credentials: "include",
     })
@@ -252,9 +251,15 @@ export async function deleteBuild(id: string) {
             Accept: "application/json",
             "x-csrftoken": data["message"],
           },
+        }).then((response) => {
+          if (!response.ok) {
+            return 'Error';
+          } else {
+            return 'Success'
+          }
         })
       );
-    return "Success";
+    return res;
   } catch (error) {
     console.log(error);
     return "Error";
@@ -263,7 +268,7 @@ export async function deleteBuild(id: string) {
 
 export async function resetPassword(email: string) {
   try {
-    await fetch(url + "/password/reset/", {
+    const res = await fetch(url + "/password/reset/", {
       method: "POST",
       body: JSON.stringify({ email }),
       headers: {
@@ -271,9 +276,14 @@ export async function resetPassword(email: string) {
         Accept: "application/json",
       },
     })
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-    return "Success";
+      .then((response) => {
+        if (response.ok) {
+          return 'Success';
+        } else {
+          return 'error';
+        }
+      });
+    return res;
   } catch (error) {
     console.log(error);
     return "Error";
@@ -287,7 +297,7 @@ export async function changeResetPassword(
   new_password2: string
 ) {
   try {
-    await fetch(url + "/password/reset/confirm/", {
+    const res = await fetch(url + "/password/reset/confirm/", {
       method: "POST",
       body: JSON.stringify({ uid, token, new_password1, new_password2 }),
       headers: {
@@ -295,9 +305,14 @@ export async function changeResetPassword(
         Accept: "application/json",
       },
     })
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-    return "Success";
+      .then((response) => {
+        if (response.ok) {
+          return 'Success';
+        } else {
+          return 'Error';
+        }
+      });
+    return res;
   } catch (error) {
     console.log(error);
     return "Error";
@@ -306,13 +321,12 @@ export async function changeResetPassword(
 
 export async function putUsername(username: string) {
   try {
-    await fetch(url + "/get-token/", {
+    const res = await fetch(url + "/get-token/", {
       method: "GET",
       credentials: "include",
     })
       .then((response) => response.json())
-      .then((data) => {
-        fetch(url + "/user/", {
+      .then((data) => fetch(url + "/user/", {
           method: "PUT",
           body: JSON.stringify({ username }),
           headers: {
@@ -322,10 +336,15 @@ export async function putUsername(username: string) {
           },
           credentials: "include",
         })
-          .then((response) => response.json())
-          .then((data) => console.log(data));
-      });
-    return "Success";
+          .then((response) => {
+            if (response.ok) {
+              return 'Success';
+            } else {
+              return 'Error';
+            }
+          })
+      );
+    return res;
   } catch (error) {
     console.log(error);
     return "Error";
@@ -338,35 +357,51 @@ export async function changePassword(
   new_password2: string
 ) {
   try {
-    const token = await fetch(url + "/get-token/", {
+    const result = await fetch(url + "/get-token/", {
       method: "GET",
       credentials: "include",
     })
       .then((response) => response.json())
-      .then((data) => {
-        return data;
-      });
-    const result = await fetch(url + "/password/change/", {
-      method: "POST",
-      body: JSON.stringify({ new_password1, new_password2, old_password }),
-      headers: {
-        "content-type": "application/json",
-        Accept: "application/json",
-        "x-csrftoken": token["message"],
-      },
-      credentials: "include",
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.hasOwnProperty("old_password")) {
-          return "old_password";
-        } else {
-          return "success";
-        }
-      });
+      .then((data) => 
+        fetch(url + "/password/change/", {
+          method: "POST",
+          body: JSON.stringify({ new_password1, new_password2, old_password }),
+          headers: {
+            "content-type": "application/json",
+            Accept: "application/json",
+            "x-csrftoken": data["message"],
+          },
+          credentials: "include",
+        })
+          .then((response) => {
+            if (response.ok) {
+              return 'success';
+            } else {
+              return 'old_password';
+            }
+          })
+      );
     return result;
   } catch (error) {
     console.log(error);
     return "Error";
+  }
+}
+
+export async function getPrices() {
+  try {
+    const result = await fetch(url + '/components/', {
+      method: 'GET',
+    }).then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        return 'Error';
+      }
+    });
+    return result;
+  } catch (error) {
+    console.log(error);
+    return 'Error';
   }
 }

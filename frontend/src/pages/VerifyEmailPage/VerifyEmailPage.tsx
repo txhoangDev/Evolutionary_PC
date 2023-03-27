@@ -15,8 +15,7 @@ const VerifyEmailPage: React.FC = () => {
 
   React.useEffect(() => {
     const keyString = key ? key.toString() : "";
-    const response = verifyEmail(keyString);
-    response.then((response) => {
+    verifyEmail(keyString).then((response) => {
       if (response === "success") {
         setSuccess(true);
         setTimeout(() => {

@@ -7,7 +7,9 @@ const MobileBuildStepper: React.FC<buildStepper> = (props: buildStepper) => {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    if (props.handleValidate(activeStep)) {
+      setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    }
   };
 
   const handleBack = () => {
@@ -38,7 +40,11 @@ const MobileBuildStepper: React.FC<buildStepper> = (props: buildStepper) => {
         activeStep={activeStep}
         nextButton={
           activeStep === props.steps.length - 1 ? (
-            <Button size="small" onClick={props.handleBuild}>
+            <Button size="small" onClick={() => {
+              if (props.handleValidate(activeStep)) {
+                props.handleBuild();
+              }
+            }}>
               Build
             </Button>
           ) : (

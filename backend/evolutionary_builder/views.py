@@ -90,12 +90,13 @@ def build_details(request, pk):
     if request.method == 'GET':
         serializers = BuildSerializer(build, context={'request': request})
         build_info = {}
-        curr_cpu = CPU.objects.get(id=serializers.data['cpu_id'])
+        curr_cpu = CPU.objects.get(id=serializers.data['cpu_id'][0])
         cpu_data = CPUSerializer(curr_cpu).data
-        curr_gpu = GPU.objects.get(id=serializers.data['gpu_id'])
+        curr_gpu = GPU.objects.get(id=serializers.data['gpu_id'][0])
         gpu_data = GPUSerializer(curr_gpu).data
-        curr_ram = RAM.objects.get(id=serializers.data['ram_id'])
+        curr_ram = RAM.objects.get(id=serializers.data['ram_id'][0])
         ram_data = RAMSerializer(curr_ram).data
+        build_info['budget'] = serializers.data['budget']
         build_info['cpu'] = cpu_data['name']
         build_info['cpu_price'] = cpu_data['price']
         build_info['gpu'] = gpu_data['name']
@@ -108,3 +109,13 @@ def build_details(request, pk):
         return Response(status=status.HTTP_200_OK)
     else:
         return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
+    
+@api_view(['GET'])
+def get_lowest_prices(request):
+    cpu_serializer = CPUSerializer(CPU.objects.order_by('price').first())
+    lowest_cpu = float(cpu_serializer.data['price'])
+    gpu_serializer = GPUSerializer(GPU.objects.order_by('price').first())
+    lowest_gpu = float(gpu_serializer.data['price'])
+    ram_serializer = RAMSerializer(RAM.objects.order_by('price').first())
+    lowest_ram = float(ram_serializer.data['price'])
+    return Response(data=[lowest_cpu, lowest_gpu, lowest_ram], status=status.HTTP_200_OK)

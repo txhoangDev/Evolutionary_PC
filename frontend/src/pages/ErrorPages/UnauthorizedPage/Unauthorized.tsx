@@ -6,6 +6,7 @@ import {
   Typography,
   Grid,
   Container,
+  Button,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
@@ -53,11 +54,10 @@ const Unauthorized: React.FC = () => {
                 align={isMd ? "left" : "center"}
               >
                 Oops! Looks like you're unauthorized.
-                <br />
-                <Link href="/login" underline="none">
-                  Go to Login
-                </Link>
               </Typography>
+              <Button variant="contained" href="/login">
+                Go to Login
+              </Button>
             </Box>
           </Grid>
           <Grid item container justifyContent={"center"} xs={12} md={6}>

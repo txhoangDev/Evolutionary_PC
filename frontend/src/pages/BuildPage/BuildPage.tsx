@@ -10,14 +10,17 @@ import {
   FormLabel,
   FormControlLabel,
   RadioGroup,
+  Snackbar
 } from "@mui/material";
+import MuiAlert, { AlertProps } from '@mui/material/Alert';
+import Slide, { SlideProps } from '@mui/material/Slide';
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useNavigate } from "react-router-dom";
 
 import Main from "../../layouts/main/Main";
 import BuildStepper from "./components/BuildStepper";
 import MobileBuildStepper from "./components/MobileBuildStepper";
-import { createNewBuild, getUser } from "../../http-common";
+import { createNewBuild, getUser, getPrices } from "../../http-common";
 
 const Unauthorized = React.lazy(
   () => import("../ErrorPages/UnauthorizedPage/Unauthorized")
@@ -30,6 +33,19 @@ const steps = [
   "RAM budget",
 ];
 
+const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
+  props,
+  ref,
+) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled"{...props} />;
+});
+
+type TransitionProps = Omit<SlideProps, 'direction'>;
+
+function TransitionDown(props: TransitionProps) {
+  return <Slide {...props} direction="down" />;
+}
+
 const BuildPage: React.FC = () => {
   const [budget, setBudget] = React.useState("");
   const [cpuBudget, setCpuBudget] = React.useState("");
@@ -37,15 +53,24 @@ const BuildPage: React.FC = () => {
   const [gpuBudget, setGpuBudget] = React.useState("");
   const [gpuBrand, setGpuBrand] = React.useState("None");
   const [ramBudget, setRamBudget] = React.useState("");
-  const [loggedIn, setLoggedIn] = React.useState(true);
+  const [loggedIn, setLoggedIn] = React.useState(false);
+  const [prices, setPrices] = React.useState([]);
+  const [open, setOpen] = React.useState(false);
+  const [message, setMessage] = React.useState("");
   const navigate = useNavigate();
 
   const isSm = useMediaQuery("(max-width: 600px)");
 
   React.useLayoutEffect(() => {
     getUser().then((response) => {
-      if (!response) {
-        setLoggedIn(false);
+      if (response) {
+        setLoggedIn(true);
+      }
+    });
+    getPrices().then((response) => {
+      if (response !== 'Error') {
+        setPrices(response);
+        console.log(response);
       }
     });
   }, []);
@@ -93,32 +118,93 @@ const BuildPage: React.FC = () => {
     setRamBudget(event.target.value);
   };
 
-  const handleBuild = () => {
-    let cBudget: number = 0;
-    let gBudget: number = 0;
-    let rBudget: number = 0;
-    if (cpuBudget !== "") {
-      cBudget = Number(cpuBudget);
-    }
-    if (gpuBudget !== "") {
-      gBudget = Number(gpuBudget);
-    }
-    if (ramBudget !== "") {
-      rBudget = Number(ramBudget);
-    }
-    const result = createNewBuild(
-      Number(budget),
-      cpuBrand,
-      cBudget,
-      gpuBrand,
-      gBudget,
-      rBudget
-    );
-    result.then((response) => {
-      if (response === 'Success') {
-        navigate('/account');
+  const handleValidate = (step: number) => {
+    if (step === 0 && Number(budget) < 500) {
+      setOpen(true);
+      setMessage('Budget is too low for a computer.');
+      return false;
+    } else if (step === 1) {
+      if (typeof cpuBudget === 'string') {
+        return true;
+      } else if (Number(cpuBudget) >= Number(budget) * 0.7) {
+        setOpen(true);
+        setMessage('CPU budget is too high');
+        return false;
+      } else if (Number(cpuBudget) < prices[0]) {
+        setOpen(true);
+        setMessage('CPU budget is too low');
+        return false;
+      } else if ((Number(budget) * 0.7) - Number(cpuBudget) < prices[1] + prices[2]) {
+        setOpen(true);
+        setMessage('CPU budget is too high');
+        return false;
       }
-    });
+    } else if (step === 2) {
+      if (typeof gpuBudget === 'string') {
+        return true;
+      } else if (Number(gpuBudget) + Number(cpuBudget) >= Number(budget) * 0.7) {
+        setOpen(true);
+        setMessage('GPU budget is too high');
+        return false;
+      } else if (Number(gpuBudget) < prices[1]) {
+        setOpen(true);
+        setMessage('GPU budget is too low');
+        return false;
+      } else if ((Number(budget) * 0.7) - Number(gpuBudget) - Number(cpuBudget) < prices[2]) {
+        setOpen(true);
+        setMessage('GPU budget is too high');
+        return false;
+      }
+    }
+    return true;
+  }
+
+  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+  }
+
+    setOpen(false);
+  }
+
+  const handleBuild = () => {
+    if (Number(ramBudget) + Number(gpuBudget) + Number(cpuBudget) > Number(budget) * 0.7 && typeof ramBudget !== 'string') {
+      setOpen(true);
+      setMessage('RAM budget is too high');
+    } else if (Number(ramBudget) < prices[2] && typeof ramBudget !== 'string') {
+      setOpen(true);
+      setMessage('RAM budget is too low');
+    } else if ((Number(budget) * 0.7) - Number(ramBudget) - Number(gpuBudget) - Number(cpuBudget) < 0 && typeof ramBudget !== 'string') {
+      setOpen(true);
+      setMessage('RAM budget is too high');
+    } else {
+      let cBudget: number = 0;
+      let gBudget: number = 0;
+      let rBudget: number = 0;
+      if (cpuBudget !== "") {
+        cBudget = Number(cpuBudget);
+      }
+      if (gpuBudget !== "") {
+        gBudget = Number(gpuBudget);
+      }
+      if (ramBudget !== "") {
+        rBudget = Number(ramBudget);
+      }
+      const result = createNewBuild(
+        Number(budget),
+        cpuBrand,
+        cBudget,
+        gpuBrand,
+        gBudget,
+        rBudget
+      );
+      result.then((response) => {
+        console.log(response)
+        if (response === 'Success') {
+          navigate('/account');
+        }
+      });
+    }
   };
 
   const content = [
@@ -135,6 +221,11 @@ const BuildPage: React.FC = () => {
           variant="outlined"
           required
           value={budget}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+            }
+          }}
         />
       </Grid>
     </Grid>,
@@ -149,6 +240,11 @@ const BuildPage: React.FC = () => {
           onChange={handleCpuBudgetChange}
           variant="outlined"
           value={cpuBudget}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+            }
+          }}
         />
       </Grid>
       <Grid item xs={12} md={6} textAlign="center">
@@ -180,6 +276,11 @@ const BuildPage: React.FC = () => {
           onChange={handleGpuBudgetChange}
           variant="outlined"
           value={gpuBudget}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+            }
+          }}
         />
       </Grid>
       <Grid item xs={12} md={6} textAlign="center">
@@ -215,6 +316,11 @@ const BuildPage: React.FC = () => {
           onChange={handleRamBudgetChange}
           variant="outlined"
           value={ramBudget}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+            }
+          }}
         />
       </Grid>
     </Grid>,
@@ -225,12 +331,18 @@ const BuildPage: React.FC = () => {
       {loggedIn ? (
         <Main>
           <Container>
+            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose} TransitionComponent={TransitionDown} anchorOrigin={{ vertical: 'top', horizontal: 'center' }}>
+              <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+                {message}
+              </Alert>
+            </Snackbar>
             {isSm ? (
               <MobileBuildStepper
                 handleBuild={handleBuild}
                 validateInput={validateInput}
                 steps={steps}
                 content={content}
+                handleValidate={handleValidate}
               />
             ) : (
               <BuildStepper
@@ -238,6 +350,7 @@ const BuildPage: React.FC = () => {
                 validateInput={validateInput}
                 steps={steps}
                 content={content}
+                handleValidate={handleValidate}
               />
             )}
           </Container>

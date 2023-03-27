@@ -175,6 +175,11 @@ const SignUp: React.FC = () => {
                   label="Username"
                   variant="filled"
                   fullWidth
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      e.preventDefault();
+                    }
+                  }}
                 />
               </Box>
             </Grid>
@@ -188,6 +193,11 @@ const SignUp: React.FC = () => {
                   label="Email"
                   variant="filled"
                   fullWidth
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      e.preventDefault();
+                    }
+                  }}
                 />
               </Box>
             </Grid>
@@ -207,6 +217,11 @@ const SignUp: React.FC = () => {
                   variant="filled"
                   type="password"
                   fullWidth
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      e.preventDefault();
+                    }
+                  }}
                 />
               </Box>
             </Grid>
@@ -226,6 +241,11 @@ const SignUp: React.FC = () => {
                   variant="filled"
                   type="password"
                   fullWidth
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      handleSignUp();
+                    }
+                  }}
                 />
               </Box>
             </Grid>

@@ -1,15 +1,10 @@
 import React from "react";
 import { Build } from "../../types";
-import {
-  Container,
-  Box,
-  AppBar,
-  Toolbar,
-  Button,
-  CssBaseline,
-} from "@mui/material";
+import { Container, Box, Toolbar, CssBaseline, Snackbar } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useNavigate } from "react-router";
+import MuiAlert, { AlertProps } from "@mui/material/Alert";
+import Slide, { SlideProps } from "@mui/material/Slide";
 
 import { getUserBuilds, logout, deleteBuild, getUser } from "../../http-common";
 import BuildDetail from "./components/BuildDetail";
@@ -22,9 +17,25 @@ const Unauthorized = React.lazy(
   () => import("../ErrorPages/UnauthorizedPage/Unauthorized")
 );
 
+const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
+  props,
+  ref
+) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
+
+type TransitionProps = Omit<SlideProps, "direction">;
+
+function TransitionDown(props: TransitionProps) {
+  return <Slide {...props} direction="down" />;
+}
+
 const UserBuildPage: React.FC = () => {
+  const [open, setOpen] = React.useState(false);
+  const [info, setInfo] = React.useState(false);
+  const [message, setMessage] = React.useState("");
   const [builds, setBuilds] = React.useState<Build[]>([]);
-  const [authorized, setAuthorized] = React.useState<boolean>(true);
+  const [authorized, setAuthorized] = React.useState<boolean>(false);
   const [component, setComponent] = React.useState<React.ReactElement>(<></>);
   const navigate = useNavigate();
 
@@ -37,34 +48,44 @@ const UserBuildPage: React.FC = () => {
       } else if (type === "Settings") {
         setComponent(<Settings />);
       } else {
-        if (type.length === 1) {
+        if (!type.includes(" DELETE")) {
           setComponent(<BuildDetail id={Number(type)} />);
         } else {
-          const res = deleteBuild(type.split(" ")[0]);
-          res.then((result) => {
-            if (result === "Success") {
-              getUserBuilds().then((response) => {
-                if (typeof response === "object") {
-                  setBuilds(response);
-                }
-              });
-            }
-          });
+          deleteBuild(type.split(" ")[0]).then((result) => {
+              if (result === "Success") {
+                getUserBuilds().then((response) => {
+                  if (typeof response === "object") {
+                    setBuilds(response);
+                  } else {
+                    setOpen(true);
+                    setMessage("Uh oh, something went wrong");
+                  }
+                });
+              } else {
+                setMessage("Unable to delete build.");
+                setOpen(true);
+              }
+            })
+            .catch((err) => {
+              setMessage("Unable to delete build.");
+            });
         }
       }
     },
     [builds]
   );
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     const user = getUser();
     user.then((response) => {
-      if (!response) {
-        setAuthorized(false);
-      } else {
+      if (response) {
+        setAuthorized(true);
         getUserBuilds().then((response) => {
           if (typeof response === "object") {
             setBuilds(response);
+            if (response.length === 0) {
+              setInfo(true);
+            }
           }
         });
       }
@@ -76,15 +97,19 @@ const UserBuildPage: React.FC = () => {
   }, [builds, handleDrawerChange]);
 
   const Logout = () => {
-    const result = logout();
-    result.then(
-      function (res) {
+    logout().then((response) => {
+      if (response === "Success") {
         navigate("/Home");
-      },
-      function (err) {
-        console.log(err);
+      } else {
+        setOpen(true);
+        setMessage("Unable to logout");
       }
-    );
+    });
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setInfo(false);
   };
 
   return (
@@ -92,23 +117,36 @@ const UserBuildPage: React.FC = () => {
       {authorized ? (
         <Box sx={{ display: isSm ? "" : "flex" }}>
           <CssBaseline />
-          <AppBar
-            position="fixed"
-            sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
+          <Snackbar
+            open={open}
+            autoHideDuration={6000}
+            onClose={handleClose}
+            TransitionComponent={TransitionDown}
+            anchorOrigin={{ vertical: "top", horizontal: "center" }}
           >
-            <Toolbar sx={{ justifyContent: "space-between" }}>
-              <Button href="/" variant="text" sx={{ color: "white" }}>
-                Evolutionary PC
-              </Button>
-              <Button variant="text" sx={{ color: "white" }} onClick={Logout}>
-                Logout
-              </Button>
-            </Toolbar>
-          </AppBar>
+            <Alert
+              onClose={handleClose}
+              severity="error"
+              sx={{ width: "100%" }}
+            >
+              {message}
+            </Alert>
+          </Snackbar>
+          <Snackbar
+            open={info}
+            autoHideDuration={6000}
+            onClose={handleClose}
+            TransitionComponent={TransitionDown}
+            anchorOrigin={{ vertical: "top", horizontal: "center" }}
+          >
+            <Alert onClose={handleClose} severity="info" sx={{ width: "100%" }}>
+              You currently have no builds
+            </Alert>
+          </Snackbar>
           {isSm ? (
-            <MoblieDrawer onChange={handleDrawerChange} />
+            <MoblieDrawer onChange={handleDrawerChange} logout={Logout} />
           ) : (
-            <DesktopDrawer onChange={handleDrawerChange} />
+            <DesktopDrawer onChange={handleDrawerChange} logout={Logout} />
           )}
           <Box>
             {isSm ? <></> : <Toolbar />}

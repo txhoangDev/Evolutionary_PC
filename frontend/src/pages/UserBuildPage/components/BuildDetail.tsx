@@ -28,6 +28,7 @@ const BuildDetailPage: React.FC<detailProps> = (props: detailProps) => {
   const [cpu, setCpu] = React.useState("");
   const [gpu, setGpu] = React.useState("");
   const [ram, setRam] = React.useState("");
+  const [budget, setBudget] = React.useState(0);
   const [prices, setPrices] = React.useState<string[]>([]);
   const [component, setComponent] = React.useState("");
   const [index, setIndex] = React.useState(0);
@@ -36,19 +37,16 @@ const BuildDetailPage: React.FC<detailProps> = (props: detailProps) => {
   const [showMore, setShowMore] = React.useState(false);
 
   React.useEffect(() => {
-    const result = getBuild(props.id);
-    result.then(
-      function (res) {
-        setCpu(res["cpu"]);
+    getBuild(props.id).then((res) => {
+      if (res !== 'Error') {
+        setBudget(Number(res['budget']))
+        setCpu(res['cpu']);
         setComponent(res["cpu"]);
         setGpu(res["gpu"]);
         setRam(res["ram"]);
         setPrices([res["cpu_price"], res["gpu_price"], res["ram_price"]]);
-      },
-      function (err) {
-        console.log(err);
       }
-    );
+    })
     setChecked(true);
   }, [props.id]);
 
@@ -106,10 +104,13 @@ const BuildDetailPage: React.FC<detailProps> = (props: detailProps) => {
         backgroundImage: `url(${bg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "100vh",
+        height: "100%",
         zIndex: "-1",
       }}
     >
+      <Typography variant="h6" sx={{ textAlign: 'right', mr: 2 }}>
+        Leftover budget: { (budget - Number(prices[0]) - Number(prices[1]) - Number(prices[2])).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
+      </Typography>
       <Grid container spacing={0} style={{ minHeight: "100vh" }}>
         <Grid item container xs={1} md={1} alignItems={"center"}>
           <IconButton size="large" disableRipple onClick={handleLeft}>
@@ -146,7 +147,7 @@ const BuildDetailPage: React.FC<detailProps> = (props: detailProps) => {
                     </Typography>
                   </Box>
                   <Box marginBottom={2}>
-                    <Typography variant="h4">${prices[index]}</Typography>
+                    <Typography variant="h4">{(Number(prices[index])).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</Typography>
                   </Box>
                   <Box marginBottom={3}>
                     <Typography

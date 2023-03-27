@@ -154,10 +154,11 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 REST_AUTH_SERIALIZERS = {
-    "PASSWORD_RESET_SERIALIZER": "evolutionary_builder.serializers.CustomPasswordResetConfirmSerializer"
+    "PASSWORD_RESET_SERIALIZER": "evolutionary_builder.serializers.CustomPasswordResetConfirmSerializer",
+    "LOGIN_SERIALIZER": "evolutionary_builder.serializers.CustomLoginSerializer"
 }
 
-if (os.getenv('SESSION_COOKIE_SECURE')):
+if (os.getenv('SESSION_COOKIE_SECURE') == 'True'):
     SESSION_COOKIE_SAMESITE = 'None'
     CSRF_COOKIE_SAMESITE = 'None'
     SESSION_COOKIE_SECURE = True
@@ -172,6 +173,7 @@ JWT_AUTH_SECURE = True
 JWT_AUTH_COOKIE_USE_CSRF = True
 SITE_ID = 1
 AUTH_USER_MODEL = 'evolutionary_builder.User'
+ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'

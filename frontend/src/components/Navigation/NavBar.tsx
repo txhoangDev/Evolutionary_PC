@@ -47,6 +47,7 @@ const Link = styled(Typography)({
 const initialState: State = {
   logoutButton: <></>,
   loginButton: <></>,
+  accountButton: <></>,
   signupButton: <></>,
   menu: <></>,
   anchorElNav: null,
@@ -56,6 +57,8 @@ const reducer = (state: State, action: Action): State => {
   switch (action.type) {
     case "SET_LOGOUT_BUTTON":
       return { ...state, logoutButton: action.payload };
+    case "SET_ACCOUNT_BUTTON":
+      return { ...state, accountButton: action.payload };
     case "SET_LOGIN_BUTTON":
       return { ...state, loginButton: action.payload };
     case "SET_SIGNUP_BUTTON":
@@ -71,7 +74,6 @@ const reducer = (state: State, action: Action): State => {
   }
 };
 
-// navbar component
 const NavBar: React.FC = () => {
   let theme = createTheme({
     palette: {
@@ -109,6 +111,8 @@ const NavBar: React.FC = () => {
 
   const handleLogout = React.useCallback(() => {
     dispatch({ type: "SET_ANCHORELNAV", payload: null });
+    dispatch({ type: "SET_LOGOUT_BUTTON", payload: <></> });
+    dispatch({ type: "SET_ACCOUNT_BUTTON", payload: <></> });
     logout().then((response) => {
       if (response === "Success") {
         navigate("/Home");
@@ -120,6 +124,18 @@ const NavBar: React.FC = () => {
     const res = getUser();
     res.then((response) => {
       if (response) {
+        dispatch({
+          type: "SET_ACCOUNT_BUTTON",
+          payload: (
+            <Button
+              onClick={handleCloseNavMenu}
+              href='/account'
+              sx={{ my: 2, color: "black", display: "block" }}
+            >
+              <Link>Dashboard</Link>
+            </Button>
+          ),
+        });
         dispatch({
           type: "SET_LOGOUT_BUTTON",
           payload: (
@@ -159,6 +175,7 @@ const NavBar: React.FC = () => {
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">FAQ</Typography>
               </MenuItem>
+              <MenuItem href="/account">Dashboard</MenuItem>
               <MenuItem onClick={handleLogout}>Logout</MenuItem>
             </Menu>
           ),
@@ -317,6 +334,7 @@ const NavBar: React.FC = () => {
                 <Link>{"FAQ"}</Link>
               </Button>
               {state.loginButton}
+              {state.accountButton}
               {state.signupButton}
               {state.logoutButton}
             </Box>

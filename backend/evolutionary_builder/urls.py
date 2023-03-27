@@ -23,6 +23,7 @@ urlpatterns = [
     path('create-build/', create_build),
     path('build/<int:pk>/', build_details),
     path('get-token/', get_csrf_token),
+    path('components/', get_lowest_prices),
     path('', include('dj_rest_auth.urls')),
     re_path(
         r"password/reset/key/(?P<uidb36>[0-9A-Za-z]+)-(?P<key>.+)/",

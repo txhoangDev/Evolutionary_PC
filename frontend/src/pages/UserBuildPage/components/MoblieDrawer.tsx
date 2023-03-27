@@ -88,6 +88,9 @@ const MoblieDrawer: React.FC<drawerProps> = (props: drawerProps) => {
             <ListItemButton onClick={() => props.onChange("Settings")}>
               <ListItemText primary="Settings" />
             </ListItemButton>
+            <ListItemButton onClick={props.logout}>
+              <ListItemText primary="Logout" />
+            </ListItemButton>
           </List>
         </Box>
       </SwipeableDrawer>
