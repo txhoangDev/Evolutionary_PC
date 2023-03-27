@@ -9,6 +9,8 @@ import {
   Button,
   Alert,
   AlertTitle,
+  Checkbox,
+  FormControlLabel
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
@@ -24,6 +26,7 @@ const Input: React.FC = () => {
   const [userError, setUserError] = React.useState(false);
   const [password, setPassword] = React.useState("");
   const [passError, setPassError] = React.useState(false);
+  const [remember, setRemember] = React.useState(false);
 
   const handleUsernameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(e.target.value);
@@ -32,6 +35,10 @@ const Input: React.FC = () => {
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value);
   };
+
+  const handleRemember = () => {
+    setRemember(!remember);
+  }
 
   const handleLogin = () => {
     if (username.length === 0) {
@@ -49,7 +56,7 @@ const Input: React.FC = () => {
         </Alert>
       );
     } else {
-      const result = login(username, password);
+      const result = login(username, password, remember);
       result.then((response) => {
         if (response === "error") {
           setAlert(
@@ -96,6 +103,11 @@ const Input: React.FC = () => {
               label="Username"
               variant="filled"
               fullWidth
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                }
+              }}
             />
           </Box>
         </Grid>
@@ -109,8 +121,16 @@ const Input: React.FC = () => {
               variant="filled"
               type="password"
               fullWidth
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  handleLogin();
+                }
+              }}
             />
           </Box>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <FormControlLabel control={<Checkbox checked={remember} onClick={handleRemember} /> } label="Remember Me?" />
         </Grid>
         <Grid item xs={12} md={6}>
           <Link href="/account/forgot">Forgot Password?</Link>

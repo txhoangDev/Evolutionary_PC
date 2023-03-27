@@ -1,4 +1,5 @@
 export type State = {
+  accountButton: JSX.Element;
   logoutButton: JSX.Element;
   loginButton: JSX.Element;
   signupButton: JSX.Element;
@@ -8,6 +9,7 @@ export type State = {
 
 export type Action =
   | { type: "SET_LOGOUT_BUTTON"; payload: JSX.Element }
+  | { type: "SET_ACCOUNT_BUTTON"; payload: JSX.Element }
   | { type: "SET_LOGIN_BUTTON"; payload: JSX.Element }
   | { type: "SET_SIGNUP_BUTTON"; payload: JSX.Element }
   | { type: "SET_MENU"; payload: JSX.Element }
@@ -20,6 +22,7 @@ export interface detailProps {
 
 export interface drawerProps {
   onChange: (newBuildId: string) => void;
+  logout: () => void;
 }
 
 export interface buildProps {
@@ -32,6 +35,7 @@ export interface buildStepper {
   validateInput: () => boolean;
   steps: string[];
   content: JSX.Element[];
+  handleValidate: (steps: number) => boolean;
 }
 
 export interface Build {

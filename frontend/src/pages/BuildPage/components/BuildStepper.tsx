@@ -40,20 +40,22 @@ const BuildStepper: React.FC<buildStepper> = (props: buildStepper) => {
   };
 
   const handleNext = () => {
-    setDirection("left");
-    setChecked(false);
-    const newCompleted = completed;
-    newCompleted[activeStep] = true;
-    setCompleted(newCompleted);
-    const newActiveStep =
-      isLastStep() && !allStepsCompleted()
-        ? props.steps.findIndex((step, i) => !(i in completed))
-        : activeStep + 1;
-    setActiveStep(newActiveStep);
-    setTimeout(function () {
-      setDirection("right");
-      setChecked(true);
-    }, 300);
+    if (props.handleValidate(activeStep)) {
+      setDirection("left");
+      setChecked(false);
+      const newCompleted = completed;
+      newCompleted[activeStep] = true;
+      setCompleted(newCompleted);
+      const newActiveStep =
+        isLastStep() && !allStepsCompleted()
+          ? props.steps.findIndex((step, i) => !(i in completed))
+          : activeStep + 1;
+      setActiveStep(newActiveStep);
+      setTimeout(function () {
+        setDirection("right");
+        setChecked(true);
+      }, 300);
+    }
   };
 
   const handleBack = () => {

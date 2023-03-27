@@ -9,6 +9,7 @@ import {
   Snackbar,
 } from "@mui/material";
 import MuiAlert, { AlertProps } from "@mui/material/Alert";
+import Slide, { SlideProps } from "@mui/material/Slide";
 
 import { getUserInfo, putUsername, changePassword } from "../../../http-common";
 
@@ -18,6 +19,12 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
 ) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
+
+type TransitionProps = Omit<SlideProps, "direction">;
+
+function TransitionDown(props: TransitionProps) {
+  return <Slide {...props} direction="down" />;
+}
 
 const Settings: React.FC = () => {
   const [username, setUsername] = React.useState("");
@@ -108,6 +115,7 @@ const Settings: React.FC = () => {
             setOpen(false);
             setType(true);
           }}
+          TransitionComponent={TransitionDown}
         >
           <Alert
             onClose={() => {

@@ -11,17 +11,26 @@ import {
 } from "@mui/material";
 
 import { buildProps } from "../../../types";
+import { getUserInfo } from "../../../http-common";
 
 const Welcome: React.FC<buildProps> = (props: buildProps) => {
+  const [username, setUsername] = React.useState("");
+
+  React.useEffect(() => {
+    getUserInfo().then((response) => setUsername(response.username));
+  }, []);
+
   return (
     <Container maxWidth="xl">
       <Grid container spacing={2} direction="column">
         <Grid item container xs={12} md={6}>
           <Typography variant="h3" sx={{ fontWeight: 700 }}>
-            Welcome Back Corgi!
+            Welcome Back {username}!
           </Typography>
         </Grid>
         {props.builds.map((build) => {
+          let gpu_brand = build.gpu_brand === 'None' ? '' : build.gpu_brand;
+          let cpu_brand = build.cpu_brand === 'None' ? '' : build.cpu_brand;
           return (
             <Grid item container xs={12} md={6} key={build.id}>
               <Card
@@ -35,9 +44,9 @@ const Welcome: React.FC<buildProps> = (props: buildProps) => {
                   </Typography>
                   <Divider />
                   <Typography variant="body1" sx={{ mt: 2 }}>
-                    {build.cpu_brand.length > 0 ? (
+                    {build.cpu_brand === '' ? (
                       <>
-                        CPU Brand: {build.cpu_brand}
+                        CPU Brand: {cpu_brand}
                         <br />
                       </>
                     ) : (
@@ -51,9 +60,9 @@ const Welcome: React.FC<buildProps> = (props: buildProps) => {
                     ) : (
                       <></>
                     )}
-                    {build.gpu_brand.length > 0 ? (
+                    {build.gpu_brand === '' ? (
                       <>
-                        GPU Brand: {build.gpu_brand}
+                        GPU Brand: {gpu_brand}
                         <br />
                       </>
                     ) : (
@@ -61,16 +70,16 @@ const Welcome: React.FC<buildProps> = (props: buildProps) => {
                     )}
                     {Number(build.gpu_budget) !== 0 ? (
                       <>
-                        <br />
                         GPU Budget: {build.gpu_budget}{" "}
+                        <br />
                       </>
                     ) : (
                       <></>
                     )}
                     {Number(build.ram_budget) !== 0 ? (
                       <>
-                        <br />
                         RAM Budget: {build.ram_budget}{" "}
+                        <br />
                       </>
                     ) : (
                       <></>
